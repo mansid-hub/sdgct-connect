@@ -1,9 +1,10 @@
-import t1 from "@/assets/trustee-1.jpg";
-import t2 from "@/assets/trustee-2.jpg";
-import t3 from "@/assets/trustee-3.jpg";
-import t4 from "@/assets/trustee-4.jpg";
-import t5 from "@/assets/trustee-5.jpg";
-import t6 from "@/assets/trustee-6.jpg";
+import kamaltai from "@/assets/trustees/kamaltai.jpg";
+import kirtitai from "@/assets/trustees/kirtitai.jpg";
+import dharam from "@/assets/trustees/dharam.jpg";
+import rajesh from "@/assets/trustees/rajesh.jpg";
+import karan from "@/assets/trustees/karan.jpg";
+import rajendra from "@/assets/trustees/rajendra.jpg";
+import kamlakar from "@/assets/trustees/kamlakar.jpg";
 
 export interface Trustee {
   slug: string;
@@ -19,143 +20,162 @@ export interface Trustee {
 
 export const trustees: Trustee[] = [
   {
-    slug: "dadasaheb-gawai",
-    name: "Shri. Dadasaheb Gawai",
-    designation: "Founder & Chairman",
+    slug: "kamaltai-gawai",
+    name: "Dr. Sau. Kamaltai R. Gawai",
+    designation: "Founder & President",
     summary:
-      "Visionary social reformer who founded the trust to bring education and dignity to the underprivileged of Vidarbha.",
-    image: t1,
+      "Visionary founder of the trust, devoted to the upliftment of women, children and underprivileged communities across Vidarbha.",
+    image: kamaltai,
     biography: [
-      "Born in a humble family in Amravati district, Shri. Dadasaheb Gawai dedicated his life to social upliftment, education and equality. His decades of grassroots service inspired the founding of this trust.",
-      "A respected leader and parliamentarian, he championed the cause of marginalised communities and worked tirelessly to make quality education accessible to every child.",
+      "Dr. Sau. Kamaltai R. Gawai is the founding force behind Shri. Dadasaheb Gawai Charitable Trust. Inspired by the legacy of social reform in her family, she has devoted her life to education, women's empowerment and rural welfare.",
+      "As President, she leads the trust's vision and ensures that every initiative is anchored in dignity, compassion and constitutional values.",
     ],
     contributions: [
-      "Founded the trust in service of education and social welfare",
-      "Established multiple schools and hostels for underprivileged students",
-      "Pioneered scholarship programmes for first-generation learners",
+      "Founded the trust and shaped its long-term vision",
+      "Leads women's empowerment and child welfare programmes",
+      "Mentors scholarship recipients and first-generation learners",
     ],
     achievements: [
-      "Padma Shri awardee for social service",
-      "Honored by the Government of Maharashtra for educational reforms",
+      "Honoured for decades of service to society and education",
       "Lifelong advocate for constitutional values and equality",
     ],
     message:
-      "Education is the only weapon that can change destinies. Our work will continue until every child in our region has the opportunity to dream — and the means to achieve it.",
+      "Service is the highest form of devotion. Our work will continue until every child, woman and family in our region lives with dignity and opportunity.",
   },
   {
-    slug: "sushila-gawai",
-    name: "Smt. Sushila Gawai",
-    designation: "Vice Chairperson",
+    slug: "kirtitai-arjun",
+    name: "Mrs. Kirtitai R. Arjun",
+    designation: "President",
     summary:
-      "Champion of women's empowerment and child welfare, leading the trust's outreach across rural Maharashtra.",
-    image: t2,
+      "President of the trust, leading day-to-day programmes and championing women's empowerment and child welfare.",
+    image: kirtitai,
     biography: [
-      "With over three decades of experience in social work, Smt. Sushila Gawai leads the trust's women empowerment and child welfare initiatives.",
-      "She has personally mentored hundreds of women through skill-development programmes that have transformed families and entire villages.",
+      "Mrs. Kirtitai R. Arjun serves as the President of Shri. Dadasaheb Gawai Charitable Trust, guiding its programmes with empathy and a sharp organisational mind.",
+      "She has worked closely with rural women's collectives and youth groups, building skill-development and welfare initiatives that touch thousands of lives every year.",
     ],
     contributions: [
-      "Founded the Women's Vocational Training Centre",
-      "Oversees the girl-child scholarship programme",
-      "Organises annual rural health camps benefitting 5,000+ families",
+      "Leads the women's vocational and skill-development programmes",
+      "Oversees the girl-child scholarship initiative",
+      "Drives community outreach across rural Maharashtra",
     ],
     achievements: [
-      "Recognised by UNICEF India for her work in girl-child education",
-      "Maharashtra State Award for Women Empowerment",
+      "Recognised for her contribution to women's empowerment",
+      "Active leader in community health and education networks",
     ],
     message:
-      "When you educate a woman, you educate a generation. Our centres are not just classrooms — they are spaces where dignity is restored.",
+      "When you empower a woman, you uplift an entire family. Our trust exists to make sure no woman or child is left behind.",
   },
   {
-    slug: "rajesh-deshmukh",
-    name: "Adv. Rajesh Deshmukh",
-    designation: "Managing Trustee",
+    slug: "dharam-arjun",
+    name: "Shri. Dharam Rajesh Arjun",
+    designation: "Vice-President",
     summary:
-      "Senior advocate ensuring transparent governance, legal compliance and ethical stewardship of every donation received.",
-    image: t3,
+      "Vice-President of the trust, driving youth engagement, technology adoption and modern outreach programmes.",
+    image: dharam,
     biography: [
-      "Adv. Rajesh Deshmukh is a senior advocate at the Bombay High Court with a long association with public-interest causes.",
-      "He oversees the trust's governance, legal compliance and audits — ensuring every rupee donated reaches the intended beneficiary.",
+      "Shri. Dharam Rajesh Arjun serves as Vice-President of the trust and brings a youthful, modern perspective to its work.",
+      "He focuses on technology, partnerships and youth-led initiatives, ensuring the trust's reach and impact continue to grow with every passing year.",
     ],
     contributions: [
-      "Established the trust's transparency and audit framework",
-      "Pro-bono legal counsel for beneficiary families",
-      "Authored the trust's RTE compliance handbook",
+      "Leads digital outreach and donor engagement",
+      "Coordinates youth volunteer programmes",
+      "Builds partnerships with educational and corporate institutions",
     ],
     achievements: [
-      "Distinguished Alumnus, ILS Law College Pune",
-      "Lifetime member of the Bar Council of Maharashtra & Goa",
+      "Recognised for his work in youth mentorship",
+      "Active contributor to community development initiatives",
     ],
     message:
-      "Trust is built one transparent decision at a time. We owe every donor and every beneficiary nothing less than complete honesty.",
+      "The next generation is our greatest asset. We must equip them with skills, opportunities and the courage to lead change.",
   },
   {
-    slug: "priya-kale",
-    name: "Dr. Priya Kale",
-    designation: "Trustee — Education",
+    slug: "rajesh-arjun",
+    name: "Mr. Rajesh Arjun",
+    designation: "Treasurer",
     summary:
-      "PhD in Education leading curriculum design, teacher training and the trust's flagship scholarship programme.",
-    image: t4,
+      "Treasurer of the trust, safeguarding finances and ensuring transparent stewardship of every contribution received.",
+    image: rajesh,
     biography: [
-      "Dr. Priya Kale brings academic rigour and modern pedagogy to the trust's education vertical.",
-      "She designs the curriculum, trains teachers and runs the merit-cum-means scholarship programme that supports 1,200+ students every year.",
+      "Mr. Rajesh Arjun manages the trust's finances with discipline, transparency and a deep sense of responsibility towards every donor.",
+      "He oversees budgeting, audits and statutory compliance, ensuring that every rupee is used in the service of the trust's mission.",
     ],
     contributions: [
-      "Designed the bridge-course programme for first-generation learners",
-      "Established the digital learning labs in 14 villages",
-      "Mentors over 200 scholarship recipients personally",
+      "Manages financial planning and donor reporting",
+      "Oversees 80G & 12A statutory compliance",
+      "Implemented transparent quarterly disclosures",
     ],
     achievements: [
-      "PhD in Educational Psychology, SNDT University",
-      "Fulbright Fellow 2018",
+      "Decades of experience in financial governance",
+      "Recognised for his integrity and stewardship",
     ],
     message:
-      "Every child carries the spark of brilliance. Our job is simply to make sure no child has to put it out because of poverty.",
+      "Every contribution carries someone's faith. We treat that faith as the most precious thing this trust holds.",
   },
   {
-    slug: "anand-patil",
-    name: "Dr. Anand Patil",
-    designation: "Trustee — Healthcare",
+    slug: "karan-arjun",
+    name: "Shri. Karan Rajesh Arjun",
+    designation: "Trustee",
     summary:
-      "Practising physician leading rural medical camps, mobile clinics and the trust's preventive healthcare programme.",
-    image: t5,
+      "Trustee championing education, scholarships and capacity-building for first-generation learners across Vidarbha.",
+    image: karan,
     biography: [
-      "Dr. Anand Patil is a practising physician who runs the trust's healthcare initiatives across 40+ villages in Vidarbha.",
-      "He has built a network of volunteer doctors who conduct monthly health camps, screenings and follow-up care for vulnerable communities.",
+      "Shri. Karan Rajesh Arjun is a trustee deeply committed to education and youth development.",
+      "He drives the trust's scholarship programmes and mentors students to help them realise their full potential.",
     ],
     contributions: [
-      "Runs the monthly mobile clinic programme",
-      "Coordinates free cataract-surgery camps",
-      "Built the maternal & child health screening initiative",
+      "Leads the merit-cum-means scholarship initiative",
+      "Mentors first-generation learners personally",
+      "Coordinates career-guidance programmes for students",
     ],
     achievements: [
-      "MD, Government Medical College Nagpur",
-      "Indian Medical Association Community Service Award",
+      "Recognised for his work in education & mentorship",
+    ],
+    message:
+      "Education is the surest path out of poverty. Our scholarships are not charity — they are an investment in tomorrow's leaders.",
+  },
+  {
+    slug: "rajendra-gawai",
+    name: "Dr. Rajendra R. Gawai",
+    designation: "Trustee",
+    summary:
+      "Trustee leading healthcare initiatives, rural medical camps and preventive-care programmes for vulnerable communities.",
+    image: rajendra,
+    biography: [
+      "Dr. Rajendra R. Gawai brings medical expertise and a passion for community welfare to the trust.",
+      "He leads the healthcare vertical, organising medical camps, screenings and follow-up care across rural Vidarbha.",
+    ],
+    contributions: [
+      "Coordinates monthly rural health camps",
+      "Builds the preventive-care and screening programme",
+      "Mentors a network of volunteer medical professionals",
+    ],
+    achievements: [
+      "Recognised for community service in healthcare",
     ],
     message:
       "Health is the foundation everything else is built on. We bring care to the doorstep of those who would otherwise be left behind.",
   },
   {
-    slug: "vasant-bhosale",
-    name: "Shri. Vasant Bhosale",
-    designation: "Treasurer",
+    slug: "kamlakar-payas",
+    name: "Dr. Kamlakar P. Payas",
+    designation: "Secretary",
     summary:
-      "Chartered accountant safeguarding the trust's finances and stewarding every contribution with discipline and care.",
-    image: t6,
+      "Secretary of the trust, ensuring smooth operations, governance and meticulous execution of every initiative.",
+    image: kamlakar,
     biography: [
-      "Shri. Vasant Bhosale is a chartered accountant with over 35 years of experience in audit and financial governance.",
-      "He manages the trust's finances, audits and donor reporting with the discipline that has earned the trust its reputation for transparency.",
+      "Dr. Kamlakar P. Payas serves as the Secretary of Shri. Dadasaheb Gawai Charitable Trust.",
+      "He coordinates governance, documentation and inter-team collaboration, making sure every programme is executed with discipline and accountability.",
     ],
     contributions: [
-      "Implemented quarterly public financial disclosures",
-      "Built the donor-facing impact reporting system",
-      "Oversees 80G & 12A statutory compliance",
+      "Manages governance, records and statutory documentation",
+      "Coordinates trustee meetings and programme reviews",
+      "Drives operational excellence across all initiatives",
     ],
     achievements: [
-      "Fellow Chartered Accountant (FCA), ICAI",
-      "Past President, Amravati CA Branch",
+      "Decades of experience in administration and academia",
     ],
     message:
-      "Every rupee that comes to us carries someone's faith. We treat that faith as the most precious thing we hold.",
+      "Good intentions become real impact only through disciplined execution. That is the work we owe every beneficiary and every donor.",
   },
 ];
 
