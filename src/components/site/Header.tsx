@@ -7,11 +7,18 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About Us" },
-  { to: "/trustees", label: "Trustees" },
   { to: "/blog", label: "Blog" },
   { to: "/contact", label: "Contact Us" },
 ];
+
+const aboutMenu = {
+  label: "About Us",
+  to: "/about",
+  items: [
+    { label: "About the Trust", to: "/about" },
+    { label: "Trustees", to: "/trustees" },
+  ],
+};
 
 const institutionMenu = {
   label: "Institution",
@@ -44,8 +51,11 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [instOpen, setInstOpen] = useState(false);
+  const [aboutOpen, setAboutOpen] = useState(false);
   const [mobileInstOpen, setMobileInstOpen] = useState<string | null>(null);
+  const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const instRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -58,7 +68,9 @@ const Header = () => {
   useEffect(() => {
     setOpen(false);
     setInstOpen(false);
+    setAboutOpen(false);
     setMobileInstOpen(null);
+    setMobileAboutOpen(false);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -84,7 +96,25 @@ const Header = () => {
     };
   }, [instOpen]);
 
+  useEffect(() => {
+    if (!aboutOpen) return;
+    const onClick = (e: MouseEvent) => {
+      if (aboutRef.current && !aboutRef.current.contains(e.target as Node)) setAboutOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setAboutOpen(false);
+    };
+    document.addEventListener("mousedown", onClick);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onClick);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [aboutOpen]);
+
   const instActive = location.pathname.startsWith("/institution");
+  const aboutActive =
+    location.pathname === "/about" || location.pathname.startsWith("/trustees");
 
   return (
     <header
@@ -99,24 +129,60 @@ const Header = () => {
         <Logo />
 
         <nav className="hidden lg:flex items-center gap-1">
-          {links.map((l) => (
-            <NavLink
-              key={l.to}
-              to={l.to}
-              end={l.to === "/"}
-              className={({ isActive }) =>
-                cn(
-                  "px-4 py-2 rounded-full text-sm font-medium transition-base",
-                  isActive
-                    ? "text-primary bg-primary/8"
-                    : "text-foreground/75 hover:text-primary hover:bg-secondary"
-                )
-              }
-            >
-              {l.label}
-            </NavLink>
-          ))}
+          {/* Home */}
+          <NavLink
+            key="/"
+            to="/"
+            end
+            className={({ isActive }) =>
+              cn(
+                "px-4 py-2 rounded-full text-sm font-medium transition-base",
+                isActive
+                  ? "text-primary bg-primary/8"
+                  : "text-foreground/75 hover:text-primary hover:bg-secondary"
+              )
+            }
+          >
+            Home
+          </NavLink>
 
+          {/* About Us dropdown */}
+          <div className="relative" ref={aboutRef}>
+            <button
+              type="button"
+              onClick={() => setAboutOpen((v) => !v)}
+              aria-haspopup="menu"
+              aria-expanded={aboutOpen}
+              className={cn(
+                "px-4 py-2 rounded-full text-sm font-medium transition-base inline-flex items-center gap-1.5",
+                aboutActive
+                  ? "text-primary bg-primary/8"
+                  : "text-foreground/75 hover:text-primary hover:bg-secondary"
+              )}
+            >
+              {aboutMenu.label}
+              <ChevronDown size={14} className={cn("transition-base", aboutOpen && "rotate-180")} />
+            </button>
+            <div
+              role="menu"
+              className={cn(
+                "absolute left-0 mt-3 w-60 p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
+                aboutOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
+              )}
+            >
+              {aboutMenu.items.map((i) => (
+                <Link
+                  key={i.to}
+                  to={i.to}
+                  className="block px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary transition-base"
+                >
+                  {i.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Institution dropdown (placed right after About Us) */}
           <div className="relative" ref={instRef}>
             <button
               type="button"
@@ -137,7 +203,7 @@ const Header = () => {
             <div
               role="menu"
               className={cn(
-                "absolute right-0 mt-3 w-[36rem] max-w-[calc(100vw-2rem)] grid grid-cols-2 gap-1 p-3 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
+                "absolute left-0 mt-3 w-[36rem] max-w-[calc(100vw-2rem)] grid grid-cols-2 gap-1 p-3 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
                 instOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
               )}
             >
@@ -164,6 +230,25 @@ const Header = () => {
               ))}
             </div>
           </div>
+
+          {/* Remaining simple links */}
+          {links.filter((l) => l.to !== "/").map((l) => (
+            <NavLink
+              key={l.to}
+              to={l.to}
+              end={l.to === "/"}
+              className={({ isActive }) =>
+                cn(
+                  "px-4 py-2 rounded-full text-sm font-medium transition-base",
+                  isActive
+                    ? "text-primary bg-primary/8"
+                    : "text-foreground/75 hover:text-primary hover:bg-secondary"
+                )
+              }
+            >
+              {l.label}
+            </NavLink>
+          ))}
         </nav>
 
         <div className="flex items-center gap-2">
@@ -200,27 +285,53 @@ const Header = () => {
         )}
       >
         <nav className="container flex flex-col py-8 gap-1">
-          {links.map((l, i) => (
-            <NavLink
-              key={l.to}
-              to={l.to}
-              end={l.to === "/"}
-              style={{ animationDelay: `${i * 60}ms` }}
-              className={({ isActive }) =>
-                cn(
-                  "px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base animate-fade-up",
-                  isActive
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-secondary"
-                )
-              }
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              cn(
+                "px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base animate-fade-up",
+                isActive ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
+              )
+            }
+          >
+            Home
+          </NavLink>
+
+          {/* Mobile About Us accordion */}
+          <div className="animate-fade-up">
+            <button
+              type="button"
+              onClick={() => setMobileAboutOpen((v) => !v)}
+              className={cn(
+                "w-full flex items-center justify-between px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base",
+                aboutActive ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
+              )}
+              aria-expanded={mobileAboutOpen}
             >
-              {l.label}
-            </NavLink>
-          ))}
+              About Us
+              <ChevronDown
+                size={18}
+                className={cn("transition-base", mobileAboutOpen && "rotate-180")}
+              />
+            </button>
+            {mobileAboutOpen && (
+              <div className="mt-1 ml-2 pl-3 border-l-2 border-border/60 flex flex-col gap-1">
+                {aboutMenu.items.map((i) => (
+                  <Link
+                    key={i.to}
+                    to={i.to}
+                    className="px-4 py-3 rounded-xl text-base font-medium text-foreground/80 hover:bg-secondary hover:text-primary transition-base"
+                  >
+                    {i.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
 
           {/* Mobile Institution accordion */}
-          <div className="animate-fade-up" style={{ animationDelay: `${links.length * 60}ms` }}>
+          <div className="animate-fade-up">
             <button
               type="button"
               onClick={() => setMobileInstOpen((v) => (v === "root" ? null : "root"))}
@@ -286,6 +397,22 @@ const Header = () => {
               </div>
             )}
           </div>
+
+          {/* Remaining simple links (Blog, Contact) */}
+          {links.filter((l) => l.to !== "/").map((l) => (
+            <NavLink
+              key={l.to}
+              to={l.to}
+              className={({ isActive }) =>
+                cn(
+                  "px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base animate-fade-up",
+                  isActive ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
+                )
+              }
+            >
+              {l.label}
+            </NavLink>
+          ))}
 
           <Button asChild variant="donate" size="lg" className="mt-6 w-full">
             <Link to="/donate">
