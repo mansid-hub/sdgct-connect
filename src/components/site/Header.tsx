@@ -285,27 +285,53 @@ const Header = () => {
         )}
       >
         <nav className="container flex flex-col py-8 gap-1">
-          {links.map((l, i) => (
-            <NavLink
-              key={l.to}
-              to={l.to}
-              end={l.to === "/"}
-              style={{ animationDelay: `${i * 60}ms` }}
-              className={({ isActive }) =>
-                cn(
-                  "px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base animate-fade-up",
-                  isActive
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-secondary"
-                )
-              }
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              cn(
+                "px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base animate-fade-up",
+                isActive ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
+              )
+            }
+          >
+            Home
+          </NavLink>
+
+          {/* Mobile About Us accordion */}
+          <div className="animate-fade-up">
+            <button
+              type="button"
+              onClick={() => setMobileAboutOpen((v) => !v)}
+              className={cn(
+                "w-full flex items-center justify-between px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base",
+                aboutActive ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
+              )}
+              aria-expanded={mobileAboutOpen}
             >
-              {l.label}
-            </NavLink>
-          ))}
+              About Us
+              <ChevronDown
+                size={18}
+                className={cn("transition-base", mobileAboutOpen && "rotate-180")}
+              />
+            </button>
+            {mobileAboutOpen && (
+              <div className="mt-1 ml-2 pl-3 border-l-2 border-border/60 flex flex-col gap-1">
+                {aboutMenu.items.map((i) => (
+                  <Link
+                    key={i.to}
+                    to={i.to}
+                    className="px-4 py-3 rounded-xl text-base font-medium text-foreground/80 hover:bg-secondary hover:text-primary transition-base"
+                  >
+                    {i.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
 
           {/* Mobile Institution accordion */}
-          <div className="animate-fade-up" style={{ animationDelay: `${links.length * 60}ms` }}>
+          <div className="animate-fade-up">
             <button
               type="button"
               onClick={() => setMobileInstOpen((v) => (v === "root" ? null : "root"))}
@@ -371,6 +397,22 @@ const Header = () => {
               </div>
             )}
           </div>
+
+          {/* Remaining simple links (Blog, Contact) */}
+          {links.filter((l) => l.to !== "/").map((l) => (
+            <NavLink
+              key={l.to}
+              to={l.to}
+              className={({ isActive }) =>
+                cn(
+                  "px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base animate-fade-up",
+                  isActive ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
+                )
+              }
+            >
+              {l.label}
+            </NavLink>
+          ))}
 
           <Button asChild variant="donate" size="lg" className="mt-6 w-full">
             <Link to="/donate">
