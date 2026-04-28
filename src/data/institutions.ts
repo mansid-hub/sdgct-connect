@@ -19,10 +19,10 @@ export const categories: Category[] = [
     parent: "schools",
     description: "Government-aided schools nurturing students across the Amravati region.",
     items: [
-      { name: "Dr. Babasaheb Ambedkar Marathi Vidyalaya", location: "Frezarpura, Amravati" },
+      { name: "Dr. Babasaheb Ambedkar Marathi Vidyalaya", location: "Frezarpura, Amravati", website: "https://schools.org.in/amravati/27071503202/dr-babasaheb-amdedkar-vidyalay.html" },
       { name: "Madan Maharaj Vidyalaya", location: "Fulamla, Tq. Nandgaon (Kh.), Amravati" },
-      { name: "Mahatma Jyotiba Fuley Vidyalaya", location: "Vihigaon, Tq. Anjangaon Surji, Amravati" },
-      { name: "Matoshri Ramabai Ambedkar Vidyalaya", location: "Shyam Nagar, Amravati" },
+      { name: "Mahatma Jyotiba Fule Vidyalaya", location: "Vihigaon, Tq. Anjangaon Surji, Amravati", website: "https://mjfamt.org/" },
+      { name: "Matoshri Ramabai Ambedkar Vidyalaya", location: "Shyam Nagar, Amravati", website: "https://schools.org.in/amravati/27071505604/matoshri-ramabai-ambedkar-vid.html" },
       { name: "Shri Dadasaheb Gawai Vidyalaya", location: "Malhara, Tq. Achalpur, Amravati" },
       { name: "Matoshri Gangadevi Lulla Vidyalaya", location: "Gaurkheda Kumbhi, Tq. Achalpur, Amravati" },
       { name: "Krushnakamal Adiwasi Ashram Shala", location: "Ner Pingalai, Tq. Morshi, Amravati" },
