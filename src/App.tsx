@@ -14,7 +14,8 @@ import Donate from "./pages/Donate.tsx";
 import Institution from "./pages/Institution.tsx";
 import Schools from "./pages/Schools.tsx";
 import Colleges from "./pages/Colleges.tsx";
-import InstitutionList from "./pages/InstitutionList.tsx";
+import Hospitals from "./pages/Hospitals.tsx";
+import InstitutionRouter from "./pages/InstitutionRouter.tsx";
 import ScrollToTop from "./components/site/ScrollToTop.tsx";
 
 const queryClient = new QueryClient();
@@ -37,7 +38,8 @@ const App = () => (
           <Route path="/institution" element={<Institution />} />
           <Route path="/institution/schools" element={<Schools />} />
           <Route path="/institution/colleges" element={<Colleges />} />
-          <Route path="/institution/:parent/:slug" element={<InstitutionList />} />
+          <Route path="/institution/hospitals" element={<Hospitals />} />
+          <Route path="/institution/:parent/:slug" element={<InstitutionRouter />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

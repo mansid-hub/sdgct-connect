@@ -5,7 +5,7 @@ import PageHeader from "@/components/site/PageHeader";
 import { categories } from "@/data/institutions";
 
 interface Props {
-  parent: "schools" | "colleges";
+  parent: "schools" | "colleges" | "hospitals";
   title: string;
   eyebrow: string;
   description: string;
@@ -13,7 +13,8 @@ interface Props {
 
 const InstitutionHub = ({ parent, title, eyebrow, description }: Props) => {
   const items = categories.filter((c) => c.parent === parent);
-  const parentLabel = parent === "schools" ? "Schools" : "Colleges";
+  const parentLabel =
+    parent === "schools" ? "Schools" : parent === "colleges" ? "Colleges" : "Hospitals";
   return (
     <Layout>
       <PageHeader

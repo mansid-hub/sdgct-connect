@@ -1,5 +1,5 @@
-import { useParams, Navigate } from "react-router-dom";
-import { ExternalLink, MapPin, Building2 } from "lucide-react";
+import { useParams, Navigate, Link } from "react-router-dom";
+import { ExternalLink, MapPin, Building2, ArrowUpRight } from "lucide-react";
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
 import { Button } from "@/components/ui/button";
@@ -51,16 +51,25 @@ const InstitutionList = () => {
                 <div className="h-11 w-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
                   <Building2 size={20} />
                 </div>
-                <h3 className="mt-5 font-display text-lg font-bold text-foreground leading-snug">
+                <Link
+                  to={`/institution/${category.parent}/${inst.slug}`}
+                  className="mt-5 font-display text-lg font-bold text-foreground leading-snug hover:text-primary transition-base inline-flex items-start gap-1.5"
+                >
                   {inst.name}
-                </h3>
+                  <ArrowUpRight size={14} className="mt-1 shrink-0" />
+                </Link>
                 {inst.location && (
                   <div className="mt-3 flex items-start gap-2 text-sm text-muted-foreground">
                     <MapPin size={14} className="mt-0.5 shrink-0 text-accent" />
                     <span>{inst.location}</span>
                   </div>
                 )}
-                <div className="mt-6 pt-5 border-t border-border/60">
+                <div className="mt-auto pt-5 border-t border-border/60 flex flex-col gap-2">
+                  <Button asChild variant="default" size="sm" className="w-full">
+                    <Link to={`/institution/${category.parent}/${inst.slug}`}>
+                      View details <ArrowUpRight size={14} />
+                    </Link>
+                  </Button>
                   <Button asChild variant="outline" size="sm" className="w-full">
                     <a
                       href={buildWebsiteUrl(inst)}

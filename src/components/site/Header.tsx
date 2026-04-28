@@ -23,27 +23,10 @@ const aboutMenu = {
 const institutionMenu = {
   label: "Institution",
   to: "/institution",
-  groups: [
-    {
-      label: "Schools",
-      to: "/institution/schools",
-      items: [
-        { label: "Granted Schools", to: "/institution/schools/granted-schools" },
-        { label: "Non-Granted Schools", to: "/institution/schools/non-granted-schools" },
-      ],
-    },
-    {
-      label: "Colleges",
-      to: "/institution/colleges",
-      items: [
-        { label: "Granted Colleges", to: "/institution/colleges/granted-colleges" },
-        { label: "Non-Granted Colleges", to: "/institution/colleges/non-granted-colleges" },
-        { label: "Granted Junior Colleges", to: "/institution/colleges/granted-junior-colleges" },
-        { label: "Technical Colleges", to: "/institution/colleges/technical-colleges" },
-        { label: "Polytechnics", to: "/institution/colleges/polytechnics" },
-        { label: "ITI", to: "/institution/colleges/iti" },
-      ],
-    },
+  items: [
+    { label: "Schools", to: "/institution/schools" },
+    { label: "Colleges", to: "/institution/colleges" },
+    { label: "Hospitals", to: "/institution/hospitals" },
   ],
 };
 
@@ -184,49 +167,47 @@ const Header = () => {
 
           {/* Institution dropdown (placed right after About Us) */}
           <div className="relative" ref={instRef}>
-            <button
-              type="button"
-              onClick={() => setInstOpen((v) => !v)}
-              aria-haspopup="menu"
-              aria-expanded={instOpen}
+            <div
               className={cn(
-                "px-4 py-2 rounded-full text-sm font-medium transition-base inline-flex items-center gap-1.5",
+                "rounded-full inline-flex items-center transition-base",
                 instActive
                   ? "text-primary bg-primary/8"
                   : "text-foreground/75 hover:text-primary hover:bg-secondary"
               )}
             >
-              {institutionMenu.label}
-              <ChevronDown size={14} className={cn("transition-base", instOpen && "rotate-180")} />
-            </button>
+              <Link
+                to={institutionMenu.to}
+                className="pl-4 pr-1.5 py-2 text-sm font-medium rounded-l-full"
+              >
+                {institutionMenu.label}
+              </Link>
+              <button
+                type="button"
+                onClick={() => setInstOpen((v) => !v)}
+                aria-haspopup="menu"
+                aria-expanded={instOpen}
+                aria-label="Toggle Institution menu"
+                className="pr-3 pl-1 py-2 rounded-r-full"
+              >
+                <ChevronDown size={14} className={cn("transition-base", instOpen && "rotate-180")} />
+              </button>
+            </div>
 
             <div
               role="menu"
               className={cn(
-                "absolute left-0 mt-3 w-[36rem] max-w-[calc(100vw-2rem)] grid grid-cols-2 gap-1 p-3 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
+                "absolute left-0 mt-3 w-60 p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
                 instOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
               )}
             >
-              {institutionMenu.groups.map((g) => (
-                <div key={g.to} className="p-2">
-                  <Link
-                    to={g.to}
-                    className="block px-3 py-2 rounded-lg text-xs font-semibold tracking-[0.18em] uppercase text-accent hover:bg-secondary"
-                  >
-                    {g.label}
-                  </Link>
-                  <div className="mt-1 flex flex-col">
-                    {g.items.map((i) => (
-                      <Link
-                        key={i.to}
-                        to={i.to}
-                        className="px-3 py-2 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary transition-base"
-                      >
-                        {i.label}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+              {institutionMenu.items.map((i) => (
+                <Link
+                  key={i.to}
+                  to={i.to}
+                  className="block px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary transition-base"
+                >
+                  {i.label}
+                </Link>
               ))}
             </div>
           </div>
@@ -355,45 +336,15 @@ const Header = () => {
                 >
                   Overview
                 </Link>
-                {institutionMenu.groups.map((g) => {
-                  const key = g.to;
-                  const sub = mobileInstOpen === key;
-                  return (
-                    <div key={g.to}>
-                      <button
-                        type="button"
-                        onClick={() => setMobileInstOpen(sub ? "root" : key)}
-                        className="w-full flex items-center justify-between px-4 py-3 rounded-xl text-base font-semibold text-foreground hover:bg-secondary transition-base"
-                        aria-expanded={sub}
-                      >
-                        {g.label}
-                        <ChevronDown
-                          size={16}
-                          className={cn("transition-base", sub && "rotate-180")}
-                        />
-                      </button>
-                      {sub && (
-                        <div className="ml-3 pl-3 border-l border-border/60 flex flex-col">
-                          <Link
-                            to={g.to}
-                            className="px-4 py-2.5 rounded-lg text-sm text-accent font-semibold hover:bg-secondary"
-                          >
-                            All {g.label}
-                          </Link>
-                          {g.items.map((i) => (
-                            <Link
-                              key={i.to}
-                              to={i.to}
-                              className="px-4 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary transition-base"
-                            >
-                              {i.label}
-                            </Link>
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  );
-                })}
+                {institutionMenu.items.map((i) => (
+                  <Link
+                    key={i.to}
+                    to={i.to}
+                    className="px-4 py-3 rounded-xl text-base font-medium text-foreground/80 hover:bg-secondary hover:text-primary transition-base"
+                  >
+                    {i.label}
+                  </Link>
+                ))}
               </div>
             )}
           </div>
