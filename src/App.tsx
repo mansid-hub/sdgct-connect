@@ -11,6 +11,10 @@ import TrusteeDetail from "./pages/TrusteeDetail.tsx";
 import Blog from "./pages/Blog.tsx";
 import Contact from "./pages/Contact.tsx";
 import Donate from "./pages/Donate.tsx";
+import Institution from "./pages/Institution.tsx";
+import Schools from "./pages/Schools.tsx";
+import Colleges from "./pages/Colleges.tsx";
+import InstitutionList from "./pages/InstitutionList.tsx";
 import ScrollToTop from "./components/site/ScrollToTop.tsx";
 
 const queryClient = new QueryClient();
@@ -30,6 +34,10 @@ const App = () => (
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/institution" element={<Institution />} />
+          <Route path="/institution/schools" element={<Schools />} />
+          <Route path="/institution/colleges" element={<Colleges />} />
+          <Route path="/institution/:parent/:slug" element={<InstitutionList />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

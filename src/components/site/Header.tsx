@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X, Heart, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Logo from "./Logo";
 import { cn } from "@/lib/utils";
@@ -13,9 +13,39 @@ const links = [
   { to: "/contact", label: "Contact" },
 ];
 
+const institutionMenu = {
+  label: "Institution",
+  to: "/institution",
+  groups: [
+    {
+      label: "Schools",
+      to: "/institution/schools",
+      items: [
+        { label: "Granted Schools", to: "/institution/schools/granted-schools" },
+        { label: "Non-Granted Schools", to: "/institution/schools/non-granted-schools" },
+      ],
+    },
+    {
+      label: "Colleges",
+      to: "/institution/colleges",
+      items: [
+        { label: "Granted Colleges", to: "/institution/colleges/granted-colleges" },
+        { label: "Non-Granted Colleges", to: "/institution/colleges/non-granted-colleges" },
+        { label: "Granted Junior Colleges", to: "/institution/colleges/granted-junior-colleges" },
+        { label: "Technical Colleges", to: "/institution/colleges/technical-colleges" },
+        { label: "Polytechnics", to: "/institution/colleges/polytechnics" },
+        { label: "ITI", to: "/institution/colleges/iti" },
+      ],
+    },
+  ],
+};
+
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [instOpen, setInstOpen] = useState(false);
+  const [mobileInstOpen, setMobileInstOpen] = useState<string | null>(null);
+  const instRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -27,6 +57,8 @@ const Header = () => {
 
   useEffect(() => {
     setOpen(false);
+    setInstOpen(false);
+    setMobileInstOpen(null);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -35,6 +67,24 @@ const Header = () => {
       document.body.style.overflow = "";
     };
   }, [open]);
+
+  useEffect(() => {
+    if (!instOpen) return;
+    const onClick = (e: MouseEvent) => {
+      if (instRef.current && !instRef.current.contains(e.target as Node)) setInstOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setInstOpen(false);
+    };
+    document.addEventListener("mousedown", onClick);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onClick);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [instOpen]);
+
+  const instActive = location.pathname.startsWith("/institution");
 
   return (
     <header
@@ -66,6 +116,54 @@ const Header = () => {
               {l.label}
             </NavLink>
           ))}
+
+          <div className="relative" ref={instRef}>
+            <button
+              type="button"
+              onClick={() => setInstOpen((v) => !v)}
+              aria-haspopup="menu"
+              aria-expanded={instOpen}
+              className={cn(
+                "px-4 py-2 rounded-full text-sm font-medium transition-base inline-flex items-center gap-1.5",
+                instActive
+                  ? "text-primary bg-primary/8"
+                  : "text-foreground/75 hover:text-primary hover:bg-secondary"
+              )}
+            >
+              {institutionMenu.label}
+              <ChevronDown size={14} className={cn("transition-base", instOpen && "rotate-180")} />
+            </button>
+
+            <div
+              role="menu"
+              className={cn(
+                "absolute right-0 mt-3 w-[36rem] max-w-[calc(100vw-2rem)] grid grid-cols-2 gap-1 p-3 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
+                instOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
+              )}
+            >
+              {institutionMenu.groups.map((g) => (
+                <div key={g.to} className="p-2">
+                  <Link
+                    to={g.to}
+                    className="block px-3 py-2 rounded-lg text-xs font-semibold tracking-[0.18em] uppercase text-accent hover:bg-secondary"
+                  >
+                    {g.label}
+                  </Link>
+                  <div className="mt-1 flex flex-col">
+                    {g.items.map((i) => (
+                      <Link
+                        key={i.to}
+                        to={i.to}
+                        className="px-3 py-2 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary transition-base"
+                      >
+                        {i.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -97,7 +195,7 @@ const Header = () => {
       {/* Mobile menu */}
       <div
         className={cn(
-          "lg:hidden fixed inset-x-0 top-16 sm:top-20 bottom-0 bg-background z-40 transition-smooth",
+          "lg:hidden fixed inset-x-0 top-16 sm:top-20 bottom-0 bg-background z-40 transition-smooth overflow-y-auto",
           open ? "translate-x-0 opacity-100" : "translate-x-full opacity-0 pointer-events-none"
         )}
       >
@@ -120,6 +218,75 @@ const Header = () => {
               {l.label}
             </NavLink>
           ))}
+
+          {/* Mobile Institution accordion */}
+          <div className="animate-fade-up" style={{ animationDelay: `${links.length * 60}ms` }}>
+            <button
+              type="button"
+              onClick={() => setMobileInstOpen((v) => (v === "root" ? null : "root"))}
+              className={cn(
+                "w-full flex items-center justify-between px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base",
+                instActive ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
+              )}
+              aria-expanded={mobileInstOpen === "root"}
+            >
+              Institution
+              <ChevronDown
+                size={18}
+                className={cn("transition-base", mobileInstOpen === "root" && "rotate-180")}
+              />
+            </button>
+            {mobileInstOpen === "root" && (
+              <div className="mt-1 ml-2 pl-3 border-l-2 border-border/60 flex flex-col gap-1">
+                <Link
+                  to="/institution"
+                  className="px-4 py-3 rounded-xl text-base font-medium text-foreground/80 hover:bg-secondary hover:text-primary transition-base"
+                >
+                  Overview
+                </Link>
+                {institutionMenu.groups.map((g) => {
+                  const key = g.to;
+                  const sub = mobileInstOpen === key;
+                  return (
+                    <div key={g.to}>
+                      <button
+                        type="button"
+                        onClick={() => setMobileInstOpen(sub ? "root" : key)}
+                        className="w-full flex items-center justify-between px-4 py-3 rounded-xl text-base font-semibold text-foreground hover:bg-secondary transition-base"
+                        aria-expanded={sub}
+                      >
+                        {g.label}
+                        <ChevronDown
+                          size={16}
+                          className={cn("transition-base", sub && "rotate-180")}
+                        />
+                      </button>
+                      {sub && (
+                        <div className="ml-3 pl-3 border-l border-border/60 flex flex-col">
+                          <Link
+                            to={g.to}
+                            className="px-4 py-2.5 rounded-lg text-sm text-accent font-semibold hover:bg-secondary"
+                          >
+                            All {g.label}
+                          </Link>
+                          {g.items.map((i) => (
+                            <Link
+                              key={i.to}
+                              to={i.to}
+                              className="px-4 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary transition-base"
+                            >
+                              {i.label}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+
           <Button asChild variant="donate" size="lg" className="mt-6 w-full">
             <Link to="/donate">
               <Heart className="fill-current" /> Donate Now
