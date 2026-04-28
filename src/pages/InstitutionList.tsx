@@ -64,7 +64,7 @@ const InstitutionList = () => {
                     <span>{inst.location}</span>
                   </div>
                 )}
-                <div className="mt-6 pt-5 border-t border-border/60 flex flex-col gap-2 mt-auto">
+                <div className="mt-auto pt-5 border-t border-border/60 flex flex-col gap-2">
                   <Button asChild variant="default" size="sm" className="w-full">
                     <Link to={`/institution/${category.parent}/${inst.slug}`}>
                       View details <ArrowUpRight size={14} />
