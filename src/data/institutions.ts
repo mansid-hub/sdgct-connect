@@ -19,7 +19,7 @@ export const categories: Category[] = [
     parent: "schools",
     description: "Government-aided schools nurturing students across the Amravati region.",
     items: [
-      { name: "Dr. Babasaheb Ambedkar Marathi Vidyalaya", location: "Frezarpura, Amravati", website: "https://schools.org.in/amravati/27071503202/dr-babasaheb-amdedkar-vidyalay.html" },
+      { name: "Dr. Babasaheb Ambedkar Marathi Vidyalaya", location: "Frezarpura, Amravati", website: "https://instagram.com/dr_babasaheb_ambedkar_mv_amt/" },
       { name: "Madan Maharaj Vidyalaya", location: "Fulamla, Tq. Nandgaon (Kh.), Amravati" },
       { name: "Mahatma Jyotiba Fule Vidyalaya", location: "Vihigaon, Tq. Anjangaon Surji, Amravati", website: "https://mjfamt.org/" },
       { name: "Matoshri Ramabai Ambedkar Vidyalaya", location: "Shyam Nagar, Amravati", website: "https://schools.org.in/amravati/27071505604/matoshri-ramabai-ambedkar-vid.html" },
