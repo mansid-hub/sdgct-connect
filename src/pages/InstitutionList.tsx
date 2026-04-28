@@ -5,6 +5,16 @@ import PageHeader from "@/components/site/PageHeader";
 import { Button } from "@/components/ui/button";
 import { getCategory } from "@/data/institutions";
 
+const buildWebsiteUrl = (inst: { name: string; location?: string; website?: string }) => {
+  if (inst.website) return inst.website;
+  const query = encodeURIComponent(
+    `${inst.name}${inst.location ? " " + inst.location : ""} official website`
+  );
+  // Google's "I'm Feeling Lucky" redirects straight to the top result,
+  // which is almost always the institution's official site.
+  return `https://www.google.com/search?q=${query}&btnI=1`;
+};
+
 const InstitutionList = () => {
   const { parent, slug } = useParams();
   const category = slug ? getCategory(slug) : undefined;
@@ -53,7 +63,7 @@ const InstitutionList = () => {
                 <div className="mt-6 pt-5 border-t border-border/60">
                   <Button asChild variant="outline" size="sm" className="w-full">
                     <a
-                      href={inst.website || "#"}
+                      href={buildWebsiteUrl(inst)}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`Visit website of ${inst.name}`}
