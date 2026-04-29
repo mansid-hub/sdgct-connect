@@ -35,12 +35,10 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/why-us" element={<div>Why Us Page</div>} />
-          <Route path="/media" element={<div>Media </div>} />
-          <Route path="/media/awards" element={<div>Awards</div>} />
-          <Route path="/media/blogs" element={<div>Blogs</div>} />
-          <Route path="/media/press" element={<div>Press</div>} />
-          <Route path="/about/mission-vision" element={<div>Mission Vision</div>} />
+          <Route path="/media" element={<Media />} />
+          <Route path="/media/awards" element={<Awards />} />
+          <Route path="/media/blogs" element={<BlogsMedia />} />
+          <Route path="/media/press" element={<Press />} />
           <Route path="/about" element={<About />} />
           <Route path="/trustees" element={<Trustees />} />
           <Route path="/trustees/:slug" element={<TrusteeDetail />} />
