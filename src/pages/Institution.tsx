@@ -42,7 +42,7 @@ const Institution = () => {
       />
 
       {/* Summary / counts */}
-      <section className="py-16 sm:py-20 border-b border-border/60 bg-secondary/30">
+      <section className="section-y border-b border-border/60 bg-secondary/30">
         <div className="container">
           <div className="max-w-3xl">
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">At a glance</div>
@@ -127,7 +127,7 @@ const Institution = () => {
       </section>
 
       {/* Tiles */}
-      <section className="py-16 sm:py-20">
+      <section className="section-y">
         <div className="container grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {tiles.map((t, i) => (
             <Link
@@ -156,7 +156,7 @@ const Institution = () => {
       </section>
 
       {/* Full list by category */}
-      <section className="pb-20 sm:pb-24">
+      <section className="section-y !pt-0">
         <div className="container">
           <div className="max-w-3xl">
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Complete directory</div>

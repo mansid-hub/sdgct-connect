@@ -43,7 +43,7 @@ const Contact = () => {
         crumbs={[{ label: "Home", to: "/" }, { label: "Contact" }]}
       />
 
-      <section className="py-20 sm:py-24">
+      <section className="section-y">
         <div className="container grid lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-16">
           <div className="bg-card rounded-3xl p-8 sm:p-10 border border-border/60 shadow-card">
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground">Send us a message</h2>

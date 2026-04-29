@@ -28,7 +28,7 @@ const Blog = () => {
         crumbs={[{ label: "Home", to: "/" }, { label: "Blog" }]}
       />
 
-      <section className="py-16 sm:py-20">
+      <section className="section-y">
         <div className="container">
           {/* Featured */}
           <a href="#" className="group grid lg:grid-cols-2 gap-8 lg:gap-12 bg-card rounded-3xl overflow-hidden border border-border/60 shadow-soft hover:shadow-card transition-smooth">

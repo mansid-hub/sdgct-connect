@@ -23,7 +23,7 @@ const About = () => {
         crumbs={[{ label: "Home", to: "/" }, { label: "About" }]}
       />
 
-      <section className="py-20 sm:py-24">
+      <section className="section-y">
         <div className="container grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative">
             <img
@@ -70,7 +70,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-20 sm:py-24 bg-secondary/40">
+      <section className="section-y bg-secondary/40">
         <div className="container">
           <SectionHeader
             eyebrow="What guides us"
@@ -91,7 +91,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="py-20 sm:py-24">
+      <section className="section-y">
         <div className="container grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
             <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-accent">
