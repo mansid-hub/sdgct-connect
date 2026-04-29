@@ -47,6 +47,7 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [instOpen, setInstOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
+  const [mediaOpen, setMediaOpen] = useState(false);
   const [mobileInstOpen, setMobileInstOpen] = useState<string | null>(null);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const instRef = useRef<HTMLDivElement>(null);
