@@ -29,10 +29,15 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/why-us" element={<div>Why Us Page</div>} />
+          <Route path="/media" element={<div>Media Page</div>} />
+          <Route path="/media/awards" element={<div>Awards</div>} />
+          <Route path="/media/blogs" element={<div>Blogs</div>} />
+          <Route path="/media/press" element={<div>Press</div>} />
+          <Route path="/about/mission-vision" element={<div>Mission Vision</div>} />
           <Route path="/about" element={<About />} />
           <Route path="/trustees" element={<Trustees />} />
           <Route path="/trustees/:slug" element={<TrusteeDetail />} />
-          <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/institution" element={<Institution />} />
