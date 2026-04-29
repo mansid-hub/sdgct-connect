@@ -7,7 +7,6 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { to: "/", label: "Home" },
-  { to: "/blog", label: "Blog" },
   { to: "/contact", label: "Contact Us" },
 ];
 
@@ -15,8 +14,8 @@ const aboutMenu = {
   label: "About Us",
   to: "/about",
   items: [
-    { label: "About the Trust", to: "/about" },
-    { label: "Trustees", to: "/trustees" },
+    { label: "Founder's Journey", to: "/about" },
+    { label: "Board of Trustee", to: "/trustees" },
   ],
 };
 
@@ -27,6 +26,14 @@ const institutionMenu = {
     { label: "Schools", to: "/institution/schools" },
     { label: "Colleges", to: "/institution/colleges" },
     { label: "Hospitals", to: "/institution/hospitals" },
+  ],
+};
+
+const institutionMenu = {
+  label: "Media",
+  to: "/media", 
+  items:[
+    { label: "Blogs", to: "/Media/blogs" },
   ],
 };
 
