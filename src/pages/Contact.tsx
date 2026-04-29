@@ -72,9 +72,9 @@ const Contact = () => {
 
           <div className="space-y-4">
             {[
-              { icon: MapPin, title: "Visit us", body: "Trust House, Camp Road,\nAmravati, Maharashtra 444602" },
-              { icon: Phone, title: "Call us", body: "+91 721 222 3344\n+91 98220 12345" },
-              { icon: Mail, title: "Email", body: "contact@dgctrust.org\ndonate@dgctrust.org" },
+              { icon: MapPin, title: "Visit us", body: "Shyam Nagar, Congress Nagar Road,\nAmravati - 444606, MH" },
+              { icon: Phone, title: "Call us", body: "+91 98234 96914" },
+              { icon: Mail, title: "Email", body: "sdgct1991@gmail.com" },
               { icon: Clock, title: "Office hours", body: "Mon–Sat · 9:30 am – 6:00 pm\nSun · By appointment" },
             ].map((c, i) => (
               <div key={i} className="bg-card rounded-2xl p-6 border border-border/60 shadow-soft flex gap-4">
@@ -93,8 +93,8 @@ const Contact = () => {
         <div className="container mt-12">
           <div className="rounded-3xl overflow-hidden border border-border/60 shadow-card aspect-[16/7] bg-secondary">
             <iframe
-              title="Map of Amravati"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=77.74%2C20.92%2C77.78%2C20.95&layer=mapnik&marker=20.9374%2C77.7796"
+              title="Shyam Nagar, Congress Nagar Road, Amravati 444606"
+              src="https://www.google.com/maps?q=Shyam+Nagar,+Congress+Nagar+Road,+Amravati+444606,+Maharashtra&output=embed"
               className="h-full w-full border-0"
               loading="lazy"
             />

@@ -111,7 +111,7 @@ const Header = () => {
       <div className="container flex items-center justify-between h-16 sm:h-20">
         <Logo />
 
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden xl:flex items-center gap-1">
           {/* Home */}
           <NavLink
             key="/"
@@ -248,7 +248,7 @@ const Header = () => {
 
           <button
             type="button"
-            className="lg:hidden inline-flex items-center justify-center h-10 w-10 rounded-full text-primary hover:bg-secondary transition-base"
+            className="xl:hidden inline-flex items-center justify-center h-10 w-10 rounded-full text-primary hover:bg-secondary transition-base"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
@@ -261,7 +261,7 @@ const Header = () => {
       {/* Mobile menu */}
       <div
         className={cn(
-          "lg:hidden fixed inset-x-0 top-16 sm:top-20 bottom-0 bg-background z-40 transition-smooth overflow-y-auto",
+          "xl:hidden fixed inset-x-0 top-16 sm:top-20 bottom-0 bg-background z-40 transition-smooth overflow-y-auto",
           open ? "translate-x-0 opacity-100" : "translate-x-full opacity-0 pointer-events-none"
         )}
       >
