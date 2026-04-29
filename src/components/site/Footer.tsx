@@ -53,16 +53,16 @@ const Footer = () => {
           <ul className="space-y-3 text-sm text-primary-foreground/75">
             <li className="flex gap-3">
               <MapPin size={16} className="mt-0.5 shrink-0 text-accent" />
-              <span>Trust House, Camp Road,<br />Amravati, Maharashtra 444602</span>
+              <span>Shyam Nagar, Congress Nagar Road,<br />Amravati - 444606, MH</span>
             </li>
             <li className="flex gap-3 items-center">
               <Phone size={16} className="text-accent shrink-0" />
-              <a href="tel:+917212223344" className="hover:text-accent">+91 721 222 3344</a>
+              <a href="tel:+919823496914" className="hover:text-accent">+91 98234 96914</a>
             </li>
             <li className="flex gap-3 items-center">
               <Mail size={16} className="text-accent shrink-0" />
-              <a href="mailto:contact@dgctrust.org" className="hover:text-accent">
-                contact@dgctrust.org
+              <a href="mailto:sdgct1991@gmail.com" className="hover:text-accent">
+                sdgct1991@gmail.com
               </a>
             </li>
           </ul>
