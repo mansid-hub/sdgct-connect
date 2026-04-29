@@ -52,7 +52,7 @@ const Testimonials = () => {
   }, [paused]);
 
   return (
-    <section className="py-20 sm:py-28 bg-secondary/40">
+    <section className="py-12 sm:py-16 bg-secondary/40">
       <div className="container">
         <SectionHeader
           eyebrow="Voices of Impact"

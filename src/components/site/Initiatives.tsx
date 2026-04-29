@@ -40,7 +40,7 @@ const items = [
 
 const Initiatives = () => {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-12 sm:py-16">
       <div className="container">
         <SectionHeader
           eyebrow="What We Do"
