@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { to: "/", label: "Home" },
+  { to: "/blogs", label: "Blog" },
   { to: "/contact", label: "Contact Us" },
 ];
 
@@ -29,13 +30,6 @@ const institutionMenu = {
   ],
 };
 
-const institutionMenu = {
-  label: "Media",
-  to: "/media", 
-  items:[
-    { label: "Blogs", to: "/Media/blogs" },
-  ],
-};
 
 const Header = () => {
   const [open, setOpen] = useState(false);
