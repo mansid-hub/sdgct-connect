@@ -39,7 +39,7 @@ const InstitutionList = () => {
           { label: category.title },
         ]}
       />
-      <section className="py-20 sm:py-24">
+      <section className="section-y">
         <div className="container">
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {category.items.map((inst, i) => (

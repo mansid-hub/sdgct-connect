@@ -27,7 +27,7 @@ const InstitutionHub = ({ parent, title, eyebrow, description }: Props) => {
           { label: parentLabel },
         ]}
       />
-      <section className="py-20 sm:py-24">
+      <section className="section-y">
         <div className="container grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((c, i) => (
             <Link

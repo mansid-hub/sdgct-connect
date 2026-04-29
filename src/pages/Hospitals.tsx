@@ -21,7 +21,7 @@ const Hospitals = () => {
           { label: "Hospitals" },
         ]}
       />
-      <section className="py-20 sm:py-24">
+      <section className="section-y">
         <div className="container">
           {items.length === 0 ? (
             <div className="max-w-2xl mx-auto text-center rounded-3xl border border-border/60 bg-card p-10 sm:p-14 shadow-soft animate-fade-up">

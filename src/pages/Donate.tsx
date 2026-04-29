@@ -68,7 +68,7 @@ const Donate = () => {
         crumbs={[{ label: "Home", to: "/" }, { label: "Donate" }]}
       />
 
-      <section className="py-16 sm:py-20">
+      <section className="section-y">
         <div className="container grid lg:grid-cols-[1fr_380px] gap-10">
           <form onSubmit={submit} className="space-y-10">
             {/* Cause */}

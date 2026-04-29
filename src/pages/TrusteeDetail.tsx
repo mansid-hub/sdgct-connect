@@ -28,7 +28,7 @@ const TrusteeDetail = () => {
         </div>
       </section>
 
-      <section className="py-14 sm:py-20">
+      <section className="section-y">
         <div className="container grid lg:grid-cols-[420px_1fr] gap-12 lg:gap-16">
           <aside className="lg:sticky lg:top-28 lg:self-start">
             <div className="bg-card rounded-3xl p-6 sm:p-8 border border-border/60 shadow-card">
