@@ -48,5 +48,5 @@ const Media = () => {
     </Layout>
   );
 };
-
-export default Media;
+return <div>Media Page Working</div>;
+//export default Media;
