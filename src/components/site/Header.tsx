@@ -51,6 +51,7 @@ const Header = () => {
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
   const instRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
+  const mediaRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
 
   useEffect(() => {
@@ -106,6 +107,28 @@ const Header = () => {
       document.removeEventListener("keydown", onKey);
     };
   }, [aboutOpen]);
+
+  useEffect(() => {
+  if (!mediaOpen) return;
+
+  const onClick = (e: MouseEvent) => {
+    if (mediaRef.current && !mediaRef.current.contains(e.target as Node)) {
+      setMediaOpen(false);
+    }
+  };
+
+  const onKey = (e: KeyboardEvent) => {
+    if (e.key === "Escape") setMediaOpen(false);
+  };
+
+  document.addEventListener("mousedown", onClick);
+  document.addEventListener("keydown", onKey);
+
+  return () => {
+    document.removeEventListener("mousedown", onClick);
+    document.removeEventListener("keydown", onKey);
+  };
+}, [mediaOpen]);
 
   const instActive = location.pathname.startsWith("/institution");
   const aboutActive =
