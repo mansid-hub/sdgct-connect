@@ -342,11 +342,11 @@ const Header = () => {
 
       {/* Mobile menu */}
       <div
-        className={cn(
-          "xl:hidden fixed inset-x-0 top-16 sm:top-20 bottom-0 bg-background z-40 transition-smooth overflow-y-auto",
-          open ? "translate-x-0 opacity-100" : "translate-x-full opacity-0 pointer-events-none"
-        )}
-      >
+  className={cn(
+    "xl:hidden fixed inset-0 top-16 sm:top-20 bg-white z-[999] transition-all duration-300 overflow-y-auto",
+    open ? "translate-x-0 opacity-100" : "translate-x-full opacity-0 pointer-events-none"
+  )}
+>
         <nav className="container flex flex-col py-8 gap-1">
           <NavLink
             to="/"
