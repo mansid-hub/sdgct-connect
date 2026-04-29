@@ -347,14 +347,14 @@ const Header = () => {
     open ? "translate-x-0 opacity-100" : "translate-x-full opacity-0 pointer-events-none"
   )}
 >
-        <nav className="container flex flex-col py-8 gap-1">
+        <nav className="container flex flex-col py-8 gap-1 text-black">          
           <NavLink
             to="/"
             end
             className={({ isActive }) =>
               cn(
                 "px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base animate-fade-up",
-                isActive ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
+                isActive ? "bg-primary text-primary-foreground" : "text-black hover:bg-secondary"
               )
             }
           >
@@ -368,7 +368,7 @@ const Header = () => {
               onClick={() => setMobileAboutOpen((v) => !v)}
               className={cn(
                 "w-full flex items-center justify-between px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base",
-                aboutActive ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
+                aboutActive ? "bg-primary text-primary-foreground" : "text-black hover:bg-secondary"
               )}
               aria-expanded={mobileAboutOpen}
             >
@@ -384,7 +384,7 @@ const Header = () => {
                   <Link
                     key={i.to}
                     to={i.to}
-                    className="px-4 py-3 rounded-xl text-base font-medium text-foreground/80 hover:bg-secondary hover:text-primary transition-base"
+                    className="px-4 py-3 rounded-xl text-base font-medium text-black/80 hover:bg-secondary hover:text-primary transition-base"
                   >
                     {i.label}
                   </Link>
@@ -400,7 +400,7 @@ const Header = () => {
               onClick={() => setMobileInstOpen((v) => (v === "root" ? null : "root"))}
               className={cn(
                 "w-full flex items-center justify-between px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base",
-                instActive ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
+                instActive ? "bg-primary text-primary-foreground" : "text-black hover:bg-secondary"
               )}
               aria-expanded={mobileInstOpen === "root"}
             >
@@ -414,7 +414,7 @@ const Header = () => {
               <div className="mt-1 ml-2 pl-3 border-l-2 border-border/60 flex flex-col gap-1">
                 <Link
                   to="/institution"
-                  className="px-4 py-3 rounded-xl text-base font-medium text-foreground/80 hover:bg-secondary hover:text-primary transition-base"
+                  className="px-4 py-3 rounded-xl text-base font-medium text-black/80 hover:bg-secondary hover:text-primary transition-base"
                 >
                   Overview
                 </Link>
@@ -422,7 +422,7 @@ const Header = () => {
                   <Link
                     key={i.to}
                     to={i.to}
-                    className="px-4 py-3 rounded-xl text-base font-medium text-foreground/80 hover:bg-secondary hover:text-primary transition-base"
+                    className="px-4 py-3 rounded-xl text-base font-medium text-black/80 hover:bg-secondary hover:text-primary transition-base"
                   >
                     {i.label}
                   </Link>
@@ -453,7 +453,7 @@ const Header = () => {
         <Link
           key={i.to}
           to={i.to}
-          className="px-4 py-3 rounded-xl text-base font-medium text-foreground/80 hover:bg-secondary hover:text-primary"
+          className="px-4 py-3 rounded-xl text-base font-medium text-black/80 hover:bg-secondary hover:text-primary"
         >
           {i.label}
         </Link>
@@ -469,7 +469,7 @@ const Header = () => {
               className={({ isActive }) =>
                 cn(
                   "px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base animate-fade-up",
-                  isActive ? "bg-primary text-primary-foreground" : "text-foreground hover:bg-secondary"
+                  isActive ? "bg-primary text-primary-foreground" : "text-black hover:bg-secondary"
                 )
               }
             >
