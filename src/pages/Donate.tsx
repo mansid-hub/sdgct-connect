@@ -6,15 +6,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { z } from "zod";
-import { GraduationCap, HeartPulse, Sparkles, Utensils, Heart, Shield, CheckCircle2 } from "lucide-react";
+import { Heart, Shield, CheckCircle2 } from "lucide-react";
 import { cn } from "@/lib/utils";
-
-const causes = [
-  { id: "education", label: "Education & Scholarships", icon: GraduationCap, desc: "Books, tuition & mentorship for students." },
-  { id: "health", label: "Healthcare Camps", icon: HeartPulse, desc: "Mobile clinics & medicine for villages." },
-  { id: "women", label: "Women Empowerment", icon: Sparkles, desc: "Vocational training and micro-grants." },
-  { id: "food", label: "Food & Welfare", icon: Utensils, desc: "Daily meals for elders and families." },
-];
 
 const presets = [500, 1500, 5000, 10000, 25000];
 
@@ -26,7 +19,6 @@ const donorSchema = z.object({
 
 const Donate = () => {
   const { toast } = useToast();
-  const [cause, setCause] = useState("education");
   const [amount, setAmount] = useState<number>(1500);
   const [custom, setCustom] = useState("");
   const [donor, setDonor] = useState({ fullName: "", email: "", phone: "" });
@@ -36,8 +28,6 @@ const Donate = () => {
     const c = parseInt(custom, 10);
     return Number.isFinite(c) && c > 0 ? c : amount;
   }, [custom, amount]);
-
-  const causeLabel = causes.find((c) => c.id === cause)?.label ?? "";
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -55,7 +45,7 @@ const Donate = () => {
     setErrors({});
     toast({
       title: "Thank you!",
-      description: `₹${finalAmount.toLocaleString()} towards ${causeLabel}. Payment integration coming soon.`,
+      description: `₹${finalAmount.toLocaleString()} received. Payment integration coming soon.`,
     });
   };
 
@@ -64,50 +54,17 @@ const Donate = () => {
       <PageHeader
         eyebrow="Donate"
         title="Make a donation that lasts a lifetime"
-        description="Choose a cause, an amount and a payment method. Every contribution receives a tax-exempt receipt under Section 80G."
+        description="Select an amount and a payment method. Every contribution receives a tax-exempt receipt under Section 80G."
         crumbs={[{ label: "Home", to: "/" }, { label: "Donate" }]}
       />
 
       <section className="section-y">
         <div className="container grid lg:grid-cols-[1fr_380px] gap-10">
           <form onSubmit={submit} className="space-y-10">
-            {/* Cause */}
-            <div className="bg-card rounded-3xl p-7 sm:p-9 border border-border/60 shadow-soft">
-              <div className="flex items-center gap-3 mb-6">
-                <span className="h-9 w-9 rounded-full gradient-primary text-primary-foreground font-bold flex items-center justify-center">1</span>
-                <h2 className="font-display text-xl sm:text-2xl font-bold text-foreground">Choose a cause</h2>
-              </div>
-              <div className="grid sm:grid-cols-2 gap-3">
-                {causes.map((c) => {
-                  const active = cause === c.id;
-                  return (
-                    <label
-                      key={c.id}
-                      className={cn(
-                        "cursor-pointer rounded-2xl border-2 p-5 flex gap-4 transition-base",
-                        active
-                          ? "border-primary bg-primary/5 shadow-soft"
-                          : "border-border bg-background hover:border-primary/40"
-                      )}
-                    >
-                      <input type="radio" name="cause" value={c.id} checked={active} onChange={() => setCause(c.id)} className="sr-only" />
-                      <div className={cn("h-11 w-11 rounded-xl flex items-center justify-center shrink-0", active ? "gradient-primary text-primary-foreground" : "bg-secondary text-primary")}>
-                        <c.icon size={20} />
-                      </div>
-                      <div>
-                        <div className="font-display font-semibold text-foreground">{c.label}</div>
-                        <div className="text-sm text-muted-foreground mt-1">{c.desc}</div>
-                      </div>
-                    </label>
-                  );
-                })}
-              </div>
-            </div>
-
             {/* Amount */}
             <div className="bg-card rounded-3xl p-7 sm:p-9 border border-border/60 shadow-soft">
               <div className="flex items-center gap-3 mb-6">
-                <span className="h-9 w-9 rounded-full gradient-primary text-primary-foreground font-bold flex items-center justify-center">2</span>
+                <span className="h-9 w-9 rounded-full gradient-primary text-primary-foreground font-bold flex items-center justify-center">1</span>
                 <h2 className="font-display text-xl sm:text-2xl font-bold text-foreground">Select amount</h2>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
@@ -139,7 +96,7 @@ const Donate = () => {
             {/* Donor */}
             <div className="bg-card rounded-3xl p-7 sm:p-9 border border-border/60 shadow-soft">
               <div className="flex items-center gap-3 mb-6">
-                <span className="h-9 w-9 rounded-full gradient-primary text-primary-foreground font-bold flex items-center justify-center">3</span>
+                <span className="h-9 w-9 rounded-full gradient-primary text-primary-foreground font-bold flex items-center justify-center">2</span>
                 <h2 className="font-display text-xl sm:text-2xl font-bold text-foreground">Your details</h2>
               </div>
               <div className="grid sm:grid-cols-2 gap-5">
@@ -164,7 +121,7 @@ const Donate = () => {
             {/* Payment */}
             <div className="bg-card rounded-3xl p-7 sm:p-9 border border-border/60 shadow-soft">
               <div className="flex items-center gap-3 mb-6">
-                <span className="h-9 w-9 rounded-full gradient-primary text-primary-foreground font-bold flex items-center justify-center">4</span>
+                <span className="h-9 w-9 rounded-full gradient-primary text-primary-foreground font-bold flex items-center justify-center">3</span>
                 <h2 className="font-display text-xl sm:text-2xl font-bold text-foreground">Payment</h2>
               </div>
               <div className="grid sm:grid-cols-3 gap-3">
@@ -190,7 +147,6 @@ const Donate = () => {
               <div className="bg-card rounded-3xl p-7 border border-border/60 shadow-card">
                 <div className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Donation summary</div>
                 <div className="mt-4 space-y-3 text-sm">
-                  <div className="flex justify-between"><span className="text-muted-foreground">Cause</span><span className="font-semibold text-foreground text-right max-w-[60%]">{causeLabel}</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Amount</span><span className="font-semibold text-foreground">₹{finalAmount.toLocaleString()}</span></div>
                   <div className="flex justify-between"><span className="text-muted-foreground">Tax benefit (50%)</span><span className="font-semibold text-foreground">₹{Math.floor(finalAmount * 0.5).toLocaleString()}</span></div>
                 </div>
