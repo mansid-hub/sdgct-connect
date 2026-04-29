@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const CallToDonate = () => {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-12 sm:py-16">
       <div className="container">
         <div className="relative overflow-hidden rounded-3xl gradient-primary text-primary-foreground p-8 sm:p-14 lg:p-20 shadow-elegant">
           <div className="absolute -top-20 -right-20 h-72 w-72 rounded-full bg-accent/30 blur-3xl" aria-hidden />

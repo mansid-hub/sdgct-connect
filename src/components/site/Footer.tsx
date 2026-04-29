@@ -5,7 +5,7 @@ import Logo from "./Logo";
 const Footer = () => {
   return (
     <footer className="bg-primary-deep text-primary-foreground">
-      <div className="container py-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container py-10 grid gap-12 md:grid-cols-2 lg:grid-cols-4">
         <div className="space-y-5">
           <div className="bg-background/95 inline-flex p-3 rounded-2xl">
             <Logo />
