@@ -17,6 +17,12 @@ import Colleges from "./pages/Colleges.tsx";
 import Hospitals from "./pages/Hospitals.tsx";
 import InstitutionRouter from "./pages/InstitutionRouter.tsx";
 import ScrollToTop from "./components/site/ScrollToTop.tsx";
+import WhyUs from "@/pages/WhyUs";
+import Media from "@/pages/Media";
+import Awards from "@/pages/Awards";
+import BlogsMedia from "@/pages/BlogsMedia";
+import Press from "@/pages/Press";
+import MissionVision from "@/pages/MissionVision";
 
 const queryClient = new QueryClient();
 
