@@ -342,8 +342,8 @@ const Header = () => {
       {/* Mobile menu */}
       <div
   className={cn(
-    "xl:hidden fixed inset-0 top-16 sm:top-20 bg-white z-[999] transition-all duration-300 overflow-y-auto",
-    open ? "translate-x-0 opacity-100" : "translate-x-full opacity-0 pointer-events-none"
+    "xl:hidden fixed left-0 right-0 bottom-0 top-16 sm:top-20 bg-white z-[999] overflow-y-auto transition-transform duration-300",
+    open ? "translate-x-0" : "translate-x-full pointer-events-none"
   )}
 >
         <nav className="container flex flex-col py-8 gap-1 text-black">          
