@@ -167,27 +167,29 @@ const Header = () => {
 
           {/* About Us dropdown */}
           <div className="relative" ref={aboutRef}>
-  <div
-    className={cn(
-      "rounded-full inline-flex items-center transition-base",
-      aboutActive
-        ? "text-primary bg-primary/8"
-        : "text-foreground/75 hover:text-primary hover:bg-secondary"
-    )}
-  >
-    {/* CLICKABLE LINK */}
+  <div className="flex items-center rounded-full overflow-hidden">
+    
+    {/* LEFT: Link (About page) */}
     <Link
       to="/about"
-      className="pl-4 pr-1.5 py-2 text-sm font-medium rounded-l-full"
+      className={cn(
+        "px-4 py-2 text-sm font-medium",
+        aboutActive
+          ? "text-primary bg-primary/8"
+          : "text-foreground/75 hover:text-primary hover:bg-secondary"
+      )}
     >
       {aboutMenu.label}
     </Link>
 
-    {/* DROPDOWN BUTTON */}
+    {/* RIGHT: Dropdown toggle */}
     <button
       type="button"
-      onClick={() => setAboutOpen((v) => !v)}
-      className="pr-3 pl-1 py-2 rounded-r-full"
+      onClick={(e) => {
+        e.stopPropagation(); // 🔥 VERY IMPORTANT
+        setAboutOpen((v) => !v);
+      }}
+      className="px-2 py-2 hover:bg-secondary"
     >
       <ChevronDown
         size={14}
@@ -196,7 +198,7 @@ const Header = () => {
     </button>
   </div>
 
-  {/* DROPDOWN MENU */}
+  {/* Dropdown */}
   <div
     className={cn(
       "absolute left-0 mt-3 w-60 p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
