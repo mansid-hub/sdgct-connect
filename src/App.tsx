@@ -23,6 +23,7 @@ import Awards from "@/pages/Awards";
 import BlogsMedia from "@/pages/BlogsMedia";
 import Press from "@/pages/Press";
 import MissionVision from "@/pages/MissionVision";
+import FoundersJourney from "@/pages/FoundersJourney";
 
 const queryClient = new QueryClient();
 
@@ -41,6 +42,7 @@ const App = () => (
           <Route path="/media/press" element={<Press />} />
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/about/mission-vision" element={<MissionVision />} />
+          <Route path="/about/founders-journey" element={<FoundersJourney />} />
           <Route path="/about" element={<About />} />
           <Route path="/trustees" element={<Trustees />} />
           <Route path="/trustees/:slug" element={<TrusteeDetail />} />

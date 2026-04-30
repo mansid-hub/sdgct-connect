@@ -15,7 +15,7 @@ const aboutMenu = {
   label: "About Us",
   to: "/about",
   items: [
-    { label: "Founder's Journey", to: "/about" },
+    { label: "Founder's Journey", to: "/about/founders-journey" },
     { label: "Mission & Vision", to: "/about/mission-vision" },
     { label: "Board of Trustee", to: "/trustees" },
   ],
