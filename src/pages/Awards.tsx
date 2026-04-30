@@ -4,7 +4,6 @@ const awardsImages = [
   "/images/awards1.png",
   "/images/awards2.png",
   "/images/awards3.png",
-  "/images/awards4.jpg",
 ];
 
 const Awards = () => {
