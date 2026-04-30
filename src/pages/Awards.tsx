@@ -2,7 +2,6 @@ import { useState } from "react";
 import Layout from "@/components/site/Layout";
 
 const awardsImages = [
-  "/images/awards.png",
   "/images/awards1.png",
   "/images/awards2.png",
   "/images/awards3.png",
