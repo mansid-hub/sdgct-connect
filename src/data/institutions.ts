@@ -13,6 +13,7 @@ export interface Institution {
   established?: string;
   about?: string[];
   highlights?: string[];
+  gallery?: string[];
 }
 
 export interface Category {
@@ -53,6 +54,9 @@ const build = (
     image: parent === "hospitals" ? healthImg : fallbackImg,
     about: makeAbout(r.name, r.location),
     highlights: makeHighlights(),
+    gallery: parent === "hospitals"
+      ? [healthImg, fallbackImg, healthImg, fallbackImg]
+      : [fallbackImg, healthImg, fallbackImg, healthImg],
   }));
 
 export const categories: Category[] = [

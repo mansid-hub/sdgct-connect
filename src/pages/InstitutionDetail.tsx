@@ -13,6 +13,7 @@ import {
   Coins,
 } from "lucide-react";
 import { allInstitutions, getInstitutionBySlug } from "@/data/institutions";
+import InstitutionGallery from "@/components/site/InstitutionGallery";
 
 const buildWebsiteUrl = (inst: { name: string; location?: string; website?: string }) => {
   if (inst.website) return inst.website;
@@ -136,6 +137,10 @@ const InstitutionDetail = () => {
                   ))}
                 </ul>
               </div>
+            )}
+
+            {inst.gallery && inst.gallery.length > 0 && (
+              <InstitutionGallery images={inst.gallery} name={inst.name} />
             )}
 
             <div className="flex items-center justify-between border-t border-border/60 pt-8 gap-3 flex-wrap">
