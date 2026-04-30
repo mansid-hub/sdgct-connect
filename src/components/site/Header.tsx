@@ -485,7 +485,6 @@ const Header = () => {
           </Button>
         </nav>
       </div>
-    </div>
     </>
   );
 };
