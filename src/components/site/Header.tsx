@@ -167,40 +167,55 @@ const Header = () => {
 
           {/* About Us dropdown */}
           <div className="relative" ref={aboutRef}>
-            <button
-              type="button"
-              onClick={() => setAboutOpen((v) => !v)}
-              aria-haspopup="menu"
-              aria-expanded={aboutOpen}
-              className={cn(
-                "px-4 py-2 rounded-full text-sm font-medium transition-base inline-flex items-center gap-1.5",
-                aboutActive
-                  ? "text-primary bg-primary/8"
-                  : "text-foreground/75 hover:text-primary hover:bg-secondary"
-              )}
-            >
-              {aboutMenu.label}
-              <ChevronDown size={14} className={cn("transition-base", aboutOpen && "rotate-180")} />
-            </button>
-            <div
-              role="menu"
-              className={cn(
-                "absolute left-0 mt-3 w-60 p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
-                aboutOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
-              )}
-            >
-              {aboutMenu.items.map((i) => (
-                <Link
-                  key={i.to}
-                  to={i.to}
-                  className="block px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary transition-base"
-                >
-                  {i.label}
-                </Link>
-              ))}
-            </div>
-          </div>
+  <div
+    className={cn(
+      "rounded-full inline-flex items-center transition-base",
+      aboutActive
+        ? "text-primary bg-primary/8"
+        : "text-foreground/75 hover:text-primary hover:bg-secondary"
+    )}
+  >
+    {/* CLICKABLE LINK */}
+    <Link
+      to="/about"
+      className="pl-4 pr-1.5 py-2 text-sm font-medium rounded-l-full"
+    >
+      {aboutMenu.label}
+    </Link>
 
+    {/* DROPDOWN BUTTON */}
+    <button
+      type="button"
+      onClick={() => setAboutOpen((v) => !v)}
+      className="pr-3 pl-1 py-2 rounded-r-full"
+    >
+      <ChevronDown
+        size={14}
+        className={cn("transition-base", aboutOpen && "rotate-180")}
+      />
+    </button>
+  </div>
+
+  {/* DROPDOWN MENU */}
+  <div
+    className={cn(
+      "absolute left-0 mt-3 w-60 p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
+      aboutOpen
+        ? "opacity-100 scale-100 pointer-events-auto"
+        : "opacity-0 scale-95 pointer-events-none"
+    )}
+  >
+    {aboutMenu.items.map((i) => (
+      <Link
+        key={i.to}
+        to={i.to}
+        className="block px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary"
+      >
+        {i.label}
+      </Link>
+    ))}
+  </div>
+</div>
           {/* Institution dropdown (placed right after About Us) */}
           <div className="relative" ref={instRef}>
             <div
