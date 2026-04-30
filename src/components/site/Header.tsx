@@ -135,6 +135,7 @@ const Header = () => {
     location.pathname === "/about" || location.pathname.startsWith("/trustees");
 
   return (
+    <>
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-base",
@@ -338,6 +339,7 @@ const Header = () => {
           </button>
         </div>
       </div>
+    </header>
 
       {/* Mobile menu */}
       <div
