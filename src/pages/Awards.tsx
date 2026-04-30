@@ -1,9 +1,9 @@
 import Layout from "@/components/site/Layout";
 
 const awardsImages = [
-  "/images/awards1.jpg",
-  "/images/awards2.jpg",
-  "/images/awards3.jpg",
+  "/images/awards1.png",
+  "/images/awards2.png",
+  "/images/awards3.png",
   "/images/awards4.jpg",
 ];
 
