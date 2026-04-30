@@ -1,16 +1,15 @@
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
 import SectionHeader from "@/components/site/SectionHeader";
-import { Eye, Target, Sparkles, Users } from "lucide-react";
+import { GraduationCap, HeartHandshake, Sparkles, BookOpen, Users, Cpu } from "lucide-react";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
 import CallToDonate from "@/components/site/CallToDonate";
 
-const values = [
-  { icon: Target, title: "Mission", text: "To uplift underprivileged communities through education, healthcare and dignified opportunity." },
-  { icon: Eye, title: "Vision", text: "A society where every child, woman and elder has access to the tools they need to thrive." },
-  { icon: Sparkles, title: "Values", text: "Transparency, compassion, accountability and unwavering respect for the people we serve." },
-  { icon: Users, title: "Community", text: "We work with — not for — the communities, building local capability and lasting change." },
+const whatWeDo = [
+  { icon: BookOpen, title: "Education for all", text: "Pre-primary to post-graduation across schools, junior and senior colleges." },
+  { icon: Cpu, title: "Skills & digital learning", text: "Pharmacy, vocational training, e-learning and applied research programmes." },
+  { icon: Users, title: "Community upliftment", text: "Outreach, scholarships and welfare initiatives that reach families across Vidarbha." },
 ];
 
 const About = () => {
@@ -18,67 +17,79 @@ const About = () => {
     <Layout>
       <PageHeader
         eyebrow="About Us"
-        title="Decades of service. Generations of impact."
-        description="Founded in the spirit of Shri Dadasaheb Gawai's lifelong commitment to social reform, our trust has grown into one of Vidarbha's most respected charitable institutions."
+        title="A trust built on dignity, education and opportunity."
+        description="Shri Dadasaheb Gawai Charitable Trust (SDGCT) is a Buddhist Minority Institution recognised by the Government of Maharashtra, serving Amravati and beyond since 1991."
         crumbs={[{ label: "Home", to: "/" }, { label: "About" }]}
       />
 
+      {/* Who we are */}
       <section className="section-y">
         <div className="container grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="relative">
             <img
               src={hero2}
-              alt="Our work in the community"
+              alt="Students and teachers across SDGCT institutions"
               loading="lazy"
               width={1920}
               height={1080}
               className="rounded-3xl shadow-card aspect-[4/5] object-cover w-full"
             />
             <div className="absolute -bottom-6 -right-6 hidden md:block bg-card rounded-2xl p-6 shadow-elegant border border-border/60 w-56">
-              <div className="font-display text-3xl font-bold text-primary">12+</div>
-              <div className="text-sm text-muted-foreground mt-1">years of dedicated grassroots service</div>
+              <div className="font-display text-3xl font-bold text-primary">Since 1991</div>
+              <div className="text-sm text-muted-foreground mt-1">Three decades of grassroots service</div>
             </div>
           </div>
           <div>
             <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-accent">
-              <span className="h-px w-6 bg-accent" /> Our Story
+              <span className="h-px w-6 bg-accent" /> Who we are
             </span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-foreground text-balance">
-              Born from a vision of equality, sustained by community.
+              An institution rooted in service, guided by an enduring vision.
             </h2>
             <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                The Shri Dadasaheb Gawai Charitable Trust was founded in honour
-                of one of Vidarbha's most respected social reformers. From its
-                first scholarship to a single child, it has grown into a
-                multi-programme institution touching tens of thousands of lives
-                each year.
+                Established in 1991 in Amravati, SDGCT is a charitable trust
+                inspired by the lifelong vision of Dr. B. R. Ambedkar — that
+                education and dignity belong to every person, without exception.
               </p>
               <p>
-                Today the trust runs schools, hostels, health camps, women's
-                vocational centres and community welfare programmes across
-                Amravati, Akola, Yavatmal and beyond — always anchored in the
-                values that started it all.
-              </p>
-              <p>
-                We remain a small team — but a deeply committed one — supported
-                by trustees, donors and volunteers who believe that compassion
-                in action is the best inheritance we can leave behind.
+                Today the trust runs a growing network of schools, junior and
+                senior colleges, technical institutes and community programmes
+                that quietly change lives, one student and one family at a time.
               </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Our mission */}
       <section className="section-y bg-secondary/40">
+        <div className="container max-w-4xl text-center">
+          <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-accent justify-center">
+            <span className="h-px w-6 bg-accent" /> Our Mission
+          </span>
+          <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-foreground text-balance">
+            Equality. Education. Opportunity.
+          </h2>
+          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+            We exist to make quality education accessible to every learner, and
+            to open doors of opportunity for communities that have long stood
+            outside them. Every classroom we run, every scholarship we award and
+            every initiative we launch is a step towards a more equal society.
+          </p>
+        </div>
+      </section>
+
+      {/* What we do */}
+      <section className="section-y">
         <div className="container">
           <SectionHeader
-            eyebrow="What guides us"
-            title="Mission, vision & values"
-            description="The principles that shape every decision we make and every programme we run."
+            eyebrow="What We Do"
+            title="Education and upliftment, end to end."
+            description="From a child's first classroom to advanced research and skill training — our work spans the full journey of a learner."
           />
-          <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((v, i) => (
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {whatWeDo.map((v, i) => (
               <div key={i} className="bg-card rounded-3xl p-7 border border-border/60 shadow-soft hover:shadow-card hover:-translate-y-1 transition-smooth">
                 <div className="inline-flex items-center justify-center h-12 w-12 rounded-2xl gradient-primary text-primary-foreground mb-5">
                   <v.icon size={20} />
@@ -91,31 +102,44 @@ const About = () => {
         </div>
       </section>
 
-      <section className="section-y">
+      {/* Growth & Impact */}
+      <section className="section-y bg-secondary/40">
         <div className="container grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
             <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-accent">
-              <span className="h-px w-6 bg-accent" /> Our Background
+              <span className="h-px w-6 bg-accent" /> Growth & Impact
             </span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-foreground text-balance">
-              A movement rooted in Vidarbha, reaching across India.
+              Approaching a golden jubilee of service.
             </h2>
             <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                What began as a single scholarship in a small village school is
-                today a registered charitable trust certified under Section 12A
-                and 80G of the Income Tax Act.
+                Several of our institutions are nearing their golden jubilee — a
+                quiet milestone built on decades of trust earned from students,
+                parents and the communities we serve.
               </p>
               <p>
-                We publish quarterly impact reports, undergo independent annual
-                audits and welcome anyone who wishes to visit our programmes
-                in person.
+                In recent years the trust has expanded into pharmacy education,
+                e-learning, applied research and vocational courses — preparing
+                a new generation of learners for the world they are entering.
               </p>
+              <div className="pt-2 grid grid-cols-3 gap-4">
+                {[
+                  { icon: GraduationCap, label: "Education" },
+                  { icon: Sparkles, label: "Research" },
+                  { icon: HeartHandshake, label: "Community" },
+                ].map((p, i) => (
+                  <div key={i} className="rounded-2xl border border-border/60 bg-card p-4 flex items-center gap-2">
+                    <p.icon size={16} className="text-primary" />
+                    <span className="text-sm font-semibold text-foreground">{p.label}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
           <img
             src={hero3}
-            alt="Trust at work in the community"
+            alt="SDGCT institutions across the Amravati region"
             loading="lazy"
             width={1920}
             height={1080}
