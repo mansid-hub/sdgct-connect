@@ -4,8 +4,8 @@ import CallToDonate from "@/components/site/CallToDonate";
 import { ShieldCheck, HeartHandshake, GraduationCap, Users } from "lucide-react";
 
 const stats = [
-  { value: "50+", label: "Institutions" },
-  { value: "10,000+", label: "Students Impacted" },
+  { value: "48+", label: "Institutions" },
+  { value: "12,000+", label: "Students Impacted" },
   { value: "25+", label: "Years of Service" },
   { value: "100+", label: "Programs & Initiatives" },
 ];
