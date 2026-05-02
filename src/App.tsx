@@ -8,7 +8,6 @@ import NotFound from "./pages/NotFound.tsx";
 import About from "./pages/About.tsx";
 import Trustees from "./pages/Trustees.tsx";
 import TrusteeDetail from "./pages/TrusteeDetail.tsx";
-import Blog from "./pages/Blog.tsx";
 import Contact from "./pages/Contact.tsx";
 import Donate from "./pages/Donate.tsx";
 import Institution from "./pages/Institution.tsx";

@@ -52,7 +52,27 @@ const Header = () => {
   const instRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const mediaRef = useRef<HTMLDivElement>(null);
+  const hoverTimers = useRef<{ about?: number; inst?: number; media?: number }>({});
   const location = useLocation();
+
+  const HOVER_DELAY = 180;
+  const openWithHover = (key: "about" | "inst" | "media") => {
+    if (hoverTimers.current[key]) {
+      window.clearTimeout(hoverTimers.current[key]);
+      hoverTimers.current[key] = undefined;
+    }
+    if (key === "about") setAboutOpen(true);
+    if (key === "inst") setInstOpen(true);
+    if (key === "media") setMediaOpen(true);
+  };
+  const closeWithHover = (key: "about" | "inst" | "media") => {
+    if (hoverTimers.current[key]) window.clearTimeout(hoverTimers.current[key]);
+    hoverTimers.current[key] = window.setTimeout(() => {
+      if (key === "about") setAboutOpen(false);
+      if (key === "inst") setInstOpen(false);
+      if (key === "media") setMediaOpen(false);
+    }, HOVER_DELAY);
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -133,6 +153,7 @@ const Header = () => {
   const instActive = location.pathname.startsWith("/institution");
   const aboutActive =
     location.pathname === "/about" || location.pathname.startsWith("/trustees");
+  const mediaActive = location.pathname.startsWith("/media");
 
   return (
     <>
@@ -166,7 +187,12 @@ const Header = () => {
           </NavLink>
 
           {/* About Us dropdown */}
-          <div className="relative" ref={aboutRef}>
+          <div
+            className="relative"
+            ref={aboutRef}
+            onMouseEnter={() => openWithHover("about")}
+            onMouseLeave={() => closeWithHover("about")}
+          >
   <div className="flex items-center rounded-full overflow-hidden">
     
     {/* LEFT: Link (About page) */}
@@ -186,9 +212,12 @@ const Header = () => {
     <button
       type="button"
       onClick={(e) => {
-        e.stopPropagation(); // 🔥 VERY IMPORTANT
+        e.stopPropagation();
         setAboutOpen((v) => !v);
       }}
+      aria-haspopup="menu"
+      aria-expanded={aboutOpen}
+      aria-label="Toggle About menu"
       className="px-2 py-2 hover:bg-secondary"
     >
       <ChevronDown
@@ -200,6 +229,7 @@ const Header = () => {
 
   {/* Dropdown */}
   <div
+    role="menu"
     className={cn(
       "absolute left-0 mt-3 w-60 p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
       aboutOpen
@@ -219,7 +249,12 @@ const Header = () => {
   </div>
 </div>
           {/* Institution dropdown (placed right after About Us) */}
-          <div className="relative" ref={instRef}>
+          <div
+            className="relative"
+            ref={instRef}
+            onMouseEnter={() => openWithHover("inst")}
+            onMouseLeave={() => closeWithHover("inst")}
+          >
             <div
               className={cn(
                 "rounded-full inline-flex items-center transition-base",
@@ -266,11 +301,18 @@ const Header = () => {
           </div>
           
           {/* Media dropdown (placed right after Institution) */}
-          <div className="relative" ref={mediaRef}>
+          <div
+            className="relative"
+            ref={mediaRef}
+            onMouseEnter={() => openWithHover("media")}
+            onMouseLeave={() => closeWithHover("media")}
+          >
   <div
     className={cn(
       "rounded-full inline-flex items-center transition-base",
-      "text-foreground/75 hover:text-primary hover:bg-secondary"
+      mediaActive
+        ? "text-primary bg-primary/8"
+        : "text-foreground/75 hover:text-primary hover:bg-secondary"
     )}
   >
     <Link
@@ -283,6 +325,9 @@ const Header = () => {
     <button
       type="button"
       onClick={() => setMediaOpen((v) => !v)}
+      aria-haspopup="menu"
+      aria-expanded={mediaOpen}
+      aria-label="Toggle Media menu"
       className="pr-3 pl-1 py-2 rounded-r-full"
     >
       <ChevronDown
@@ -293,10 +338,11 @@ const Header = () => {
   </div>
 
   <div
+    role="menu"
     className={cn(
       "absolute left-0 mt-3 w-60 p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
       mediaOpen
-        ? "opacity-100 scale-100"
+        ? "opacity-100 scale-100 pointer-events-auto"
         : "opacity-0 scale-95 pointer-events-none"
     )}
   >
