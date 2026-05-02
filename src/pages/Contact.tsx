@@ -72,7 +72,7 @@ const Contact = () => {
 
           <div className="space-y-4">
             {[
-              { icon: MapPin, title: "Visit us", body: "Shyam Nagar, Congress Nagar Road,\nAmravati - 444606, MH" },
+              { icon: MapPin, title: "Visit us", body: "Shri Dadasaheb Gawai Charitable Trust,\nShyam Nagar, Congress Nagar Road,\nAmravati - 444606, Maharashtra" },
               { icon: Phone, title: "Call us", body: "+91 98234 96914" },
               { icon: Mail, title: "Email", body: "sdgct1991@gmail.com" },
               { icon: Clock, title: "Office hours", body: "Mon–Sat · 9:30 am – 6:00 pm\nSun · By appointment" },
@@ -93,8 +93,8 @@ const Contact = () => {
         <div className="container mt-12">
           <div className="rounded-3xl overflow-hidden border border-border/60 shadow-card aspect-[16/7] bg-secondary">
             <iframe
-              title="Shyam Nagar, Congress Nagar Road, Amravati 444606"
-              src="https://www.google.com/maps?q=Shyam+Nagar,+Congress+Nagar+Road,+Amravati+444606,+Maharashtra&output=embed"
+              title="Shri Dadasaheb Gawai Charitable Trust, Shyam Nagar, Congress Nagar Road, Amravati - 444606, Maharashtra"
+              src="https://www.google.com/maps?q=Shri+Dadasaheb+Gawai+Charitable+Trust,+Shyam+Nagar,+Congress+Nagar+Road,+Amravati+444606,+Maharashtra&output=embed"
               className="h-full w-full border-0"
               loading="lazy"
             />

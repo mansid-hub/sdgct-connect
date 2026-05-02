@@ -53,7 +53,11 @@ const Footer = () => {
           <ul className="space-y-3 text-sm text-primary-foreground/75">
             <li className="flex gap-3">
               <MapPin size={16} className="mt-0.5 shrink-0 text-accent" />
-              <span>Shyam Nagar, Congress Nagar Road,<br />Amravati - 444606, MH</span>
+              <span>
+                Shri Dadasaheb Gawai Charitable Trust,<br />
+                Shyam Nagar, Congress Nagar Road,<br />
+                Amravati - 444606, Maharashtra
+              </span>
             </li>
             <li className="flex gap-3 items-center">
               <Phone size={16} className="text-accent shrink-0" />
