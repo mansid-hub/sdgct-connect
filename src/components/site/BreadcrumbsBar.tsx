@@ -1,6 +1,5 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ArrowLeft, ChevronRight, Home } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 const LABEL_OVERRIDES: Record<string, string> = {
   "about": "About Us",
