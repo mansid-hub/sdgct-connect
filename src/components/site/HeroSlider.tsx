@@ -46,8 +46,7 @@ const HeroSlider = () => {
   }, [active]);
 
   return (
-    <section className="relative overflow-hidden h-[90vh] min-h-[560px] max-h-[820px] flex items-center text-primary-foreground">
-      
+ <section className="relative overflow-hidden h-[65vh] min-h-[420px] max-h-[580px] flex items-center text-primary-foreground">      
       {/* Slides */}
       {slides.map((slide, i) => (
         <div
