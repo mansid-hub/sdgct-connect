@@ -3,9 +3,9 @@ import { HandHeart, GraduationCap, Building2, HeartPulse } from "lucide-react";
 
 const metrics = [
   { icon: HandHeart, value: 25, suffix: "M+", label: "Donations Raised", note: "in INR over 12 years" },
-  { icon: GraduationCap, value: 12000, suffix: "+", label: "Children Helped", note: "scholarships & mentorship" },
+  { icon: GraduationCap, value: 12000, suffix: "+", label: "Children Helped Per Year", note: "scholarships & mentorship" },
   { icon: Building2, value: 48, suffix: "+", label: "Institutes Supported", note: "schools, hostels & clinics" },
-  { icon: HeartPulse, value: 75000, suffix: "+", label: "Lives Touched", note: "through health & welfare" },
+  { icon: HeartPulse, value: 175000, suffix: "+", label: "Lives Touched", note: "through education & healthcare" },
 ];
 
 function useCountUp(end: number, start: boolean, duration = 1800) {
