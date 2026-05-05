@@ -40,40 +40,38 @@ const InstitutionsPreview = () => {
           description="Explore the schools, colleges and healthcare programmes run under SDGCT."
         />
 
-        {/* tighter grid spacing */}
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {cards.map((card, i) => (
             <Link
               key={i}
               to={card.to}
-              className="group flex flex-col justify-between rounded-2xl border border-border/60 bg-card p-5 shadow-soft hover:shadow-card hover:-translate-y-1 transition-smooth min-h-[200px]"
+              className="group flex flex-col justify-between rounded-2xl border border-border/60 bg-card p-5 shadow-soft hover:shadow-card hover:-translate-y-1 transition-smooth min-h-[190px]"
             >
-              {/* Header row */}
-              <div className="flex items-center justify-between">
-                <div className="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center">
+              {/* TOP ROW: icon + count + title */}
+              <div className="flex items-center gap-3">
+                <div className="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
                   <card.icon size={20} />
+                </div>
+
+                <div className="flex flex-col leading-tight">
+                  <div className="text-base font-bold text-primary">
+                    {card.count}+
+                  </div>
+                  <div className="text-sm font-semibold text-foreground">
+                    {card.title}
+                  </div>
                 </div>
 
                 <ArrowUpRight
                   size={18}
-                  className="text-muted-foreground group-hover:text-primary transition-base"
+                  className="ml-auto text-muted-foreground group-hover:text-primary transition-base"
                 />
               </div>
 
-              {/* Content (compact + fills space better) */}
-              <div className="mt-3 flex flex-col gap-2">
-                <div className="text-2xl font-bold text-primary leading-none">
-                  {card.count}+
-                </div>
-
-                <h3 className="font-display text-lg font-bold text-foreground leading-tight">
-                  {card.title}
-                </h3>
-
-                <p className="text-sm text-muted-foreground leading-snug line-clamp-3">
-                  {card.text}
-                </p>
-              </div>
+              {/* DESCRIPTION */}
+              <p className="mt-3 text-sm text-muted-foreground leading-snug line-clamp-3">
+                {card.text}
+              </p>
             </Link>
           ))}
         </div>
