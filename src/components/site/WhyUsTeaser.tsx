@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 const points = [
   { icon: ShieldCheck, title: "Trusted since 1991", text: "Recognised Buddhist Minority Institution." },
   { icon: GraduationCap, title: "End-to-end education", text: "Pre-primary to post-graduation." },
-  { icon: HeartHandshake, title: "Community first", text: "Programmes shaped by the people we serve." },
-  { icon: Users, title: "People who care", text: "Trustees, teachers and volunteers, fully invested." },
+  { icon: HeartHandshake, title: "Affordable Healthcare", text: "Quality care in underserved regions." },
+  { icon: Users, title: "Rural Focus", text: "Deep presence in Vidarbha." },
 ];
 
 const WhyUsTeaser = () => {
