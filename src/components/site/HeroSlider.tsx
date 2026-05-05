@@ -34,11 +34,16 @@ const slides = [
 const HeroSlider = () => {
   const [active, setActive] = useState(0);
 
-  useEffect(() => {
-    const id = setInterval(() => setActive((a) => (a + 1) % slides.length), 6500);
-    return () => clearInterval(id);
-  }, []);
+useEffect(() => {
+  const durations = [10000, 6500, 6500]; // first slide = 10s
 
+  const timeout = setTimeout(() => {
+    setActive((prev) => (prev + 1) % slides.length);
+  }, durations[active]);
+
+  return () => clearTimeout(timeout);
+}, [active]);
+  
   return (
     <section className="relative overflow-hidden h-[90vh] min-h-[560px] max-h-[820px] flex items-center text-primary-foreground">
       {slides.map((slide, i) => (
@@ -51,13 +56,16 @@ const HeroSlider = () => {
           aria-hidden={active !== i}
         >
           <img
-            src={slide.image}
-            alt=""
-            className="relative h-[75vh] md:h-[85vh] overflow-hidden"
-              loading={i === 0 ? "eager" : "lazy"}
-            width={1620}
-            height={1080}
-          />
+  src={slide.image}
+  alt=""
+  className={cn(
+    "relative h-[75vh] md:h-[85vh] overflow-hidden",
+    i === 0 ? "opacity-70" : "opacity-100"
+  )}
+  loading={i === 0 ? "eager" : "lazy"}
+  width={1620}
+  height={1080}
+/>
           <div className="absolute inset-0 gradient-hero" />
         </div>
       ))}
