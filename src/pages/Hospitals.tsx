@@ -13,12 +13,12 @@ const Hospitals = () => {
     <Layout>
       <PageHeader
         eyebrow="Institution"
-        title="Hospitals"
-        description="Healthcare initiatives and hospitals associated with the trust."
+        title="Healthcare"
+        description="Hospitals and healthcare centres associated with the trust."
         crumbs={[
           { label: "Home", to: "/" },
           { label: "Institution", to: "/institution" },
-          { label: "Hospitals" },
+          { label: "Healthcare" },
         ]}
       />
       <section className="section-y">

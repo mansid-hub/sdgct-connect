@@ -40,7 +40,7 @@ const InstitutionDetail = () => {
   const next = siblings[(idx + 1) % siblings.length];
 
   const parentLabel =
-    inst.parent === "schools" ? "Schools" : inst.parent === "colleges" ? "Colleges" : "Hospitals";
+    inst.parent === "schools" ? "Schools" : inst.parent === "colleges" ? "Colleges" : "Healthcare";
   const parentPath = `/institution/${inst.parent}`;
 
   return (
