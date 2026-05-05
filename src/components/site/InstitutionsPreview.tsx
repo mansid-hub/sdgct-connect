@@ -19,7 +19,7 @@ const InstitutionsPreview = () => {
       icon: GraduationCap,
       title: "Colleges & Institutes",
       count: c.colleges.total,
-      text: "Junior, senior, technical, pharmacy, B.Ed., D.Ed., polytechnic and ITI institutes.",
+      text: "Junior, senior, technical, pharmacy, law, B.Ed., D.Ed., polytechnic and ITI institutes.",
     },
     {
       to: "/institution/hospitals",
