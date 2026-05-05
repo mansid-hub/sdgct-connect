@@ -108,7 +108,7 @@ const Institution = () => {
                 <div className="h-11 w-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
                   <Stethoscope size={20} />
                 </div>
-                <h3 className="font-display text-xl font-bold text-foreground">Hospitals</h3>
+                <h3 className="font-display text-xl font-bold text-foreground">Healthcare</h3>
                 </div>
                 <ArrowUpRight size={16} className="text-muted-foreground group-hover:text-primary transition-base" />
               </div>
@@ -116,7 +116,7 @@ const Institution = () => {
               <div className="mt-4 text-sm text-muted-foreground">
                 {totalHospitals === 0
                   ? "Healthcare initiatives coming soon — details will be published here."
-                  : "Hospitals and healthcare centres under the trust."}
+                  : `${totalHospitals} hospital${totalHospitals === 1 ? "" : "s"} under the trust.`}
               </div>
             </Link>
           </div>
@@ -129,7 +129,7 @@ const Institution = () => {
           <div className="max-w-3xl">
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Complete directory</div>
             <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-foreground">
-              All schools and colleges
+              All schools, colleges and healthcare
             </h2>
             <p className="mt-3 text-muted-foreground leading-relaxed">
               Click any institution to learn more about its location, focus areas and official website.
@@ -195,6 +195,37 @@ const Institution = () => {
                 Get in touch for admissions <ExternalLink size={14} />
               </Link>
             </Button>
+          </div>
+
+          {/* All Institutions master list */}
+          <div className="mt-20">
+            <div className="max-w-3xl">
+              <div className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Master list</div>
+              <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-foreground">
+                All Institutions
+              </h2>
+              <p className="mt-3 text-muted-foreground leading-relaxed">
+                Every school, college and healthcare centre under the trust, listed alphabetically.
+              </p>
+            </div>
+            <ul className="mt-8 grid gap-x-8 gap-y-2 sm:grid-cols-2 lg:grid-cols-3 border-t border-border/60 pt-6">
+              {categories
+                .flatMap((c) => c.items.map((i) => ({ ...i, parent: c.parent })))
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .map((inst, i) => (
+                  <li key={inst.parent + inst.slug + i} className="border-b border-border/40 py-2.5">
+                    <Link
+                      to={`/institution/${inst.parent}/${inst.slug}`}
+                      className="text-sm text-foreground hover:text-primary transition-base inline-flex items-start gap-1.5"
+                    >
+                      <span>{inst.name}</span>
+                      {inst.location && (
+                        <span className="text-muted-foreground"> — <span className="text-xs">{inst.location}</span></span>
+                      )}
+                    </Link>
+                  </li>
+                ))}
+            </ul>
           </div>
         </div>
       </section>
