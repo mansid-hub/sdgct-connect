@@ -53,7 +53,7 @@ const HeroSlider = () => {
           <img
             src={slide.image}
             alt=""
-            <section className="relative h-[75vh] md:h-[85vh] overflow-hidden">
+            className="relative h-[75vh] md:h-[85vh] overflow-hidden"
               loading={i === 0 ? "eager" : "lazy"}
             width={1620}
             height={1080}
