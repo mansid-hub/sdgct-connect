@@ -10,7 +10,7 @@ export default function MissionVisionSection() {
   ];
 
   return (
-     className="max-w-6xl mx-auto px-6 py-24"
+     <section className="max-w-6xl mx-auto px-6 py-24">
       
       {/* ================= VISION ================= */}
       <motion.div
