@@ -27,7 +27,7 @@ const institutionMenu = {
   items: [
     { label: "Schools", to: "/institution/schools" },
     { label: "Colleges", to: "/institution/colleges" },
-    { label: "Hospitals", to: "/institution/hospitals" },
+    { label: "Healthcare", to: "/institution/hospitals" },
   ],
 };
 
