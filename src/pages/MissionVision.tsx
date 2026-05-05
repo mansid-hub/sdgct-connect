@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 export default function MissionVisionSection() {
   const missionPoints = [
     "To serve underserved and rural regions across Vidarbha through sustained, on-ground delivery of education and healthcare.",
@@ -10,16 +8,10 @@ export default function MissionVisionSection() {
   ];
 
   return (
-     <section className="max-w-6xl mx-auto px-6 py-24">
+    <section className="max-w-6xl mx-auto px-6 py-24">
       
       {/* ================= VISION ================= */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
-        className="text-center mb-20"
-      >
+      <div className="text-center mb-20">
         <h2 className="text-3xl md:text-4xl font-semibold mb-8">
           Vision
         </h2>
@@ -39,43 +31,35 @@ export default function MissionVisionSection() {
             self-reliance, and possibility—across rural Vidarbha and beyond.
           </p>
         </div>
-      </motion.div>
+      </div>
 
-      {/* Divider between sections */}
+      {/* Divider */}
       <div className="w-full h-[1px] bg-gray-200 mb-20"></div>
 
       {/* ================= MISSION ================= */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ staggerChildren: 0.2 }}
-      >
+      <div>
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12">
           Mission
         </h2>
 
         <div className="space-y-6 max-w-4xl mx-auto">
           {missionPoints.map((point, index) => (
-            <motion.div
+            <div
               key={index}
-              variants={{
-                hidden: { opacity: 0, y: 25 },
-                visible: { opacity: 1, y: 0 },
-              }}
               className="flex items-start gap-4"
             >
-              {/* Minimal bullet */}
+              {/* Bullet */}
               <div className="mt-2 w-2 h-2 rounded-full bg-gray-400 flex-shrink-0"></div>
 
               {/* Text */}
               <p className="text-base md:text-lg text-gray-700 leading-relaxed">
                 {point}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
-      </motion.div>
+      </div>
+
     </section>
   );
 }
