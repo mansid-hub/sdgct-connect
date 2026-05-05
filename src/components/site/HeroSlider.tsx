@@ -11,9 +11,9 @@ const slides = [
   {
     image: hero1,
     eyebrow: "Education for All",
-    title: "Empowering Lives Through Education & Support",
+    title: "Empowering lives and expanding access to quality education",
     description:
-      "For decades, we have stood beside the most vulnerable — bringing learning, healthcare and dignity to every doorstep.",
+      "For over three decades, we’ve supported the most vulnerable—because talent is everywhere, but opportunity isn’t.",
   },
   {
     image: hero2,
@@ -55,7 +55,7 @@ const HeroSlider = () => {
             alt=""
             className="absolute inset-0 h-full w-full object-cover scale-105"
             loading={i === 0 ? "eager" : "lazy"}
-            width={1920}
+            width={1820}
             height={1080}
           />
           <div className="absolute inset-0 gradient-hero" />
