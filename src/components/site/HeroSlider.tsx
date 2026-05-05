@@ -55,7 +55,7 @@ const HeroSlider = () => {
             alt=""
             className="absolute inset-0 h-full w-full object-cover scale-105"
             loading={i === 0 ? "eager" : "lazy"}
-            width={1820}
+            width={1620}
             height={1080}
           />
           <div className="absolute inset-0 gradient-hero" />
