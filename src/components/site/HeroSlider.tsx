@@ -13,7 +13,7 @@ const slides = [
     eyebrow: "Education for All",
     title: "Empowering lives and expanding access to quality education",
     description:
-      "For over three decades, we’ve supported the most vulnerable—because talent is everywhere, but opportunity isn’t.",
+      "For over three decades, we’ve supported the most vulnerable because talent is everywhere, but opportunity isn’t.",
   },
   {
     image: hero2,
