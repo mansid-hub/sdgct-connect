@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { HandHeart, GraduationCap, Building2, HeartPulse } from "lucide-react";
 
 const metrics = [
-  { icon: GraduationCap, value: 12000, suffix: "+", label: "Students Learning Across Our Schools & Colleges", note: "scholarships & mentorship" },
+  { icon: GraduationCap, value: 12000, suffix: "+", label: "Students Learning ", note: "Across Our Schools & Colleges" },
   { icon: HandHeart, value: 400, suffix: "M+", label: "Educators", note: "Dedicated teaching professionals across schools, colleges, and institutes" },
   { icon: Building2, value: 48, suffix: "+", label: "Institutes Supported", note: "schools, hostels & clinics" },
   { icon: HeartPulse, value: 175000, suffix: "+", label: "Lives Touched", note: "through education & healthcare" },
