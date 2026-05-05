@@ -51,7 +51,7 @@ useEffect(() => {
           key={i}
           className={cn(
             "absolute inset-0 transition-opacity duration-1000",
-            active === i ? "opacity-100" : "opacity-0"
+            active === i ? "opacity-70" : "opacity-0"
           )}
           aria-hidden={active !== i}
         >
