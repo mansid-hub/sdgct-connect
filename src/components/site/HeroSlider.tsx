@@ -53,8 +53,8 @@ const HeroSlider = () => {
           <img
             src={slide.image}
             alt=""
-            className="absolute inset-0 h-full w-full object-cover scale-105"
-            loading={i === 0 ? "eager" : "lazy"}
+            <section className="relative h-[75vh] md:h-[85vh] overflow-hidden">
+              loading={i === 0 ? "eager" : "lazy"}
             width={1620}
             height={1080}
           />
@@ -82,7 +82,7 @@ const HeroSlider = () => {
           <div className="mt-9 flex flex-wrap gap-3 sm:gap-4 animate-fade-up" style={{ animationDelay: "260ms" }}>
             <Button asChild variant="donate" size="xl">
               <Link to="/donate">
-                <Heart className="fill-current" /> Donate Now
+                <Heart className="fill-current" /> Sponsor a Child
               </Link>
             </Button>
             <Button asChild variant="outline" size="xl" className="bg-background/10 border-primary-foreground/30 text-primary-foreground hover:bg-background/20 hover:border-primary-foreground/60">
