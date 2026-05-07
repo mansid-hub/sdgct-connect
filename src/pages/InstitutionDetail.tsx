@@ -9,8 +9,6 @@ import {
   ExternalLink,
   MapPin,
   Sparkles,
-  Landmark,
-  Coins,
 } from "lucide-react";
 import { allInstitutions, getInstitutionBySlug } from "@/data/institutions";
 import InstitutionGallery from "@/components/site/InstitutionGallery";
@@ -86,16 +84,6 @@ const InstitutionDetail = () => {
                       <span>{inst.location}</span>
                     </div>
                   )}
-                  <div className="flex items-start gap-2 text-muted-foreground">
-                    {inst.type === "granted" ? (
-                      <Landmark size={14} className="mt-0.5 shrink-0 text-accent" />
-                    ) : (
-                      <Coins size={14} className="mt-0.5 shrink-0 text-accent" />
-                    )}
-                    <span>
-                      {inst.type === "granted" ? "Government-aided institution" : "Self-financed institution"}
-                    </span>
-                  </div>
                 </div>
                 <Button asChild variant="default" size="default" className="mt-6 w-full">
                   <a
