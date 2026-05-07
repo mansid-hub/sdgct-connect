@@ -128,10 +128,9 @@ const HeroSlider = () => {
       </div>
    
    {/* Indicators */}
-<div className="absolute bottom-3 left-0 right-0 z-10">
+<div className="absolute bottom-[-10px] left-0 right-0 z-10">
   <div className="container flex items-center justify-between gap-6">
-    
-    <div className="flex gap-2">
+     <div className="flex gap-2">
       {slides.map((_, i) => (
         <button
           key={i}
