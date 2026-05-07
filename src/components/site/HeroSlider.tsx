@@ -128,7 +128,7 @@ const HeroSlider = () => {
       </div>
    
    {/* Indicators */}
-<div className="absolute bottom- left-0 right-0 z-10">
+<div className="absolute bottom-3 left-0 right-0 z-10">
   <div className="container flex items-center justify-between gap-6">
     
     <div className="flex gap-2">
