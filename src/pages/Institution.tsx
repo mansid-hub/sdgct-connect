@@ -1,15 +1,21 @@
 import { Link } from "react-router-dom";
-import { GraduationCap, School, Stethoscope, ArrowUpRight, MapPin, ExternalLink, Landmark, Coins } from "lucide-react";
+import { GraduationCap, School, Stethoscope, ArrowUpRight, ExternalLink } from "lucide-react";
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
 import { Button } from "@/components/ui/button";
-import { categories, summaryCounts } from "@/data/institutions";
+import { allInstitutions, summaryCounts } from "@/data/institutions";
 
 const Institution = () => {
   const counts = summaryCounts();
   const totalSchools = counts.schools.total;
   const totalColleges = counts.colleges.total;
   const totalHospitals = counts.hospitals.total;
+
+  const groups = [
+    { parent: "schools" as const, title: "Schools", items: allInstitutions("schools") },
+    { parent: "colleges" as const, title: "Colleges", items: allInstitutions("colleges") },
+    { parent: "hospitals" as const, title: "Healthcare", items: allInstitutions("hospitals") },
+  ];
 
   return (
     <Layout>
@@ -51,20 +57,7 @@ const Institution = () => {
                 <ArrowUpRight size={16} className="text-muted-foreground group-hover:text-primary transition-base" />
               </div>
               <div className="mt-5 text-4xl font-display font-bold text-primary">{counts.schools.total}</div>
-              <div className="mt-4 space-y-2 text-sm">
-                <div className="flex items-center justify-between">
-                  <span className="flex items-center gap-2 text-muted-foreground">
-                    <Landmark size={14} className="text-accent" /> Government-aided
-                  </span>
-                  <span className="font-semibold text-foreground">{counts.schools.granted}</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="flex items-center gap-2 text-muted-foreground">
-                    <Coins size={14} className="text-accent" /> Self-financed
-                  </span>
-                  <span className="font-semibold text-foreground">{counts.schools.selfFinanced}</span>
-                </div>
-              </div>
+              <p className="mt-3 text-sm text-muted-foreground">Primary, middle and secondary schools across the region.</p>
             </Link>
 
             {/* Colleges summary */}
@@ -82,20 +75,7 @@ const Institution = () => {
                 <ArrowUpRight size={16} className="text-muted-foreground group-hover:text-primary transition-base" />
               </div>
               <div className="mt-5 text-4xl font-display font-bold text-primary">{counts.colleges.total}</div>
-              <div className="mt-4 space-y-2 text-sm">
-                <div className="flex items-center justify-between">
-                  <span className="flex items-center gap-2 text-muted-foreground">
-                    <Landmark size={14} className="text-accent" /> Government-aided
-                  </span>
-                  <span className="font-semibold text-foreground">{counts.colleges.granted}</span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="flex items-center gap-2 text-muted-foreground">
-                    <Coins size={14} className="text-accent" /> Self-financed
-                  </span>
-                  <span className="font-semibold text-foreground">{counts.colleges.selfFinanced}</span>
-                </div>
-              </div>
+              <p className="mt-3 text-sm text-muted-foreground">Senior, junior, technical, polytechnic and ITI institutes.</p>
             </Link>
 
             {/* Hospitals summary */}
@@ -136,55 +116,46 @@ const Institution = () => {
             </p>
           </div>
 
-          <div className="mt-10 space-y-14">
-            {categories
-              .filter((c) => c.items.length > 0)
-              .map((cat) => (
-                <div key={cat.slug}>
+          <div className="mt-10 space-y-12">
+            {groups
+              .filter((g) => g.items.length > 0)
+              .map((g) => (
+                <div key={g.parent}>
                   <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border/60 pb-4">
-                    <div>
-                      <h3 className="font-display text-2xl font-bold text-foreground">{cat.title}</h3>
-                      <p className="mt-1 text-sm text-muted-foreground">{cat.description}</p>
-                    </div>
+                    <h3 className="font-display text-2xl font-bold text-foreground">{g.title}</h3>
                     <span className="text-xs font-semibold tracking-[0.18em] uppercase text-accent">
-                      {cat.items.length} institutions
+                      {g.items.length} institutions
                     </span>
                   </div>
-                  <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    {cat.items.map((inst, i) => (
-                      <Link
-                        key={inst.slug + i}
-                        to={`/institution/${cat.parent}/${inst.slug}`}
-                        style={{ animationDelay: `${i * 30}ms` }}
-                        className="group rounded-2xl border border-border/60 bg-card p-5 shadow-soft hover:shadow-card hover:-translate-y-0.5 transition-smooth animate-fade-up flex flex-col"
-                      >
-                        <div className="flex items-center justify-between">
-                          <span
-                            className={`text-[10px] font-semibold tracking-[0.16em] uppercase px-2 py-1 rounded-full ${
-                              inst.type === "granted"
-                                ? "bg-primary/10 text-primary"
-                                : "bg-accent/10 text-accent"
-                            }`}
+                  <ul className="mt-4 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-2">
+                    {g.items
+                      .slice()
+                      .sort((a, b) => a.name.localeCompare(b.name))
+                      .map((inst, i) => (
+                        <li
+                          key={inst.slug + i}
+                          className="border-b border-border/40 py-3"
+                        >
+                          <Link
+                            to={`/institution/${g.parent}/${inst.slug}`}
+                            className="group flex items-baseline justify-between gap-3 text-sm text-foreground hover:text-primary transition-base"
                           >
-                            {inst.type === "granted" ? "Govt. Aided" : "Self-Financed"}
-                          </span>
-                          <ArrowUpRight
-                            size={14}
-                            className="text-muted-foreground group-hover:text-primary transition-base"
-                          />
-                        </div>
-                        <h4 className="mt-4 font-display text-base font-bold text-foreground leading-snug group-hover:text-primary transition-base">
-                          {inst.name}
-                        </h4>
-                        {inst.location && (
-                          <div className="mt-2 flex items-start gap-1.5 text-xs text-muted-foreground">
-                            <MapPin size={12} className="mt-0.5 shrink-0 text-accent" />
-                            <span>{inst.location}</span>
-                          </div>
-                        )}
-                      </Link>
-                    ))}
-                  </div>
+                            <span className="font-medium">
+                              {inst.name}
+                              {inst.location && (
+                                <span className="text-muted-foreground font-normal">
+                                  {" "}— <span className="text-xs">{inst.location}</span>
+                                </span>
+                              )}
+                            </span>
+                            <ArrowUpRight
+                              size={14}
+                              className="shrink-0 opacity-0 group-hover:opacity-100 transition-base"
+                            />
+                          </Link>
+                        </li>
+                      ))}
+                  </ul>
                 </div>
               ))}
           </div>
@@ -195,37 +166,6 @@ const Institution = () => {
                 Get in touch for admissions <ExternalLink size={14} />
               </Link>
             </Button>
-          </div>
-
-          {/* All Institutions master list */}
-          <div className="mt-20">
-            <div className="max-w-3xl">
-              <div className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Master list</div>
-              <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-foreground">
-                All Institutions
-              </h2>
-              <p className="mt-3 text-muted-foreground leading-relaxed">
-                Every school, college and healthcare centre under the trust, listed alphabetically.
-              </p>
-            </div>
-            <ul className="mt-8 grid gap-x-8 gap-y-2 sm:grid-cols-2 lg:grid-cols-3 border-t border-border/60 pt-6">
-              {categories
-                .flatMap((c) => c.items.map((i) => ({ ...i, parent: c.parent })))
-                .sort((a, b) => a.name.localeCompare(b.name))
-                .map((inst, i) => (
-                  <li key={inst.parent + inst.slug + i} className="border-b border-border/40 py-2.5">
-                    <Link
-                      to={`/institution/${inst.parent}/${inst.slug}`}
-                      className="text-sm text-foreground hover:text-primary transition-base inline-flex items-start gap-1.5"
-                    >
-                      <span>{inst.name}</span>
-                      {inst.location && (
-                        <span className="text-muted-foreground"> — <span className="text-xs">{inst.location}</span></span>
-                      )}
-                    </Link>
-                  </li>
-                ))}
-            </ul>
           </div>
         </div>
       </section>
