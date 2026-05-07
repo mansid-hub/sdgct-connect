@@ -2,6 +2,13 @@ import { Link } from "react-router-dom";
 import { Heart, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const grants = [
+  { v: "₹ 500", l: "Books for a child", amount: 500 },
+  { v: "₹ 1,500", l: "Medical kit", amount: 1500 },
+  { v: "₹ 5,000", l: "Skill training", amount: 5000 },
+  { v: "₹ 25,000", l: "Full scholarship", amount: 25000 },
+];
+
 const CallToDonate = () => {
   return (
     <section className="py-12 sm:py-16">
@@ -35,19 +42,15 @@ const CallToDonate = () => {
               </div>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              {[
-                { v: "₹ 500", l: "Books for a child" },
-                { v: "₹ 1,500", l: "Medical kit" },
-                { v: "₹ 5,000", l: "Skill training" },
-                { v: "₹ 25,000", l: "Full scholarship" },
-              ].map((g, i) => (
-                <div
+              {grants.map((g, i) => (
+                <Link
                   key={i}
-                  className="rounded-2xl bg-background/10 backdrop-blur border border-primary-foreground/15 p-5"
+                  to={`/donate?amount=${g.amount}`}
+                  className="group rounded-2xl bg-background/10 backdrop-blur border border-primary-foreground/15 p-5 hover:bg-background/20 hover:border-primary-foreground/40 transition-base"
                 >
-                  <div className="font-display font-bold text-2xl text-accent">{g.v}</div>
+                  <div className="font-display font-bold text-2xl text-accent group-hover:scale-105 transition-base origin-left">{g.v}</div>
                   <div className="text-sm text-primary-foreground/80 mt-1">{g.l}</div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
