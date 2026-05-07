@@ -133,7 +133,26 @@ const HeroSlider = () => {
           </div>
         </div>
       </div>
-
+   {/* Indicators */} <div className="absolute bottom-9 left-0 right-0 z-10"> 
+     <div className="container flex items-center justify-between gap-6"> 
+       <div className="flex gap-2"> 
+         {slides.map((_, i) => ( 
+   <button 
+     key={i} 
+     onClick={() => setActive(i)} 
+     aria-label={Slide ${i + 1}} 
+     className={cn( 
+       "h-1.5 rounded-full transition-base", 
+       active === i ? 
+       "w-10 bg-accent" 
+       : "w-6 bg-primary-foreground/40 hover:bg-primary-
+       foreground/60" 
+     )} 
+     /> 
+ ))} 
+       </div>
+       </div>
+     </div>
     </section>
   );
 };
