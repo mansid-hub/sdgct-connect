@@ -515,15 +515,50 @@ const Header = () => {
                 >
                   Overview
                 </Link>
-                {institutionMenu.items.map((i) => (
-                  <Link
-                    key={i.to}
-                    to={i.to}
-                    className="px-4 py-3 rounded-xl text-base font-medium text-black/80 hover:bg-secondary hover:text-primary transition-base"
-                  >
-                    {i.label}
-                  </Link>
-                ))}
+                {institutionMenu.items.map((i) => {
+                  const children = allInstitutions(i.parent);
+                  const open = mobileInstChild === i.parent;
+                  return (
+                    <div key={i.to}>
+                      <div className="flex items-center">
+                        <Link
+                          to={i.to}
+                          className="flex-1 px-4 py-3 rounded-xl text-base font-medium text-black/80 hover:bg-secondary hover:text-primary transition-base"
+                        >
+                          {i.label}
+                        </Link>
+                        {children.length > 0 && (
+                          <button
+                            type="button"
+                            aria-label={`Toggle ${i.label} list`}
+                            onClick={() =>
+                              setMobileInstChild((v) => (v === i.parent ? null : i.parent))
+                            }
+                            className="px-3 py-3 text-black/70 hover:text-primary"
+                          >
+                            <ChevronDown
+                              size={16}
+                              className={cn("transition-base", open && "rotate-180")}
+                            />
+                          </button>
+                        )}
+                      </div>
+                      {open && children.length > 0 && (
+                        <div className="mt-1 ml-3 pl-3 border-l-2 border-border/60 flex flex-col">
+                          {children.map((c) => (
+                            <Link
+                              key={c.parent + c.slug}
+                              to={`/institution/${c.parent}/${c.slug}`}
+                              className="px-3 py-2 rounded-lg text-sm text-black/75 hover:bg-secondary hover:text-primary transition-base"
+                            >
+                              {c.name}
+                            </Link>
+                          ))}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             )}
           </div>
