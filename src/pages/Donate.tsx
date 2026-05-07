@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import Layout from "@/components/site/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -22,8 +23,21 @@ const donorSchema = z.object({
 
 const Donate = () => {
   const { toast } = useToast();
+  const [searchParams] = useSearchParams();
   const [amount, setAmount] = useState<number>(1000);
   const [custom, setCustom] = useState("");
+
+  useEffect(() => {
+    const a = parseInt(searchParams.get("amount") ?? "", 10);
+    if (Number.isFinite(a) && a > 0) {
+      if (presets.includes(a)) {
+        setAmount(a);
+        setCustom("");
+      } else {
+        setCustom(String(a));
+      }
+    }
+  }, [searchParams]);
   const [method, setMethod] = useState<Method>("razorpay");
   const [donor, setDonor] = useState({ fullName: "", email: "", phone: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
