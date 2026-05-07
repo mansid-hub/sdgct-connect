@@ -133,7 +133,7 @@ const HeroSlider = () => {
           </div>
         </div>
       </div>
-   {/* Indicators */} <div className="absolute bottom-9 left-0 right-0 z-10"> 
+   {/* Indicators */} <div className="absolute bottom-4 left-0 right-0 z-10"> 
      <div className="container flex items-center justify-between gap-6"> 
        <div className="flex gap-2"> 
          {slides.map((_, i) => ( 
