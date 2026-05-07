@@ -61,10 +61,10 @@ const build = (
 
 export const categories: Category[] = [
   {
-    slug: "granted-schools",
-    title: "Granted Schools",
+    slug: "all-schools",
+    title: "Schools",
     parent: "schools",
-    description: "Government-aided schools nurturing students across the Amravati region.",
+    description: "Primary, middle and secondary schools nurturing students across the Amravati region.",
     items: build("schools", [
       { name: "Dr. Babasaheb Ambedkar Marathi Vidyalaya", location: "Frezarpura, Amravati", website: "https://instagram.com/dr_babasaheb_ambedkar_mv_amt/", type: "granted" },
       { name: "Madan Maharaj Vidyalaya", location: "Fulamla, Tq. Nandgaon (Kh.), Amravati", type: "granted" },
@@ -77,14 +77,6 @@ export const categories: Category[] = [
       { name: "Sant Gadge Baba Hindi High School", location: "Shyam Nagar, Amravati", type: "granted" },
       { name: "Dr. Babasaheb Ambedkar Marathi Primary School", location: "Fraizarpura, Amravati", type: "granted" },
       { name: "Kamaljyot Marathi Primary and Middle School", location: "Navasari, Amravati", type: "granted" },
-    ]),
-  },
-  {
-    slug: "non-granted-schools",
-    title: "Non-Granted Schools",
-    parent: "schools",
-    description: "Self-financed schools delivering quality English-medium education.",
-    items: build("schools", [
       { name: "Lotus English School", location: "Shyam Nagar, Amravati", type: "self-financed" },
       { name: "Lotus English School", location: "Darapur, Tq. Daryapur, Amravati", type: "self-financed" },
       { name: "Lotus English Primary School", location: "Uttam Nagar, Amravati", type: "self-financed" },
@@ -93,22 +85,14 @@ export const categories: Category[] = [
     ]),
   },
   {
-    slug: "granted-colleges",
-    title: "Granted Colleges",
+    slug: "senior-colleges",
+    title: "Senior Colleges",
     parent: "colleges",
-    description: "Government-aided senior colleges offering undergraduate and postgraduate programmes.",
+    description: "Senior colleges offering undergraduate and postgraduate programmes.",
     items: build("colleges", [
       { name: "Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya", location: "Uttam Nagar, Amravati", type: "granted" },
       { name: "Takshashila Mahavidyalaya", location: "Shyam Nagar, Amravati", type: "granted" },
       { name: "Takshashila Mahavidyalaya", location: "Darapur, Tq. Daryapur, Amravati", type: "granted" },
-    ]),
-  },
-  {
-    slug: "non-granted-colleges",
-    title: "Non-Granted Colleges",
-    parent: "colleges",
-    description: "Self-financed colleges advancing specialised professional education.",
-    items: build("colleges", [
       { name: "Takshashila Ayurvedic College, Hospital and Research Centre", location: "Kherda, Tq. Karanja, Dist. Washim", type: "self-financed" },
       { name: "Takshashila Institute of Pharmaceutical Education and Research", location: "Kherda, Tq. Karanja Lad, Washim", type: "self-financed" },
       { name: "Ramkrushna Shikshan Shastra Mahavidyalaya (B.Ed.)", location: "Uttam Nagar, Amravati", type: "self-financed" },
@@ -116,10 +100,10 @@ export const categories: Category[] = [
     ]),
   },
   {
-    slug: "granted-junior-colleges",
-    title: "Granted Junior Colleges",
+    slug: "junior-colleges",
+    title: "Junior Colleges",
     parent: "colleges",
-    description: "Government-aided junior colleges and MCVC vocational streams.",
+    description: "Junior colleges and MCVC vocational streams.",
     items: build("colleges", [
       { name: "Dr. Babasaheb Ambedkar Junior College", location: "Uttam Nagar, Amravati", type: "granted" },
       { name: "Takshashila Junior College", location: "Shyam Nagar, Amravati", type: "granted" },
