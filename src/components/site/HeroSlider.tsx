@@ -110,14 +110,7 @@ const HeroSlider = () => {
             className="mt-9 flex flex-wrap gap-3 sm:gap-4 animate-fade-up"
             style={{ animationDelay: "260ms" }}
           >
-            {/* Hide on first slide */}
-            {active !== 0 && (
-              <Button asChild variant="donate" size="xl">
-                <Link to="/donate">
-                  <Heart className="fill-current" /> Sponsor a Child
-                </Link>
-              </Button>
-            )}
+            
 
             <Button
               asChild
