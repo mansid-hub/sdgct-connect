@@ -4,6 +4,7 @@ import { Menu, X, Heart, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Logo from "./Logo";
 import { cn } from "@/lib/utils";
+import { allInstitutions } from "@/data/institutions";
 
 const links = [
   { to: "/", label: "Home" },
@@ -25,9 +26,9 @@ const institutionMenu = {
   label: "Institution",
   to: "/institution",
   items: [
-    { label: "Schools", to: "/institution/schools" },
-    { label: "Colleges", to: "/institution/colleges" },
-    { label: "Healthcare", to: "/institution/hospitals" },
+    { label: "Schools", to: "/institution/schools", parent: "schools" as const },
+    { label: "Colleges", to: "/institution/colleges", parent: "colleges" as const },
+    { label: "Healthcare", to: "/institution/hospitals", parent: "hospitals" as const },
   ],
 };
 
@@ -49,6 +50,8 @@ const Header = () => {
   const [mediaOpen, setMediaOpen] = useState(false);
   const [mobileInstOpen, setMobileInstOpen] = useState<string | null>(null);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
+  const [mobileInstChild, setMobileInstChild] = useState<string | null>(null);
+  const [instHover, setInstHover] = useState<string | null>(null);
   const instRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const mediaRef = useRef<HTMLDivElement>(null);
@@ -284,19 +287,49 @@ const Header = () => {
             <div
               role="menu"
               className={cn(
-                "absolute left-0 mt-3 w-60 p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
+                "absolute left-0 mt-3 w-64 p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
                 instOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
               )}
             >
-              {institutionMenu.items.map((i) => (
-                <Link
-                  key={i.to}
-                  to={i.to}
-                  className="block px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary transition-base"
-                >
-                  {i.label}
-                </Link>
-              ))}
+              {institutionMenu.items.map((i) => {
+                const children = allInstitutions(i.parent);
+                return (
+                  <div
+                    key={i.to}
+                    className="relative"
+                    onMouseEnter={() => setInstHover(i.parent)}
+                    onMouseLeave={() => setInstHover((p) => (p === i.parent ? null : p))}
+                  >
+                    <Link
+                      to={i.to}
+                      className="flex items-center justify-between px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary transition-base"
+                    >
+                      <span>{i.label}</span>
+                      <ChevronDown size={14} className="-rotate-90 opacity-60" />
+                    </Link>
+                    {children.length > 0 && (
+                      <div
+                        className={cn(
+                          "absolute top-0 left-full ml-1 w-80 max-h-[70vh] overflow-y-auto p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top-left",
+                          instHover === i.parent
+                            ? "opacity-100 scale-100 pointer-events-auto"
+                            : "opacity-0 scale-95 pointer-events-none"
+                        )}
+                      >
+                        {children.map((c) => (
+                          <Link
+                            key={c.parent + c.slug}
+                            to={`/institution/${c.parent}/${c.slug}`}
+                            className="block px-3 py-2 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary transition-base"
+                          >
+                            {c.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
           
