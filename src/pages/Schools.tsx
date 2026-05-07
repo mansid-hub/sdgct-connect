@@ -5,7 +5,7 @@ const Schools = () => (
     parent="schools"
     eyebrow="Institution"
     title="Schools"
-    description="Explore our granted and non-granted schools offering primary, middle and secondary education."
+    description="Explore our schools offering primary, middle and secondary education."
   />
 );
 

@@ -23,7 +23,8 @@ const InstitutionList = () => {
     return <Navigate to="/institution" replace />;
   }
 
-  const parentLabel = category.parent === "schools" ? "Schools" : "Colleges";
+  const parentLabel =
+    category.parent === "schools" ? "Schools" : category.parent === "colleges" ? "Colleges" : "Healthcare";
   const parentPath = `/institution/${category.parent}`;
 
   return (
