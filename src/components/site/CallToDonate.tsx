@@ -9,7 +9,8 @@ const grants = [
   { v: "₹ 25,000", l: "Full scholarship", amount: 25000 },
 ];
 
-const CallToDonate = () => {
+const CallToDonate = ({ hideLastTile = false }: { hideLastTile?: boolean }) => {
+  const tiles = hideLastTile ? grants.slice(0, 3) : grants;
   return (
     <section className="py-12 sm:py-16">
       <div className="container">
@@ -41,8 +42,8 @@ const CallToDonate = () => {
                 </Button>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              {grants.map((g, i) => (
+            <div className={hideLastTile ? "grid grid-cols-1 sm:grid-cols-3 gap-4" : "grid grid-cols-2 gap-4"}>
+              {tiles.map((g, i) => (
                 <Link
                   key={i}
                   to={`/donate?amount=${g.amount}`}
