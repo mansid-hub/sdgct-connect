@@ -26,7 +26,7 @@ const institutionMenu = {
   label: "Institution",
   to: "/institution",
   items: [
-    { label: "Schools", to: "/institution/schools/all-schools", parent: "schools" as const },
+    { label: "Schools", to: "/institution/schools/schools", parent: "schools" as const },
     { label: "Colleges", to: "/institution/colleges", parent: "colleges" as const },
     { label: "Healthcare", to: "/institution/hospitals", parent: "hospitals" as const },
   ],
