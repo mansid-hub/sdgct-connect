@@ -44,7 +44,7 @@ const Institution = () => {
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {/* Schools summary */}
             <Link
-              to="/institution/schools/all-schools"
+              to="/institution/schools/schools"
               className="group rounded-3xl border border-border/60 bg-card p-6 shadow-soft hover:shadow-card hover:-translate-y-1 transition-smooth"
             >
               <div className="flex items-center justify-between gap-3">
