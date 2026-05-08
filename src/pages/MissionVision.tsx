@@ -2,6 +2,26 @@ import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
 import CallToDonate from "@/components/site/CallToDonate";
 import { Quote, Sparkles } from "lucide-react";
+import PageHeader from "@/components/shared/PageHeader";
+
+export default function VisionMissionPage() {
+  return (
+    <>
+      {/* Shared Header */}
+      <PageHeader
+        breadcrumb={[
+          { label: "Home", href: "/" },
+          { label: "About Us", href: "/about" },
+          { label: "Vision & Mission" },
+        ]}
+        eyebrow="Vision & Mission"
+        title="Building access, dignity and opportunity."
+        description="Our vision and mission guide every institution, initiative, and decision—ensuring education and healthcare remain accessible to underserved communities across Vidarbha."
+        gradient="blue"
+      />
+
+      {/* Main Content */}
+
 export default function MissionVisionSection() {
   const missionPoints = [
     "To serve underserved and rural regions across Vidarbha through sustained, on-ground delivery of education and healthcare.",
