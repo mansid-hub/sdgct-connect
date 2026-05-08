@@ -1,3 +1,7 @@
+import Layout from "@/components/site/Layout";
+import PageHeader from "@/components/site/PageHeader";
+import CallToDonate from "@/components/site/CallToDonate";
+import { Quote, Sparkles } from "lucide-react";
 export default function MissionVisionSection() {
   const missionPoints = [
     "To serve underserved and rural regions across Vidarbha through sustained, on-ground delivery of education and healthcare.",
