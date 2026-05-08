@@ -1,6 +1,5 @@
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
-import CallToDonate from "@/components/site/CallToDonate";
 import { Quote, Sparkles } from "lucide-react";
 import kamaltai from "@/assets/trustees/kamaltai.jpg";
 import hero1 from "@/assets/hero-1.jpg";
