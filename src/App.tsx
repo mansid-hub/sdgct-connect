@@ -11,7 +11,6 @@ import TrusteeDetail from "./pages/TrusteeDetail.tsx";
 import Contact from "./pages/Contact.tsx";
 import Donate from "./pages/Donate.tsx";
 import Institution from "./pages/Institution.tsx";
-import Schools from "./pages/Schools.tsx";
 import Colleges from "./pages/Colleges.tsx";
 import Hospitals from "./pages/Hospitals.tsx";
 import InstitutionRouter from "./pages/InstitutionRouter.tsx";
@@ -48,7 +47,6 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/institution" element={<Institution />} />
-          <Route path="/institution/schools" element={<Schools />} />
           <Route path="/institution/colleges" element={<Colleges />} />
           <Route path="/institution/hospitals" element={<Hospitals />} />
           <Route path="/institution/:parent/:slug" element={<InstitutionRouter />} />
