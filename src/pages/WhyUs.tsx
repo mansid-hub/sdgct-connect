@@ -1,6 +1,5 @@
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
-import CallToDonate from "@/components/site/CallToDonate";
 import { ShieldCheck, HeartHandshake, GraduationCap, Users } from "lucide-react";
 
 const stats = [
@@ -76,7 +75,6 @@ const WhyUs = () => {
         </div>
       </section>
 
-      <CallToDonate />
     </Layout>
   );
 };
