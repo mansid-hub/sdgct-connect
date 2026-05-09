@@ -35,7 +35,7 @@ const Footer = () => {
               { to: "/", label: "Home" },
               { to: "/about", label: "About Us" },
               { to: "/trustees", label: "Our Trustees" },
-              { to: "/blog", label: "Blog & News" },
+              { to: "/blog", label: "Resources" },
               { to: "/donate", label: "Donate" },
               { to: "/contact", label: "Contact" },
             ].map((l) => (
