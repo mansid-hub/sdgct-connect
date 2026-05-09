@@ -3,12 +3,15 @@ import Layout from "@/components/site/Layout";
 import { ArrowLeft } from "lucide-react";
 
 import fallbackImg from "@/assets/initiative-education.jpg";
+import atishImg from "@/assets/success-atish-tayde.png";
+import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
+import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
 
 const stories = [
   {
     slug: "atish-tayde-drdo",
     title: "Mr. Atish Tayde, Scientist, Defence Research and Development Organisation (DRDO)",
-    image: fallbackImg,
+    image: atishImg,
     tagline:
       "From struggle to success, his journey teaches us that hard work and determination can turn dreams into reality.",
     paragraphs: [
@@ -21,7 +24,7 @@ const stories = [
   {
     slug: "vaishali-hiwrale-police",
     title: "Ms. Vaishali Hiwrale, Maharashtra Police",
-    image: fallbackImg,
+    image: vaishaliImg,
     tagline:
       "Rising above financial struggles and social limitations to serve with courage and integrity.",
     paragraphs: [
@@ -34,7 +37,7 @@ const stories = [
   {
     slug: "shrawasti-tayde-thang-ta",
     title: "Ms. Shrawasti Dipak Tayde, National-level Bronze Medalist in Thang-Ta Martial Art",
-    image: fallbackImg,
+    image: shrawastiImg,
     tagline:
       "A shining example of perseverance and passion, transforming dreams into reality.",
     paragraphs: [
