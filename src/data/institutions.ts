@@ -3,6 +3,10 @@ import healthImg from "@/assets/initiative-health.jpg";
 import atishImg from "@/assets/success-atish-tayde.png";
 import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
 import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
+import malhara1 from "@/assets/malhara-1.png";
+import malhara2 from "@/assets/malhara-2.png";
+import malhara3 from "@/assets/malhara-3.png";
+import malhara5 from "@/assets/malhara-5.png";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -194,6 +198,8 @@ const malhara = schoolsCat?.items.find((i) => i.slug === "shri-dadasaheb-gawai-v
 if (malhara) {
   malhara.about = malharaAbout;
   malhara.successStories = malharaSuccessStories;
+  malhara.image = malhara1;
+  malhara.gallery = [malhara1, malhara2, malhara3, malhara5];
 }
 
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
