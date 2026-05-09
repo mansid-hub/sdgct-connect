@@ -14,7 +14,7 @@ export interface Institution {
   about?: string[];
   highlights?: string[];
   gallery?: string[];
-  successStories?: { title: string; preview: string; image?: string }[];
+  successStories?: { title: string; preview: string; image?: string; slug: string }[];
 }
 
 export interface Category {
@@ -168,18 +168,21 @@ const malharaSuccessStories = [
     preview:
       "From struggle to success, his journey teaches us that hard work and determination can turn dreams into reality. Atish Tayde, an esteemed alumnus of Shri. Dadasaheb Gawai Vidyalaya, Malhara, rose from a humble rural background to serve the nation as a DRDO scientist.",
     image: fallbackImg,
+    slug: "atish-tayde-drdo",
   },
   {
     title: "Ms. Vaishali Hiwrale, Maharashtra Police",
     preview:
       "Coming from a humble farming family with severe financial challenges, Vaishali Hiwrale has emerged as a shining example of determination, resilience, and hard work — earning a respected position in the Maharashtra Police.",
     image: fallbackImg,
+    slug: "vaishali-hiwrale-police",
   },
   {
     title: "Ms. Shrawasti Dipak Tayde, National-level Bronze Medalist in Thang-Ta Martial Art",
     preview:
       "With unwavering dedication and relentless practice, Shrawasti excelled in Thang-Ta — a traditional martial art from Manipur — progressing from school-level competitions to win a bronze medal at the national championship.",
     image: fallbackImg,
+    slug: "shrawasti-tayde-thang-ta",
   },
 ];
 
