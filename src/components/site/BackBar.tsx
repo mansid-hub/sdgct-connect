@@ -8,7 +8,7 @@ const BackBar = () => {
   if (location.pathname === "/") return null;
 
   return (
-    <div className="border-b border-border/40 bg-secondary/20">
+    <div className="mt-16 sm:mt-20 border-b border-border/40 bg-secondary/20">
   <div className="container mx-auto px-4 py-2.5 flex justify-start">
     <button
       type="button"
