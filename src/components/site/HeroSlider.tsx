@@ -32,7 +32,7 @@ const slides = [
     title: "Where Compassion Meets Commitment",
     description:
       "Join thousands of supporters who believe that no child should be left behind — for any reason.",
-    objectPosition: "center bottom",
+    objectPosition: "center 75%",
     overlay: "bg-black/35",
   },
 ];
