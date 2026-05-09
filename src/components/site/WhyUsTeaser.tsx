@@ -18,13 +18,8 @@ const WhyUsTeaser = () => {
             <span className="h-px w-6 bg-accent" /> Why SDGCT
           </span>
           <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-foreground text-balance">
-            A trust families return to, generation after generation.
+            Delivery end-to-end education. From early learners to masters programs. With a commitment to affordability, inclusion & regional impact.
           </h2>
-          <p className="mt-5 text-muted-foreground leading-relaxed">
-            Three decades of consistent, transparent service in education,
-            healthcare and community development — anchored in dignity for
-            every learner.
-          </p>
           <Button asChild variant="default" size="lg" className="mt-7">
             <Link to="/why-us">Why choose us <ArrowRight /></Link>
           </Button>
