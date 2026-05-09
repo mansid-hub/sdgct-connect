@@ -9,6 +9,7 @@ import {
   ExternalLink,
   MapPin,
   Sparkles,
+  Trophy,
 } from "lucide-react";
 import { allInstitutions, getInstitutionBySlug } from "@/data/institutions";
 import InstitutionGallery from "@/components/site/InstitutionGallery";
@@ -108,7 +109,43 @@ const InstitutionDetail = () => {
               </div>
             </div>
 
-            {inst.highlights && inst.highlights.length > 0 && (
+            {inst.successStories && inst.successStories.length > 0 ? (
+              <div>
+                <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground flex items-center gap-3">
+                  <Trophy className="text-accent" /> Success Stories
+                </h2>
+                <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {inst.successStories.map((story, i) => (
+                    <article
+                      key={i}
+                      className="bg-card border border-border/60 rounded-2xl overflow-hidden flex flex-col shadow-card"
+                    >
+                      {story.image && (
+                        <img
+                          src={story.image}
+                          alt={story.title}
+                          className="w-full h-44 object-cover"
+                        />
+                      )}
+                      <div className="p-5 flex flex-col flex-1">
+                        <h3 className="font-semibold text-foreground text-base leading-snug">
+                          {story.title}
+                        </h3>
+                        <p className="mt-3 text-sm text-muted-foreground line-clamp-4 flex-1">
+                          {story.preview}
+                        </p>
+                        <Link
+                          to="/media/blogs"
+                          className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                        >
+                          Read full story <ArrowRight size={14} />
+                        </Link>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            ) : inst.highlights && inst.highlights.length > 0 && (
               <div>
                 <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground flex items-center gap-3">
                   <Sparkles className="text-accent" /> Highlights
