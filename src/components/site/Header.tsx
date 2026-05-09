@@ -33,11 +33,11 @@ const institutionMenu = {
 };
 
 const mediaMenu = {
-  label: "Media",
+  label: "Resources",
   to: "/media",
   items: [
     { label: "Awards & Recognition", to: "/media/awards" },
-    { label: "Blogs", to: "/media/blogs" },
+    { label: "Success Stories", to: "/media/blogs" },
     { label: "Press Release", to: "/media/press" },
   ],
 };
