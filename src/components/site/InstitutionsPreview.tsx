@@ -9,7 +9,7 @@ const InstitutionsPreview = () => {
 
   const cards = [
     {
-      to: "/institution/schools",
+      to: "/institution/schools/schools",
       icon: School,
       title: "Schools",
       count: c.schools.total,
