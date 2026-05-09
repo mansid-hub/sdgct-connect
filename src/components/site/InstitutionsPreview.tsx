@@ -13,14 +13,14 @@ const InstitutionsPreview = () => {
       icon: School,
       title: "Schools",
       count: c.schools.total,
-      text: "Marathi & English-medium primary, secondary and aided schools across Vidarbha.",
+      text: "Marathi & English-medium primary, secondary and schools across Vidarbha.",
     },
     {
       to: "/institution/colleges",
       icon: GraduationCap,
       title: "Colleges & Institutes",
       count: c.colleges.total,
-      text: "Junior, senior, technical, pharmacy, law, B.Ed., D.Ed., polytechnic and ITI institutes.",
+      text: "Engineering, pharmacy, ayurvedic, polytechnic, law, ITI institues, junior and senior colleges.",
     },
     {
       to: "/institution/hospitals",
