@@ -14,6 +14,7 @@ export interface Institution {
   about?: string[];
   highlights?: string[];
   gallery?: string[];
+  successStories?: { title: string; preview: string; image?: string }[];
 }
 
 export interface Category {
