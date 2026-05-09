@@ -9,18 +9,24 @@ const BackBar = () => {
 
   return (
     <div className="border-b border-border/40 bg-secondary/20">
-      <div className="container mx-auto px-4 py-2.5">
-        <button
-          type="button"
-          onClick={() => navigate(-1)}
-          className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-primary transition-base"
-          aria-label="Go back"
-        >
-          <ArrowLeft size={16} />
-          Back
-        </button>
-      </div>
-    </div>
+  <div className="container mx-auto px-4 py-2.5 flex justify-start">
+    <button
+      type="button"
+      onClick={() => {
+        if (window.history.length > 1) {
+          navigate(-1);
+        } else {
+          navigate("/");
+        }
+      }}
+      className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200"
+      aria-label="Go back"
+    >
+      <ArrowLeft size={16} />
+      Back
+    </button>
+  </div>
+</div>
   );
 };
 
