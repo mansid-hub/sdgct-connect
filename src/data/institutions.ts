@@ -152,6 +152,44 @@ export const categories: Category[] = [
 
 export const getCategory = (slug: string) => categories.find((c) => c.slug === slug);
 
+// ---- Per-institution content overrides ----
+const malharaAbout: string[] = [
+  "Nestled at the foothills of the Satpuda mountain range, the school is located in a predominantly tribal area where access to education has traditionally been limited. Despite these challenges, Shri. Dadasaheb Gawai Vidyalaya, Malhara, has emerged as a strong pillar of learning, hope, and social upliftment.",
+  "This school is not just a place where lessons are taught; it is a land where seeds of courage, discipline, and patriotism are sown. Each student who walks through its gates carries a spark, and the teachers, like skilled sculptors, shape those sparks into blazing torches.",
+  "The primary mission of the institution is to serve the tribal community, and it fulfills this responsibility with deep commitment. Nearly 80% of the students come from tribal backgrounds, reflecting the school's strong connection with the local community.",
+  "The school does not focus only on basic education, but on delivering quality education that can truly transform lives. The teachers are dedicated and work tirelessly to create a supportive and encouraging environment. They emphasize both academic excellence and overall personality development, helping students build confidence, discipline, and a sense of responsibility.",
+  "Shri. Dadasaheb Gawai Vidyalaya is more than just an educational institution, it is a center for empowerment. By educating tribal children, it is shaping not only individual futures, but also contributing to the development of the entire community.",
+  "We create awareness among our students about different skills like computer literacy, farming techniques, handicrafts, and vocational training. This helps them become self-reliant and opens new career opportunities for them. Through the achievements of its students, the school proudly stands as a symbol of how dedication and proper guidance can turn small beginnings into great success stories.",
+];
+
+const malharaSuccessStories = [
+  {
+    title: "Mr. Atish Tayde, Scientist, Defence Research and Development Organisation (DRDO)",
+    preview:
+      "From struggle to success, his journey teaches us that hard work and determination can turn dreams into reality. Atish Tayde, an esteemed alumnus of Shri. Dadasaheb Gawai Vidyalaya, Malhara, rose from a humble rural background to serve the nation as a DRDO scientist.",
+    image: fallbackImg,
+  },
+  {
+    title: "Ms. Vaishali Hiwrale, Maharashtra Police",
+    preview:
+      "Coming from a humble farming family with severe financial challenges, Vaishali Hiwrale has emerged as a shining example of determination, resilience, and hard work — earning a respected position in the Maharashtra Police.",
+    image: fallbackImg,
+  },
+  {
+    title: "Ms. Shrawasti Dipak Tayde, National-level Bronze Medalist in Thang-Ta Martial Art",
+    preview:
+      "With unwavering dedication and relentless practice, Shrawasti excelled in Thang-Ta — a traditional martial art from Manipur — progressing from school-level competitions to win a bronze medal at the national championship.",
+    image: fallbackImg,
+  },
+];
+
+const schoolsCat = categories.find((c) => c.slug === "schools");
+const malhara = schoolsCat?.items.find((i) => i.slug === "shri-dadasaheb-gawai-vidyalaya-malhara-tq-achalpur-dist-amravati");
+if (malhara) {
+  malhara.about = malharaAbout;
+  malhara.successStories = malharaSuccessStories;
+}
+
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
   categories
     .filter((c) => (parent ? c.parent === parent : true))
