@@ -124,7 +124,8 @@ const InstitutionDetail = () => {
                         <img
                           src={story.image}
                           alt={story.title}
-                          className="w-full h-44 object-cover"
+                          className="w-full h-56 object-cover"
+                          style={{ objectPosition: "center top" }}
                         />
                       )}
                       <div className="p-5 flex flex-col flex-1">
