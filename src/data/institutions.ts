@@ -1,5 +1,8 @@
 import fallbackImg from "@/assets/initiative-education.jpg";
 import healthImg from "@/assets/initiative-health.jpg";
+import atishImg from "@/assets/success-atish-tayde.png";
+import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
+import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -167,21 +170,21 @@ const malharaSuccessStories = [
     title: "Mr. Atish Tayde, Scientist, Defence Research and Development Organisation (DRDO)",
     preview:
       "From struggle to success, his journey teaches us that hard work and determination can turn dreams into reality. Atish Tayde, an esteemed alumnus of Shri. Dadasaheb Gawai Vidyalaya, Malhara, rose from a humble rural background to serve the nation as a DRDO scientist.",
-    image: fallbackImg,
+    image: atishImg,
     slug: "atish-tayde-drdo",
   },
   {
     title: "Ms. Vaishali Hiwrale, Maharashtra Police",
     preview:
       "Coming from a humble farming family with severe financial challenges, Vaishali Hiwrale has emerged as a shining example of determination, resilience, and hard work — earning a respected position in the Maharashtra Police.",
-    image: fallbackImg,
+    image: vaishaliImg,
     slug: "vaishali-hiwrale-police",
   },
   {
     title: "Ms. Shrawasti Dipak Tayde, National-level Bronze Medalist in Thang-Ta Martial Art",
     preview:
       "With unwavering dedication and relentless practice, Shrawasti excelled in Thang-Ta — a traditional martial art from Manipur — progressing from school-level competitions to win a bronze medal at the national championship.",
-    image: fallbackImg,
+    image: shrawastiImg,
     slug: "shrawasti-tayde-thang-ta",
   },
 ];
