@@ -117,7 +117,7 @@ const Donate = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
            {/* LEFT — Form */}
             <form onSubmit={submit} className="bg-card rounded-3xl p-7 sm:p-10 border border-border/60 shadow-soft space-y-7"> 
-                <<div className="space-y-5">
+                <div className="space-y-5">
   {/* Name */}
   <div className="grid sm:grid-cols-2 gap-5">
     <div>
