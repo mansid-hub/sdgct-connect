@@ -1,9 +1,12 @@
+import { Link, useParams } from "react-router-dom";
 import Layout from "@/components/site/Layout";
+import { ArrowLeft } from "lucide-react";
 
 import fallbackImg from "@/assets/initiative-education.jpg";
 
 const stories = [
   {
+    slug: "atish-tayde-drdo",
     title: "Mr. Atish Tayde, Scientist, Defence Research and Development Organisation (DRDO)",
     image: fallbackImg,
     tagline:
@@ -16,6 +19,7 @@ const stories = [
     ],
   },
   {
+    slug: "vaishali-hiwrale-police",
     title: "Ms. Vaishali Hiwrale, Maharashtra Police",
     image: fallbackImg,
     tagline:
@@ -28,6 +32,7 @@ const stories = [
     ],
   },
   {
+    slug: "shrawasti-tayde-thang-ta",
     title: "Ms. Shrawasti Dipak Tayde, National-level Bronze Medalist in Thang-Ta Martial Art",
     image: fallbackImg,
     tagline:
@@ -41,10 +46,62 @@ const stories = [
 ];
 
 const BlogsMedia = () => {
+  const { slug } = useParams<{ slug?: string }>();
+
+  if (slug) {
+    const story = stories.find((s) => s.slug === slug);
+    if (!story) {
+      return (
+        <Layout>
+          <div className="container mx-auto px-4 py-16 text-center">
+            <h1 className="text-2xl font-bold mb-4">Story not found</h1>
+            <Link
+              to="/media/blogs"
+              className="inline-flex items-center gap-2 text-primary hover:underline"
+            >
+              <ArrowLeft size={16} /> Back to all stories
+            </Link>
+          </div>
+        </Layout>
+      );
+    }
+
+    return (
+      <Layout>
+        <div className="container mx-auto px-4 py-16">
+          <Link
+            to="/media/blogs"
+            className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline mb-8"
+          >
+            <ArrowLeft size={16} /> Back to all stories
+          </Link>
+
+          <article className="bg-card border border-border/60 rounded-2xl overflow-hidden shadow-card grid md:grid-cols-[320px_1fr]">
+            <img
+              src={story.image}
+              alt={story.title}
+              className="w-full h-full max-h-80 md:max-h-none object-cover"
+            />
+            <div className="p-6 sm:p-8">
+              <h1 className="text-2xl sm:text-3xl font-display font-bold text-foreground leading-snug">
+                {story.title}
+              </h1>
+              <p className="mt-3 text-sm italic text-accent">{story.tagline}</p>
+              <div className="mt-5 space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
+                {story.paragraphs.map((p, i) => (
+                  <p key={i}>{p}</p>
+                ))}
+              </div>
+            </div>
+          </article>
+        </div>
+      </Layout>
+    );
+  }
+
   return (
     <Layout>
       <div className="container mx-auto px-4 py-16">
-
         {/* Heading */}
         <div className="max-w-2xl mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">Success Stories</h1>
@@ -79,7 +136,6 @@ const BlogsMedia = () => {
             </article>
           ))}
         </div>
-
       </div>
     </Layout>
   );
