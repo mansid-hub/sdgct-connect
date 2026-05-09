@@ -28,7 +28,7 @@ const BlogsMedia = () => {
 
         {/* Heading */}
         <div className="max-w-2xl mb-12">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-4">Blogs</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4">Success Stories</h1>
           <p className="text-muted-foreground">
             Explore insights, stories, and updates from our journey in education and community impact.
           </p>
