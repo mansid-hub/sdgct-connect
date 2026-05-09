@@ -116,181 +116,281 @@ const Donate = () => {
 
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
            {/* LEFT — Form */}
-<form
-  onSubmit={submit}
-  className="rounded-[28px] bg-[#f7c600] space-y-6"
->
-  {/* Heading */}
-  <div className="text-center">
-    <h2 className="text-3xl sm:text-4xl font-bold text-[#2f3d73]">
-      50% Tax Exemption Under Section 80G*
-    </h2>
-
-    <p className="mt-2 text-sm font-medium text-[#d62828]">
-      *Only Applicable for Indian Citizens
-    </p>
-  </div>
-
-  {/* Frequency Toggle */}
-  <div className="flex w-full max-w-md overflow-hidden rounded-xl bg-white">
-    <button
-      type="button"
-      onClick={() => setMethod("razorpay")}
-      className="flex-1 bg-[#e32727] py-4 text-lg font-semibold text-white"
-    >
-      One-time
-    </button>
-
-    <button
-      type="button"
-      className="flex-1 bg-white py-4 text-lg font-semibold text-black"
-    >
-      Monthly
-    </button>
-  </div>
-
-  {/* Donation Amounts */}
-  <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-    {presets.map((p) => {
-      const active = !custom && amount === p;
-
-      return (
-        <button
-          type="button"
-          key={p}
-          onClick={() => {
-            setAmount(p);
-            setCustom("");
-          }}
-          className={cn(
-            "flex h-16 items-center justify-center rounded-lg border text-lg font-semibold transition-all",
-            active
-              ? "border-[#d62828] bg-[#d62828] text-white"
-              : "border-gray-300 bg-white text-gray-700"
-          )}
-        >
-          ₹ {p.toLocaleString()}
-        </button>
-      );
-    })}
-
-    <Input
-      inputMode="numeric"
-      placeholder="Min ₹ 100"
-      value={custom}
-      onChange={(e) =>
-        setCustom(e.target.value.replace(/[^\d]/g, "").slice(0, 7))
-      }
-      className="h-16 border-gray-300 bg-white text-base"
-    />
-  </div>
-
+            <form onSubmit={submit} className="bg-card rounded-3xl p-7 sm:p-10 border border-border/60 shadow-soft space-y-7"> 
+              <div className="space-y-5"> 
+                <div className="space-y-5">
   {/* Name */}
-  <div className="grid gap-4 md:grid-cols-2">
-    <Input
-      placeholder="First Name *"
-      className="h-16 bg-[#f3f3f3] text-lg"
-      value={donor.fullName}
-      onChange={(e) =>
-        setDonor({ ...donor, fullName: e.target.value })
-      }
-    />
+  <div className="grid sm:grid-cols-2 gap-5">
+    <div>
+      <Label className="text-foreground">First Name</Label>
+      <Input
+        className="mt-2 h-12 rounded-xl"
+        placeholder="First Name *"
+      />
+    </div>
 
-    <Input
-      placeholder="Last Name *"
-      className="h-16 bg-[#f3f3f3] text-lg"
-    />
+    <div>
+      <Label className="text-foreground">Last Name</Label>
+      <Input
+        className="mt-2 h-12 rounded-xl"
+        placeholder="Last Name *"
+      />
+    </div>
   </div>
 
   {/* Address */}
-  <textarea
-    placeholder="Address *"
-    rows={4}
-    className="w-full rounded-lg border border-gray-300 bg-[#f3f3f3] px-5 py-4 text-lg outline-none"
-  />
+  <div>
+    <Label className="text-foreground">Address</Label>
+
+    <textarea
+      placeholder="Address *"
+      rows={4}
+      className="mt-2 w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none"
+    />
+  </div>
 
   {/* City State Postal */}
-  <div className="grid gap-4 md:grid-cols-3">
-    <Input
-      placeholder="City *"
-      className="h-16 bg-[#f3f3f3] text-lg"
-    />
+  <div className="grid sm:grid-cols-3 gap-5">
+    <div>
+      <Label className="text-foreground">City</Label>
+      <Input
+        className="mt-2 h-12 rounded-xl"
+        placeholder="City *"
+      />
+    </div>
 
-    <Input
-      placeholder="State *"
-      className="h-16 bg-[#f3f3f3] text-lg"
-    />
+    <div>
+      <Label className="text-foreground">State</Label>
+      <Input
+        className="mt-2 h-12 rounded-xl"
+        placeholder="State *"
+      />
+    </div>
 
-    <Input
-      placeholder="Postal code *"
-      className="h-16 bg-[#f3f3f3] text-lg"
-    />
+    <div>
+      <Label className="text-foreground">Postal Code</Label>
+      <Input
+        className="mt-2 h-12 rounded-xl"
+        placeholder="Postal code *"
+      />
+    </div>
   </div>
 
   {/* PAN + Mobile */}
-  <div className="grid gap-4 md:grid-cols-2">
-    <Input
-      placeholder="PAN NUMBER *"
-      className="h-16 bg-[#f3f3f3] text-lg"
-    />
+  <div className="grid sm:grid-cols-2 gap-5">
+    <div>
+      <Label className="text-foreground">PAN Number</Label>
+      <Input
+        className="mt-2 h-12 rounded-xl"
+        placeholder="PAN NUMBER *"
+      />
+    </div>
 
-    <Input
-      placeholder="Mobile *"
-      className="h-16 bg-[#f3f3f3] text-lg"
-      value={donor.phone}
-      onChange={(e) =>
-        setDonor({
-          ...donor,
-          phone: e.target.value
-            .replace(/[^\d+\s]/g, "")
-            .slice(0, 20),
-        })
-      }
-    />
+    <div>
+      <Label className="text-foreground">Phone Number</Label>
+      <Input
+        type="tel"
+        className="mt-2 h-12 rounded-xl"
+        value={donor.phone}
+        onChange={(e) =>
+          setDonor({
+            ...donor,
+            phone: e.target.value
+              .replace(/[^\d+\s]/g, "")
+              .slice(0, 20),
+          })
+        }
+        placeholder="+91 ..."
+      />
+    </div>
   </div>
 
   {/* DOB + Email */}
-  <div className="grid gap-4 md:grid-cols-2">
-    <Input
-      placeholder="DATE OF BIRTH *"
-      className="h-16 bg-[#f3f3f3] text-lg"
-    />
+  <div className="grid sm:grid-cols-2 gap-5">
+    <div>
+      <Label className="text-foreground">Date of Birth</Label>
+      <Input
+        type="date"
+        className="mt-2 h-12 rounded-xl"
+      />
+    </div>
 
-    <Input
-      type="email"
-      placeholder="Email Id *"
-      className="h-16 bg-[#f3f3f3] text-lg"
-      value={donor.email}
-      onChange={(e) =>
-        setDonor({ ...donor, email: e.target.value })
-      }
-    />
+    <div>
+      <Label htmlFor="email" className="text-foreground">
+        Email
+      </Label>
+
+      <Input
+        id="email"
+        type="email"
+        className="mt-2 h-12 rounded-xl"
+        value={donor.email}
+        onChange={(e) =>
+          setDonor({ ...donor, email: e.target.value })
+        }
+        maxLength={255}
+        placeholder="you@example.com"
+      />
+
+      {errors.email && (
+        <p className="mt-1.5 text-xs text-destructive">
+          {errors.email}
+        </p>
+      )}
+    </div>
   </div>
 
-  {/* Last Row */}
-  <div className="grid gap-4 md:grid-cols-[1fr_auto]">
+  {/* Amount */}
+  <div>
+    <Label className="text-foreground">
+      Donation Amount (₹)
+    </Label>
+
+    <Input
+      inputMode="numeric"
+      className="mt-2 h-12 rounded-xl"
+      placeholder="Enter amount"
+      value={custom}
+      onChange={(e) =>
+        setCustom(
+          e.target.value
+            .replace(/[^\d]/g, "")
+            .slice(0, 7)
+        )
+      }
+    />
+
+    <div className="grid grid-cols-3 gap-2 mt-3">
+      {presets.map((p) => {
+        const active = !custom && amount === p;
+
+        return (
+          <button
+            type="button"
+            key={p}
+            onClick={() => {
+              setAmount(p);
+              setCustom("");
+            }}
+            className={cn(
+              "h-11 rounded-xl font-display font-semibold border transition-base",
+              active
+                ? "border-primary bg-primary text-primary-foreground"
+                : "border-border bg-background text-foreground hover:border-primary/40"
+            )}
+          >
+            ₹{p.toLocaleString()}
+          </button>
+        );
+      })}
+    </div>
+  </div>
+
+  {/* Source */}
+  <div>
+    <Label className="text-foreground">
+      How did you know about us?
+    </Label>
+
     <Select>
-      <SelectTrigger className="h-16 bg-[#f3f3f3] text-lg">
-        <SelectValue placeholder="How did you know about us?" />
+      <SelectTrigger className="mt-2 h-12 rounded-xl">
+        <SelectValue placeholder="Select option" />
       </SelectTrigger>
 
       <SelectContent>
-        <SelectItem value="instagram">Instagram</SelectItem>
-        <SelectItem value="facebook">Facebook</SelectItem>
-        <SelectItem value="youtube">YouTube</SelectItem>
-        <SelectItem value="friend">Friend / Family</SelectItem>
+        <SelectItem value="instagram">
+          Instagram
+        </SelectItem>
+
+        <SelectItem value="facebook">
+          Facebook
+        </SelectItem>
+
+        <SelectItem value="youtube">
+          YouTube
+        </SelectItem>
+
+        <SelectItem value="friend">
+          Friend / Family
+        </SelectItem>
+
+        <SelectItem value="website">
+          Website
+        </SelectItem>
       </SelectContent>
     </Select>
-
-    <Button
-      type="submit"
-      disabled={submitting}
-      className="h-16 rounded-full bg-[#e32727] px-10 text-lg font-bold uppercase text-white hover:bg-[#c91f1f]"
-    >
-      {submitting ? "Processing..." : "DONATE NOW"}
-    </Button>
   </div>
-</form>
+
+  {/* Payment Method */}
+  <div>
+    <Label className="text-foreground">
+      Payment Method
+    </Label>
+
+    <Select
+      value={method}
+      onValueChange={(v) =>
+        setMethod(v as Method)
+      }
+    >
+      <SelectTrigger className="mt-2 h-12 rounded-xl">
+        <SelectValue />
+      </SelectTrigger>
+
+      <SelectContent>
+        <SelectItem value="razorpay">
+          Razorpay (Recommended)
+        </SelectItem>
+
+        <SelectItem value="stripe">
+          Stripe (International)
+        </SelectItem>
+
+        <SelectItem value="upi">
+          UPI QR
+        </SelectItem>
+      </SelectContent>
+    </Select>
+  </div>
+
+  {/* Screenshot Upload */}
+  {method === "upi" && (
+    <div>
+      <Label
+        htmlFor="screenshot"
+        className="text-foreground"
+      >
+        Upload Payment Screenshot
+      </Label>
+
+      <label
+        htmlFor="screenshot"
+        className="mt-2 flex items-center gap-3 h-12 px-4 rounded-xl border border-dashed border-border bg-background hover:border-primary/40 cursor-pointer transition-base"
+      >
+        <Upload
+          size={16}
+          className="text-muted-foreground"
+        />
+
+        <span className="text-sm text-muted-foreground truncate">
+          {screenshot
+            ? screenshot.name
+            : "Choose an image (PNG/JPG, max 5 MB)"}
+        </span>
+
+        <input
+          id="screenshot"
+          type="file"
+          accept="image/png,image/jpeg"
+          className="hidden"
+          onChange={handleFile}
+        />
+      </label>
+    </div>
+  )}
+</div> 
+            </form>
+
             {/* RIGHT — QR */}
             <aside className="bg-card rounded-3xl p-7 sm:p-10 border border-border/60 shadow-soft">
               <div className="text-center">
