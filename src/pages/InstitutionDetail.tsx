@@ -135,7 +135,7 @@ const InstitutionDetail = () => {
                           {story.preview}
                         </p>
                         <Link
-                          to="/media/blogs"
+                          to={`/media/blogs/${story.slug}`}
                           className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
                         >
                           Read full story <ArrowRight size={14} />
