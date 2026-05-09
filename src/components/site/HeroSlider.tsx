@@ -14,6 +14,8 @@ const slides = [
     title: "Empowering lives and expanding access to quality education",
     description:
       "For over three decades, we’ve supported the most vulnerable because talent is everywhere, but opportunity isn’t.",
+    objectPosition: "center 30%",
+    overlay: "bg-black/40",
   },
   {
     image: hero2,
@@ -21,6 +23,8 @@ const slides = [
     title: "Every Hand We Hold Builds a Stronger Tomorrow",
     description:
       "From village schools to mobile clinics, your support powers the change happening across Vidarbha.",
+    objectPosition: "center 35%",
+    overlay: "bg-black/35",
   },
   {
     image: hero3,
@@ -28,6 +32,8 @@ const slides = [
     title: "Where Compassion Meets Commitment",
     description:
       "Join thousands of supporters who believe that no child should be left behind — for any reason.",
+    objectPosition: "center bottom",
+    overlay: "bg-black/35",
   },
 ];
 
@@ -65,16 +71,14 @@ const HeroSlider = () => {
               "absolute inset-0 w-full h-full object-cover transition-transform duration-[7000ms]",
               active === i ? "scale-105" : "scale-100"
             )}
+            style={{ objectPosition: slide.objectPosition }}
             loading={i === 0 ? "eager" : "lazy"}
           />
 
           {/* Dark overlay */}
-          <div
-            className={cn(
-              "absolute inset-0",
-              i === 0 ? "bg-black/50" : "bg-black/40"
-            )}
-          />
+          <div className={cn("absolute inset-0", slide.overlay)} />
+          {/* Left-side gradient to keep text readable without darkening the whole image */}
+          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/20 to-transparent" />
         </div>
       ))}
 
