@@ -115,133 +115,182 @@ const Donate = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-            {/* LEFT — Form */}
-            <form onSubmit={submit} className="bg-card rounded-3xl p-7 sm:p-10 border border-border/60 shadow-soft space-y-7">
-              <div className="space-y-5">
-                <div>
-                  <Label htmlFor="fullName" className="text-foreground">Full Name</Label>
-                  <Input
-                    id="fullName"
-                    className="mt-2 h-12 rounded-xl"
-                    value={donor.fullName}
-                    onChange={(e) => setDonor({ ...donor, fullName: e.target.value })}
-                    maxLength={100}
-                    placeholder="Your name"
-                  />
-                  {errors.fullName && <p className="mt-1.5 text-xs text-destructive">{errors.fullName}</p>}
-                </div>
+           {/* LEFT — Form */}
+<form
+  onSubmit={submit}
+  className="rounded-[28px] bg-[#f7c600] space-y-6"
+>
+  {/* Heading */}
+  <div className="text-center">
+    <h2 className="text-3xl sm:text-4xl font-bold text-[#2f3d73]">
+      50% Tax Exemption Under Section 80G*
+    </h2>
 
-                <div className="grid sm:grid-cols-2 gap-5">
-                  <div>
-                    <Label htmlFor="email" className="text-foreground">Email</Label>
-                    <Input
-                      id="email"
-                      type="email"
-                      className="mt-2 h-12 rounded-xl"
-                      value={donor.email}
-                      onChange={(e) => setDonor({ ...donor, email: e.target.value })}
-                      maxLength={255}
-                      placeholder="you@example.com"
-                    />
-                    {errors.email && <p className="mt-1.5 text-xs text-destructive">{errors.email}</p>}
-                  </div>
-                  <div>
-                    <Label htmlFor="phone" className="text-foreground">Phone Number</Label>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      className="mt-2 h-12 rounded-xl"
-                      value={donor.phone}
-                      onChange={(e) => setDonor({ ...donor, phone: e.target.value.replace(/[^\d+\s]/g, "").slice(0, 20) })}
-                      placeholder="+91 ..."
-                    />
-                    {errors.phone && <p className="mt-1.5 text-xs text-destructive">{errors.phone}</p>}
-                  </div>
-                </div>
+    <p className="mt-2 text-sm font-medium text-[#d62828]">
+      *Only Applicable for Indian Citizens
+    </p>
+  </div>
 
-                <div>
-                  <Label htmlFor="custom" className="text-foreground">Donation Amount (₹)</Label>
-                  <Input
-                    id="custom"
-                    inputMode="numeric"
-                    className="mt-2 h-12 rounded-xl"
-                    placeholder="Enter amount"
-                    value={custom}
-                    onChange={(e) => setCustom(e.target.value.replace(/[^\d]/g, "").slice(0, 7))}
-                  />
-                  <div className="grid grid-cols-3 gap-2 mt-3">
-                    {presets.map((p) => {
-                      const active = !custom && amount === p;
-                      return (
-                        <button
-                          type="button"
-                          key={p}
-                          onClick={() => { setAmount(p); setCustom(""); }}
-                          className={cn(
-                            "h-11 rounded-xl font-display font-semibold border transition-base",
-                            active
-                              ? "border-primary bg-primary text-primary-foreground"
-                              : "border-border bg-background text-foreground hover:border-primary/40"
-                          )}
-                        >
-                          ₹{p.toLocaleString()}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
+  {/* Frequency Toggle */}
+  <div className="flex w-full max-w-md overflow-hidden rounded-xl bg-white">
+    <button
+      type="button"
+      onClick={() => setMethod("razorpay")}
+      className="flex-1 bg-[#e32727] py-4 text-lg font-semibold text-white"
+    >
+      One-time
+    </button>
 
-                <div>
-                  <Label className="text-foreground">Payment Method</Label>
-                  <Select value={method} onValueChange={(v) => setMethod(v as Method)}>
-                    <SelectTrigger className="mt-2 h-12 rounded-xl">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="razorpay">Razorpay (Recommended)</SelectItem>
-                      <SelectItem value="stripe">Stripe (International)</SelectItem>
-                      <SelectItem value="upi">UPI QR</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
+    <button
+      type="button"
+      className="flex-1 bg-white py-4 text-lg font-semibold text-black"
+    >
+      Monthly
+    </button>
+  </div>
 
-                {method === "upi" && (
-                  <div>
-                    <Label htmlFor="screenshot" className="text-foreground">Upload Payment Screenshot</Label>
-                    <label
-                      htmlFor="screenshot"
-                      className="mt-2 flex items-center gap-3 h-12 px-4 rounded-xl border border-dashed border-border bg-background hover:border-primary/40 cursor-pointer transition-base"
-                    >
-                      <Upload size={16} className="text-muted-foreground" />
-                      <span className="text-sm text-muted-foreground truncate">
-                        {screenshot ? screenshot.name : "Choose an image (PNG/JPG, max 5 MB)"}
-                      </span>
-                      <input
-                        id="screenshot"
-                        type="file"
-                        accept="image/png,image/jpeg"
-                        className="hidden"
-                        onChange={handleFile}
-                      />
-                    </label>
-                  </div>
-                )}
-              </div>
+  {/* Donation Amounts */}
+  <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+    {presets.map((p) => {
+      const active = !custom && amount === p;
 
-              <Button
-                type="submit"
-                disabled={submitting}
-                className="w-full h-13 rounded-xl bg-foreground text-background hover:bg-foreground/90 font-display font-semibold text-base"
-              >
-                {submitting ? "Processing…" : `Donate ₹${finalAmount.toLocaleString()} Now`}
-              </Button>
+      return (
+        <button
+          type="button"
+          key={p}
+          onClick={() => {
+            setAmount(p);
+            setCustom("");
+          }}
+          className={cn(
+            "flex h-16 items-center justify-center rounded-lg border text-lg font-semibold transition-all",
+            active
+              ? "border-[#d62828] bg-[#d62828] text-white"
+              : "border-gray-300 bg-white text-gray-700"
+          )}
+        >
+          ₹ {p.toLocaleString()}
+        </button>
+      );
+    })}
 
-              <div className="flex items-center justify-center gap-2 text-xs text-muted-foreground">
-                <Lock size={12} />
-                Secure Payments via Razorpay & Stripe
-              </div>
-            </form>
+    <Input
+      inputMode="numeric"
+      placeholder="Min ₹ 100"
+      value={custom}
+      onChange={(e) =>
+        setCustom(e.target.value.replace(/[^\d]/g, "").slice(0, 7))
+      }
+      className="h-16 border-gray-300 bg-white text-base"
+    />
+  </div>
 
+  {/* Name */}
+  <div className="grid gap-4 md:grid-cols-2">
+    <Input
+      placeholder="First Name *"
+      className="h-16 bg-[#f3f3f3] text-lg"
+      value={donor.fullName}
+      onChange={(e) =>
+        setDonor({ ...donor, fullName: e.target.value })
+      }
+    />
+
+    <Input
+      placeholder="Last Name *"
+      className="h-16 bg-[#f3f3f3] text-lg"
+    />
+  </div>
+
+  {/* Address */}
+  <textarea
+    placeholder="Address *"
+    rows={4}
+    className="w-full rounded-lg border border-gray-300 bg-[#f3f3f3] px-5 py-4 text-lg outline-none"
+  />
+
+  {/* City State Postal */}
+  <div className="grid gap-4 md:grid-cols-3">
+    <Input
+      placeholder="City *"
+      className="h-16 bg-[#f3f3f3] text-lg"
+    />
+
+    <Input
+      placeholder="State *"
+      className="h-16 bg-[#f3f3f3] text-lg"
+    />
+
+    <Input
+      placeholder="Postal code *"
+      className="h-16 bg-[#f3f3f3] text-lg"
+    />
+  </div>
+
+  {/* PAN + Mobile */}
+  <div className="grid gap-4 md:grid-cols-2">
+    <Input
+      placeholder="PAN NUMBER *"
+      className="h-16 bg-[#f3f3f3] text-lg"
+    />
+
+    <Input
+      placeholder="Mobile *"
+      className="h-16 bg-[#f3f3f3] text-lg"
+      value={donor.phone}
+      onChange={(e) =>
+        setDonor({
+          ...donor,
+          phone: e.target.value
+            .replace(/[^\d+\s]/g, "")
+            .slice(0, 20),
+        })
+      }
+    />
+  </div>
+
+  {/* DOB + Email */}
+  <div className="grid gap-4 md:grid-cols-2">
+    <Input
+      placeholder="DATE OF BIRTH *"
+      className="h-16 bg-[#f3f3f3] text-lg"
+    />
+
+    <Input
+      type="email"
+      placeholder="Email Id *"
+      className="h-16 bg-[#f3f3f3] text-lg"
+      value={donor.email}
+      onChange={(e) =>
+        setDonor({ ...donor, email: e.target.value })
+      }
+    />
+  </div>
+
+  {/* Last Row */}
+  <div className="grid gap-4 md:grid-cols-[1fr_auto]">
+    <Select>
+      <SelectTrigger className="h-16 bg-[#f3f3f3] text-lg">
+        <SelectValue placeholder="How did you know about us?" />
+      </SelectTrigger>
+
+      <SelectContent>
+        <SelectItem value="instagram">Instagram</SelectItem>
+        <SelectItem value="facebook">Facebook</SelectItem>
+        <SelectItem value="youtube">YouTube</SelectItem>
+        <SelectItem value="friend">Friend / Family</SelectItem>
+      </SelectContent>
+    </Select>
+
+    <Button
+      type="submit"
+      disabled={submitting}
+      className="h-16 rounded-full bg-[#e32727] px-10 text-lg font-bold uppercase text-white hover:bg-[#c91f1f]"
+    >
+      {submitting ? "Processing..." : "DONATE NOW"}
+    </Button>
+  </div>
+</form>
             {/* RIGHT — QR */}
             <aside className="bg-card rounded-3xl p-7 sm:p-10 border border-border/60 shadow-soft">
               <div className="text-center">
