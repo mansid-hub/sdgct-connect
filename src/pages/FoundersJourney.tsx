@@ -9,8 +9,7 @@ const FoundersJourney = () => {
     <Layout>
       <PageHeader
         eyebrow="Founder's Journey"
-        title="A vision that built institutions and lifted communities."
-        description="The story of SDGCT begins with two extraordinary lives — Shri Dadasaheb Gawai and Aai Dr. Kamaltai R. Gawai — whose belief in education and dignity continues to guide every decision the trust makes."
+
         crumbs={[{ label: "Home", to: "/" }, { label: "About", to: "/about" }, { label: "Founder's Journey" }]}
       />
 
@@ -27,23 +26,51 @@ const FoundersJourney = () => {
           />
           <div>
             <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-accent">
-              <span className="h-px w-6 bg-accent" /> The Vision
+              <span className="h-px w-6 bg-accent" /> Founder, Shri Dadasaheb Gawai Charitable Trust
             </span>
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-foreground text-balance">
-              Shri Dadasaheb Gawai
+              Late Shri R. S. Gawai (Dadasaheb)
             </h2>
             <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Shri Dadasaheb Gawai believed deeply that education is the
-                surest path out of inequality. His life's work was anchored in
-                a single conviction — that every child deserves a fair chance
-                to learn, grow and live with dignity.
+                Born in the rural village of Darapur in Amravati, Shri R. S. Gavai dedicated his life to expanding 
+                opportunities for underserved communities. Guided by the ideals of Dr. B. R. Ambedkar, he believed 
+                that education was the most powerful instrument for social mobility, capable of transforming not 
+                just individuals, but entire communities. This belief took shape through the establishment of 
+                Shri Dadasaheb Gawai Charitable Trust. What began as a single school was rooted in a simple 
+                conviction: that access to quality education should not depend on where one is born.
               </p>
               <p>
-                That conviction became the foundation on which this trust was
-                built. The institutions that carry his name today exist because
-                he refused to accept that opportunity should depend on where
-                someone was born.
+                Starting with modest beginnings, Shri Gavai focused on building institutions where they were 
+                needed most—rural and often overlooked regions of Vidarbha. Over time, this effort grew into 
+                a network of schools and colleges that today educate over 12,000 students annually across Vidarbha. 
+                His work was deeply personal and community-driven. In his native village, he helped fulfil a long-standing
+                aspiration by establishing an engineering college, bringing professional education within reach for local 
+                students who would otherwise have had to migrate or forgo such opportunities altogether. For many families, 
+                this access marked a turning point, enabling the first generation to pursue technical degrees and build new 
+                pathways for economic mobility.
+              </p>
+              
+             <p>
+               Similarly, he initiated schools in remote villages where formal education had previously been inaccessible. 
+               These institutions did more than provide classrooms; they opened doors for children to step into structured 
+               learning environments for the first time, fundamentally altering life trajectories across communities. For 
+               Shri Gavai, education extended beyond academics. He saw it as a means to build confidence, self-reliance, 
+               and a sense of agency. The institutions he established were designed not just to teach, but to enable individuals 
+               to navigate a changing world with dignity and purpose. He also  recognised that barriers to progress were often 
+               interconnected. His work therefore reflected a broader understanding of community development supporting not only 
+               students, but the ecosystems around them.
+               
+              <p>
+                Today, the institutions established under his guidance continue to serve as pillars of opportunity for thousands of
+                students and families. Generations have passed through these classrooms, carrying forward the values of education, 
+                self-reliance, and social responsibility. Shri R. S. Gavai’s legacy is reflected not only in these institutions but 
+                also in the breadth of responsibility he carried in public life. Over the years, he served in several of the nation’s 
+                highest constitutional roles, including as Governor of Kerala, Bihar, and Sikkim; as a Member of Parliament in both Houses; 
+                and as Leader of the Opposition in the State Legislature, along with key parliamentary and legislative leadership positions. 
+                These roles reflect the trust placed in his leadership and his deep engagement with public service. The Shri Dadasaheb Gawai 
+                Charitable Trust continues to carry this vision forward, expanding access to education and healthcare, strengthening institutions, 
+                and working towards a more equitable and inclusive society.
               </p>
             </div>
             <div className="mt-6 rounded-2xl border-l-4 border-accent bg-secondary/40 p-5">
@@ -57,42 +84,7 @@ const FoundersJourney = () => {
         </div>
       </section>
 
-      {/* Aai Dr. Kamaltai */}
-      <section className="section-y bg-secondary/40">
-        <div className="container grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div className="order-2 lg:order-1">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-accent">
-              <span className="h-px w-6 bg-accent" /> The Inspiration
-            </span>
-            <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-foreground text-balance">
-              Aai Dr. Kamaltai R. Gawai
-            </h2>
-            <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Aai Dr. Kamaltai R. Gawai is the founding inspiration behind
-                SDGCT. With quiet determination, she carried forward a vision
-                of education for every child — and built it, brick by brick,
-                school by school, into the network of institutions that exists
-                today.
-              </p>
-              <p>
-                Her devotion to women's empowerment, child welfare and
-                community service shaped the soul of this trust. The warmth
-                with which the trust is run today is, in many ways, hers.
-              </p>
-            </div>
-          </div>
-          <img
-            src={kamaltai}
-            alt="Aai Dr. Kamaltai R. Gawai"
-            loading="lazy"
-            width={1200}
-            height={1500}
-            className="order-1 lg:order-2 rounded-3xl shadow-card aspect-[4/5] object-cover w-full"
-          />
-        </div>
-      </section>
-
+     
       {/* Long-term impact */}
       <section className="section-y">
         <div className="container max-w-4xl text-center">
