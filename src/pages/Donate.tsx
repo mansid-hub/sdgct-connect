@@ -117,21 +117,22 @@ const Donate = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
            {/* LEFT — Form */}
             <form onSubmit={submit} className="bg-card rounded-3xl p-7 sm:p-10 border border-border/60 shadow-soft space-y-7"> 
-              <div className="space-y-5"> 
-                <div className="space-y-5">
+                <<div className="space-y-5">
   {/* Name */}
   <div className="grid sm:grid-cols-2 gap-5">
     <div>
-      <Label className="text-foreground">First Name</Label>
+      <Label htmlFor="firstName">First Name</Label>
       <Input
+        id="firstName"
         className="mt-2 h-12 rounded-xl"
         placeholder="First Name *"
       />
     </div>
 
     <div>
-      <Label className="text-foreground">Last Name</Label>
+      <Label htmlFor="lastName">Last Name</Label>
       <Input
+        id="lastName"
         className="mt-2 h-12 rounded-xl"
         placeholder="Last Name *"
       />
@@ -140,55 +141,62 @@ const Donate = () => {
 
   {/* Address */}
   <div>
-    <Label className="text-foreground">Address</Label>
+    <Label htmlFor="address">Address</Label>
 
     <textarea
-      placeholder="Address *"
+      id="address"
       rows={4}
-      className="mt-2 w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none"
+      placeholder="Address *"
+      className="mt-2 flex w-full rounded-xl border border-input bg-background px-4 py-3 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
     />
   </div>
 
   {/* City State Postal */}
   <div className="grid sm:grid-cols-3 gap-5">
     <div>
-      <Label className="text-foreground">City</Label>
+      <Label htmlFor="city">City</Label>
       <Input
+        id="city"
         className="mt-2 h-12 rounded-xl"
         placeholder="City *"
       />
     </div>
 
     <div>
-      <Label className="text-foreground">State</Label>
+      <Label htmlFor="state">State</Label>
       <Input
+        id="state"
         className="mt-2 h-12 rounded-xl"
         placeholder="State *"
       />
     </div>
 
     <div>
-      <Label className="text-foreground">Postal Code</Label>
+      <Label htmlFor="postal">Postal Code</Label>
       <Input
+        id="postal"
         className="mt-2 h-12 rounded-xl"
         placeholder="Postal code *"
       />
     </div>
   </div>
 
-  {/* PAN + Mobile */}
+  {/* PAN + Phone */}
   <div className="grid sm:grid-cols-2 gap-5">
     <div>
-      <Label className="text-foreground">PAN Number</Label>
+      <Label htmlFor="pan">PAN Number</Label>
       <Input
-        className="mt-2 h-12 rounded-xl"
+        id="pan"
+        className="mt-2 h-12 rounded-xl uppercase"
         placeholder="PAN NUMBER *"
       />
     </div>
 
     <div>
-      <Label className="text-foreground">Phone Number</Label>
+      <Label htmlFor="phone">Phone Number</Label>
+
       <Input
+        id="phone"
         type="tel"
         className="mt-2 h-12 rounded-xl"
         value={donor.phone}
@@ -202,23 +210,29 @@ const Donate = () => {
         }
         placeholder="+91 ..."
       />
+
+      {errors.phone && (
+        <p className="mt-1.5 text-xs text-destructive">
+          {errors.phone}
+        </p>
+      )}
     </div>
   </div>
 
   {/* DOB + Email */}
   <div className="grid sm:grid-cols-2 gap-5">
     <div>
-      <Label className="text-foreground">Date of Birth</Label>
+      <Label htmlFor="dob">Date of Birth</Label>
+
       <Input
+        id="dob"
         type="date"
         className="mt-2 h-12 rounded-xl"
       />
     </div>
 
     <div>
-      <Label htmlFor="email" className="text-foreground">
-        Email
-      </Label>
+      <Label htmlFor="email">Email</Label>
 
       <Input
         id="email"
@@ -226,7 +240,10 @@ const Donate = () => {
         className="mt-2 h-12 rounded-xl"
         value={donor.email}
         onChange={(e) =>
-          setDonor({ ...donor, email: e.target.value })
+          setDonor({
+            ...donor,
+            email: e.target.value,
+          })
         }
         maxLength={255}
         placeholder="you@example.com"
@@ -242,9 +259,7 @@ const Donate = () => {
 
   {/* Amount */}
   <div>
-    <Label className="text-foreground">
-      Donation Amount (₹)
-    </Label>
+    <Label>Donation Amount (₹)</Label>
 
     <Input
       inputMode="numeric"
@@ -288,9 +303,7 @@ const Donate = () => {
 
   {/* Source */}
   <div>
-    <Label className="text-foreground">
-      How did you know about us?
-    </Label>
+    <Label>How did you know about us?</Label>
 
     <Select>
       <SelectTrigger className="mt-2 h-12 rounded-xl">
@@ -323,9 +336,7 @@ const Donate = () => {
 
   {/* Payment Method */}
   <div>
-    <Label className="text-foreground">
-      Payment Method
-    </Label>
+    <Label>Payment Method</Label>
 
     <Select
       value={method}
@@ -356,10 +367,7 @@ const Donate = () => {
   {/* Screenshot Upload */}
   {method === "upi" && (
     <div>
-      <Label
-        htmlFor="screenshot"
-        className="text-foreground"
-      >
+      <Label htmlFor="screenshot">
         Upload Payment Screenshot
       </Label>
 
@@ -388,7 +396,7 @@ const Donate = () => {
       </label>
     </div>
   )}
-</div> 
+</div>
             </form>
 
             {/* RIGHT — QR */}
