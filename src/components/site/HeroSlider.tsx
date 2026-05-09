@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Heart, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import hero1 from "@/assets/hero-1.jpg";
-import hero2 from "@/assets/hero-2.jpg";
+import hero2 from "@/assets/hero-2.jpeg";
 import hero3 from "@/assets/hero-3.jpg";
 import { cn } from "@/lib/utils";
 
