@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import Layout from "@/components/site/Layout";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import { getTrustee, trustees } from "@/data/trustees";
-import { ArrowLeft, ArrowRight, CheckCircle2, Quote, Sparkles, HandHeart } from "lucide-react";
+import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NotFound from "./NotFound";
 
@@ -60,40 +60,13 @@ const TrusteeDetail = () => {
 
           <div className="space-y-12">
             <div>
-              <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground">Biography</h2>
+              <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground">
+                About {trustee.name}
+              </h2>
               <div className="mt-5 space-y-4 text-base text-muted-foreground leading-relaxed">
                 {trustee.biography.map((p, i) => <p key={i}>{p}</p>)}
               </div>
             </div>
-
-            <div>
-              <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground flex items-center gap-3">
-                <HandHeart className="text-accent" /> Contributions to the trust
-              </h2>
-              <ul className="mt-6 space-y-3">
-                {trustee.contributions.map((c, i) => (
-                  <li key={i} className="flex gap-3 items-start bg-secondary/50 rounded-2xl p-4">
-                    <CheckCircle2 className="text-primary shrink-0 mt-0.5" size={18} />
-                    <span className="text-foreground">{c}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {trustee.achievements.length > 0 && (
-              <div>
-                <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground flex items-center gap-3">
-                  <Sparkles className="text-accent" /> Achievements
-                </h2>
-                <div className="mt-6 grid sm:grid-cols-2 gap-4">
-                  {trustee.achievements.map((a, i) => (
-                    <div key={i} className="bg-card border border-border/60 rounded-2xl p-5 shadow-soft">
-                      <div className="text-foreground font-medium">{a}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
 
             {trustee.message && (
               <div className="relative gradient-primary text-primary-foreground rounded-3xl p-8 sm:p-10 shadow-elegant overflow-hidden">
