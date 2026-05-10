@@ -14,6 +14,16 @@ const TrusteeDetail = () => {
   const idx = trustees.findIndex((t) => t.slug === slug);
   const next = trustees[(idx + 1) % trustees.length];
 
+  const formatShortName = (fullName: string) => {
+    const tokens = fullName.split(/\s+/).filter(Boolean);
+    if (tokens.length <= 2) return fullName;
+    const honorifics = new Set(["Sau.", "Smt.", "Shri.", "Sri.", "Mr.", "Mrs.", "Ms.", "Dr."]);
+    const prefix = tokens[0];
+    const last = tokens[tokens.length - 1];
+    const first = tokens.slice(1, -1).find((t) => !honorifics.has(t) && !/^[A-Z]\.$/.test(t)) ?? tokens[1];
+    return `${prefix} ${first} ${last}`;
+  };
+
   return (
     <Layout>
       <section className="bg-secondary/40 border-b border-border/60">
@@ -87,7 +97,7 @@ const TrusteeDetail = () => {
               </Button>
               <Button asChild variant="outline">
                 <Link to={`/trustees/${next.slug}`}>
-                  Next: {next.name.split(" ").slice(-2).join(" ")} <ArrowRight size={16} />
+                  Next: {formatShortName(next.name)} <ArrowRight size={16} />
                 </Link>
               </Button>
             </div>
