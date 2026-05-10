@@ -42,9 +42,6 @@ const Trustees = () => {
                 <div className="mt-1 text-sm text-accent font-semibold uppercase tracking-wider">
                   {t.designation}
                 </div>
-                <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-                  {t.summary}
-                </p>
                 <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-base">
                   View profile <ArrowUpRight size={14} />
                 </span>
