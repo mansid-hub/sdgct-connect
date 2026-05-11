@@ -34,55 +34,154 @@ const About = () => {
         crumbs={[{ label: "Home", to: "/" }, { label: "About" }]}
       />
 
-      {/* Who we are */}
+      {/* Our Story */}
       <section className="section-y">
-        <div className="container grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div className="relative">
-            <img
-              src={hero2}
-              alt="Students and teachers across SDGCT institutions"
-              loading="lazy"
-              width={1920}
-              height={1080}
-              className="rounded-3xl shadow-card aspect-[4/5] object-cover w-full"
-            />
-            <div className="absolute -bottom-6 -right-6 hidden md:block bg-card rounded-2xl p-6 shadow-elegant border border-border/60 w-56">
-              <div className="font-display text-3xl font-bold text-primary">
-                Since 1991
-              </div>
-              <div className="text-sm text-muted-foreground mt-1">
-                Three decades of grassroots service
+        <div className="container grid lg:grid-cols-5 gap-12 lg:gap-16">
+          <div className="lg:col-span-2">
+            <div className="relative lg:sticky lg:top-28">
+              <img
+                src={hero2}
+                alt="Students and teachers across SDGCT institutions"
+                loading="lazy"
+                width={1920}
+                height={1080}
+                className="rounded-3xl shadow-card aspect-[4/5] object-cover w-full"
+              />
+              <div className="absolute -bottom-6 -right-6 hidden md:block bg-card rounded-2xl p-6 shadow-elegant border border-border/60 w-56">
+                <div className="font-display text-3xl font-bold text-primary">
+                  Since 1991
+                </div>
+                <div className="text-sm text-muted-foreground mt-1">
+                  Three decades of grassroots service
+                </div>
               </div>
             </div>
           </div>
 
-          <div>
+          <div className="lg:col-span-3">
             <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-accent">
-              <span className="h-px w-6 bg-accent" /> Who we are
+              <span className="h-px w-6 bg-accent" /> Our Story
             </span>
 
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-foreground text-balance">
-              An institution rooted in service, guided by an enduring vision.
+              From a small village in Vidarbha to a network shaping rural futures.
             </h2>
 
             <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Established in 1991 in Amravati, SDGCT is a charitable trust
-                inspired by the lifelong vision of Dr. B. R. Ambedkar — that
-                education and dignity belong to every person, without exception.
+                The story of Shri Dadasaheb Gawai Charitable Trust begins in the
+                small rural village of Darapur, in Daryapur taluka of Vidarbha.
+              </p>
+              <p>
+                Born into a modest farming family as one among seven siblings,
+                Late Shri R. S. Gavai understood firsthand the barriers that
+                prevented rural children from accessing education. Despite
+                financial hardship, he pursued higher education and went on to
+                complete his degree from Nagpur University. But his ambition
+                extended far beyond personal success. He believed that thousands
+                of children growing up in circumstances similar to his deserved
+                the same opportunity to learn, grow, and build a better future.
               </p>
 
+              <h3 className="pt-4 font-display text-xl font-bold text-foreground">
+                The Problem He Saw
+              </h3>
               <p>
-                The trust owes its foundation to the vision of Hon’ble Shri R. S.
-                (Dadasaheb) Gawai and Hon’ble Dr. Kamaltai R. Gawai, whose
-                commitment to social upliftment continues to inspire every
-                initiative we undertake today.
+                As he travelled across Vidarbha, Shri Gavai recognised two
+                fundamental challenges facing rural education.
+              </p>
+              <p>
+                The first was geography. Villages across the region were
+                scattered and disconnected, with educational institutions
+                concentrated in urban centres. For many children, especially in
+                remote areas, even basic schooling remained physically
+                inaccessible.
+              </p>
+              <p>
+                The second was affordability. Families of landless labourers,
+                small farmers, tribal communities, and socially disadvantaged
+                groups often lacked the financial means to send their children
+                away for education. Distance, transportation, hostel costs, and
+                fees collectively pushed education out of reach for generations
+                of rural families.
+              </p>
+              <p>
+                These challenges were particularly visible across Vidarbha's
+                agrarian belt, where economic uncertainty, drought-prone
+                conditions, and limited infrastructure often restricted
+                educational opportunity for rural families. Shri Gavai saw
+                education not only as a pathway to employment, but as a means of
+                creating long-term social and economic stability within these
+                communities.
               </p>
 
+              <h3 className="pt-4 font-display text-xl font-bold text-foreground">
+                How It Began
+              </h3>
               <p>
-                Today the trust runs a growing network of schools, junior and
-                senior colleges, technical institutes and community programmes
-                that quietly change lives, one student and one family at a time.
+                Shri Gavai believed that if children could not reach schools,
+                schools must reach them.
+              </p>
+              <p>
+                With this vision, he began establishing schools directly within
+                rural communities. In the early years, this often meant
+                persuading local landowners to donate small parcels of land for
+                educational institutions. In return, schools would sometimes be
+                named in memory of their family members—creating a shared sense
+                of ownership and community participation in education.
+              </p>
+              <p>
+                What began as a small initiative steadily evolved into a large
+                educational network rooted in accessibility and social mobility.
+              </p>
+
+              <h3 className="pt-4 font-display text-xl font-bold text-foreground">
+                Where We Are Today
+              </h3>
+              <p>
+                Today, the Trust operates 16 schools and 12 higher educational
+                institutions across Maharashtra, including engineering,
+                pharmacy, law, polytechnic, and Ayurvedic medical colleges,
+                along with a 100-bedded hospital serving rural communities.
+              </p>
+              <p>
+                One of Shri Gavai's most meaningful achievements was fulfilling
+                the long-standing aspiration of the people of his native region
+                by establishing an engineering college there—bringing
+                professional education to students who would otherwise have had
+                to leave their villages or abandon such ambitions entirely.
+              </p>
+              <p>
+                Over the decades, the institutions built under his vision have
+                enabled students from rural and underserved backgrounds to
+                access opportunities once considered unimaginable. Alumni from
+                our institutions have gone on to study at IITs, IIMs, Ivy League
+                universities, serve in senior government positions, and build
+                successful careers across industries in India and abroad.
+              </p>
+
+              <h3 className="pt-4 font-display text-xl font-bold text-foreground">
+                The Legacy
+              </h3>
+              <p>
+                While the scale of the Trust has grown, its core mission remains
+                unchanged: to expand access to quality education and healthcare
+                for communities that are too often left behind by geography,
+                circumstance, or economic barriers.
+              </p>
+              <p>
+                Today, that mission remains as relevant as ever. Even now,
+                thousands of students across rural India continue to face
+                barriers of affordability, access, and exposure. The Trust's
+                work therefore continues to focus not only on building
+                institutions, but on creating pathways of opportunity that allow
+                students from rural backgrounds to participate fully in a
+                rapidly changing world.
+              </p>
+              <p>
+                From one small school to a network serving thousands annually,
+                the journey of the Trust continues to be guided by the belief
+                that talent exists everywhere and opportunity must too.
               </p>
             </div>
           </div>
