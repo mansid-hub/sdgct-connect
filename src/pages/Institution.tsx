@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { GraduationCap, School, Stethoscope, ArrowUpRight, ExternalLink } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
 import { Button } from "@/components/ui/button";
