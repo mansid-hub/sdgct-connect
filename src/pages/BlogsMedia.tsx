@@ -6,8 +6,25 @@ import fallbackImg from "@/assets/initiative-education.jpg";
 import atishImg from "@/assets/success-atish-tayde.png";
 import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
 import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
+import pravinImg from "@/assets/success-pravin-waghmare.jpeg";
+import pravinImg2 from "@/assets/success-pravin-waghmare-2.jpeg";
 
 const stories = [
+  {
+    slug: "pravin-waghmare-actor",
+    title: "Pravin Prabhakar Waghmare, Actor & Artist",
+    image: pravinImg,
+    gallery: [pravinImg, pravinImg2],
+    tagline: "An Artist Forged in Struggle (संघर्षातून उभा राहिलेला कलाकार)",
+    paragraphs: [
+      "A student named Pravin Prabhakar Waghmare once studied at Dr. Babasaheb Ambedkar Vidyalaya, located in the Fraizarpura locality of Amravati. He wore simple clothes, went barefoot, and carried an innocent smile on his face, yet his eyes held dreams of great magnitude. However, his family's financial circumstances were extremely dire. Pravin's father worked as a daily wage laborer, while Pravin himself would often tend to goats or take up odd jobs to contribute to the household income. Consequently, school was not a daily routine for him. Two days of school and four days of manual labor, that was how his life was unfolding.",
+      "One day, the teacher was conducting a lesson in the classroom. Suddenly, the sound of a cat meowing came from the back bench. All the students burst into laughter. The teacher looked back angrily, only to find Pravin sitting there quietly. A short while later came the sound of a dog barking, followed by the bleating of a goat, the entire class was rolling with laughter.",
+      "The teacher called him forward and asked, \"Did you make those sounds?\" Pravin replied fearfully, \"Yes, Sir... but I was just joking.\" However, there was no anger on the teacher's face—only astonishment. \"Why, this is truly a talent of yours!\" From that day on, the teacher recognized the artist within him. He encouraged Pravin to participate in competitions involving drama, dance, elocution, and acting. Initially, Pravin would feel nervous; but the moment he stepped onto the stage, the entire audience would be spellbound.",
+      "Once, during the school's children's theater competition, he played the role of an elderly man. His performance was so lifelike that even the judges were left astounded. He won first prize. He took the prize money home and placed it in his mother's hands. Tears welled up in his mother's eyes. \"My child, today, for the very first time, your art has brought joy into our home.\" That day proved to be a turning point in Pravin's life.",
+      "He was selected to participate in state-level competitions. From the small stages of Amravati, he made a direct leap into the vast world of Mumbai. He earned a name for himself as a street performer. Later, he won the hearts of the audience with his acting in the comedy show \"One Tappa Out,\" broadcast on a Marathi television channel. Upon witnessing his performance, the renowned comedian Johnny Lever praised him, remarking, \"This boy is destined to go very far.\"",
+      "Today, Pravin works alongside prominent artists in Marathi plays, films, and commercials. Yet, whenever someone asks him, \"Who is the force behind your success?\" He says with pride, \"My school recognized the artist within me. Had it not been for Dr. Babasaheb Ambedkar Vidyalaya, the Pravin of today would not have been shaped.\"",
+    ],
+  },
   {
     slug: "atish-tayde-drdo",
     title: "Mr. Atish Tayde, Scientist, Defence Research and Development Organisation (DRDO)",
@@ -95,6 +112,18 @@ const BlogsMedia = () => {
                   <p key={i}>{p}</p>
                 ))}
               </div>
+              {"gallery" in story && Array.isArray((story as { gallery?: string[] }).gallery) && (
+                <div className="mt-8 grid grid-cols-2 gap-4">
+                  {(story as { gallery: string[] }).gallery.map((src, i) => (
+                    <img
+                      key={i}
+                      src={src}
+                      alt={`${story.title} - ${i + 1}`}
+                      className="w-full h-56 object-cover rounded-xl border border-border/60"
+                    />
+                  ))}
+                </div>
+              )}
             </div>
           </article>
         </div>
