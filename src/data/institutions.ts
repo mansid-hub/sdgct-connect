@@ -288,7 +288,7 @@ if (ambedkarMarathiPrimary) {
   ambedkarMarathiPrimary.about = ambedkarMarathiPrimaryAbout;
   ambedkarMarathiPrimary.successStories = ambedkarMarathiPrimaryStories;
   ambedkarMarathiPrimary.image = ambedkarMr2;
-  ambedkarMarathiPrimary.gallery = [ambedkarMr2, ambedkarMr3, ambedkarMr1, ambedkarMr4, ambedkarMr5, ambedkarMr6, ambedkarMr7, ambedkarMr8, ambedkarMr9, ambedkarMr10, ambedkarMr11];
+  ambedkarMarathiPrimary.gallery = [ambedkarMr2, ambedkarMr3, ambedkarMr1, ambedkarMr4, ambedkarMr5, ambedkarMr6, ambedkarMr7, ambedkarMr8, ambedkarMr9, ambedkarMr10, ambedkarMr11, ];
 
 }
 
