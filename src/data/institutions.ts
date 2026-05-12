@@ -212,7 +212,7 @@ const ambedkarFraizarpuraAbout: string[] = [
 
 const ambedkarFraizarpuraStories = [
   {
-    title: "Pravin Prabhakar Waghmare, Actor & Artist",
+    title: "Mr. Pravin Prabhakar Waghmare, Actor & Artist",
     preview:
       "An Artist Forged in Struggle — from a barefoot boy doing odd jobs in Fraizarpura to performing alongside leading artists in Marathi plays, films and television, Pravin's journey began when a teacher recognised the artist within him.",
     image: pravinImg,
