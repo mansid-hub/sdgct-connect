@@ -5,10 +5,12 @@ import { cn } from "@/lib/utils";
 interface Props {
   images: string[];
   name: string;
+  previewCount?: number;
 }
 
-const InstitutionGallery = ({ images, name }: Props) => {
+const InstitutionGallery = ({ images, name, previewCount }: Props) => {
   const [active, setActive] = useState<number | null>(null);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     if (active === null) return;
@@ -27,27 +29,42 @@ const InstitutionGallery = ({ images, name }: Props) => {
 
   if (!images || images.length === 0) return null;
 
+  const isCollapsible =
+    typeof previewCount === "number" && previewCount > 0 && images.length > previewCount;
+  const visibleCount = isCollapsible && !expanded ? previewCount! : images.length;
+  const visible = images.slice(0, visibleCount);
+  const remaining = images.length - visibleCount;
+
   return (
     <div>
       <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground flex items-center gap-3">
         <Images className="text-accent" /> Gallery
       </h2>
       <div className="mt-6 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-        {images.map((src, i) => (
-          <button
-            key={i}
-            type="button"
-            onClick={() => setActive(i)}
-            className="group relative aspect-square overflow-hidden rounded-2xl border border-border/60 bg-secondary/40 focus:outline-none focus:ring-2 focus:ring-primary"
-          >
-            <img
-              src={src}
-              alt={`${name} gallery image ${i + 1}`}
-              loading="lazy"
-              className="h-full w-full object-cover transition-smooth group-hover:scale-105"
-            />
-          </button>
-        ))}
+        {visible.map((src, i) => {
+          const isLastPreview = isCollapsible && !expanded && i === visibleCount - 1 && remaining > 0;
+          return (
+            <button
+              key={i}
+              type="button"
+              onClick={() => (isLastPreview ? setExpanded(true) : setActive(i))}
+              className="group relative aspect-square overflow-hidden rounded-2xl border border-border/60 bg-secondary/40 focus:outline-none focus:ring-2 focus:ring-primary"
+            >
+              <img
+                src={src}
+                alt={`${name} gallery image ${i + 1}`}
+                loading="lazy"
+                className="h-full w-full object-cover transition-smooth group-hover:scale-105"
+              />
+              {isLastPreview && (
+                <div className="absolute inset-0 bg-black/60 text-white flex flex-col items-center justify-center font-semibold transition-base group-hover:bg-black/70">
+                  <span className="text-2xl sm:text-3xl">+{remaining}</span>
+                  <span className="text-xs sm:text-sm uppercase tracking-wider mt-1">View more</span>
+                </div>
+              )}
+            </button>
+          );
+        })}
       </div>
 
       {active !== null && (
