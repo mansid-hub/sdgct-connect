@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import hero1 from "@/assets/hero-1.jpg";
 import hero2 from "@/assets/hero-2.jpeg";
 import hero3 from "@/assets/hero-3.jpg";
+import heroEducation from "@/assets/hero-education-all.jpeg";
 import { cn } from "@/lib/utils";
 
 const slides = [
@@ -18,7 +19,7 @@ const slides = [
     overlay: "bg-black/35",
   },
   {
-    image: hero1,
+    image: hero2,
     eyebrow: "Hope in Action",
     title: "Where Compassion Meets Commitment",
     description:
@@ -27,12 +28,12 @@ const slides = [
     overlay: "bg-black/35",
   },
   {
-    image: hero2,
+    image: heroEducation,
     eyebrow: "Education for All",
     title: "Empowering lives and expanding access to quality education",
     description:
       "For over three decades, we’ve supported the most vulnerable because talent is everywhere, but opportunity isn’t.",
-    objectPosition: "center 40%",
+    objectPosition: "center 80%",
     overlay: "bg-black/40",
   },
 ];
