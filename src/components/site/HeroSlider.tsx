@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 
 const slides = [
   {
-    image: hero1,
+    image: hero2,
     eyebrow: "Education for All",
     title: "Empowering lives and expanding access to quality education",
     description:
@@ -18,7 +18,7 @@ const slides = [
     overlay: "bg-black/40",
   },
   {
-    image: hero2,
+    image: hero3,
     eyebrow: "Community First",
     title: "Every Hand We Hold Builds a Stronger Tomorrow",
     description:
@@ -27,7 +27,7 @@ const slides = [
     overlay: "bg-black/35",
   },
   {
-    image: hero3,
+    image: hero1,
     eyebrow: "Hope in Action",
     title: "Where Compassion Meets Commitment",
     description:
