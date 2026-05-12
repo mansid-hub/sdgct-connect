@@ -39,6 +39,9 @@ const Donate = () => {
     }
   }, [searchParams]);
   const [method, setMethod] = useState<Method>("razorpay");
+  const [donationType, setDonationType] = useState<
+  "one-time" | "monthly"
+>("one-time");
   const [donor, setDonor] = useState({ fullName: "", email: "", phone: "" });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [screenshot, setScreenshot] = useState<File | null>(null);
@@ -138,9 +141,39 @@ const Donate = () => {
 
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
            {/* LEFT — Form */}
-            <form onSubmit={submit} className="bg-card rounded-3xl p-7 sm:p-10 border border-border/60 shadow-soft space-y-7"> 
-                <div className="space-y-5">
-  {/* Name */}
+            <form onSubmit={submit} className="bg-card rounded-3xl p-7 sm:p-10 border border-border/60 shadow-lg space-y-7"> 
+<>
+  {/* Donation Type Tabs */}
+  <div className="flex overflow-hidden rounded-2xl border border-border mb-6">
+    <button
+      type="button"
+      onClick={() => setDonationType("one-time")}
+      className={cn(
+        "flex-1 h-14 text-sm sm:text-base font-semibold transition-all duration-300",
+        donationType === "one-time"
+          ? "bg-primary text-primary-foreground"
+          : "bg-background text-foreground hover:bg-muted"
+      )}
+    >
+      One-time
+    </button>
+
+    <button
+      type="button"
+      onClick={() => setDonationType("monthly")}
+      className={cn(
+        "flex-1 h-14 text-sm sm:text-base font-semibold transition-all duration-300",
+        donationType === "monthly"
+          ? "bg-primary text-primary-foreground"
+          : "bg-background text-foreground hover:bg-muted"
+      )}
+    >
+      Monthly
+    </button>
+  </div>
+
+  <div className="space-y-5"> 
+    {/* Name */}
   <div className="grid sm:grid-cols-2 gap-5">
     <div>
       <Label htmlFor="firstName">First Name</Label>
@@ -358,7 +391,7 @@ const Donate = () => {
               setCustom("");
             }}
             className={cn(
-              "h-11 rounded-xl font-display font-semibold border transition-base",
+              "h-11 rounded-xl font-display font-semibold border transition-all duration-300",
               active
                 ? "border-primary bg-primary text-primary-foreground"
                 : "border-border bg-background text-foreground hover:border-primary/40"
@@ -443,7 +476,7 @@ const Donate = () => {
 
       <label
         htmlFor="screenshot"
-        className="mt-2 flex items-center gap-3 h-12 px-4 rounded-xl border border-dashed border-border bg-background hover:border-primary/40 cursor-pointer transition-base"
+        className="mt-2 flex items-center gap-3 h-12 px-4 rounded-xl border border-dashed border-border bg-background hover:border-primary/40 cursor-pointer transition-all duration-300"
       >
         <Upload
           size={16}
@@ -467,10 +500,25 @@ const Donate = () => {
     </div>
   )}
 </div>
+  <Button
+  type="submit"
+  disabled={submitting}
+  className="w-full h-12 rounded-xl bg-foreground text-background hover:bg-foreground/90 font-semibold text-base"
+>
+  {submitting
+    ? "Processing..."
+    : `${
+        donationType === "monthly"
+          ? "Donate Monthly"
+          : "Donate"
+      } ₹${finalAmount.toLocaleString()}`}
+</Button>
+  </div>
+</>
             </form>
 
             {/* RIGHT — QR */}
-            <aside className="bg-card rounded-3xl p-7 sm:p-10 border border-border/60 shadow-soft">
+            <aside className="bg-card rounded-3xl p-7 sm:p-10 border border-border/60 shadow-lg">
               <div className="text-center">
                 <h2 className="font-display text-xl sm:text-2xl font-bold text-foreground">
                   Scan & Pay via UPI
@@ -479,7 +527,7 @@ const Donate = () => {
                   Use any UPI app to scan the code below.
                 </p>
 
-                <div className="mt-6 inline-block p-3 sm:p-4 bg-background rounded-2xl border border-border/60 shadow-soft">
+                <div className="mt-6 inline-block p-3 sm:p-4 bg-background rounded-2xl border border-border/60 shadow-lg">
                   <img
                     src={qrImage}
                     alt="Shri Dadasaheb Gawai Charitable Trust UPI QR code"
