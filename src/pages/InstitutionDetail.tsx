@@ -170,7 +170,8 @@ const InstitutionDetail = () => {
                 images={inst.gallery}
                 name={inst.name}
                 previewCount={
-                  inst.slug === "dr-babasaheb-ambedkar-vidyalaya-fraizarpura-dist-amravati"
+                  inst.slug === "dr-babasaheb-ambedkar-vidyalaya-fraizarpura-dist-amravati" ||
+                  inst.slug === "dr-babasaheb-ambedkar-marathi-primary-school-shyam-nagar-dist-amravati"
                     ? 4
                     : undefined
                 }
