@@ -9,21 +9,12 @@ import { cn } from "@/lib/utils";
 
 const slides = [
   {
-    image: hero2,
-    eyebrow: "Education for All",
-    title: "Empowering lives and expanding access to quality education",
-    description:
-      "For over three decades, we’ve supported the most vulnerable because talent is everywhere, but opportunity isn’t.",
-    objectPosition: "center 30%",
-    overlay: "bg-black/40",
-  },
-  {
     image: hero3,
     eyebrow: "Community First",
     title: "Every Hand We Hold Builds a Stronger Tomorrow",
     description:
       "From village schools to mobile clinics, your support powers the change happening across Vidarbha.",
-    objectPosition: "center 35%",
+    objectPosition: "center 45%",
     overlay: "bg-black/35",
   },
   {
@@ -32,8 +23,17 @@ const slides = [
     title: "Where Compassion Meets Commitment",
     description:
       "Join thousands of supporters who believe that no child should be left behind — for any reason.",
-    objectPosition: "center 75%",
+    objectPosition: "center 85%",
     overlay: "bg-black/35",
+  },
+  {
+    image: hero2,
+    eyebrow: "Education for All",
+    title: "Empowering lives and expanding access to quality education",
+    description:
+      "For over three decades, we’ve supported the most vulnerable because talent is everywhere, but opportunity isn’t.",
+    objectPosition: "center 40%",
+    overlay: "bg-black/40",
   },
 ];
 

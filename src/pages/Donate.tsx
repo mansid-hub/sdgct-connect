@@ -521,6 +521,3 @@ const Donate = () => {
 };
 
 export default Donate;
-
-
-this is the current donate page code
