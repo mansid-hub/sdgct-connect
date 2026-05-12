@@ -29,6 +29,7 @@ import ambedkarFr18 from "@/assets/ambedkar-fraizarpura-18.jpg";
 import ambedkarFr19 from "@/assets/ambedkar-fraizarpura-19.jpg";
 import ambedkarFr20 from "@/assets/ambedkar-fraizarpura-20.jpg";
 import ambedkarFr21 from "@/assets/ambedkar-fraizarpura-21.jpg";
+import devanandImg from "@/assets/success-devanand-shende.png";
 
 export type FundingType = "granted" | "self-financed";
 
