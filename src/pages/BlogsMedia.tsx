@@ -9,13 +9,14 @@ import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
 import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
 import pravinImg from "@/assets/success-pravin-waghmare.jpeg";
 import pravinImg2 from "@/assets/success-pravin-waghmare-2.jpeg";
+import pravinImg3 from "@/assets/success-pravin-waghmare-3.jpeg";
 
 const stories = [
   {
     slug: "pravin-waghmare-actor",
-    title: "Pravin Prabhakar Waghmare, Actor & Artist",
+    title: "Mr. Pravin Prabhakar Waghmare, Actor & Artist",
     image: pravinImg,
-    gallery: [pravinImg, pravinImg2],
+    gallery: [pravinImg, pravinImg2, pravinImg3],
     tagline: "An Artist Forged in Struggle (संघर्षातून उभा राहिलेला कलाकार)",
     paragraphs: [
       "A student named Pravin Prabhakar Waghmare once studied at Dr. Babasaheb Ambedkar Vidyalaya, located in the Fraizarpura locality of Amravati. He wore simple clothes, went barefoot, and carried an innocent smile on his face, yet his eyes held dreams of great magnitude. However, his family's financial circumstances were extremely dire. Pravin's father worked as a daily wage laborer, while Pravin himself would often tend to goats or take up odd jobs to contribute to the household income. Consequently, school was not a daily routine for him. Two days of school and four days of manual labor, that was how his life was unfolding.",
