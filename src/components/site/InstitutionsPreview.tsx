@@ -56,7 +56,7 @@ const InstitutionsPreview = () => {
   <div className="flex flex-col leading-tight">
     {/* BIG COUNT */}
     <div className="text-2xl sm:text-3xl font-bold text-primary">
-      {card.count}+
+      {card.count}
     </div>
 
     {/* TITLE */}
