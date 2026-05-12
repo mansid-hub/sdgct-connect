@@ -7,6 +7,7 @@ import malhara1 from "@/assets/malhara-1.png";
 import malhara2 from "@/assets/malhara-2.png";
 import malhara3 from "@/assets/malhara-3.png";
 import malhara5 from "@/assets/malhara-5.png";
+import pravinImg from "@/assets/success-pravin-waghmare.jpeg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -200,6 +201,31 @@ if (malhara) {
   malhara.successStories = malharaSuccessStories;
   malhara.image = malhara1;
   malhara.gallery = [malhara1, malhara2, malhara3, malhara5];
+}
+
+const ambedkarFraizarpuraAbout: string[] = [
+  "Dr. Babasaheb Ambedkar Vidyalaya, Fraizarpura, is a distinguished institution in the field of education, established in 1968, under the inspiration of the Honorable Dadasaheb Gavai. The school was founded with the noble objective of providing quality education to poor and needy students within the community, thereby ensuring a bright future for them.",
+  "To this day, numerous students from the surrounding areas, including Fraizarpura, Lumbini Nagar, Vadarapura, Rahul Nagar, and Panchasheel Nagar—pursue their education at this school. Beyond academics, the school consistently strives to identify the latent talents within its students, providing them with appropriate direction and guidance.",
+  "In the realm of sports, the school has earned a distinguished reputation within the Amravati district, with many students achieving remarkable success in various competitions. The school's achievements have been recognized and recorded in both the India Book of Records and the Limca Book of Records, an accomplishment that serves as a source of immense pride for the institution. This school has not only molded exemplary students, but has also contributed exemplary teachers and principals to the institution itself.",
+  "Representing a beautiful confluence of education, moral values, sports, and social commitment, Dr. Babasaheb Ambedkar Vidyalaya, Fraizarpura, continues to perform inspiring work for the betterment of society to this day.",
+];
+
+const ambedkarFraizarpuraStories = [
+  {
+    title: "Pravin Prabhakar Waghmare, Actor & Artist",
+    preview:
+      "An Artist Forged in Struggle — from a barefoot boy doing odd jobs in Fraizarpura to performing alongside leading artists in Marathi plays, films and television, Pravin's journey began when a teacher recognised the artist within him.",
+    image: pravinImg,
+    slug: "pravin-waghmare-actor",
+  },
+];
+
+const ambedkarFraizarpura = schoolsCat?.items.find(
+  (i) => i.slug === "dr-babasaheb-ambedkar-vidyalaya-fraizarpura-dist-amravati"
+);
+if (ambedkarFraizarpura) {
+  ambedkarFraizarpura.about = ambedkarFraizarpuraAbout;
+  ambedkarFraizarpura.successStories = ambedkarFraizarpuraStories;
 }
 
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
