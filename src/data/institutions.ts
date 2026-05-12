@@ -30,6 +30,18 @@ import ambedkarFr19 from "@/assets/ambedkar-fraizarpura-19.jpg";
 import ambedkarFr20 from "@/assets/ambedkar-fraizarpura-20.jpg";
 import ambedkarFr21 from "@/assets/ambedkar-fraizarpura-21.jpg";
 import devanandImg from "@/assets/success-devanand-shende.png";
+import ambedkarMr1 from "@/assets/ambedkar-marathi-1.jpg";
+import ambedkarMr2 from "@/assets/ambedkar-marathi-2.jpeg";
+import ambedkarMr3 from "@/assets/ambedkar-marathi-3.jpg";
+import ambedkarMr4 from "@/assets/ambedkar-marathi-4.jpg";
+import ambedkarMr5 from "@/assets/ambedkar-marathi-5.jpg";
+import ambedkarMr6 from "@/assets/ambedkar-marathi-6.jpg";
+import ambedkarMr7 from "@/assets/ambedkar-marathi-7.jpg";
+import ambedkarMr8 from "@/assets/ambedkar-marathi-8.jpg";
+import ambedkarMr9 from "@/assets/ambedkar-marathi-9.jpeg";
+import ambedkarMr10 from "@/assets/ambedkar-marathi-10.jpeg";
+import ambedkarMr11 from "@/assets/ambedkar-marathi-11.jpeg";
+
 
 export type FundingType = "granted" | "self-financed";
 
@@ -275,6 +287,9 @@ const ambedkarMarathiPrimary = schoolsCat?.items.find(
 if (ambedkarMarathiPrimary) {
   ambedkarMarathiPrimary.about = ambedkarMarathiPrimaryAbout;
   ambedkarMarathiPrimary.successStories = ambedkarMarathiPrimaryStories;
+  ambedkarFraizarpura.image = ambedkarMr2;
+  ambedkarFraizarpura.gallery = [ambedkarMr2, ambedkarMr3, ambedkarMr1, ambedkarMr4, ambedkarMr5, ambedkarMr6, ambedkarMr7, ambedkarMr8, ambedkarMr9, ambedkarMr10, ambedkarMr11 ];
+
 }
 
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
