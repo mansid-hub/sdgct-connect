@@ -275,7 +275,6 @@ const ambedkarMarathiPrimary = schoolsCat?.items.find(
 if (ambedkarMarathiPrimary) {
   ambedkarMarathiPrimary.about = ambedkarMarathiPrimaryAbout;
   ambedkarMarathiPrimary.successStories = ambedkarMarathiPrimaryStories;
-  ambedkarMarathiPrimary.image = devanandImg;
 }
 
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
