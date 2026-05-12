@@ -15,7 +15,7 @@ const slides = [
     title: "Every Hand We Hold Builds a Stronger Tomorrow",
     description:
       "From village schools to mobile clinics, your support powers the change happening across Vidarbha.",
-    objectPosition: "center 45%",
+    objectPosition: "center 75%",
     overlay: "bg-black/35",
   },
   {
@@ -24,7 +24,7 @@ const slides = [
     title: "Where Compassion Meets Commitment",
     description:
       "Join thousands of supporters who believe that no child should be left behind — for any reason.",
-    objectPosition: "center 85%",
+    objectPosition: "center 35%",
     overlay: "bg-black/35",
   },
   {
@@ -33,7 +33,7 @@ const slides = [
     title: "Empowering lives and expanding access to quality education",
     description:
       "For over three decades, we’ve supported the most vulnerable because talent is everywhere, but opportunity isn’t.",
-    objectPosition: "center 80%",
+    objectPosition: "center 20%",
     overlay: "bg-black/40",
   },
 ];
