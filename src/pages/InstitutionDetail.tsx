@@ -166,7 +166,15 @@ const InstitutionDetail = () => {
             )}
 
             {inst.gallery && inst.gallery.length > 0 && (
-              <InstitutionGallery images={inst.gallery} name={inst.name} />
+              <InstitutionGallery
+                images={inst.gallery}
+                name={inst.name}
+                previewCount={
+                  inst.slug === "dr-babasaheb-ambedkar-vidyalaya-fraizarpura-dist-amravati"
+                    ? 4
+                    : undefined
+                }
+              />
             )}
 
             <div className="flex items-center justify-between border-t border-border/60 pt-8 gap-3 flex-wrap">
