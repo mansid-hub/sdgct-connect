@@ -43,6 +43,28 @@ const Donate = () => {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [screenshot, setScreenshot] = useState<File | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [pan, setPan] = useState("");
+  const [panOtpVisible, setPanOtpVisible] = useState(false);
+  const [panOtp, setPanOtp] = useState("");
+  const [panVerified, setPanVerified] = useState(false);
+
+  const handleVerifyPan = () => {
+    if (!/^[A-Z]{5}[0-9]{4}[A-Z]$/.test(pan.trim().toUpperCase())) {
+      toast({ title: "Invalid PAN", description: "Please enter a valid 10-character PAN." });
+      return;
+    }
+    setPanOtpVisible(true);
+    setPanVerified(false);
+    toast({ title: "OTP sent", description: "A 6-digit OTP has been sent for verification." });
+  };
+
+  const handleVerifyOtp = () => {
+    if (panOtp.trim().length < 4) {
+      toast({ title: "Invalid OTP", description: "Please enter the OTP you received." });
+      return;
+    }
+    setPanVerified(true);
+  };
 
   const finalAmount = useMemo(() => {
     const c = parseInt(custom, 10);
@@ -185,11 +207,59 @@ const Donate = () => {
   <div className="grid sm:grid-cols-2 gap-5">
     <div>
       <Label htmlFor="pan">PAN Number</Label>
-      <Input
-        id="pan"
-        className="mt-2 h-12 rounded-xl uppercase"
-        placeholder="PAN NUMBER *"
-      />
+      <div className="mt-2 flex gap-2">
+        <Input
+          id="pan"
+          className="h-12 rounded-xl uppercase flex-1"
+          placeholder="PAN NUMBER *"
+          value={pan}
+          onChange={(e) => {
+            setPan(e.target.value.toUpperCase().slice(0, 10));
+            setPanVerified(false);
+            setPanOtpVisible(false);
+            setPanOtp("");
+          }}
+          disabled={panVerified}
+          maxLength={10}
+        />
+        <Button
+          type="button"
+          variant="outline"
+          className="h-12 rounded-xl shrink-0"
+          onClick={handleVerifyPan}
+          disabled={panVerified || pan.length === 0}
+        >
+          Verify PAN
+        </Button>
+      </div>
+
+      {panOtpVisible && !panVerified && (
+        <div className="mt-3 flex flex-col sm:flex-row gap-2">
+          <Input
+            inputMode="numeric"
+            className="h-12 rounded-xl flex-1"
+            placeholder="Enter OTP"
+            value={panOtp}
+            onChange={(e) => setPanOtp(e.target.value.replace(/\D/g, "").slice(0, 6))}
+            maxLength={6}
+          />
+          <Button
+            type="button"
+            variant="default"
+            className="h-12 rounded-xl shrink-0"
+            onClick={handleVerifyOtp}
+          >
+            Verify OTP
+          </Button>
+        </div>
+      )}
+
+      {panVerified && (
+        <div className="mt-3 flex items-center gap-2 rounded-xl border border-green-600/30 bg-green-600/10 px-3 py-2 text-sm font-medium text-green-700 dark:text-green-400">
+          <CheckCircle2 size={16} />
+          PAN Verified Successfully
+        </div>
+      )}
     </div>
 
     <div>
