@@ -33,7 +33,7 @@ const slides = [
     title: "Empowering lives and expanding access to quality education",
     description:
       "For over three decades, we’ve supported the most vulnerable because talent is everywhere, but opportunity isn’t.",
-    objectPosition: "center 20%",
+    objectPosition: "center 15%",
     overlay: "bg-black/40",
   },
 ];
@@ -53,7 +53,7 @@ const HeroSlider = () => {
   }, [active]);
 
   return (
- <section className="relative overflow-hidden h-[65vh] min-h-[420px] max-h-[580px] flex items-center text-primary-foreground">      
+ <section className="relative overflow-hidden h-[74vh] min-h-[500px] max-h-[680px] flex items-center text-primary-foreground">      
       {/* Slides */}
       {slides.map((slide, i) => (
         <div
@@ -84,7 +84,7 @@ const HeroSlider = () => {
       ))}
 
       {/* Content */}
-      <div className="container relative z-10 py-10">
+      <div className="container relative z-10 pt-16 pb-12">
         <div className="max-w-3xl">
           {slides.map((slide, i) => (
             <div key={i} className={cn(active === i ? "block" : "hidden")}>
