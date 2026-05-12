@@ -97,11 +97,11 @@ const BlogsMedia = () => {
             <ArrowLeft size={16} /> Back to all stories
           </Link>
 
-          <article className="bg-card border border-border/60 rounded-2xl overflow-hidden shadow-card">
+          <article className="bg-card border border-border/60 rounded-2xl overflow-hidden shadow-card grid md:grid-cols-[360px_1fr]">
             <img
               src={story.image}
               alt={story.title}
-              className="w-full max-h-[480px] object-cover object-center"
+              className="w-full h-full max-h-80 md:max-h-none object-cover object-top"
             />
             <div className="p-6 sm:p-8">
               <h1 className="text-2xl sm:text-3xl font-display font-bold text-foreground leading-snug">

@@ -8,6 +8,12 @@ import malhara2 from "@/assets/malhara-2.png";
 import malhara3 from "@/assets/malhara-3.png";
 import malhara5 from "@/assets/malhara-5.png";
 import pravinImg from "@/assets/success-pravin-waghmare.jpeg";
+import ambedkarFr1 from "@/assets/ambedkar-fraizarpura-1.jpeg";
+import ambedkarFr2 from "@/assets/ambedkar-fraizarpura-2.jpeg";
+import ambedkarFr3 from "@/assets/ambedkar-fraizarpura-3.jpeg";
+import ambedkarFr4 from "@/assets/ambedkar-fraizarpura-4.jpeg";
+import ambedkarFr5 from "@/assets/ambedkar-fraizarpura-5.jpeg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-6.jpeg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -226,6 +232,8 @@ const ambedkarFraizarpura = schoolsCat?.items.find(
 if (ambedkarFraizarpura) {
   ambedkarFraizarpura.about = ambedkarFraizarpuraAbout;
   ambedkarFraizarpura.successStories = ambedkarFraizarpuraStories;
+  ambedkarFraizarpura.image = ambedkarFr2;
+  ambedkarFraizarpura.gallery = [ambedkarFr2, ambedkarFr3, ambedkarFr1, ambedkarFr4, ambedkarFr5, ambedkarFr6];
 }
 
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
