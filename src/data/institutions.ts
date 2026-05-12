@@ -14,6 +14,21 @@ import ambedkarFr3 from "@/assets/ambedkar-fraizarpura-3.jpeg";
 import ambedkarFr4 from "@/assets/ambedkar-fraizarpura-4.jpeg";
 import ambedkarFr5 from "@/assets/ambedkar-fraizarpura-5.jpeg";
 import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-6.jpeg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-7.jpeg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-8.jpeg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-9.jpeg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-10.jpeg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-11.jpeg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-12.jpeg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-13.jpeg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-14.jpeg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-15.jpg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-16.jpg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-17.jpg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-18.jpg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-19.jpg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-20.jpg";
+import ambedkarFr6 from "@/assets/ambedkar-fraizarpura-21.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -233,7 +248,7 @@ if (ambedkarFraizarpura) {
   ambedkarFraizarpura.about = ambedkarFraizarpuraAbout;
   ambedkarFraizarpura.successStories = ambedkarFraizarpuraStories;
   ambedkarFraizarpura.image = ambedkarFr2;
-  ambedkarFraizarpura.gallery = [ambedkarFr2, ambedkarFr3, ambedkarFr1, ambedkarFr4, ambedkarFr5, ambedkarFr6];
+  ambedkarFraizarpura.gallery = [ambedkarFr2, ambedkarFr3, ambedkarFr1, ambedkarFr4, ambedkarFr5, ambedkarFr6, ambedkarFr7, ambedkarFr8, ambedkarFr9, ambedkarFr10, ambedkarFr11, ambedkarFr12, ambedkarFr13, ambedkarFr14, ambedkarFr15, ambedkarFr16, ambedkarFr17, ambedkarFr18, ambedkarFr19, ambedkarFr20, ambedkarFr21, ];
 }
 
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
