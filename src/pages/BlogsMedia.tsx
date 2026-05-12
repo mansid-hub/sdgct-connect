@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import Layout from "@/components/site/Layout";
+import InstitutionGallery from "@/components/site/InstitutionGallery";
 import { ArrowLeft } from "lucide-react";
 
 import fallbackImg from "@/assets/initiative-education.jpg";
@@ -113,15 +114,8 @@ const BlogsMedia = () => {
                 ))}
               </div>
               {"gallery" in story && Array.isArray((story as { gallery?: string[] }).gallery) && (
-                <div className="mt-8 grid grid-cols-2 gap-4">
-                  {(story as { gallery: string[] }).gallery.map((src, i) => (
-                    <img
-                      key={i}
-                      src={src}
-                      alt={`${story.title} - ${i + 1}`}
-                      className="w-full h-56 object-cover rounded-xl border border-border/60"
-                    />
-                  ))}
+                <div className="mt-8">
+                  <InstitutionGallery images={(story as { gallery: string[] }).gallery} name={story.title} />
                 </div>
               )}
             </div>
