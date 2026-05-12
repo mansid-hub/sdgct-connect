@@ -9,8 +9,23 @@ import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
 import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
 import pravinImg from "@/assets/success-pravin-waghmare.jpeg";
 import pravinImg3 from "@/assets/success-pravin-waghmare-3.jpeg";
+import devanandImg from "@/assets/success-devanand-shende.png";
+import devanandImg2 from "@/assets/success-devanand-shende-2.png";
 
 const stories = [
+  {
+    slug: "devanand-shende-teacher",
+    title: "Mr. Devanand Suresh Shende, Teacher at Dr. Babasaheb Ambedkar Marathi Primary School",
+    image: devanandImg,
+    gallery: [devanandImg, devanandImg2],
+    tagline:
+      "From a daily wage laborer's son to an educator shaping young minds — a cornerstone of educational empowerment.",
+    paragraphs: [
+      "Devanand Suresh Shende was a student at the Dr. Babasaheb Ambedkar Marathi Primary School, back in 1998. The distance between his home and the school was 5 kilometers, which he would travel by foot, come rain or storm, or in this case, in the scorching Amravati heat. Hailing from an extremely impoverished background, his parents worked as daily wage laborers; where neither his mother nor his father had received any formal education. His household consisted of a family of six; himself and his three sisters, along with his parents.",
+      "From a very young age, he harbored a firm resolve to become a teacher. However, his family could not provide financial support for his education. To fund his studies, he worked the night shift at a blood bank and attended college during the day. Despite these arduous circumstances, he persevered in his academic pursuits. He successfully completed his higher education at Takshashila College, run by the same Dadasaheb Gawai Trust that supported his school, and graduated with a M.A. in D.T.Ed.",
+      "Today, the very corridors through which Devanand once walked with dreams in his eyes now echo with his words of wisdom as a teacher. His journey stands as a living testament that circumstances may delay success, but they can never defeat a person whose resolve is stronger than adversity.",
+    ],
+  },
   {
     slug: "pravin-waghmare-actor",
     title: "Mr. Pravin Prabhakar Waghmare, Actor & Artist",
