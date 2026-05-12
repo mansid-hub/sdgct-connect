@@ -29,6 +29,7 @@ import ambedkarFr18 from "@/assets/ambedkar-fraizarpura-18.jpg";
 import ambedkarFr19 from "@/assets/ambedkar-fraizarpura-19.jpg";
 import ambedkarFr20 from "@/assets/ambedkar-fraizarpura-20.jpg";
 import ambedkarFr21 from "@/assets/ambedkar-fraizarpura-21.jpg";
+import devanandImg from "@/assets/success-devanand-shende.png";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -249,6 +250,31 @@ if (ambedkarFraizarpura) {
   ambedkarFraizarpura.successStories = ambedkarFraizarpuraStories;
   ambedkarFraizarpura.image = ambedkarFr2;
   ambedkarFraizarpura.gallery = [ambedkarFr2, ambedkarFr3, ambedkarFr1, ambedkarFr4, ambedkarFr5, ambedkarFr6, ambedkarFr7, ambedkarFr8, ambedkarFr9, ambedkarFr10, ambedkarFr11, ambedkarFr12, ambedkarFr13, ambedkarFr14, ambedkarFr15, ambedkarFr16, ambedkarFr17, ambedkarFr18, ambedkarFr19, ambedkarFr20, ambedkarFr21, ];
+}
+
+const ambedkarMarathiPrimaryAbout: string[] = [
+  "Dr. Babasaheb Ambedkar Marathi Primary School, Shyam Nagar, now located in Fraizarpura, is an educational institution established in 1983 under the inspiration of the Honorable Dadasaheb Gavai. Founded with the mission of providing quality education to poor and underprivileged children, the school has become a pillar of transformation for families across Fraizarpura, Yashoda Nagar, Rahul Nagar, and Uttam Nagar.",
+  "More than just an educational institution, the school is a nurturing home where teachers dedicate themselves to shaping the future of every child with love, care, and unwavering commitment. The educators treat students like their own children, standing beside them through every challenge while instilling confidence, discipline, moral values, and the courage to dream beyond limitations. Along with academic excellence, the school actively identifies and nurtures hidden talents in sports, leadership, creativity, and social responsibility.",
+  "The success of its alumni exhibits the school's transformative impact. Former students have gone on to achieve distinguished positions in various fields, bringing honor to their families, community, and alma mater. One such alumnus was recently recognized with the prestigious \"Ideal Teacher Award,\" reflecting the strong values and inspiration nurtured within the school.",
+  "Driven by the belief that education is the foundation of social change, Dr. Babasaheb Ambedkar Marathi Primary School continues its inspiring mission of empowering children and building an empowered society.",
+];
+
+const ambedkarMarathiPrimaryStories = [
+  {
+    title: "Mr. Devanand Suresh Shende, Teacher at Dr. Babasaheb Ambedkar Marathi Primary School",
+    preview:
+      "From a daily wage laborer's son to an educator shaping young minds, Devanand Shende's story is not just a success story, it is a cornerstone of educational empowerment for every child who dares to dream beyond limitations.",
+    image: devanandImg,
+    slug: "devanand-shende-teacher",
+  },
+];
+
+const ambedkarMarathiPrimary = schoolsCat?.items.find(
+  (i) => i.slug === "dr-babasaheb-ambedkar-marathi-primary-school-shyam-nagar-dist-amravati"
+);
+if (ambedkarMarathiPrimary) {
+  ambedkarMarathiPrimary.about = ambedkarMarathiPrimaryAbout;
+  ambedkarMarathiPrimary.successStories = ambedkarMarathiPrimaryStories;
 }
 
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
