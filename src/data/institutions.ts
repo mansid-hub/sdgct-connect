@@ -313,6 +313,7 @@ if (kamaljyot) {
   kamaljyot.about = kamaljyotAbout;
   kamaljyot.image = kamaljyot1;
   kamaljyot.gallery = [kamaljyot1, kamaljyot2, kamaljyot3, kamaljyot4, kamaljyot5, kamaljyot6];
+  kamaljyot.highlights = [];
 }
 
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
