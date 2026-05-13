@@ -63,6 +63,15 @@ import krushnakamal2 from "@/assets/krushnakamal-2.jpeg";
 import krushnakamal3 from "@/assets/krushnakamal-3.jpg";
 import krushnakamal4 from "@/assets/krushnakamal-4.jpg";
 import krushnakamal5 from "@/assets/krushnakamal-5.jpeg";
+import krushnakamal6 from "@/assets/krushnakamal-6.jpeg";
+import krushnakamal7 from "@/assets/krushnakamal-7.jpeg";
+import krushnakamal8 from "@/assets/krushnakamal-8.jpeg";
+import krushnakamal9 from "@/assets/krushnakamal-9.jpeg";
+import krushnakamal10 from "@/assets/krushnakamal-10.jpeg";
+import krushnakamal11 from "@/assets/krushnakamal-11.jpeg";
+import krushnakamal12 from "@/assets/krushnakamal-12.jpeg";
+import krushnakamal13 from "@/assets/krushnakamal-13.jpeg";
+
 import omprakashImg from "@/assets/success-omprakash-jambekar.jpg";
 
 
@@ -359,8 +368,8 @@ const krushnakamal = schoolsCat?.items.find(
 if (krushnakamal) {
   krushnakamal.about = krushnakamalAbout;
   krushnakamal.successStories = krushnakamalStories;
-  krushnakamal.image = krushnakamal1;
-  krushnakamal.gallery = [krushnakamal1, krushnakamal2, krushnakamal3, krushnakamal4, krushnakamal5];
+  krushnakamal.image = krushnakamal3;
+  krushnakamal.gallery = [krushnakamal1, krushnakamal2, krushnakamal3, krushnakamal4, krushnakamal5, krushnakamal6, krushnakamal7, krushnakamal8, krushnakamal9, krushnakamal10, krushnakamal11, krushnakamal12, krushnakamal13];
   krushnakamal.highlights = [];
 }
 
