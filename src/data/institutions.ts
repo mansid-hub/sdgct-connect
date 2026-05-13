@@ -287,7 +287,7 @@ const ambedkarMarathiPrimary = schoolsCat?.items.find(
 if (ambedkarMarathiPrimary) {
   ambedkarMarathiPrimary.about = ambedkarMarathiPrimaryAbout;
   ambedkarMarathiPrimary.successStories = ambedkarMarathiPrimaryStories;
-  ambedkarMarathiPrimary.image = ambedkarMr2;
+  ambedkarMarathiPrimary.image = ambedkarMa2;
   ambedkarMarathiPrimary.gallery = [ambedkarMa2, ambedkarMa3, ambedkarMa1, ambedkarMa4, ambedkarMa5, ambedkarMa6, ambedkarMa7, ambedkarMa8, ambedkarMa9, ambedkarMa10, ambedkarMa11, ];
 
 }
