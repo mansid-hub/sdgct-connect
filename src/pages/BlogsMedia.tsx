@@ -11,8 +11,22 @@ import pravinImg from "@/assets/success-pravin-waghmare.jpeg";
 import pravinImg3 from "@/assets/success-pravin-waghmare-3.jpeg";
 import devanandImg from "@/assets/success-devanand-shende.png";
 import devanandImg2 from "@/assets/success-devanand-shende-2.png";
+import krushnakamal2 from "@/assets/krushnakamal-2.jpeg";
 
 const stories = [
+  {
+    slug: "omprakash-jambekar-agriculture-officer",
+    title: "Mr. Omprakash Harilal Jambekar, Agricultural Assistant Officer, Central Institute for Cotton Research, Nagpur",
+    image: krushnakamal2,
+    tagline:
+      "A beacon of hope for an entire community — overcoming adversity, rebuilding self-confidence, and proving that determination, guidance, and compassion can transform a life.",
+    paragraphs: [
+      "This is not merely the story of one student's achievement, but a beacon of hope for an entire community — a story of overcoming adversity, rebuilding self-confidence, and proving that with determination, guidance, and compassion, one's life can truly be transformed.",
+      "From a remote corner of the Dharni Ghat region emerged a young boy whose parents worked tirelessly as laborers, struggling every day simply to provide food for the family. Their home was a fragile mud-and-wattle hut, built with whatever little they had. There were days when even two proper meals seemed impossible. The distance between his village and school was nearly 190 kilometers. Even today, many parts of his area have no proper roads, no healthcare facilities, no mobile network, and only the most basic living amenities. Despite these hardships, Omprakash pursued his education at Krushnakamal Adiwasi Anudanit Ashram School, Ner Pingalai, from Class 3 to 10. However, years of poverty, emotional stress, and social pressure deeply affected him. He developed a severe stammer, lost confidence, and began questioning his future. Hurtful remarks from villagers and classmates pushed him further into self-doubt.",
+      "Just when life seemed overwhelmed by darkness, the teachers and staff of Krushnakamal Ashram School became his guiding light — they became his family. They believed in him when he had stopped believing in himself. Through personal counseling, meditation, disciplined routines, public speaking practice, and constant encouragement, they helped him slowly rebuild his confidence. For five years, they stood beside him unwaveringly. Slowly, transformation began and Omprakash started gaining control over his speech. Every day, he reminded himself: \u201cI will not give up. I will change. I will win.\u201d His perseverance finally bore fruit when he secured first rank in his school in Class 10 during the 2016\u201317 academic year. Today, Omprakash proudly serves as an Agricultural Assistant Officer at the Central Institute for Cotton Research, Nagpur.",
+      "That achievement was not merely a personal success. It was a moment of pride for his struggling parents, for every teacher who stood beside him, for the school that nurtured him, and for the entire community that witnessed his transformation. Today, he lives with dignity, happiness, and hope for an even more promising future. His story is a reminder that even the darkest struggles can lead to the brightest victories.",
+    ],
+  },
   {
     slug: "devanand-shende-teacher",
     title: "Mr. Devanand Suresh Shende, Teacher at Dr. Babasaheb Ambedkar Marathi Primary School",
