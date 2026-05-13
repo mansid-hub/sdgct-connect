@@ -47,6 +47,18 @@ import kamaljyot3 from "@/assets/kamaljyot-3.jpg";
 import kamaljyot4 from "@/assets/kamaljyot-4.jpg";
 import kamaljyot5 from "@/assets/kamaljyot-5.jpg";
 import kamaljyot6 from "@/assets/kamaljyot-6.jpg";
+import kamaljyot7 from "@/assets/kamaljyot-7.jpg";
+import kamaljyot8 from "@/assets/kamaljyot-8.jpg";
+import kamaljyot9 from "@/assets/kamaljyot-9.jpg";
+import kamaljyot10 from "@/assets/kamaljyot-10.jpg";
+import kamaljyot11 from "@/assets/kamaljyot-11.jpg";
+import kamaljyot12 from "@/assets/kamaljyot-12.jpg";
+import kamaljyot13 from "@/assets/kamaljyot-13.jpg";
+import kamaljyot14 from "@/assets/kamaljyot-14.jpg";
+import kamaljyot15 from "@/assets/kamaljyot-15.jpg";
+import kamaljyot16 from "@/assets/kamaljyot-16.jpg";
+import kamaljyot17 from "@/assets/kamaljyot-17.jpg";
+
 
 
 export type FundingType = "granted" | "self-financed";
@@ -312,7 +324,7 @@ const kamaljyot = schoolsCat?.items.find(
 if (kamaljyot) {
   kamaljyot.about = kamaljyotAbout;
   kamaljyot.image = kamaljyot1;
-  kamaljyot.gallery = [kamaljyot1, kamaljyot2, kamaljyot3, kamaljyot4, kamaljyot5, kamaljyot6];
+  kamaljyot.gallery = [kamaljyot1, kamaljyot2, kamaljyot3, kamaljyot4, kamaljyot5, kamaljyot6, kamaljyot7, kamaljyot8, kamaljyot9, kamaljyot10, kamaljyot11, kamaljyot12, kamaljyot13, kamaljyot14, kamaljyot15, kamaljyot16, kamaljyot17];
   kamaljyot.highlights = [];
 }
 
