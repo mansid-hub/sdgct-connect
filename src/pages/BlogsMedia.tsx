@@ -11,13 +11,15 @@ import pravinImg from "@/assets/success-pravin-waghmare.jpeg";
 import pravinImg3 from "@/assets/success-pravin-waghmare-3.jpeg";
 import devanandImg from "@/assets/success-devanand-shende.png";
 import devanandImg2 from "@/assets/success-devanand-shende-2.png";
-import krushnakamal2 from "@/assets/krushnakamal-2.jpeg";
+import omprakashImg from "@/assets/success-omprakash-jambekar.jpg";
+import omprakashImg2 from "@/assets/success-omprakash-jambekar-2.jpg";
 
 const stories = [
   {
     slug: "omprakash-jambekar-agriculture-officer",
     title: "Mr. Omprakash Harilal Jambekar, Agricultural Assistant Officer, Central Institute for Cotton Research, Nagpur",
-    image: krushnakamal2,
+    image: omprakashImg,
+    gallery: [omprakashImg, omprakashImg2],
     tagline:
       "A beacon of hope for an entire community — overcoming adversity, rebuilding self-confidence, and proving that determination, guidance, and compassion can transform a life.",
     paragraphs: [

@@ -63,6 +63,7 @@ import krushnakamal2 from "@/assets/krushnakamal-2.jpeg";
 import krushnakamal3 from "@/assets/krushnakamal-3.jpg";
 import krushnakamal4 from "@/assets/krushnakamal-4.jpg";
 import krushnakamal5 from "@/assets/krushnakamal-5.jpeg";
+import omprakashImg from "@/assets/success-omprakash-jambekar.jpg";
 
 
 
@@ -347,7 +348,7 @@ const krushnakamalStories = [
     title: "Mr. Omprakash Harilal Jambekar, Agricultural Assistant Officer, Central Institute for Cotton Research, Nagpur",
     preview:
       "From a remote corner of the Dharni Ghat region to becoming an Agricultural Assistant Officer — Omprakash's story is a beacon of hope, resilience, and the transformative power of compassionate guidance.",
-    image: krushnakamal2,
+    image: omprakashImg,
     slug: "omprakash-jambekar-agriculture-officer",
   },
 ];
