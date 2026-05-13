@@ -41,6 +41,12 @@ import ambedkarMa8 from "@/assets/ambedkar-marathi-8.jpg";
 import ambedkarMa9 from "@/assets/ambedkar-marathi-9.jpeg";
 import ambedkarMa10 from "@/assets/ambedkar-marathi-10.jpeg";
 import ambedkarMa11 from "@/assets/ambedkar-marathi-11.jpeg";
+import kamaljyot1 from "@/assets/kamaljyot-1.png";
+import kamaljyot2 from "@/assets/kamaljyot-2.jpg";
+import kamaljyot3 from "@/assets/kamaljyot-3.jpg";
+import kamaljyot4 from "@/assets/kamaljyot-4.jpg";
+import kamaljyot5 from "@/assets/kamaljyot-5.jpg";
+import kamaljyot6 from "@/assets/kamaljyot-6.jpg";
 
 
 export type FundingType = "granted" | "self-financed";
@@ -290,6 +296,23 @@ if (ambedkarMarathiPrimary) {
   ambedkarMarathiPrimary.image = ambedkarMa2;
   ambedkarMarathiPrimary.gallery = [ambedkarMa2, ambedkarMa3, ambedkarMa1, ambedkarMa4, ambedkarMa5, ambedkarMa6, ambedkarMa7, ambedkarMa8, ambedkarMa9, ambedkarMa10, ambedkarMa11, ];
 
+}
+
+const kamaljyotAbout: string[] = [
+  "Established in 1995, Kamaljyot Marathi Primary and Middle School, Navasari, has been steadfastly serving as a center of learning, hope, and empowerment for children from underserved communities. Located in Mahatma Phule Nagar, the school has consistently worked towards transforming the lives of students from backward, remote, slum, and tribal (tanda) areas by providing them access to quality education and a nurturing environment.",
+  "Over the years, the school has inspired countless students to pursue successful careers in government services, private sectors, professional fields, and social leadership. The institution strongly believes that education is the most powerful tool for breaking the cycle of poverty and creating future possibilities for families and communities. With this vision, the teachers and staff work tirelessly to ensure that every child receives encouragement, guidance, and opportunities to grow with confidence and dignity.",
+  "Beyond academics, the school focuses on practical and value-based learning that prepares students for real-life challenges. Despite operating within limited space and resources, the school has introduced an innovative bank-like learning model in their administrative office to teach children the importance of finance, saving habits, and basic banking concepts from an early age. This unique initiative helps students develop financial awareness, responsibility, and life skills that will benefit them in the future.",
+  "The school also nurtures moral values, discipline, creativity, and social awareness, helping students become responsible and self-reliant citizens. Teachers remain deeply committed to ensuring that children from marginalized communities remain connected to education and continue progressing toward a better future.",
+  "While the school continues to face problems related to infrastructure and educational facilities, its dedication to the welfare and development of children remains unwavering. Guided by the belief that \u201ctoday\u2019s children are the future of tomorrow,\u201d Kamaljyot Primary Marathi School continues to make a meaningful and lasting impact through education, innovation, and community upliftment.",
+];
+
+const kamaljyot = schoolsCat?.items.find(
+  (i) => i.slug === "kamaljyot-marathi-primary-and-middle-school-navasari-dist-amravati"
+);
+if (kamaljyot) {
+  kamaljyot.about = kamaljyotAbout;
+  kamaljyot.image = kamaljyot1;
+  kamaljyot.gallery = [kamaljyot1, kamaljyot2, kamaljyot3, kamaljyot4, kamaljyot5, kamaljyot6];
 }
 
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
