@@ -41,6 +41,12 @@ import ambedkarMa8 from "@/assets/ambedkar-marathi-8.jpg";
 import ambedkarMa9 from "@/assets/ambedkar-marathi-9.jpeg";
 import ambedkarMa10 from "@/assets/ambedkar-marathi-10.jpeg";
 import ambedkarMa11 from "@/assets/ambedkar-marathi-11.jpeg";
+import kamaljyot1 from "@/assets/kamaljyot-1.png";
+import kamaljyot2 from "@/assets/kamaljyot-2.jpg";
+import kamaljyot3 from "@/assets/kamaljyot-3.jpg";
+import kamaljyot4 from "@/assets/kamaljyot-4.jpg";
+import kamaljyot5 from "@/assets/kamaljyot-5.jpg";
+import kamaljyot6 from "@/assets/kamaljyot-6.jpg";
 
 
 export type FundingType = "granted" | "self-financed";
