@@ -54,7 +54,7 @@ const InstitutionGallery = ({ images, name, previewCount }: Props) => {
                 src={src}
                 alt={`${name} gallery image ${i + 1}`}
                 loading="lazy"
-                className="h-full w-full object-cover transition-smooth group-hover:scale-105"
+                className="h-full w-full object-cover object-top transition-smooth group-hover:scale-105"
               />
               {isLastPreview && (
                 <div className="absolute inset-0 bg-black/60 text-white flex flex-col items-center justify-center font-semibold transition-base group-hover:bg-black/70">
