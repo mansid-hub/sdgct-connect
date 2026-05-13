@@ -333,6 +333,36 @@ if (kamaljyot) {
   kamaljyot.highlights = [];
 }
 
+const krushnakamalAbout: string[] = [
+  "In a remote region of Maharashtra, Krushnakamal Adiwasi Anudanit Ashram School, Ner Pingalai, also called Krushnakamal Aided Tribal Ashram School, has become a symbol of hope, transformation, and opportunity for tribal children and their communities. Established in 2003, serving predominantly tribal students, the school provides free, quality education while nurturing every child with compassion, dignity, and care.",
+  "What makes the institution truly remarkable is the dedication of its teachers and staff, who go far beyond the call of duty. Many children arrive from remote villages without exposure to basic hygiene, structured living, or emotional support. Teachers personally guide them in daily habits such as cleanliness, bathing, discipline, and self-care, helping build confidence and self-respect. The residential hostel serves not just as accommodation, but as a safe and loving home where children feel protected and valued.",
+  "During the COVID-19 pandemic, the strong emotional bond between the students and the school became deeply evident. Many children were reluctant to return to their villages because the school had become their place of security, nourishment, care, and stability. This reflects the trust the tribal community places in the institution and the transformative role it plays in their lives.",
+  "Beyond academics, the school focuses on holistic development by equipping students with computer literacy, agriculture knowledge, vocational skills, handicrafts, technology, and practical life skills. Daily meditation and value-based practices help nurture confidence, positivity, and emotional well-being.",
+  "Since 2015, the school has consistently achieved a 100% Class 10 board examination result, while students continue to excel in state and departmental sports competitions. Many alumni now serve in government sectors including forestry, healthcare, agriculture, revenue, and education.",
+  "Krushnakamal Aided Tribal Ashram School stands today as more than a school — it is a transformative force empowering tribal children, strengthening rural communities, and building a self-reliant future for generations to come.",
+];
+
+const krushnakamalStories = [
+  {
+    title: "Mr. Omprakash Harilal Jambekar, Agricultural Assistant Officer, Central Institute for Cotton Research, Nagpur",
+    preview:
+      "From a remote corner of the Dharni Ghat region to becoming an Agricultural Assistant Officer — Omprakash's story is a beacon of hope, resilience, and the transformative power of compassionate guidance.",
+    image: krushnakamal2,
+    slug: "omprakash-jambekar-agriculture-officer",
+  },
+];
+
+const krushnakamal = schoolsCat?.items.find(
+  (i) => i.slug === "krushnakamal-adiwasi-anudanit-ashram-school-ner-pingalai-tq-morshi-dist-amravati"
+);
+if (krushnakamal) {
+  krushnakamal.about = krushnakamalAbout;
+  krushnakamal.successStories = krushnakamalStories;
+  krushnakamal.image = krushnakamal1;
+  krushnakamal.gallery = [krushnakamal1, krushnakamal2, krushnakamal3, krushnakamal4, krushnakamal5];
+  krushnakamal.highlights = [];
+}
+
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
   categories
     .filter((c) => (parent ? c.parent === parent : true))
