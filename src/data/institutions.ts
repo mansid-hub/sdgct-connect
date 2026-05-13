@@ -58,6 +58,11 @@ import kamaljyot14 from "@/assets/kamaljyot-14.jpg";
 import kamaljyot15 from "@/assets/kamaljyot-15.jpg";
 import kamaljyot16 from "@/assets/kamaljyot-16.jpg";
 import kamaljyot17 from "@/assets/kamaljyot-17.jpg";
+import krushnakamal1 from "@/assets/krushnakamal-1.jpeg";
+import krushnakamal2 from "@/assets/krushnakamal-2.jpeg";
+import krushnakamal3 from "@/assets/krushnakamal-3.jpg";
+import krushnakamal4 from "@/assets/krushnakamal-4.jpg";
+import krushnakamal5 from "@/assets/krushnakamal-5.jpeg";
 
 
 
