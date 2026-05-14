@@ -14,6 +14,7 @@ import Institution from "./pages/Institution.tsx";
 import Colleges from "./pages/Colleges.tsx";
 import Hospitals from "./pages/Hospitals.tsx";
 import InstitutionRouter from "./pages/InstitutionRouter.tsx";
+import InstitutionList from "./pages/InstitutionList.tsx";
 import ScrollToTop from "./components/site/ScrollToTop.tsx";
 import WhyUs from "@/pages/WhyUs";
 import Media from "@/pages/Media";
@@ -48,6 +49,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/institution" element={<Institution />} />
+          <Route path="/institution/schools" element={<InstitutionList categorySlug="schools" />} />
           <Route path="/institution/colleges" element={<Colleges />} />
           <Route path="/institution/hospitals" element={<Hospitals />} />
           <Route path="/institution/:parent/:slug" element={<InstitutionRouter />} />
