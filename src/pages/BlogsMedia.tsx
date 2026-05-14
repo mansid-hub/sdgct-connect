@@ -14,13 +14,17 @@ import devanandImg2 from "@/assets/success-devanand-shende-2.png";
 import omprakashImg from "@/assets/success-omprakash-jambekar.jpg";
 import omprakashImg2 from "@/assets/success-omprakash-jambekar-2.jpg";
 import omprakashImg3 from "@/assets/success-omprakash-jambekar-3.jpg";
-import rajnandiniImg from "@/assets/madan-5.jpg";
+import rajnandiniGroup from "@/assets/success-rajnandini-group.jpg";
+import rajnandiniCert from "@/assets/success-rajnandini-certificate.jpg";
+import rajnandiniNaik from "@/assets/success-rajnandini-naik.jpg";
+import rajnandiniSandeepNaik from "@/assets/success-rajnandini-sandeep-naik.jpg";
 
 const stories = [
   {
     slug: "rajnandini-naik-sikai-martial-art",
     title: "Ms. Rajnandini Sandeep Naik, National-level Gold Medalist in Sikai Martial Art",
-    image: rajnandiniImg,
+    image: rajnandiniGroup,
+    gallery: [rajnandiniCert, rajnandiniNaik, rajnandiniSandeepNaik],
     tagline:
       "A national Gold Medalist in Sikai Martial Art \u2014 a story of courage, discipline and perseverance against all odds.",
     paragraphs: [
