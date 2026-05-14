@@ -14,8 +14,23 @@ import devanandImg2 from "@/assets/success-devanand-shende-2.png";
 import omprakashImg from "@/assets/success-omprakash-jambekar.jpg";
 import omprakashImg2 from "@/assets/success-omprakash-jambekar-2.jpg";
 import omprakashImg3 from "@/assets/success-omprakash-jambekar-3.jpg";
+import rajnandiniImg from "@/assets/madan-5.jpg";
 
 const stories = [
+  {
+    slug: "rajnandini-naik-sikai-martial-art",
+    title: "Ms. Rajnandini Sandeep Naik, National-level Gold Medalist in Sikai Martial Art",
+    image: rajnandiniImg,
+    tagline:
+      "A national Gold Medalist in Sikai Martial Art \u2014 a story of courage, discipline and perseverance against all odds.",
+    paragraphs: [
+      "Rajnandini Sandeep Naik is a remarkable example of courage, determination, and the power of perseverance. A student of Madan Maharaj Vidyalaya and Kamaldeep Junior College, Rajnandini began her educational journey in the modest surroundings of her village\u2019s Zilla Parishad school. Coming from a financially struggling family, with parents who earn their livelihood by working in others' fields on a daily basis, she faced numerous hardships from an early age, yet her spirit to rise above challenges never weakened.",
+      "Alongside her studies, Rajnandini nurtured a deep passion for sports and dreamed of achieving something extraordinary. Her life took a transformative turn after joining Madan Maharaj Vidyalaya, where her talent and determination were recognized by her sports mentor, Vidhale Sir. Under his guidance, she discovered her true calling in Sikai Martial Art, an ancient, traditional sword-based martial art from Kashmir that emphasizes speed, agility, and self-defense.",
+      "Despite limited access to equipment and training facilities, Rajnandini refused to let circumstances define her future. She practiced tirelessly every day after school, displaying exceptional discipline, resilience, and dedication. Her hard work soon began to shine through as she achieved success at taluka, district, and state-level competitions.",
+      "In 2024, Rajnandini\u2019s relentless efforts culminated in a proud and historic achievement when she won the Gold Medal in Sikai Martial Art at the national-level championship. Her victory brought immense pride not only to her school and family, but to her entire village.",
+      "An excellent student and an inspiration to her peers, Rajnandini Sandeep Naik dreams of representing India on the international stage. Her journey stands as a powerful reminder that with determination, guidance, and unwavering self-belief, no obstacle is too great to overcome.",
+    ],
+  },
   {
     slug: "omprakash-jambekar-agriculture-officer",
     title: "Mr. Omprakash Harilal Jambekar, Agricultural Assistant Officer, Central Institute for Cotton Research, Nagpur",

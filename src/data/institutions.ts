@@ -73,6 +73,11 @@ import krushnakamal12 from "@/assets/krushnakamal-12.jpeg";
 import krushnakamal13 from "@/assets/krushnakamal-13.jpeg";
 
 import omprakashImg from "@/assets/success-omprakash-jambekar.jpg";
+import madan1 from "@/assets/madan-1.jpg";
+import madan2 from "@/assets/madan-2.jpg";
+import madan3 from "@/assets/madan-3.jpg";
+import madan4 from "@/assets/madan-4.jpg";
+import madan5 from "@/assets/madan-5.jpg";
 
 
 
@@ -409,6 +414,35 @@ if (krushnakamal) {
   krushnakamal.image = krushnakamal3;
   krushnakamal.gallery = [krushnakamal1, krushnakamal2, krushnakamal3, krushnakamal4, krushnakamal5, krushnakamal6, krushnakamal7, krushnakamal8, krushnakamal9, krushnakamal10, krushnakamal11, krushnakamal12, krushnakamal13];
   krushnakamal.highlights = [];
+}
+
+const madanAbout: string[] = [
+  "Madan Maharaj Vidyalaya, Fulamla (established in 1969) and Kamaldeep Junior College, Fulamla (established in 2002) are educational institutions that have emerged from the vision of the late leader Shri Dadasaheb Gavai. These institutions were established with the noble intention of providing educational opportunities to the students of rural and remote areas, where basic educational facilities and proper roads for commuting were lacking, in such a situation, to provide education to the poor and disadvantaged sections.",
+  "Fulamla village is located at the end of Nandgaon Khandeshwar Taluka of Amravati district, near the district border. Earlier, this area lacked educational and other basic facilities. In such a situation, Dadasaheb Gavai, with the cooperation of local citizens, laid a strong foundation of education here. Due to his efforts, today a strong tradition of education has been created in this area.",
+  "More than fifty years have passed since the establishment of Madan Maharaj Vidyalaya, and during this period the school has made continuous progress. Along with academic excellence, the school has also performed remarkably in various government competitions and initiatives. Students have participated in district and state level competitions and have often achieved remarkable ranks. In particular, by achieving district-level rankings twice in a row under the campaign \u201cMukhyamantri Majhi Shala Sundar Shala\u201d, the awards received have been effectively utilized for the physical and academic development of the school. This has made the school\u2019s infrastructure more efficient and provided a conducive and inspiring environment for the students.",
+  "This institution offers education from class 5 to 12, and most of the students studying here are from ordinary and economically weak families. The school is continuously working to instill a love of education in such students and make them well-educated, responsible and capable citizens.",
+  "Overall, Madan Maharaj Vidyalaya and Kamaldeep Junior College are not just educational institutions but also function as centers of social upliftment and educational advancement in rural areas.",
+];
+
+const madanStories = [
+  {
+    title: "Ms. Rajnandini Sandeep Naik, National-level Gold Medalist in Sikai Martial Art",
+    preview:
+      "From a Zilla Parishad school in her village to winning a national Gold Medal in Sikai Martial Art \u2014 Rajnandini\u2019s journey of courage, discipline and perseverance brought pride to her school, family and entire village.",
+    image: madan5,
+    slug: "rajnandini-naik-sikai-martial-art",
+  },
+];
+
+const madan = schoolsCat?.items.find(
+  (i) => i.slug === "madan-maharaj-vidyalaya-and-kamaldeep-junior-college-fulamla-tq-nandgaon-kh-dist"
+);
+if (madan) {
+  madan.about = madanAbout;
+  madan.successStories = madanStories;
+  madan.image = madan1;
+  madan.gallery = [madan1, madan2, madan3, madan4, madan5];
+  madan.highlights = [];
 }
 
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
