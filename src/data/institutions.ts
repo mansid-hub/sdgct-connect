@@ -81,10 +81,10 @@ import madan5 from "@/assets/madan-5.jpg";
 import madan6 from "@/assets/madan-6.jpg";
 import madan7 from "@/assets/madan-7.jpg";
 import madan8 from "@/assets/madan-8.jpg";
-import madan9 from "@/assets/madan-9.jpg";
-import madan10 from "@/assets/madan-10.jpg";
-import madan11 from "@/assets/madan-11.jpg";
-import madan12 from "@/assets/madan-12.jpg";
+import madan9 from "@/assets/madan-9.jpeg";
+import madan10 from "@/assets/madan-10.jpeg";
+import madan11 from "@/assets/madan-11.jpeg";
+import madan12 from "@/assets/madan-12.jpeg";
 
 export type FundingType = "granted" | "self-financed";
 
