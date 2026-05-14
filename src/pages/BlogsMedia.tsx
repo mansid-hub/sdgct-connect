@@ -23,8 +23,8 @@ const stories = [
   {
     slug: "rajnandini-naik-sikai-martial-art",
     title: "Ms. Rajnandini Sandeep Naik, National-level Gold Medalist in Sikai Martial Art",
-    image: rajnandiniCert,
-    gallery: [rajnandiniGroup, rajnandiniNaik, rajnandiniSandeepNaik],
+    image: rajnandiniSandeepNaik,
+    gallery: [rajnandiniGroup, rajnandiniNaik, rajnandiniCert],
     tagline:
       "A national Gold Medalist in Sikai Martial Art \u2014 a story of courage, discipline and perseverance against all odds.",
     paragraphs: [
