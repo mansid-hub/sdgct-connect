@@ -440,7 +440,8 @@ const madanStories = [
 ];
 
 const madan = schoolsCat?.items.find(
-  (i) => i.slug === "madan-maharaj-vidyalaya-and-kamaldeep-junior-college-fulamla-tq-nandgaon-kh-dist"
+  (i) => i.name === "Madan Maharaj Vidyalaya and Kamaldeep Junior College"
+);"
 );
 if (madan) {
   madan.about = madanAbout;
