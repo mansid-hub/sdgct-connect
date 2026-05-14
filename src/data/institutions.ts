@@ -226,6 +226,45 @@ export const categories: Category[] = [
 
 export const getCategory = (slug: string) => categories.find((c) => c.slug === slug);
 
+// ---- Establishment years by slug ----
+const establishedBySlug: Record<string, string> = {
+  "kamaljyot-marathi-primary-and-middle-school-navasari-dist-amravati": "1995",
+  "krushnakamal-adiwasi-anudanit-ashram-school-ner-pingalai-tq-morshi-dist-amravati": "2003",
+  "shri-dadasaheb-gawai-vidyalaya-malhara-tq-achalpur-dist-amravati": "1987",
+  "matoshri-gangadevi-lulla-vidyalaya-and-junior-college-gaurkheda-kumbhi-tq-achalp": "1989",
+  "madan-maharaj-vidyalaya-and-kamaldeep-junior-college-fulamla-tq-nandgaon-kh-dist": "1969",
+  "mahatma-jyotiba-phule-vidyalaya-and-junior-college-vihigao-tq-anjangaon-surji-di": "1981",
+  "dr-babasaheb-ambedkar-vidyalaya-fraizarpura-dist-amravati": "1968",
+  "dr-babasaheb-ambedkar-marathi-primary-school-shyam-nagar-dist-amravati": "1983",
+  "dr-babasaheb-ambedkar-hindi-primary-school-shyam-nagar-dist-amravati": "1987",
+  "matoshri-ramabai-ambedkar-vidyalaya-and-junior-college-shyam-nagar-dist-amravati": "1992",
+  "sant-gadge-baba-hindi-vidyalaya-shyam-nagar-dist-amravati": "2006",
+  "lotus-prerna-english-school-vihigao-tq-anjangaon-surji-dist-amravati": "2012",
+  "lotus-english-school-and-science-junior-college-shyam-nagar-dist-amravati": "2000",
+  "lotus-shri-dadasaheb-gaikwad-english-school-darapur-tq-daryapur-dist-amravati": "2013",
+  "lotus-kamalsurya-english-primary-school-gaurkheda-kumbhi-tq-achalpur-dist-amrava": "2017",
+  "lotus-karan-english-school-uttam-nagar-dist-amravati": "2014",
+  "dr-babasaheb-ambedkar-takshashila-mahavidyalaya-and-junior-college-uttam-nagar-d": "1972",
+  "takshashila-mahavidyalaya-and-junior-college-shyam-nagar-dist-amravati": "1984",
+  "takshashila-mahavidyalaya-darapur-tq-daryapur-dist-amravati": "2000",
+  "takshashila-institute-of-pharmaceutical-education-and-research-kherda-tq-karanja": "2016",
+  "ramkrushna-shikshan-shastra-mahavidyalaya-b-ed-uttam-nagar-dist-amravati": "2004",
+  "sau-dr-kamaltai-gawai-adhyapak-vidyalaya-d-ed-darapur-tq-daryapur-dist-amravati": "2006",
+  "ramkrushna-junior-college-darapur-tq-daryapur-dist-amravati": "1984",
+  "takshashila-institute-of-engineering-and-technology-and-research-centre-darapur-": "2008",
+  "takshashila-polytechnic-college-uttam-nagar-amravati": "2014",
+  "samrat-ashok-industrial-training-institute-darapur-tq-daryapur-amravati": "2010",
+  "nalanda-industrial-training-institute-mogra-post-bhankheda-amravati": "2009",
+};
+
+for (const cat of categories) {
+  for (const item of cat.items) {
+    if (!item.established && establishedBySlug[item.slug]) {
+      item.established = establishedBySlug[item.slug];
+    }
+  }
+}
+
 // ---- Per-institution content overrides ----
 const malharaAbout: string[] = [
   "Nestled at the foothills of the Satpuda mountain range, the school is located in a predominantly tribal area where access to education has traditionally been limited. Despite these challenges, Shri. Dadasaheb Gawai Vidyalaya, Malhara, has emerged as a strong pillar of learning, hope, and social upliftment.",
