@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import {
   ArrowLeft,
   ArrowRight,
+  CalendarDays,
   CheckCircle2,
   ExternalLink,
   MapPin,
@@ -83,6 +84,12 @@ const InstitutionDetail = () => {
                     <div className="flex items-start gap-2 text-muted-foreground">
                       <MapPin size={14} className="mt-0.5 shrink-0 text-accent" />
                       <span>{inst.location}</span>
+                    </div>
+                  )}
+                  {inst.established && (
+                    <div className="flex items-start gap-2 text-muted-foreground">
+                      <CalendarDays size={14} className="mt-0.5 shrink-0 text-accent" />
+                      <span>Established {inst.established}</span>
                     </div>
                   )}
                 </div>
