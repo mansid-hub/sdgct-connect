@@ -219,7 +219,7 @@ export const categories: Category[] = [
     description: "Hospitals and healthcare centres associated with the trust.",
     items: build("hospitals", [
       { name: "Takshshila Ayurvedic Hospital", location: "Kherda, Tq. Karanja Lad, Dist. Washim", type: "self-financed" },
-      { name: "Takshshila Modern Hospital", location: "Kherda, Tq. Karanja Lad, Dist. Washim", type: "self-financed" },
+      { name: "Takshshila Modern Medical Hospital", location: "Kherda, Tq. Karanja Lad, Dist. Washim", type: "self-financed" },
     ]),
   },
 ];
