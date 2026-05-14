@@ -15,8 +15,14 @@ const buildWebsiteUrl = (inst: { name: string; location?: string; website?: stri
   return `https://www.google.com/search?q=${query}&btnI=1`;
 };
 
-const InstitutionList = () => {
-  const { parent, slug } = useParams();
+interface InstitutionListProps {
+  categorySlug?: string;
+}
+
+const InstitutionList = ({ categorySlug }: InstitutionListProps = {}) => {
+  const params = useParams();
+  const parent = categorySlug ? "schools" : params.parent;
+  const slug = categorySlug ?? params.slug;
   const category = slug ? getCategory(slug) : undefined;
 
   if (!category || (parent && category.parent !== parent)) {
@@ -26,6 +32,7 @@ const InstitutionList = () => {
   const parentLabel =
     category.parent === "schools" ? "Schools" : category.parent === "colleges" ? "Colleges" : "Healthcare";
   const parentPath = `/institution/${category.parent}`;
+  const showCategoryCrumb = category.title !== parentLabel;
 
   return (
     <Layout>
@@ -36,8 +43,10 @@ const InstitutionList = () => {
         crumbs={[
           { label: "Home", to: "/" },
           { label: "Institution", to: "/institution" },
-          { label: parentLabel, to: parentPath },
-          { label: category.title },
+          showCategoryCrumb
+            ? { label: parentLabel, to: parentPath }
+            : { label: parentLabel },
+          ...(showCategoryCrumb ? [{ label: category.title }] : []),
         ]}
       />
       <section className="section-y">
