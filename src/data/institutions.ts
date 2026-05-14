@@ -78,8 +78,13 @@ import madan2 from "@/assets/madan-2.jpg";
 import madan3 from "@/assets/madan-3.jpg";
 import madan4 from "@/assets/madan-4.jpg";
 import madan5 from "@/assets/madan-5.jpg";
-
-
+import madan6 from "@/assets/madan-6.jpg";
+import madan7 from "@/assets/madan-7.jpg";
+import madan8 from "@/assets/madan-8.jpg";
+import madan9 from "@/assets/madan-9.jpg";
+import madan10 from "@/assets/madan-10.jpg";
+import madan11 from "@/assets/madan-11.jpg";
+import madan12 from "@/assets/madan-12.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -441,7 +446,7 @@ if (madan) {
   madan.about = madanAbout;
   madan.successStories = madanStories;
   madan.image = madan1;
-  madan.gallery = [madan1, madan2, madan3, madan4, madan5];
+  madan.gallery = [madan1, madan2, madan3, madan4, madan5, madan6, madan7, madan8, madan9, madan10, madan11, madan12];
   madan.highlights = [];
 }
 
