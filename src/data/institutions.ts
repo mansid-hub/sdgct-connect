@@ -445,7 +445,7 @@ const madan = schoolsCat?.items.find(
 if (madan) {
   madan.about = madanAbout;
   madan.successStories = madanStories;
-  madan.image = madan1;
+  madan.image = madan4;
   madan.gallery = [madan1, madan2, madan3, madan4, madan5, madan6, madan7, madan8, madan9, madan10, madan11, madan12];
   madan.highlights = [];
 }
