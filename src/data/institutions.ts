@@ -73,6 +73,11 @@ import krushnakamal12 from "@/assets/krushnakamal-12.jpeg";
 import krushnakamal13 from "@/assets/krushnakamal-13.jpeg";
 
 import omprakashImg from "@/assets/success-omprakash-jambekar.jpg";
+import madan1 from "@/assets/madan-1.jpg";
+import madan2 from "@/assets/madan-2.jpg";
+import madan3 from "@/assets/madan-3.jpg";
+import madan4 from "@/assets/madan-4.jpg";
+import madan5 from "@/assets/madan-5.jpg";
 
 
 
