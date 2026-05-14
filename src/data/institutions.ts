@@ -85,6 +85,7 @@ import madan9 from "@/assets/madan-9.jpeg";
 import madan10 from "@/assets/madan-10.jpeg";
 import madan11 from "@/assets/madan-11.jpeg";
 import madan12 from "@/assets/madan-12.jpeg";
+import rajnandiniSandeepNaik from "@/assets/success-rajnandini-sandeep-naik.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -434,7 +435,7 @@ const madanStories = [
     title: "Ms. Rajnandini Sandeep Naik, National-level Gold Medalist in Sikai Martial Art",
     preview:
       "From a Zilla Parishad school in her village to winning a national Gold Medal in Sikai Martial Art \u2014 Rajnandini\u2019s journey of courage, discipline and perseverance brought pride to her school, family and entire village.",
-    image: madan5,
+    image: rajnandiniSandeepNaik,
     slug: "rajnandini-naik-sikai-martial-art",
   },
 ];
