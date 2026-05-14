@@ -441,7 +441,6 @@ const madanStories = [
 
 const madan = schoolsCat?.items.find(
   (i) => i.name === "Madan Maharaj Vidyalaya and Kamaldeep Junior College"
-);"
 );
 if (madan) {
   madan.about = madanAbout;
