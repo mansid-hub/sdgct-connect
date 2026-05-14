@@ -152,7 +152,7 @@ export const categories: Category[] = [
       { name: "Dr. Babasaheb Ambedkar Marathi Primary School", location: "Shyam Nagar, Dist. Amravati", type: "granted" },
       { name: "Dr. Babasaheb Ambedkar Hindi Primary School", location: "Shyam Nagar, Dist. Amravati", type: "granted" },
       { name: "Matoshri Ramabai Ambedkar Vidyalaya and Junior College", location: "Shyam Nagar, Dist. Amravati", website: "https://schools.org.in/amravati/27071505604/matoshri-ramabai-ambedkar-vid.html", type: "granted" },
-      { name: "Sant Gadge Baba Hindi Vidyalaya", location: "Shyam Nagar, Amravati", type: "granted" },
+      { name: "Sant Gadge Baba Hindi Vidyalaya", location: "Shyam Nagar, Dist. Amravati", type: "granted" },
       { name: "Lotus (Prerna) English School", location: "Vihigao, Tq. Anjangaon Surji, Dist. Amravati", type: "self-financed" },
       { name: "Lotus English School and Science Junior College", location: "Shyam Nagar, Dist. Amravati", type: "self-financed" },
       { name: "Lotus (Shri. Dadasaheb Gaikwad) English School", location: "Darapur, Tq. Daryapur, Dist. Amravati", type: "self-financed" },
@@ -199,7 +199,6 @@ export const categories: Category[] = [
     parent: "colleges",
     description: "Diploma-level polytechnic institutes in engineering disciplines.",
     items: build("colleges", [
-      { name: "Vikramshila Polytechnic", location: "Darapur, Tq. Daryapur, Amravati", type: "self-financed" },
       { name: "Takshashila Polytechnic College", location: "Uttam Nagar, Amravati", type: "self-financed" },
     ]),
   },
@@ -220,7 +219,7 @@ export const categories: Category[] = [
     description: "Hospitals and healthcare centres associated with the trust.",
     items: build("hospitals", [
       { name: "Takshshila Ayurvedic Hospital", location: "Kherda, Tq. Karanja Lad, Dist. Washim", type: "self-financed" },
-      { name: "Takshshila Modern Hospital", location: "Amravati, Maharashtra", type: "self-financed" },
+      { name: "Takshshila Modern Hospital", location: "Kherda, Tq. Karanja Lad, Dist. Washim", type: "self-financed" },
     ]),
   },
 ];
