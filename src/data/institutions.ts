@@ -86,6 +86,7 @@ import madan10 from "@/assets/madan-10.jpeg";
 import madan11 from "@/assets/madan-11.jpeg";
 import madan12 from "@/assets/madan-12.jpeg";
 import rajnandiniSandeepNaik from "@/assets/success-rajnandini-sandeep-naik.jpg";
+import ambedkarHindi1 from "@/assets/ambedkar-hindi-1.png";
 
 export type FundingType = "granted" | "self-financed";
 
