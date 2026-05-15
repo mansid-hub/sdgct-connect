@@ -33,7 +33,7 @@ const slides = [
     title: "Empowering lives and expanding access to quality education",
     description:
       "For over three decades, we’ve supported the most vulnerable because talent is everywhere, but opportunity isn’t.",
-    objectPosition: "center 15%",
+    objectPosition: "center top",
     overlay: "bg-black/40",
   },
 ];
