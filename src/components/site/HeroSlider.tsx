@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Heart, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import hero1 from "@/assets/hero-1.jpg";
+import hero1 from "@/assets/hero-1.jpeg";
 import hero2 from "@/assets/hero-2.jpeg";
 import hero3 from "@/assets/hero-3.jpg";
 import heroEducation from "@/assets/hero-education-all.jpeg";
@@ -28,7 +28,7 @@ const slides = [
     overlay: "bg-black/35",
   },
   {
-    image: heroEducation,
+    image: hero1,
     eyebrow: "Education for All",
     title: "Empowering lives and expanding access to quality education",
     description:
