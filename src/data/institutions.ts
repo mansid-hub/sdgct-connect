@@ -452,6 +452,22 @@ if (madan) {
   madan.highlights = [];
 }
 
+const ambedkarHindiAbout: string[] = [
+  "Dr. Babasaheb Ambedkar Hindi Primary School, has played a significant role in transforming the lives of children from underprivileged and slum communities, especially within the Muslim-majority population. Established in 1987 as a minority institution, the school began with a simple yet powerful mission to ensure that every child, regardless of their social or economic background, receives access to quality education. The school offers educational facilities from Grade 1 to Grade 7 and has helped many students achieve academic success and secure prestigious professional positions over the years.",
+  "In its early years, the school faced several setbacks. Many families in the surrounding communities struggled with poverty and lacked awareness about the importance of education. Children were often forced to prioritize daily survival over schooling, leading to low enrollment and irregular attendance. Despite these difficulties, the school remained committed to its vision. The dedicated teachers and administration worked tirelessly to encourage parents to send their children to school and motivated students to dream beyond their circumstances.",
+  "With qualified teachers, a supportive learning environment, and active participation in sports and cultural activities, students gained confidence and developed their talents. Many former students have gone on to pursue higher education and now hold respected positions in various professions, becoming role models within their communities.",
+];
+
+const ambedkarHindi = schoolsCat?.items.find(
+  (i) => i.slug === "dr-babasaheb-ambedkar-hindi-primary-school-shyam-nagar-dist-amravati"
+);
+if (ambedkarHindi) {
+  ambedkarHindi.about = ambedkarHindiAbout;
+  ambedkarHindi.image = ambedkarHindi1;
+  ambedkarHindi.gallery = [ambedkarHindi1];
+  ambedkarHindi.highlights = [];
+}
+
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
   categories
     .filter((c) => (parent ? c.parent === parent : true))
