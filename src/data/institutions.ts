@@ -25,6 +25,14 @@ import mahatmaGatherings7 from "@/assets/mahatma-gatherings-7.jpg";
 import mahatmaGatherings8 from "@/assets/mahatma-gatherings-8.jpg";
 import mahatmaGatherings9 from "@/assets/mahatma-gatherings-9.jpg";
 import mahatmaGatherings10 from "@/assets/mahatma-gatherings-10.jpg";
+import mahatmaSports1 from "@/assets/mahatma-sports-1.jpg";
+import mahatmaSports2 from "@/assets/mahatma-sports-2.jpg";
+import mahatmaSports3 from "@/assets/mahatma-sports-3.jpg";
+import mahatmaSports4 from "@/assets/mahatma-sports-4.jpg";
+import mahatmaSports5 from "@/assets/mahatma-sports-5.jpg";
+import mahatmaSports6 from "@/assets/mahatma-sports-6.jpg";
+import mahatmaSports7 from "@/assets/mahatma-sports-7.jpg";
+import mahatmaSports8 from "@/assets/mahatma-sports-8.jpg";
 import pravinImg from "@/assets/success-pravin-waghmare.jpeg";
 import ambedkarFr1 from "@/assets/ambedkar-fraizarpura-1.jpeg";
 import ambedkarFr2 from "@/assets/ambedkar-fraizarpura-2.jpeg";
@@ -521,7 +529,7 @@ if (mahatma) {
   mahatma.galleryFolders = [
     { name: "CSR", images: [mahatmaCsr1, mahatmaCsr2, mahatmaCsr3, mahatmaCsr4, mahatmaCsr5, mahatmaCsr6, mahatmaCsr7, mahatmaCsr8] },
     { name: "Gatherings", images: [mahatmaGatherings1, mahatmaGatherings2, mahatmaGatherings3, mahatmaGatherings4, mahatmaGatherings5, mahatmaGatherings6, mahatmaGatherings7, mahatmaGatherings8, mahatmaGatherings9, mahatmaGatherings10] },
-    { name: "Sports & Cultural Activities", images: [] },
+    { name: "Sports & Cultural Activities", images: [mahatmaSports1, mahatmaSports2, mahatmaSports3, mahatmaSports4, mahatmaSports5, mahatmaSports6, mahatmaSports7, mahatmaSports8] },
   ];
   mahatma.highlights = [];
 }
