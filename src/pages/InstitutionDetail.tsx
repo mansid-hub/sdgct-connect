@@ -173,9 +173,7 @@ const InstitutionDetail = () => {
               </div>
             )}
 
-            {inst.galleryFolders && inst.galleryFolders.length > 0 ? (
-              <InstitutionFolderGallery folders={inst.galleryFolders} name={inst.name} />
-            ) : inst.gallery && inst.gallery.length > 0 && (
+            {inst.gallery && inst.gallery.length > 0 && (
               <InstitutionGallery
                 images={inst.gallery}
                 name={inst.name}
@@ -190,6 +188,10 @@ const InstitutionDetail = () => {
                     : undefined
                 }
               />
+            )}
+
+            {inst.galleryFolders && inst.galleryFolders.length > 0 && (
+              <InstitutionFolderGallery folders={inst.galleryFolders} name={inst.name} />
             )}
 
             <div className="flex items-center justify-between border-t border-border/60 pt-8 gap-3 flex-wrap">
