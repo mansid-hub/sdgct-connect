@@ -8,9 +8,6 @@ import WhyUsTeaser from "@/components/site/WhyUsTeaser";
 
 const Index = () => {
   return (
-    <div style={{ fontSize: "60px", color: "red" }}>
-  LIVE TEST WORKING
-</div>
     <Layout>
       {/* Hero */}
       <HeroSlider />
