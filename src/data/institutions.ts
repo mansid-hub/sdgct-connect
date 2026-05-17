@@ -89,6 +89,7 @@ import rajnandiniSandeepNaik from "@/assets/success-rajnandini-sandeep-naik.jpg"
 import ambedkarHindi1 from "@/assets/ambedkar-hindi-1.png";
 import mahatma1 from "@/assets/mahatma-1.jpg";
 import mahatma2 from "@/assets/mahatma-2.jpg";
+import ankitProfileCard from "@/assets/ankit-profile-card.jpg";
 import mahatma3 from "@/assets/mahatma-3.jpg";
 import mahatma4 from "@/assets/mahatma-4.jpg";
 import mahatma5 from "@/assets/mahatma-5.jpg";
@@ -485,7 +486,7 @@ const mahatmaStories = [
     title: "Mr. Ankit Prafull Junghare, Livestock Supervisor, Department of Animal Husbandry",
     preview:
       "From childhood hardship to government service \u2014 Ankit's journey is a moving story of resilience, sacrifice and the transformative power of education, anchored by his mother's strength and his teachers' belief in him.",
-    image: mahatma2,
+    image: ankitProfileCard,
     slug: "ankit-junghare-livestock-supervisor",
   },
 ];
