@@ -181,7 +181,8 @@ const InstitutionDetail = () => {
                   inst.slug === "dr-babasaheb-ambedkar-marathi-primary-school-shyam-nagar-dist-amravati" ||
                   inst.slug === "kamaljyot-marathi-primary-and-middle-school-navasari-dist-amravati" ||
                   inst.slug === "krushnakamal-adiwasi-anudanit-ashram-school-ner-pingalai-tq-morshi-dist-amravati" ||
-                  inst.slug === "madan-maharaj-vidyalaya-and-kamaldeep-junior-college-fulamla-tq-nandgaon-kh-dist"
+                  inst.slug === "madan-maharaj-vidyalaya-and-kamaldeep-junior-college-fulamla-tq-nandgaon-kh-dist" ||
+                  inst.slug === "mahatma-jyotiba-phule-vidyalaya-and-junior-college-vihigao-tq-anjangaon-surji-di"
                     ? 4
                     : undefined
                 }

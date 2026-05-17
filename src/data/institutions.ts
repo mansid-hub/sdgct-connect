@@ -87,6 +87,11 @@ import madan11 from "@/assets/madan-11.jpeg";
 import madan12 from "@/assets/madan-12.jpeg";
 import rajnandiniSandeepNaik from "@/assets/success-rajnandini-sandeep-naik.jpg";
 import ambedkarHindi1 from "@/assets/ambedkar-hindi-1.png";
+import mahatma1 from "@/assets/mahatma-1.jpg";
+import mahatma2 from "@/assets/mahatma-2.jpg";
+import mahatma3 from "@/assets/mahatma-3.jpg";
+import mahatma4 from "@/assets/mahatma-4.jpg";
+import mahatma5 from "@/assets/mahatma-5.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -466,6 +471,34 @@ if (ambedkarHindi) {
   ambedkarHindi.image = ambedkarHindi1;
   ambedkarHindi.gallery = [ambedkarHindi1];
   ambedkarHindi.highlights = [];
+}
+
+const mahatmaAbout: string[] = [
+  "Mahatma Jyotiba Phule Vidyalaya and Junior College, Vihigaon, run by Shri Dadasaheb Gavai Charitable Trust, Amravati, has been doing remarkable work in the field of education since 1981. Inspired by the visionary leadership of Late Shri Dadasaheb Gavai, the institution has emerged as one of the most respected and renowned schools in the Panchkroshi region. The school provides semi-English education from Classes 5 to 10 and offers Arts, Science, and Vocational streams for Classes 11 and 12. With a strong commitment to academic excellence, the institution focuses on nurturing students through value-based education, discipline, culture, and overall personality development.",
+  "Over the years, the school has achieved remarkable success in academics, sports, arts, and social leadership. Its alumni have excelled in diverse fields and continue to contribute significantly to society as political leaders, social workers, civil servants, government officers, defence personnel, doctors, engineers, lawyers, and educators. The institution has also earned distinction in sports by producing students who have represented and brought laurels at the national level.",
+  "In the fields of art, culture, and science, students have consistently showcased their talent in state-level competitions. Notably, student projects have been selected at the state level in prestigious initiatives such as the Inspire Award and science exhibitions, reflecting the school's dedication to innovation and excellence. Adding to its achievements, during the academic session 2024\u201325, the school secured the second position at the taluka level in the \u201cMukhyamantri Majhi Shala Sundar Shala\u201d Phase II competition and was honoured with a cash prize of \u20b92 lakh.",
+  "With its strong educational foundation, rich cultural values, and commitment to progress, Mahatma Jyotiba Phule Vidyalaya and Junior College continues to shape responsible citizens and inspire generations towards enhanced possibilities.",
+];
+
+const mahatmaStories = [
+  {
+    title: "Mr. Ankit Prafull Junghare, Livestock Supervisor, Department of Animal Husbandry",
+    preview:
+      "From childhood hardship to government service \u2014 Ankit's journey is a moving story of resilience, sacrifice and the transformative power of education, anchored by his mother's strength and his teachers' belief in him.",
+    image: mahatma2,
+    slug: "ankit-junghare-livestock-supervisor",
+  },
+];
+
+const mahatma = schoolsCat?.items.find(
+  (i) => i.slug === "mahatma-jyotiba-phule-vidyalaya-and-junior-college-vihigao-tq-anjangaon-surji-di"
+);
+if (mahatma) {
+  mahatma.about = mahatmaAbout;
+  mahatma.successStories = mahatmaStories;
+  mahatma.image = mahatma1;
+  mahatma.gallery = [mahatma1, mahatma2, mahatma3, mahatma4, mahatma5];
+  mahatma.highlights = [];
 }
 
 export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>

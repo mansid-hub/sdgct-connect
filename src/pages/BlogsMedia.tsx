@@ -18,6 +18,9 @@ import rajnandiniGroup from "@/assets/success-rajnandini-group.jpg";
 import rajnandiniCert from "@/assets/success-rajnandini-certificate.jpg";
 import rajnandiniNaik from "@/assets/success-rajnandini-naik.jpg";
 import rajnandiniSandeepNaik from "@/assets/success-rajnandini-sandeep-naik.jpg";
+import mahatma2 from "@/assets/mahatma-2.jpg";
+import mahatma1 from "@/assets/mahatma-1.jpg";
+import mahatma3 from "@/assets/mahatma-3.jpg";
 
 const stories = [
   {
@@ -113,6 +116,20 @@ const stories = [
       "Shri. Dadasaheb Gawai Vidyalaya, Malhara, has always been committed to nurturing not only academic excellence, but also talent in sports and co-curricular activities. Continuing this proud tradition, the school celebrates the outstanding achievement by one of its bright students, Ku. Shrawasti Tayde, who has brought national recognition to the institution.",
       "Shrawasti comes from a humble background, with her father working at the Achalpur Tahasil and her mother being a home-maker. With unwavering dedication, discipline, and relentless practice through an Association at Paratwada, Shrawasti excelled in Thang-Ta. Thang-Ta being a traditional martial art form originating from Manipur, Northeast India, specializing in armed combat using Thang (sword) and Ta (spear). She progressed from school-level competitions to the national stage, where she demonstrated exceptional skill, confidence, and sportsmanship. Her remarkable victory at the national-level championship stands as a proud milestone for both the school and the community, and reflects her strong determination and passion for the sport.",
       "This achievement is a testament to the school's commitment to holistic education and the encouragement provided by teachers and mentors who continuously inspire students to explore their potential in all fields. Shrawasti's journey is a shining example of perseverance and passion, motivating young minds to transform their dreams into reality.",
+    ],
+  },
+  {
+    slug: "ankit-junghare-livestock-supervisor",
+    title: "Mr. Ankit Prafull Junghare, Livestock Supervisor, Department of Animal Husbandry",
+    image: mahatma2,
+    gallery: [mahatma2, mahatma1, mahatma3],
+    tagline:
+      "A moving story of resilience, sacrifice and the transformative power of education \u2014 anchored by a mother's strength and teachers who never gave up on him.",
+    paragraphs: [
+      "Ankit Prafull Junghare's journey is a moving story of resilience, sacrifice, and the transformative power of education. An alumnus of Mahatma Jyotiba Phule Vidyalaya, Vihigaon, Ankit now serves as a Livestock Supervisor in the Department of Animal Husbandry. But behind this achievement lies a childhood marked by financial hardship, uncertainty, and countless struggles.",
+      "During the most difficult phase of his life, when the future seemed hopeless, his school became his ray of hope. More than academic knowledge, his teachers became mentors who recognized his potential, encouraged him to rise after every setback, and taught him never to give up.",
+      "Behind his success stands another pillar of strength \u2014 his mother. Despite immense hardships and personal sacrifices, she never allowed his education to stop. Setting aside her own needs, she fought tirelessly to ensure her son could dream beyond his circumstances. Her sacrifices and unwavering faith became the foundation of Ankit's perseverance.",
+      "Reflecting on his journey, Ankit says, \u201cWhen I possessed nothing else, my school gave me the gift of faith in myself.\u201d Today, he proudly credits his achievements to his mother's sacrifices and the values instilled by his school. His story continues to inspire students to overcome adversity with determination, self-belief, and hope. With immense gratitude and pride, he declares, \u201cAnd for the rest of my life, I will proudly declare: \u2018I am a student of this school!\u2019\u201d",
     ],
   },
 ];
