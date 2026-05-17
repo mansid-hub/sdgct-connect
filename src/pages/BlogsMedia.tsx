@@ -4,6 +4,7 @@ import InstitutionGallery from "@/components/site/InstitutionGallery";
 import { ArrowLeft } from "lucide-react";
 
 import fallbackImg from "@/assets/initiative-education.jpg";
+import jaiGuptaImg from "@/assets/jai-gupta.jpeg";
 import atishImg from "@/assets/success-atish-tayde.png";
 import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
 import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
@@ -150,7 +151,7 @@ const stories = [
   {
     slug: "jai-gupta-atya-patya",
     title: "Mr. Jai Sachin Gupta, National-level Bronze Medalist in Atya-Patya",
-    image: fallbackImg,
+    image: jaiGuptaImg,
     gallery: [],
     tagline: "A Journey of Passion, Persistence, and Sporting Excellence.",
     paragraphs: [

@@ -122,6 +122,7 @@ import mahatma5 from "@/assets/mahatma-5.jpg";
 import matoshriGangadevi1 from "@/assets/matoshri-gangadevi-1.jpeg";
 import matoshriGangadevi2 from "@/assets/matoshri-gangadevi-2.png";
 import matoshriGangadevi3 from "@/assets/matoshri-gangadevi-3.png";
+import jaiGuptaImg from "@/assets/jai-gupta.jpeg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -562,6 +563,7 @@ const matoshriGangadeviStories = [
     preview:
       "A Journey of Passion, Persistence, and Sporting Excellence — from cycling kilometers to school to representing his institution at the National Atya-Patya Championship and securing third place.",
     slug: "jai-gupta-atya-patya",
+    image: jaiGuptaImg,
   },
 ];
 
