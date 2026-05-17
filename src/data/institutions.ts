@@ -499,7 +499,7 @@ if (mahatma) {
   mahatma.about = mahatmaAbout;
   mahatma.successStories = mahatmaStories;
   mahatma.image = mahatma1;
-  mahatma.gallery = [];
+  mahatma.gallery = [mahatma1, mahatma2, mahatma3, mahatma4, mahatma5];
   mahatma.galleryFolders = [
     { name: "CSR", images: [] },
     { name: "Gatherings", images: [] },
