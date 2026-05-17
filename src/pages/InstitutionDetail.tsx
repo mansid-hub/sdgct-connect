@@ -173,26 +173,21 @@ const InstitutionDetail = () => {
               </div>
             )}
 
-            {inst.gallery && inst.gallery.length > 0 && (
-              <InstitutionGallery
-                images={inst.gallery}
-                name={inst.name}
-                previewCount={
-                  inst.slug === "dr-babasaheb-ambedkar-vidyalaya-fraizarpura-dist-amravati" ||
-                  inst.slug === "dr-babasaheb-ambedkar-marathi-primary-school-shyam-nagar-dist-amravati" ||
-                  inst.slug === "kamaljyot-marathi-primary-and-middle-school-navasari-dist-amravati" ||
-                  inst.slug === "krushnakamal-adiwasi-anudanit-ashram-school-ner-pingalai-tq-morshi-dist-amravati" ||
-                  inst.slug === "madan-maharaj-vidyalaya-and-kamaldeep-junior-college-fulamla-tq-nandgaon-kh-dist" ||
-                  inst.slug === "mahatma-jyotiba-phule-vidyalaya-and-junior-college-vihigao-tq-anjangaon-surji-di"
-                    ? 4
-                    : undefined
-                }
-              />
-            )}
-
-            {inst.galleryFolders && inst.galleryFolders.length > 0 && (
-              <InstitutionFolderGallery folders={inst.galleryFolders} name={inst.name} />
-            )}
+            {(() => {
+              const folderImages = (inst.galleryFolders ?? []).flatMap((f) => f.images);
+              const combined = [...(inst.gallery ?? []), ...folderImages];
+              if (combined.length === 0) return null;
+              const previewCount =
+                inst.slug === "dr-babasaheb-ambedkar-vidyalaya-fraizarpura-dist-amravati" ||
+                inst.slug === "dr-babasaheb-ambedkar-marathi-primary-school-shyam-nagar-dist-amravati" ||
+                inst.slug === "kamaljyot-marathi-primary-and-middle-school-navasari-dist-amravati" ||
+                inst.slug === "krushnakamal-adiwasi-anudanit-ashram-school-ner-pingalai-tq-morshi-dist-amravati" ||
+                inst.slug === "madan-maharaj-vidyalaya-and-kamaldeep-junior-college-fulamla-tq-nandgaon-kh-dist" ||
+                inst.slug === "mahatma-jyotiba-phule-vidyalaya-and-junior-college-vihigao-tq-anjangaon-surji-di"
+                  ? 4
+                  : undefined;
+              return <InstitutionGallery images={combined} name={inst.name} previewCount={previewCount} />;
+            })()}
 
             <div className="flex items-center justify-between border-t border-border/60 pt-8 gap-3 flex-wrap">
               <Button asChild variant="ghost">
