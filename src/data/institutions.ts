@@ -119,6 +119,9 @@ import ankitProfileCard from "@/assets/ankit-profile-card.jpg";
 import mahatma3 from "@/assets/mahatma-3.jpg";
 import mahatma4 from "@/assets/mahatma-4.jpg";
 import mahatma5 from "@/assets/mahatma-5.jpg";
+import matoshriGangadevi1 from "@/assets/matoshri-gangadevi-1.jpeg";
+import matoshriGangadevi2 from "@/assets/matoshri-gangadevi-2.png";
+import matoshriGangadevi3 from "@/assets/matoshri-gangadevi-3.png";
 
 export type FundingType = "granted" | "self-financed";
 
