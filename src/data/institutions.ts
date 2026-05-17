@@ -107,6 +107,7 @@ export interface Institution {
   about?: string[];
   highlights?: string[];
   gallery?: string[];
+  galleryFolders?: { name: string; images: string[] }[];
   successStories?: { title: string; preview: string; image?: string; slug: string }[];
 }
 
