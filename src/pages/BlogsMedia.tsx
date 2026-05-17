@@ -19,6 +19,7 @@ import rajnandiniCert from "@/assets/success-rajnandini-certificate.jpg";
 import rajnandiniNaik from "@/assets/success-rajnandini-naik.jpg";
 import rajnandiniSandeepNaik from "@/assets/success-rajnandini-sandeep-naik.jpg";
 import mahatma2 from "@/assets/mahatma-2.jpg";
+import ankitProfileCard from "@/assets/ankit-profile-card.jpg";
 import mahatma1 from "@/assets/mahatma-1.jpg";
 import mahatma3 from "@/assets/mahatma-3.jpg";
 
@@ -121,8 +122,8 @@ const stories = [
   {
     slug: "ankit-junghare-livestock-supervisor",
     title: "Mr. Ankit Prafull Junghare, Livestock Supervisor, Department of Animal Husbandry",
-    image: mahatma2,
-    gallery: [mahatma2, mahatma1, mahatma3],
+    image: ankitProfileCard,
+    gallery: [],
     tagline:
       "A moving story of resilience, sacrifice and the transformative power of education \u2014 anchored by a mother's strength and teachers who never gave up on him.",
     paragraphs: [
