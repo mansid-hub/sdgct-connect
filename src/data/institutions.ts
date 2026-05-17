@@ -119,6 +119,9 @@ import ankitProfileCard from "@/assets/ankit-profile-card.jpg";
 import mahatma3 from "@/assets/mahatma-3.jpg";
 import mahatma4 from "@/assets/mahatma-4.jpg";
 import mahatma5 from "@/assets/mahatma-5.jpg";
+import matoshriGangadevi1 from "@/assets/matoshri-gangadevi-1.jpeg";
+import matoshriGangadevi2 from "@/assets/matoshri-gangadevi-2.png";
+import matoshriGangadevi3 from "@/assets/matoshri-gangadevi-3.png";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -538,6 +541,40 @@ export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =
   categories
     .filter((c) => (parent ? c.parent === parent : true))
     .flatMap((c) => c.items.map((i) => ({ ...i, categorySlug: c.slug, categoryTitle: c.title, parent: c.parent })));
+
+const matoshriGangadeviAbout: string[] = [
+  "With the noble vision of providing quality education to poor and underprivileged students from rural areas, respected Dadasaheb Gavai, who had dedicated himself to social service, inspired by the ideals of Dr. Babasaheb Ambedkar, established a school in Gaurkheda village, Achalpur taluka, Amravati district in 1989. What began as a small initiative has today grown into a thriving institution, nurturing more than 700 students from Classes 5 to 12.",
+  "The junior college offers education in all four streams - Arts, Commerce, Science, and Vocational courses - ensuring the holistic development of students. The school believes that education is not confined to textbooks alone; and it aims to equip students with the skills, confidence, discipline, and values needed for character building, such that the students can face future hurdles and become self-reliant citizens.",
+  "To support students from rural backgrounds, the school provides semi-English medium education from Classes 5 to 10. The experienced teaching staff not only impart academic knowledge, but also guide students in developing the ability to succeed in today's competitive world. The school is equipped with modern facilities, including digital classrooms, a computer laboratory, science laboratories, a library, and a spacious playground.",
+  "Various activities such as national festival celebrations, birth and death anniversaries of great leaders, cultural programs, essay writing, elocution, and drawing competitions are regularly organized to encourage students' creativity and participation. The school and junior college have consistently achieved outstanding academic results. Along with academics, students actively participate in sports and bring recognition to the institution through their achievements.",
+  "With a strong commitment to education and overall personality development, the school and junior college continue to progress and inspire students toward a brighter future.",
+];
+
+const matoshriGangadeviStories = [
+  {
+    title: "Ms. Pallavi A. Sadanshiv, Police Sub-Inspector, Maharashtra Police",
+    preview:
+      "An inspiring journey from a farming background to Computer Science to Police Sub-Inspector — Pallavi's story is a role model of determination and self-belief, proving that no obstacle is greater than courage and faith in oneself.",
+    slug: "pallavi-sadanshiv-psi",
+  },
+  {
+    title: "Mr. Jai Sachin Gupta, National-level Bronze Medalist in Atya-Patya",
+    preview:
+      "A Journey of Passion, Persistence, and Sporting Excellence — from cycling kilometers to school to representing his institution at the National Atya-Patya Championship and securing third place.",
+    slug: "jai-gupta-atya-patya",
+  },
+];
+
+const matoshriGangadevi = schoolsCat?.items.find(
+  (i) => i.slug === "matoshri-gangadevi-lulla-vidyalaya-and-junior-college-gaurkheda-kumbhi-tq-achalp"
+);
+if (matoshriGangadevi) {
+  matoshriGangadevi.about = matoshriGangadeviAbout;
+  matoshriGangadevi.successStories = matoshriGangadeviStories;
+  matoshriGangadevi.image = matoshriGangadevi1;
+  matoshriGangadevi.gallery = [matoshriGangadevi1, matoshriGangadevi2, matoshriGangadevi3];
+  matoshriGangadevi.highlights = [];
+}
 
 export const getInstitutionBySlug = (parent: string, slug: string) => {
   const all = allInstitutions();
