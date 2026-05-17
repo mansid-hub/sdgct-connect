@@ -123,6 +123,7 @@ import matoshriGangadevi1 from "@/assets/matoshri-gangadevi-1.jpeg";
 import matoshriGangadevi2 from "@/assets/matoshri-gangadevi-2.png";
 import matoshriGangadevi3 from "@/assets/matoshri-gangadevi-3.png";
 import jaiGuptaImg from "@/assets/jai-gupta.jpeg";
+import pallaviSadanshivImg from "@/assets/pallavi-sadanshiv.jpeg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -557,6 +558,7 @@ const matoshriGangadeviStories = [
     preview:
       "An inspiring journey from a farming background to Computer Science to Police Sub-Inspector — Pallavi's story is a role model of determination and self-belief, proving that no obstacle is greater than courage and faith in oneself.",
     slug: "pallavi-sadanshiv-psi",
+    image: pallaviSadanshivImg,
   },
   {
     title: "Mr. Jai Sachin Gupta, National-level Bronze Medalist in Atya-Patya",
