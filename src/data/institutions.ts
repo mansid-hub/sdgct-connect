@@ -107,6 +107,7 @@ export interface Institution {
   about?: string[];
   highlights?: string[];
   gallery?: string[];
+  galleryFolders?: { name: string; images: string[] }[];
   successStories?: { title: string; preview: string; image?: string; slug: string }[];
 }
 
@@ -498,7 +499,12 @@ if (mahatma) {
   mahatma.about = mahatmaAbout;
   mahatma.successStories = mahatmaStories;
   mahatma.image = mahatma1;
-  mahatma.gallery = [mahatma1, mahatma2, mahatma3, mahatma4, mahatma5];
+  mahatma.gallery = [];
+  mahatma.galleryFolders = [
+    { name: "CSR", images: [] },
+    { name: "Gatherings", images: [] },
+    { name: "Sports & Cultural Activities", images: [] },
+  ];
   mahatma.highlights = [];
 }
 
