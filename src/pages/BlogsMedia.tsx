@@ -5,6 +5,7 @@ import { ArrowLeft } from "lucide-react";
 
 import fallbackImg from "@/assets/initiative-education.jpg";
 import jaiGuptaImg from "@/assets/jai-gupta.jpeg";
+import pallaviSadanshivImg from "@/assets/pallavi-sadanshiv.jpeg";
 import atishImg from "@/assets/success-atish-tayde.png";
 import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
 import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
@@ -137,7 +138,7 @@ const stories = [
   {
     slug: "pallavi-sadanshiv-psi",
     title: "Ms. Pallavi A. Sadanshiv, Police Sub-Inspector, Maharashtra Police",
-    image: fallbackImg,
+    image: pallaviSadanshivImg,
     gallery: [],
     tagline:
       "An inspiring journey from a farming background to Computer Science to Police Sub-Inspector.",
