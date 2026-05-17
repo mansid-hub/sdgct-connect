@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import { allInstitutions, getInstitutionBySlug } from "@/data/institutions";
 import InstitutionGallery from "@/components/site/InstitutionGallery";
+import InstitutionFolderGallery from "@/components/site/InstitutionFolderGallery";
 
 const buildWebsiteUrl = (inst: { name: string; location?: string; website?: string }) => {
   if (inst.website) return inst.website;
@@ -172,7 +173,9 @@ const InstitutionDetail = () => {
               </div>
             )}
 
-            {inst.gallery && inst.gallery.length > 0 && (
+            {inst.galleryFolders && inst.galleryFolders.length > 0 ? (
+              <InstitutionFolderGallery folders={inst.galleryFolders} name={inst.name} />
+            ) : inst.gallery && inst.gallery.length > 0 && (
               <InstitutionGallery
                 images={inst.gallery}
                 name={inst.name}
