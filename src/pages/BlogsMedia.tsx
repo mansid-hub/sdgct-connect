@@ -133,6 +133,33 @@ const stories = [
       "Reflecting on his journey, Ankit says, \u201cWhen I possessed nothing else, my school gave me the gift of faith in myself.\u201d Today, he proudly credits his achievements to his mother's sacrifices and the values instilled by his school. His story continues to inspire students to overcome adversity with determination, self-belief, and hope. With immense gratitude and pride, he declares, \u201cAnd for the rest of my life, I will proudly declare: \u2018I am a student of this school!\u2019\u201d",
     ],
   },
+  {
+    slug: "pallavi-sadanshiv-psi",
+    title: "Ms. Pallavi A. Sadanshiv, Police Sub-Inspector, Maharashtra Police",
+    image: fallbackImg,
+    gallery: [],
+    tagline:
+      "An inspiring journey from a farming background to Computer Science to Police Sub-Inspector.",
+    paragraphs: [
+      "The story of Ms. Pallavi Arun Sadashiv is a role model of determination and self-belief. Born into a humble farming family, Pallavi grew up understanding the value of perseverance and dedication from an early age. She completed her primary education at Zilla Parishad Primary School, Gaurkheda Kumbhi, and later pursued her studies from Classes 8 to 10 at Matoshri Gangadevi Lulla Vidyalaya, Gaurkheda Kumbhi. After successfully passing Class 10, she chose the Science stream at Matoshri Gangadevi Lulla Vidyalaya Junior College and completed her higher secondary education despite facing severe financial difficulties.",
+      "Pallavi continued her academic journey by earning a degree in Computer Science from Hanuman Vyayam Prasarak College of Engineering. To support her education and manage the high fees, she worked alongside her studies with unwavering determination. Even after graduation, uncertainty about her future and financial limitations stood before her as major challenges.",
+      "However, instead of giving up, Pallavi decided to prepare for competitive examinations. Unable to afford coaching classes, she relied entirely on self-study and disciplined preparation from 2018 to 2020. Her hard work and perseverance paid off when she successfully cleared the Maharashtra State Commission Examination for the Non-Gazetted Group B category and achieved the prestigious post of Police Sub-Inspector (PSI).",
+      "Pallavi credits her success to the constant support of her parents and teachers, whose guidance and encouragement shaped her journey. Today, she stands as an inspiration for countless students, proving that no obstacle is greater than determination, courage, and faith in oneself.",
+    ],
+  },
+  {
+    slug: "jai-gupta-atya-patya",
+    title: "Mr. Jai Sachin Gupta, National-level Bronze Medalist in Atya-Patya",
+    image: fallbackImg,
+    gallery: [],
+    tagline: "A Journey of Passion, Persistence, and Sporting Excellence.",
+    paragraphs: [
+      "Jai Sachin Gupta's journey is a powerful reflection of how dedication and passion can turn ordinary beginnings into extraordinary achievements. Raised in a modest family, Jai completed his primary education at Zilla Parishad Primary School, Paratwada, and continued his schooling there up to Class 10. Later, he pursued Science at Matoshri Gangadevi Lulla Vidyalaya Junior College and successfully completed his higher secondary education.",
+      "Life was not easy for Jai. Limited resources and daily struggles were a part of his routine. Travelling several kilometers by bicycle every day, he continued his studies without complaint or discouragement. Alongside academics, Jai nurtured a deep love for the traditional sport of Atya-Patya.",
+      "Although he could not afford professional training or sports club facilities, he refused to let circumstances stand in the way of his dreams. With strong willpower and relentless practice on the college playground, Jai steadily sharpened his skills. The encouragement and guidance provided by his teachers and college staff became a major source of motivation in his sporting journey. His consistent efforts soon brought remarkable recognition. During the academic years 2024\u201325 and 2025\u201326, Jai represented his institution at the District, Division, State, and National levels in Atya-Patya. One of the proudest moments of his career came when he participated in the 35th Boys and Girls Junior Atya-Patya National Championship, organized by the Tamil Nadu Atya-Patya Federation, where he secured Third Place at the national level.",
+      "Jai believes that his achievements are the result of the constant encouragement of his father, family, and teachers. His story serves as an inspiration to young students, proving that commitment, focus, and hard work can lead to success, regardless of the challenges one faces in life.",
+    ],
+  },
 ];
 
 const BlogsMedia = () => {
