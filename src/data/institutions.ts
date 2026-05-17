@@ -7,6 +7,14 @@ import malhara1 from "@/assets/malhara-1.png";
 import malhara2 from "@/assets/malhara-2.png";
 import malhara3 from "@/assets/malhara-3.png";
 import malhara5 from "@/assets/malhara-5.png";
+import mahatmaCsr1 from "@/assets/mahatma-csr-1.jpg";
+import mahatmaCsr2 from "@/assets/mahatma-csr-2.jpg";
+import mahatmaCsr3 from "@/assets/mahatma-csr-3.jpg";
+import mahatmaCsr4 from "@/assets/mahatma-csr-4.jpg";
+import mahatmaCsr5 from "@/assets/mahatma-csr-5.jpg";
+import mahatmaCsr6 from "@/assets/mahatma-csr-6.jpg";
+import mahatmaCsr7 from "@/assets/mahatma-csr-7.jpg";
+import mahatmaCsr8 from "@/assets/mahatma-csr-8.jpg";
 import pravinImg from "@/assets/success-pravin-waghmare.jpeg";
 import ambedkarFr1 from "@/assets/ambedkar-fraizarpura-1.jpeg";
 import ambedkarFr2 from "@/assets/ambedkar-fraizarpura-2.jpeg";
@@ -501,7 +509,7 @@ if (mahatma) {
   mahatma.image = mahatma1;
   mahatma.gallery = [mahatma1, mahatma2, mahatma3, mahatma4, mahatma5];
   mahatma.galleryFolders = [
-    { name: "CSR", images: [] },
+    { name: "CSR", images: [mahatmaCsr1, mahatmaCsr2, mahatmaCsr3, mahatmaCsr4, mahatmaCsr5, mahatmaCsr6, mahatmaCsr7, mahatmaCsr8] },
     { name: "Gatherings", images: [] },
     { name: "Sports & Cultural Activities", images: [] },
   ];
