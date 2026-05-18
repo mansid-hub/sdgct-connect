@@ -164,6 +164,15 @@ import prerna9 from "@/assets/prerna-9.jpg";
 import prerna10 from "@/assets/prerna-10.jpg";
 import prerna11 from "@/assets/prerna-11.jpg";
 import prerna12 from "@/assets/prerna-12.jpg";
+import gaikwad1 from "@/assets/gaikwad-1.jpg";
+import gaikwad2 from "@/assets/gaikwad-2.jpg";
+import gaikwad3 from "@/assets/gaikwad-3.jpg";
+import gaikwad4 from "@/assets/gaikwad-4.jpg";
+import gaikwad5 from "@/assets/gaikwad-5.jpg";
+import gaikwad6 from "@/assets/gaikwad-6.jpg";
+import gaikwad7 from "@/assets/gaikwad-7.jpg";
+import gaikwad8 from "@/assets/gaikwad-8.jpg";
+import gaikwad9 from "@/assets/gaikwad-9.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -756,6 +765,24 @@ if (prerna) {
   prerna.image = prerna1;
   prerna.gallery = [prerna1, prerna2, prerna3, prerna4, prerna5, prerna6, prerna7, prerna8, prerna9, prerna10, prerna11, prerna12];
   prerna.highlights = [];
+}
+
+const gaikwadAbout: string[] = [
+  "Lotus (Shri. Dadasaheb Gaikwad) English School, located in the rural area of Darapur, was established in 2013 and has become a source of inspiration through its commitment to quality education for underserved communities and the remarkable achievements of its students. Despite limited resources, the school has made significant progress through dedication, consistency, and hard work.",
+  "Students of the school have achieved outstanding success in various Olympiad examinations. Many have excelled at district, state, and national levels, earning gold, silver, and bronze medals. A particularly proud achievement is that several of these students come from farming families. Through determination, perseverance, and continuous effort, they have not only won medals, but also earned Olympiad scholarships, becoming a motivation for students from rural backgrounds.",
+  "The success of these students reflects the sincere guidance of teachers, regular practice, and the positive learning environment created by the school. The institution encourages students to face challenges with confidence and strive for excellence in every field.",
+  "The school has also been honored with the prestigious \u201CGolden School Award\u201D for its excellence in education and dedication to the overall development of students. Along with academics, the school actively promotes sports, cultural activities, science exhibitions, and social awareness programs to ensure holistic development.",
+  "Today, Lotus (Shri. Dadasaheb Gaikwad) English School stands as a haven for rural students, continuing to shape bright futures through education, values, and opportunity.",
+];
+
+const gaikwad = schoolsCat?.items.find(
+  (i) => i.slug === "lotus-shri-dadasaheb-gaikwad-english-school-darapur-tq-daryapur-dist-amravati"
+);
+if (gaikwad) {
+  gaikwad.about = gaikwadAbout;
+  gaikwad.image = gaikwad1;
+  gaikwad.gallery = [gaikwad1, gaikwad2, gaikwad3, gaikwad4, gaikwad5, gaikwad6, gaikwad7, gaikwad8, gaikwad9];
+  gaikwad.highlights = [];
 }
 
 export const getInstitutionBySlug = (parent: string, slug: string) => {

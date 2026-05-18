@@ -188,6 +188,7 @@ const InstitutionDetail = () => {
                   inst.slug === "lotus-english-school-and-science-junior-college-shyam-nagar-dist-amravati" ||
                   inst.slug === "lotus-kamalsurya-english-primary-school-gaurkheda-kumbhi-tq-achalpur-dist-amrava"
                   || inst.slug === "lotus-prerna-english-school-vihigao-tq-anjangaon-surji-dist-amravati"
+                  || inst.slug === "lotus-shri-dadasaheb-gaikwad-english-school-darapur-tq-daryapur-dist-amravati"
                     ? 4
                     : undefined
                 }
