@@ -14,6 +14,8 @@ import kalyaniDongreProfile from "@/assets/kalyani-dongre-profile.jpg";
 import kalyaniDongrePoster from "@/assets/kalyani-dongre-poster.jpg";
 import santGadge1 from "@/assets/sant-gadge-1.jpg";
 import israilLaluwaleProfile from "@/assets/israil-laluwale-profile.jpg";
+import lotus6 from "@/assets/lotus-6.jpg";
+import lotus7 from "@/assets/lotus-7.jpg";
 import atishImg from "@/assets/success-atish-tayde.png";
 import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
 import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
