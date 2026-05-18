@@ -785,6 +785,30 @@ if (gaikwad) {
   gaikwad.highlights = [];
 }
 
+const takshashilaHospitalAbout: string[] = [
+  "Takshashila Hospital and Research Center, comprising the Ayurved Hospital and the Modern Facilities Hospital, serves as a center for holistic healthcare. It integrates traditional Ayurved therapies with modern healthcare practices, and community service in rural Maharashtra.",
+  "The hospital is equipped with modern diagnostic and treatment facilities, including X-ray, ECG, Pathology Laboratory, Physiotherapy Unit and Operation Theatres. The hospital provides outpatient (OPD) and inpatient (IPD) services, along with 24-hour emergency services.",
+  "Additionally, the institution emphasizes holistic healthcare by integrating Ayurveda with preventive practices like yoga, diet consultation, and lifestyle management. Free medicines and food are provided to indoor patients, reflecting its commitment to community service.",
+  "The Ayurved Hospital, established in 2019, plays a key role in both patient care and clinical training for students. It has a 60-bed capacity with multiple departments such as Kayachikitsa, Panchakarma, Shalya Tantra, Shalakya Tantra, Striroga, and Kaumarbhritya. A special highlight is its Panchakarma Unit, where traditional detoxification therapies are provided with separate arrangements for male and female patients. Specialized clinics such as pain management, Cosmetic Care, and Immunity (Swasthavritta) clinics are also available.",
+  "The institution has also adopted some nearby villages, where it actively provides regular health camps, Ayurved treatments, and awareness programs, contributing to improved healthcare access and promoting holistic well-being in rural communities.",
+];
+
+const hospitalsCat = categories.find((c) => c.slug === "hospitals");
+const takshashilaHospital = hospitalsCat?.items.find(
+  (i) => i.slug === s("Takshshila Hospital and Research Centre", "Kherda, Tq. Karanja Lad, Dist. Washim")
+);
+if (takshashilaHospital) {
+  takshashilaHospital.about = takshashilaHospitalAbout;
+  takshashilaHospital.image = takshashilaHospital1;
+  takshashilaHospital.gallery = [];
+  takshashilaHospital.highlights = [];
+  takshashilaHospital.galleryFolders = [
+    { name: "Modern Facilities Hospital", images: [] },
+    { name: "Ayurvedic Hospital", images: [] },
+    { name: "Other Activities", images: [] },
+  ];
+}
+
 export const getInstitutionBySlug = (parent: string, slug: string) => {
   const all = allInstitutions();
   return all.find((i) => i.parent === parent && i.slug === slug);
