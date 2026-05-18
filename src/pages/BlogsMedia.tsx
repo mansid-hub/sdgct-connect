@@ -13,6 +13,7 @@ import uddeshBhartiPoster from "@/assets/uddesh-bharti-poster.jpg";
 import kalyaniDongreProfile from "@/assets/kalyani-dongre-profile.jpg";
 import kalyaniDongrePoster from "@/assets/kalyani-dongre-poster.jpg";
 import santGadge1 from "@/assets/sant-gadge-1.jpg";
+import israilLaluwaleProfile from "@/assets/israil-laluwale-profile.jpg";
 import atishImg from "@/assets/success-atish-tayde.png";
 import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
 import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
@@ -200,7 +201,7 @@ const stories = [
   {
     slug: "israil-laluwale-srpf",
     title: "Mr. Israil Hasan Laluwale, SRPF (State Reserve Police Force)",
-    image: santGadge1,
+    image: israilLaluwaleProfile,
     gallery: [],
     tagline:
       "A remarkable example of perseverance and determination — proving that patience, self-belief and commitment can overcome even the toughest circumstances.",
