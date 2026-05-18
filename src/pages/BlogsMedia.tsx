@@ -197,6 +197,21 @@ const stories = [
       "Matoshri Ramabai Ambedkar Vidyalaya takes immense pride in Kalyani's achievement and wishes her continued success in all her future endeavors. Her journey truly proves that hard work paves the way to success.",
     ],
   },
+  {
+    slug: "israil-laluwale-srpf",
+    title: "Mr. Israil Hasan Laluwale, SRPF (State Reserve Police Force)",
+    image: santGadge1,
+    gallery: [],
+    tagline:
+      "A remarkable example of perseverance and determination — proving that patience, self-belief and commitment can overcome even the toughest circumstances.",
+    paragraphs: [
+      "Israil Hasan Laluwale's story is a remarkable example of perseverance and determination. A student of a Hindi-medium school since 2012, Israil came from a family facing severe financial hardship. His parents worked as daily wage laborers; consequently, the household was constantly plagued by financial hardship. They often had to struggle even to provide for their basic meals. Despite these arduous circumstances, he would take up odd jobs to assist his parents.",
+      "In the face of such difficulties, he never abandoned his studies. He continued to study with unwavering dedication. His hard work and perseverance eventually paid off, and he passed his 12th-grade examinations with excellent marks.",
+      "Driven by a dream to secure a better future, Israil began preparing for police recruitment. Every day, he trained rigorously, balancing physical preparation with academics. Although he faced failure on several occasions, he refused to give up.",
+      "His persistence finally paid off in 2025 when he was selected for the State Reserve Police Force (SRPF), fulfilling the biggest dream of his life, which now became a reality. This achievement brought immense joy and pride to his family after years of struggle and sacrifice.",
+      "Israil's journey serves as an inspiration to all students, proving that patience, self-belief, and commitment can overcome even the toughest circumstances.",
+    ],
+  },
 ];
 
 const BlogsMedia = () => {
