@@ -63,7 +63,11 @@ const Testimonials = () => {
                   src={s.image}
                   alt={s.name}
                   loading="lazy"
-                  className="w-full h-full object-cover transition-base group-hover:scale-105"
+                  className={`w-full h-full object-cover transition-base group-hover:scale-105 ${
+                    s.slug === "omprakash-jambekar-agriculture-officer"
+                      ? "object-top"
+                      : "object-center"
+                  }`}
                 />
               </div>
               <div className="p-5 flex flex-col flex-1">
