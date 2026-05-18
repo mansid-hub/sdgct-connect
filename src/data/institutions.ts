@@ -668,6 +668,43 @@ if (santGadge) {
   santGadge.highlights = [];
 }
 
+const lotusShyamNagarAbout: string[] = [
+  "Lotus English School and Science Junior College, Shyam Nagar, is a progressive educational institution dedicated to the all-round development of students. Established on 1 July 2000 with Nursery, Junior KG, and Senior KG classes, the school began with more than 40 students and has grown steadily over the years.",
+  "From the beginning, the institution has focused on quality education, discipline, moral values, and student-centered learning. With continuous expansion, classes from I to X gradually received recognition between 2013 and 2021, reflecting the school's commitment to continuous growth and educational excellence.",
+  "The school aims to build confidence, character, and leadership among students while promoting intellectual, moral, social, and cultural development. A team of dedicated, experienced, and caring teachers provides personal attention and guidance to every student, helping them become responsible citizens with strong values and a positive outlook toward life.",
+  "The campus environment is safe, pleasant, and inspiring, with importance given to cleanliness and positivity. Along with academics, students actively participate in sports, cultural activities, and co-curricular programs that support creativity, teamwork, and overall personality development. The school also provides clean drinking water and student-friendly facilities that support health and well-being.",
+];
+
+const lotusShyamNagarStories = [
+  {
+    title: "Ms. Bhakti Gajanan Chaudhary, National-level Silver Medalist in Sepak Takraw",
+    preview:
+      "From a financially struggling family to national-level silver medals and the prestigious Dr. Panjabrao Deshmukh Krida Award — Bhakti's journey is a story of perseverance and unwavering discipline.",
+    image: lotus6,
+    imagePosition: "center 30%",
+    slug: "bhakti-chaudhary-sepak-takraw",
+  },
+  {
+    title: "Ms. Kanchan Nandu Solanke, State-level Gold Medalist in Mini-Golf",
+    preview:
+      "From a humble farming family in Kanjoli village to a state-level Gold Medalist in mini golf — Kanchan's story is a remarkable journey of sincerity, dedication and dreams realised.",
+    image: lotus7,
+    imagePosition: "center 30%",
+    slug: "kanchan-solanke-mini-golf",
+  },
+];
+
+const lotusShyamNagar = schoolsCat?.items.find(
+  (i) => i.slug === "lotus-english-school-and-science-junior-college-shyam-nagar-dist-amravati"
+);
+if (lotusShyamNagar) {
+  lotusShyamNagar.about = lotusShyamNagarAbout;
+  lotusShyamNagar.successStories = lotusShyamNagarStories;
+  lotusShyamNagar.image = lotus1;
+  lotusShyamNagar.gallery = [lotus1, lotus2, lotus3, lotus4, lotus5, lotus6, lotus7];
+  lotusShyamNagar.highlights = [];
+}
+
 export const getInstitutionBySlug = (parent: string, slug: string) => {
   const all = allInstitutions();
   return all.find((i) => i.parent === parent && i.slug === slug);
