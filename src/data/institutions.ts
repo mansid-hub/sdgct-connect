@@ -128,6 +128,7 @@ import matoshriRamabai1 from "@/assets/matoshri-ramabai-1.jpg";
 import matoshriRamabai2 from "@/assets/matoshri-ramabai-2.jpg";
 import matoshriRamabai3 from "@/assets/matoshri-ramabai-3.jpg";
 import matoshriRamabai4 from "@/assets/matoshri-ramabai-4.jpg";
+import uddeshBhartiProfile from "@/assets/uddesh-bharti-profile.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -597,7 +598,8 @@ const matoshriRamabaiStories = [
     title: "Mr. Uddesh Sukhdev Bharti, International Chef, Miami USA",
     preview:
       "From Humble Beginnings to Global Heights \u2014 from the streets of Amravati to the luxury kitchens of Miami, Uddesh's journey proves that determination, not circumstance, defines destiny.",
-    image: matoshriRamabai1,
+    image: uddeshBhartiProfile,
+    imagePosition: "center 20%",
     slug: "uddesh-bharti-chef-miami",
   },
   {
