@@ -10,6 +10,8 @@ import matoshriRamabai1 from "@/assets/matoshri-ramabai-1.jpg";
 import matoshriRamabai3 from "@/assets/matoshri-ramabai-3.jpg";
 import uddeshBhartiProfile from "@/assets/uddesh-bharti-profile.jpg";
 import uddeshBhartiPoster from "@/assets/uddesh-bharti-poster.jpg";
+import kalyaniDongreProfile from "@/assets/kalyani-dongre-profile.jpg";
+import kalyaniDongrePoster from "@/assets/kalyani-dongre-poster.jpg";
 import atishImg from "@/assets/success-atish-tayde.png";
 import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
 import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
@@ -182,9 +184,9 @@ const stories = [
   },
   {
     slug: "kalyani-dongre-nmms-scholarship",
-    title: "Ku. Kalyani Pravin Dongre, Recipient of National Means-cum-Merit Scholarship",
-    image: matoshriRamabai3,
-    gallery: [],
+    title: "Ms. Kalyani Dongre, Recipient of National Means-cum-Merit Scholarship",
+    image: kalyaniDongreProfile,
+    gallery: [kalyaniDongrePoster],
     tagline:
       "Hard work, perseverance and self-belief paving the way to success.",
     paragraphs: [

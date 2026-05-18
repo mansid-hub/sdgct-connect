@@ -129,6 +129,7 @@ import matoshriRamabai2 from "@/assets/matoshri-ramabai-2.jpg";
 import matoshriRamabai3 from "@/assets/matoshri-ramabai-3.jpg";
 import matoshriRamabai4 from "@/assets/matoshri-ramabai-4.jpg";
 import uddeshBhartiProfile from "@/assets/uddesh-bharti-profile.jpg";
+import kalyaniDongreProfile from "@/assets/kalyani-dongre-profile.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -603,10 +604,11 @@ const matoshriRamabaiStories = [
     slug: "uddesh-bharti-chef-miami",
   },
   {
-    title: "Ku. Kalyani Pravin Dongre, Recipient of National Means-cum-Merit Scholarship",
+    title: "Ms. Kalyani Dongre, Recipient of National Means-cum-Merit Scholarship",
     preview:
       "Born into a family of daily wage labourers, Kalyani's determination and self-belief earned her the prestigious NMMS scholarship of \u20b948,000 \u2014 a proud inspiration for students everywhere.",
-    image: matoshriRamabai3,
+    image: kalyaniDongreProfile,
+    imagePosition: "center 20%",
     slug: "kalyani-dongre-nmms-scholarship",
   },
 ];
