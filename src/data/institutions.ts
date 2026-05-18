@@ -133,6 +133,7 @@ import kalyaniDongreProfile from "@/assets/kalyani-dongre-profile.jpg";
 import santGadge1 from "@/assets/sant-gadge-1.jpg";
 import israilLaluwaleProfile from "@/assets/israil-laluwale-profile.jpg";
 import bhaktiChaudharyProfile from "@/assets/bhakti-chaudhary-profile.jpg";
+import kanchanSolankeProfile from "@/assets/kanchan-solanke-profile.jpg";
 import santGadge2 from "@/assets/sant-gadge-2.jpg";
 import santGadge3 from "@/assets/sant-gadge-3.jpg";
 import santGadge4 from "@/assets/sant-gadge-4.jpg";
@@ -689,8 +690,8 @@ const lotusShyamNagarStories = [
     title: "Ms. Kanchan Nandu Solanke, State-level Gold Medalist in Mini-Golf",
     preview:
       "From a humble farming family in Kanjoli village to a state-level Gold Medalist in mini golf — Kanchan's story is a remarkable journey of sincerity, dedication and dreams realised.",
-    image: lotus7,
-    imagePosition: "center 30%",
+    image: kanchanSolankeProfile,
+    imagePosition: "center 20%",
     slug: "kanchan-solanke-mini-golf",
   },
 ];
