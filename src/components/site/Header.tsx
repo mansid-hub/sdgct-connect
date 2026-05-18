@@ -265,12 +265,13 @@ const Header = () => {
                   : "text-foreground/75 hover:text-primary hover:bg-secondary"
               )}
             >
-              <Link
-                to={institutionMenu.to}
+              <button
+                type="button"
+                onClick={() => setInstOpen((v) => !v)}
                 className="pl-4 pr-1.5 py-2 text-sm font-medium rounded-l-full"
               >
                 {institutionMenu.label}
-              </Link>
+              </button>
               <button
                 type="button"
                 onClick={() => setInstOpen((v) => !v)}
