@@ -124,6 +124,10 @@ import matoshriGangadevi2 from "@/assets/matoshri-gangadevi-2.png";
 import matoshriGangadevi3 from "@/assets/matoshri-gangadevi-3.png";
 import jaiGuptaImg from "@/assets/jai-gupta.jpeg";
 import pallaviSadanshivImg from "@/assets/pallavi-sadanshiv.jpeg";
+import matoshriRamabai1 from "@/assets/matoshri-ramabai-1.jpg";
+import matoshriRamabai2 from "@/assets/matoshri-ramabai-2.jpg";
+import matoshriRamabai3 from "@/assets/matoshri-ramabai-3.jpg";
+import matoshriRamabai4 from "@/assets/matoshri-ramabai-4.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -287,7 +291,7 @@ const establishedBySlug: Record<string, string> = {
   "dr-babasaheb-ambedkar-vidyalaya-fraizarpura-dist-amravati": "1968",
   "dr-babasaheb-ambedkar-marathi-primary-school-shyam-nagar-dist-amravati": "1983",
   "dr-babasaheb-ambedkar-hindi-primary-school-shyam-nagar-dist-amravati": "1987",
-  "matoshri-ramabai-ambedkar-vidyalaya-and-junior-college-shyam-nagar-dist-amravati": "1992",
+  "matoshri-ramabai-ambedkar-vidyalaya-and-junior-college-shyam-nagar-dist-amravati": "1983",
   "sant-gadge-baba-hindi-vidyalaya-shyam-nagar-dist-amravati": "2006",
   "lotus-prerna-english-school-vihigao-tq-anjangaon-surji-dist-amravati": "2012",
   "lotus-english-school-and-science-junior-college-shyam-nagar-dist-amravati": "2000",
@@ -579,6 +583,41 @@ if (matoshriGangadevi) {
   matoshriGangadevi.image = matoshriGangadevi1;
   matoshriGangadevi.gallery = [matoshriGangadevi1, matoshriGangadevi2, matoshriGangadevi3];
   matoshriGangadevi.highlights = [];
+}
+
+const matoshriRamabaiAbout: string[] = [
+  "Matoshri Ramabai Ambedkar Vidyalaya, located in the Shyam Nagar area of Amravati, is a dedicated educational institution that has been serving the community since its establishment in 1983. The school aims at fostering a dynamic learning environment for students from all backgrounds and is widely recognized for its inclusive approach.",
+  "One of the most remarkable features of this institution is its commitment to social equality. The school provides free admission to students belonging to various castes and religions, ensuring that financial or social barriers do not hinder a child's right to education. Academically, the school caters to students from Grades 5 to 12, offering a specialized and well-supported Arts Stream (Kala Shakha) for higher secondary students.",
+  "The school has consistently maintained a tradition of excellence, and every year the students have brought great pride to the institution by excelling in various competitions. The school places equal importance on extracurricular excellence and holistic skill development, helping students develop diverse talents in sports, music, and the performing arts. Thus, promoting physical fitness, cultivating creativity, confidence, and competitive spirit.",
+  "The school strongly believes in the philosophy of \u201clearning by doing\u201d and provides modern infrastructure to support practical and interactive education. It features a well-equipped computer lab that helps students develop essential digital literacy skills, along with an activity-based science lab designed to encourage hands-on experimentation and experiential learning. The school is committed to the optimal utilization of all available resources to ensure students receive maximum exposure and quality education. Through its innovative \u201cEducation Through Entertainment\u201d approach, subjects such as Science, Mathematics, Arts, and Craft are taught using group activities and practical-based learning methods, making education engaging, enjoyable, and effective for every student.",
+];
+
+const matoshriRamabaiStories = [
+  {
+    title: "Mr. Uddesh Sukhdev Bharti, International Chef, Miami USA",
+    preview:
+      "From Humble Beginnings to Global Heights \u2014 from the streets of Amravati to the luxury kitchens of Miami, Uddesh's journey proves that determination, not circumstance, defines destiny.",
+    image: matoshriRamabai1,
+    slug: "uddesh-bharti-chef-miami",
+  },
+  {
+    title: "Ku. Kalyani Pravin Dongre, Recipient of National Means-cum-Merit Scholarship",
+    preview:
+      "Born into a family of daily wage labourers, Kalyani's determination and self-belief earned her the prestigious NMMS scholarship of \u20b948,000 \u2014 a proud inspiration for students everywhere.",
+    image: matoshriRamabai3,
+    slug: "kalyani-dongre-nmms-scholarship",
+  },
+];
+
+const matoshriRamabai = schoolsCat?.items.find(
+  (i) => i.slug === "matoshri-ramabai-ambedkar-vidyalaya-and-junior-college-shyam-nagar-dist-amravati"
+);
+if (matoshriRamabai) {
+  matoshriRamabai.about = matoshriRamabaiAbout;
+  matoshriRamabai.successStories = matoshriRamabaiStories;
+  matoshriRamabai.image = matoshriRamabai2;
+  matoshriRamabai.gallery = [matoshriRamabai2, matoshriRamabai1, matoshriRamabai4, matoshriRamabai3];
+  matoshriRamabai.highlights = [];
 }
 
 export const getInstitutionBySlug = (parent: string, slug: string) => {
