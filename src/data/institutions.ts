@@ -713,6 +713,22 @@ if (lotusShyamNagar) {
   lotusShyamNagar.highlights = [];
 }
 
+const kamalsuryaAbout: string[] = [
+  "Kamalsurya English Convent located in Gaurkheda Kumbji, provides education from Nursery to Class 4. The school building is beautiful, clean, and attractive, with spacious, airy, and well-lit classrooms that create a comfortable learning environment. The school caters to students from disadvantaged communities and remote areas.",
+  "The school provides learning materials and play items specially arranged for small children, along with a safe and friendly campus. The teachers are experienced, caring, and dedicated. They teach students in a simple and effective manner and give personal attention to each child. The school also focuses on the intellectual, physical, and moral development of students.",
+  "Various activities are organized regularly, including sports competitions, cultural programs, festival celebrations, drawing, singing, and dancing. These activities support the overall development of students and help build their confidence.",
+];
+
+const kamalsurya = schoolsCat?.items.find(
+  (i) => i.slug === "lotus-kamalsurya-english-primary-school-gaurkheda-kumbhi-tq-achalpur-dist-amrava"
+);
+if (kamalsurya) {
+  kamalsurya.about = kamalsuryaAbout;
+  kamalsurya.image = kamalsurya1;
+  kamalsurya.gallery = [kamalsurya1, kamalsurya2, kamalsurya3, kamalsurya4, kamalsurya5, kamalsurya6];
+  kamalsurya.highlights = [];
+}
+
 export const getInstitutionBySlug = (parent: string, slug: string) => {
   const all = allInstitutions();
   return all.find((i) => i.parent === parent && i.slug === slug);
