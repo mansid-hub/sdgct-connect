@@ -188,64 +188,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Our Foundation (Replaces Mission) */}
-      <section className="section-y bg-secondary/40">
-        <div className="container max-w-4xl text-center">
-          <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-accent justify-center">
-            <span className="h-px w-6 bg-accent" /> Our Foundation
-          </span>
-
-          <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-foreground text-balance">
-            Built on values that empower generations.
-          </h2>
-
-          <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-            Guided by the ideals of Bharat Ratna Dr. B. R. Ambedkar, the trust
-            believes that education is the most powerful tool for social
-            transformation. Every initiative we undertake reflects a commitment
-            to equality, dignity, and opportunity for all sections of society.
-          </p>
-
-          <p className="mt-4 text-muted-foreground leading-relaxed">
-            From classrooms to community programmes, our work is rooted in the
-            belief that real change begins when individuals are empowered with
-            knowledge, confidence, and the right opportunities.
-          </p>
-        </div>
-      </section>
-
-      {/* What we do */}
-      <section className="section-y">
-        <div className="container">
-          <SectionHeader
-            eyebrow="What We Do"
-            title="Education and upliftment, end to end."
-            description="From a child's first classroom to advanced research and skill training — our work spans the full journey of a learner."
-          />
-
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {whatWeDo.map((v, i) => (
-              <div
-                key={i}
-                className="bg-card rounded-3xl p-7 border border-border/60 shadow-soft hover:shadow-card hover:-translate-y-1 transition-smooth"
-              >
-                <div className="inline-flex items-center justify-center h-12 w-12 rounded-2xl gradient-primary text-primary-foreground mb-5">
-                  <v.icon size={20} />
-                </div>
-
-                <h3 className="font-display font-bold text-lg text-foreground">
-                  {v.title}
-                </h3>
-
-                <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
-                  {v.text}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Growth & Impact */}
       <section className="section-y bg-secondary/40">
         <div className="container grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
