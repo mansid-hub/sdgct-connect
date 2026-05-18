@@ -559,6 +559,7 @@ const matoshriGangadeviStories = [
       "An inspiring journey from a farming background to Computer Science to Police Sub-Inspector — Pallavi's story is a role model of determination and self-belief, proving that no obstacle is greater than courage and faith in oneself.",
     slug: "pallavi-sadanshiv-psi",
     image: pallaviSadanshivImg,
+    imagePosition: "center 45%",
   },
   {
     title: "Mr. Jai Sachin Gupta, National-level Bronze Medalist in Atya-Patya",
