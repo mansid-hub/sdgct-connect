@@ -8,6 +8,8 @@ import jaiGuptaImg from "@/assets/jai-gupta.jpeg";
 import pallaviSadanshivImg from "@/assets/pallavi-sadanshiv.jpeg";
 import matoshriRamabai1 from "@/assets/matoshri-ramabai-1.jpg";
 import matoshriRamabai3 from "@/assets/matoshri-ramabai-3.jpg";
+import uddeshBhartiProfile from "@/assets/uddesh-bharti-profile.jpg";
+import uddeshBhartiPoster from "@/assets/uddesh-bharti-poster.jpg";
 import atishImg from "@/assets/success-atish-tayde.png";
 import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
 import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
@@ -167,8 +169,8 @@ const stories = [
   {
     slug: "uddesh-bharti-chef-miami",
     title: "Mr. Uddesh Sukhdev Bharti, International Chef, Miami USA",
-    image: matoshriRamabai1,
-    gallery: [],
+    image: uddeshBhartiProfile,
+    gallery: [uddeshBhartiPoster],
     tagline:
       "From Humble Beginnings to Global Heights (\u0906\u092e\u091a\u093e \u0909\u0926\u094d\u0926\u0947\u0936 \u0925\u0947\u091f \u092a\u094b\u0939\u091a\u0932\u093e USA (Miami) \u092a\u0930\u0926\u0947\u0936\u093e\u0924)",
     paragraphs: [
