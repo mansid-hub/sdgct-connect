@@ -133,7 +133,7 @@ const InstitutionDetail = () => {
                           src={story.image}
                           alt={story.title}
                           className="w-full h-56 object-cover"
-                          style={{ objectPosition: "center top" }}
+                          style={{ objectPosition: (story as any).imagePosition ?? "center top" }}
                         />
                       )}
                       <div className="p-5 flex flex-col flex-1">
