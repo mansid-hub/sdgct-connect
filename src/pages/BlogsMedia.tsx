@@ -12,6 +12,7 @@ import uddeshBhartiProfile from "@/assets/uddesh-bharti-profile.jpg";
 import uddeshBhartiPoster from "@/assets/uddesh-bharti-poster.jpg";
 import kalyaniDongreProfile from "@/assets/kalyani-dongre-profile.jpg";
 import kalyaniDongrePoster from "@/assets/kalyani-dongre-poster.jpg";
+import santGadge1 from "@/assets/sant-gadge-1.jpg";
 import atishImg from "@/assets/success-atish-tayde.png";
 import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
 import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
@@ -194,6 +195,21 @@ const stories = [
       "Born into a family of daily wage laborers, Kalyani faced severe economic hardships and lacked many basic comforts. However, she refused to let adversity limit her dreams. With unwavering determination, continuous support from her parents, and dedicated guidance from her teachers through special coaching sessions, she appeared for the National Means-cum-Merit Scholarship (NMMS) Examination in Class 8 and achieved remarkable success.",
       "Kalyani qualified for the prestigious NMMS Scholarship, earning financial assistance of \u20b948,000 for her future education. Her achievement is not only a personal milestone, but also a proud moment for the entire school community. Her story stands as a powerful inspiration for students everywhere, proving that hard work, perseverance, and self-belief can overcome even the greatest challenges.",
       "Matoshri Ramabai Ambedkar Vidyalaya takes immense pride in Kalyani's achievement and wishes her continued success in all her future endeavors. Her journey truly proves that hard work paves the way to success.",
+    ],
+  },
+  {
+    slug: "israil-laluwale-srpf",
+    title: "Mr. Israil Hasan Laluwale, SRPF (State Reserve Police Force)",
+    image: santGadge1,
+    gallery: [],
+    tagline:
+      "A remarkable example of perseverance and determination — proving that patience, self-belief and commitment can overcome even the toughest circumstances.",
+    paragraphs: [
+      "Israil Hasan Laluwale's story is a remarkable example of perseverance and determination. A student of a Hindi-medium school since 2012, Israil came from a family facing severe financial hardship. His parents worked as daily wage laborers; consequently, the household was constantly plagued by financial hardship. They often had to struggle even to provide for their basic meals. Despite these arduous circumstances, he would take up odd jobs to assist his parents.",
+      "In the face of such difficulties, he never abandoned his studies. He continued to study with unwavering dedication. His hard work and perseverance eventually paid off, and he passed his 12th-grade examinations with excellent marks.",
+      "Driven by a dream to secure a better future, Israil began preparing for police recruitment. Every day, he trained rigorously, balancing physical preparation with academics. Although he faced failure on several occasions, he refused to give up.",
+      "His persistence finally paid off in 2025 when he was selected for the State Reserve Police Force (SRPF), fulfilling the biggest dream of his life, which now became a reality. This achievement brought immense joy and pride to his family after years of struggle and sacrifice.",
+      "Israil's journey serves as an inspiration to all students, proving that patience, self-belief, and commitment can overcome even the toughest circumstances.",
     ],
   },
 ];

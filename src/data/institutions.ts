@@ -130,6 +130,12 @@ import matoshriRamabai3 from "@/assets/matoshri-ramabai-3.jpg";
 import matoshriRamabai4 from "@/assets/matoshri-ramabai-4.jpg";
 import uddeshBhartiProfile from "@/assets/uddesh-bharti-profile.jpg";
 import kalyaniDongreProfile from "@/assets/kalyani-dongre-profile.jpg";
+import santGadge1 from "@/assets/sant-gadge-1.jpg";
+import santGadge2 from "@/assets/sant-gadge-2.jpg";
+import santGadge3 from "@/assets/sant-gadge-3.jpg";
+import santGadge4 from "@/assets/sant-gadge-4.jpg";
+import santGadge5 from "@/assets/sant-gadge-5.jpg";
+import santGadge6 from "@/assets/sant-gadge-6.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -622,6 +628,35 @@ if (matoshriRamabai) {
   matoshriRamabai.image = matoshriRamabai2;
   matoshriRamabai.gallery = [matoshriRamabai2, matoshriRamabai1, matoshriRamabai4, matoshriRamabai3];
   matoshriRamabai.highlights = [];
+}
+
+const santGadgeAbout: string[] = [
+  "Sant Gadge Baba Hindi Vidyalaya, Shyam Nagar, Amravati is a partially aided secondary school established in 2006. The school offers education in Hindi-medium from Grades 8 to 10. Our primary objective is to provide quality education to students from all sections of society, especially those from economically weaker and under-resourced backgrounds.",
+  "The majority of students at the school come from minority and disadvantaged families. The school continuously strives to keep these students in the educational mainstream. Our dedicated and experienced teachers not only provide education but also inspire and guide students toward becoming confident and responsible citizens.",
+  "Along with academic activities, the all-round development of students is encouraged through initiatives such as sports, cultural programs, science exhibitions, and competitive exam guidance. Special attention is paid to providing a safe and enjoyable environment, a clean campus, and necessary facilities within the school.",
+  "The school places special emphasis on the development of moral values, discipline, and social responsibility. To promote education, especially for girls, the school periodically organizes awareness programs and parent-child dialogues to foster a positive attitude toward education.",
+  "Our aim is to provide equal opportunities to every student and lay a strong foundation for their victorious future.",
+];
+
+const santGadgeStories = [
+  {
+    title: "Mr. Israil Hasan Laluwale, SRPF (State Reserve Police Force)",
+    preview:
+      "From financial hardship and daily wage struggles to selection in the State Reserve Police Force — Israil's story is a remarkable example of perseverance, self-belief and unwavering determination.",
+    image: santGadge1,
+    slug: "israil-laluwale-srpf",
+  },
+];
+
+const santGadge = schoolsCat?.items.find(
+  (i) => i.slug === "sant-gadge-baba-hindi-vidyalaya-shyam-nagar-dist-amravati"
+);
+if (santGadge) {
+  santGadge.about = santGadgeAbout;
+  santGadge.successStories = santGadgeStories;
+  santGadge.image = santGadge1;
+  santGadge.gallery = [santGadge1, santGadge2, santGadge3, santGadge4, santGadge5, santGadge6];
+  santGadge.highlights = [];
 }
 
 export const getInstitutionBySlug = (parent: string, slug: string) => {
