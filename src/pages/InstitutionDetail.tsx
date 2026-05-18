@@ -184,7 +184,8 @@ const InstitutionDetail = () => {
                   inst.slug === "krushnakamal-adiwasi-anudanit-ashram-school-ner-pingalai-tq-morshi-dist-amravati" ||
                   inst.slug === "madan-maharaj-vidyalaya-and-kamaldeep-junior-college-fulamla-tq-nandgaon-kh-dist" ||
                   inst.slug === "mahatma-jyotiba-phule-vidyalaya-and-junior-college-vihigao-tq-anjangaon-surji-di" ||
-                  inst.slug === "sant-gadge-baba-hindi-vidyalaya-shyam-nagar-dist-amravati"
+                  inst.slug === "sant-gadge-baba-hindi-vidyalaya-shyam-nagar-dist-amravati" ||
+                  inst.slug === "lotus-english-school-and-science-junior-college-shyam-nagar-dist-amravati"
                     ? 4
                     : undefined
                 }
