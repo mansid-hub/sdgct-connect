@@ -4,6 +4,7 @@ import ImpactMetrics from "@/components/site/ImpactMetrics";
 import Initiatives from "@/components/site/Initiatives";
 import Testimonials from "@/components/site/Testimonials";
 import InstitutionsPreview from "@/components/site/InstitutionsPreview";
+import WhatWeDo from "@/components/site/WhatWeDo";
 
 const Index = () => {
   return (
@@ -31,6 +32,9 @@ const Index = () => {
 
       {/* Institutions */}
       <InstitutionsPreview />
+
+      {/* What We Do */}
+      <WhatWeDo />
 
       {/* Stories / Testimonials */}
       <Testimonials />
