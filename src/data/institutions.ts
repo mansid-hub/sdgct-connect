@@ -173,6 +173,7 @@ import gaikwad6 from "@/assets/gaikwad-6.jpg";
 import gaikwad7 from "@/assets/gaikwad-7.jpg";
 import gaikwad8 from "@/assets/gaikwad-8.jpg";
 import gaikwad9 from "@/assets/gaikwad-9.jpg";
+import takshashilaHospital1 from "@/assets/takshashila-hospital-1.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
