@@ -137,6 +137,13 @@ import santGadge3 from "@/assets/sant-gadge-3.jpg";
 import santGadge4 from "@/assets/sant-gadge-4.jpg";
 import santGadge5 from "@/assets/sant-gadge-5.jpg";
 import santGadge6 from "@/assets/sant-gadge-6.jpg";
+import lotus1 from "@/assets/lotus-1.jpg";
+import lotus2 from "@/assets/lotus-2.jpg";
+import lotus3 from "@/assets/lotus-3.jpg";
+import lotus4 from "@/assets/lotus-4.jpg";
+import lotus5 from "@/assets/lotus-5.jpg";
+import lotus6 from "@/assets/lotus-6.jpg";
+import lotus7 from "@/assets/lotus-7.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
