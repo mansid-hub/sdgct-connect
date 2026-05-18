@@ -152,6 +152,13 @@ import lotus4 from "@/assets/lotus-4.jpg";
 import lotus5 from "@/assets/lotus-5.jpg";
 import lotus6 from "@/assets/lotus-6.jpg";
 import lotus7 from "@/assets/lotus-7.jpg";
+import prerna1 from "@/assets/prerna-1.jpg";
+import prerna2 from "@/assets/prerna-2.jpg";
+import prerna3 from "@/assets/prerna-3.jpg";
+import prerna4 from "@/assets/prerna-4.jpg";
+import prerna5 from "@/assets/prerna-5.jpg";
+import prerna6 from "@/assets/prerna-6.jpg";
+import prerna7 from "@/assets/prerna-7.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -727,6 +734,23 @@ if (kamalsurya) {
   kamalsurya.image = kamalsurya1;
   kamalsurya.gallery = [kamalsurya1, kamalsurya2, kamalsurya3, kamalsurya4, kamalsurya5, kamalsurya6];
   kamalsurya.highlights = [];
+}
+
+const prernaAbout: string[] = [
+  "Lotus (Prerna) English School, Vihigaon was established in 2013 under the Shri Dadasaheb Gawai Charitable Trust with the vision of providing quality English-medium education to students from rural areas. The institution was founded with the belief that children from rural backgrounds should also have access to excellent and proficient education that can help shape a brighter future.",
+  "The school currently offers education from Nursery to 4th Standard. Over the past 12 years, nearly 600 students have received education from the institution, reflecting its steady contribution to rural development.",
+  "One of the key features of the school is its spacious building and a large, well-maintained playground where children can learn and play freely. Located conveniently beside the main road, the school is easily accessible for students coming from nearby villages.",
+  "The atmosphere of the school is both pleasant and disciplined, creating a positive environment for learning and growth. Every teacher works sincerely and wholeheartedly for the academic progress of the students. The teaching and non-teaching staff alike carry out their responsibilities with honesty, confidence, dedication, and humility, ensuring that every child receives proper care, guidance, and support in their educational journey.",
+];
+
+const prerna = schoolsCat?.items.find(
+  (i) => i.slug === "lotus-prerna-english-school-vihigao-tq-anjangaon-surji-dist-amravati"
+);
+if (prerna) {
+  prerna.about = prernaAbout;
+  prerna.image = prerna1;
+  prerna.gallery = [prerna1, prerna2, prerna3, prerna4, prerna5, prerna6, prerna7];
+  prerna.highlights = [];
 }
 
 export const getInstitutionBySlug = (parent: string, slug: string) => {
