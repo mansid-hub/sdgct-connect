@@ -130,6 +130,12 @@ import matoshriRamabai3 from "@/assets/matoshri-ramabai-3.jpg";
 import matoshriRamabai4 from "@/assets/matoshri-ramabai-4.jpg";
 import uddeshBhartiProfile from "@/assets/uddesh-bharti-profile.jpg";
 import kalyaniDongreProfile from "@/assets/kalyani-dongre-profile.jpg";
+import santGadge1 from "@/assets/sant-gadge-1.jpg";
+import santGadge2 from "@/assets/sant-gadge-2.jpg";
+import santGadge3 from "@/assets/sant-gadge-3.jpg";
+import santGadge4 from "@/assets/sant-gadge-4.jpg";
+import santGadge5 from "@/assets/sant-gadge-5.jpg";
+import santGadge6 from "@/assets/sant-gadge-6.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
