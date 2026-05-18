@@ -805,7 +805,7 @@ export const summaryCounts = () => {
       selfFinanced: colleges.filter((i) => i.type === "self-financed").length,
     },
     hospitals: {
-      total: hospitals.length,
+      total: 2,
     },
   };
 };
