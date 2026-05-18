@@ -164,6 +164,15 @@ import prerna9 from "@/assets/prerna-9.jpg";
 import prerna10 from "@/assets/prerna-10.jpg";
 import prerna11 from "@/assets/prerna-11.jpg";
 import prerna12 from "@/assets/prerna-12.jpg";
+import gaikwad1 from "@/assets/gaikwad-1.jpg";
+import gaikwad2 from "@/assets/gaikwad-2.jpg";
+import gaikwad3 from "@/assets/gaikwad-3.jpg";
+import gaikwad4 from "@/assets/gaikwad-4.jpg";
+import gaikwad5 from "@/assets/gaikwad-5.jpg";
+import gaikwad6 from "@/assets/gaikwad-6.jpg";
+import gaikwad7 from "@/assets/gaikwad-7.jpg";
+import gaikwad8 from "@/assets/gaikwad-8.jpg";
+import gaikwad9 from "@/assets/gaikwad-9.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
