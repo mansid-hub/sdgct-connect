@@ -8,7 +8,6 @@ import { allInstitutions } from "@/data/institutions";
 
 const links = [
   { to: "/", label: "Home" },
-  { to: "/why-us", label: "Why Us" },
   { to: "/contact", label: "Contact Us" },
 ];
 
