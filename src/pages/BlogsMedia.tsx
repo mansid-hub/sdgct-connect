@@ -240,8 +240,8 @@ const stories = [
   {
     slug: "kanchan-solanke-mini-golf",
     title: "Ms. Kanchan Nandu Solanke, State-level Gold Medalist in Mini-Golf",
-    image: lotus7,
-    gallery: [],
+    image: kanchanSolankeProfile,
+    gallery: [kanchanSolankePoster, kanchanSolankeMinigolf, kanchanSolankeFencing],
     tagline:
       "A remarkable journey of sincerity and dedication — from a humble village to a state-level Gold Medalist.",
     paragraphs: [
