@@ -159,6 +159,11 @@ import prerna4 from "@/assets/prerna-4.jpg";
 import prerna5 from "@/assets/prerna-5.jpg";
 import prerna6 from "@/assets/prerna-6.jpg";
 import prerna7 from "@/assets/prerna-7.jpg";
+import prerna8 from "@/assets/prerna-8.jpg";
+import prerna9 from "@/assets/prerna-9.jpg";
+import prerna10 from "@/assets/prerna-10.jpg";
+import prerna11 from "@/assets/prerna-11.jpg";
+import prerna12 from "@/assets/prerna-12.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -749,7 +754,7 @@ const prerna = schoolsCat?.items.find(
 if (prerna) {
   prerna.about = prernaAbout;
   prerna.image = prerna1;
-  prerna.gallery = [prerna1, prerna2, prerna3, prerna4, prerna5, prerna6, prerna7];
+  prerna.gallery = [prerna1, prerna2, prerna3, prerna4, prerna5, prerna6, prerna7, prerna8, prerna9, prerna10, prerna11, prerna12];
   prerna.highlights = [];
 }
 
