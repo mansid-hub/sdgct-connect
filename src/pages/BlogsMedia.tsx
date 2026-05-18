@@ -215,6 +215,34 @@ const stories = [
       "Israil's journey serves as an inspiration to all students, proving that patience, self-belief, and commitment can overcome even the toughest circumstances.",
     ],
   },
+  {
+    slug: "bhakti-chaudhary-sepak-takraw",
+    title: "Ms. Bhakti Gajanan Chaudhary, National-level Silver Medalist in Sepak Takraw & Recipient of Dr. Panjabrao Krida Puraskar",
+    image: lotus6,
+    gallery: [],
+    tagline:
+      "An uplifting illustration of zeal and enthusiasm — Bhakti's perseverance turned dreams into reality.",
+    paragraphs: [
+      "An uplifting illustration of zeal and enthusiasm is Bhakti Gajanan Chaudhari, a stellar student of Lotus English School and Science Junior College. She comes from a financially weak and underprivileged family. Her father works as a construction laborer to support the family, and despite severe financial difficulties, Bhakti never gave up on her education or her dream of excelling in sports.",
+      "From a young age, Bhakti developed a strong passion for sports, especially Sepak Takraw. Along with regularly attending school, she balanced her studies and rigorous sports practice with great discipline and dedication. She practiced twice daily, often facing challenges such as financial limitations, lack of sports equipment, and other hardships. However, she remained focused on her goals and continued to work tirelessly.",
+      "Her commitment brought remarkable success; wherein she won gold medals at the district and divisional levels; and earned silver medals at the state and national levels, bringing pride to her school, family, and city. For her outstanding contribution and achievements in sports, Bhakti was honored with the prestigious \u201cDr. Punjabrao Deshmukh Krida Award,\u201d which was presented to her by Maharashtra Chief Minister, Mr. Devendra Fadnavis, making it a proud and unforgettable moment in her life.",
+      "Throughout her journey, her teachers continuously guided, supported, and encouraged her, strengthening her confidence and helping her overcome every obstacle. Bhakti's story is not only about medals and awards, but also about perseverance, discipline, and the courage to rise above difficult circumstances. Today, she stands as a true inspiration to students and young athletes, proving that perseverance can turn dreams into reality.",
+    ],
+  },
+  {
+    slug: "kanchan-solanke-mini-golf",
+    title: "Ms. Kanchan Nandu Solanke, State-level Gold Medalist in Mini-Golf",
+    image: lotus7,
+    gallery: [],
+    tagline:
+      "A remarkable journey of sincerity and dedication — from a humble village to a state-level Gold Medalist.",
+    paragraphs: [
+      "Kanchan Nandu Solanke's story is a remarkable journey of sincerity and dedication. She belongs to Kanjoli village in Dharni Taluka of Amravati district and was born into a humble and economically weak family. With one brother and three sisters, Kanchan grew up in financially difficult circumstances. Her parents are hardworking farmers who struggle every day to support their family. Despite their limited resources, they strongly believed that education was the most valuable gift they could give their children.",
+      "From an early age, Kanchan was disciplined and determined to build a better future. To continue her education, she stayed away from home in the boarding facility of Lotus Hostel from Class 1 onward. Although staying away from her family was challenging, she never allowed hardships to weaken her dreams. The disciplined environment of the hostel, constant guidance from her teachers, and her own hard work helped shape her into a confident, independent, and responsible individual.",
+      "Along with academics, Kanchan developed a deep interest in sports. She participated in fencing, Sepak Takraw, and mini golf, achieving remarkable success in all three. She performed excellently in fencing at the divisional level and advanced to the state-level competition. In Sepak Takraw, she displayed outstanding skill and commitment. Her greatest achievement came in mini golf, where she won a gold medal at the state-level championship, bringing pride to her school, family, and village.",
+      "Kanchan's journey is not only about personal success, but also about hope, ambition, and the power of dreams. Despite coming from a poor rural family, she created her own identity through perseverance. Today, she stands as an inspiration to students striving to achieve something meaningful in life.",
+    ],
+  },
 ];
 
 const BlogsMedia = () => {
