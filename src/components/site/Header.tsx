@@ -290,6 +290,12 @@ const Header = () => {
                 instOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
               )}
             >
+              <Link
+                to="/institution"
+                className="flex items-center justify-between px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary transition-base"
+              >
+                <span>Overview</span>
+              </Link>
               {institutionMenu.items.map((i) => {
                 const children = allInstitutions(i.parent);
                 return (
