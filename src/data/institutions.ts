@@ -681,8 +681,8 @@ const lotusShyamNagarStories = [
     title: "Ms. Bhakti Gajanan Chaudhary, National-level Silver Medalist in Sepak Takraw",
     preview:
       "From a financially struggling family to national-level silver medals and the prestigious Dr. Panjabrao Deshmukh Krida Award — Bhakti's journey is a story of perseverance and unwavering discipline.",
-    image: lotus6,
-    imagePosition: "center 30%",
+    image: bhaktiChaudharyProfile,
+    imagePosition: "center 20%",
     slug: "bhakti-chaudhary-sepak-takraw",
   },
   {

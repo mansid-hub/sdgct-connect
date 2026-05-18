@@ -15,6 +15,10 @@ import kalyaniDongrePoster from "@/assets/kalyani-dongre-poster.jpg";
 import santGadge1 from "@/assets/sant-gadge-1.jpg";
 import israilLaluwaleProfile from "@/assets/israil-laluwale-profile.jpg";
 import lotus6 from "@/assets/lotus-6.jpg";
+import bhaktiChaudharyProfile from "@/assets/bhakti-chaudhary-profile.jpg";
+import bhaktiChaudharyPoster from "@/assets/bhakti-chaudhary-poster.jpg";
+import bhaktiChaudharyCm from "@/assets/bhakti-chaudhary-cm.jpg";
+import bhaktiChaudharyPractice from "@/assets/bhakti-chaudhary-practice.jpg";
 import lotus7 from "@/assets/lotus-7.jpg";
 import atishImg from "@/assets/success-atish-tayde.png";
 import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
@@ -218,8 +222,8 @@ const stories = [
   {
     slug: "bhakti-chaudhary-sepak-takraw",
     title: "Ms. Bhakti Gajanan Chaudhary, National-level Silver Medalist in Sepak Takraw & Recipient of Dr. Panjabrao Krida Puraskar",
-    image: lotus6,
-    gallery: [],
+    image: bhaktiChaudharyProfile,
+    gallery: [bhaktiChaudharyPoster, bhaktiChaudharyCm, bhaktiChaudharyPractice],
     tagline:
       "An uplifting illustration of zeal and enthusiasm — Bhakti's perseverance turned dreams into reality.",
     paragraphs: [
