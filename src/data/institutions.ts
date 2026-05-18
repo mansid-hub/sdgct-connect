@@ -134,6 +134,12 @@ import santGadge1 from "@/assets/sant-gadge-1.jpg";
 import israilLaluwaleProfile from "@/assets/israil-laluwale-profile.jpg";
 import bhaktiChaudharyProfile from "@/assets/bhakti-chaudhary-profile.jpg";
 import kanchanSolankeProfile from "@/assets/kanchan-solanke-profile.jpg";
+import kamalsurya1 from "@/assets/kamalsurya-1.jpg";
+import kamalsurya2 from "@/assets/kamalsurya-2.jpg";
+import kamalsurya3 from "@/assets/kamalsurya-3.jpg";
+import kamalsurya4 from "@/assets/kamalsurya-4.jpg";
+import kamalsurya5 from "@/assets/kamalsurya-5.jpg";
+import kamalsurya6 from "@/assets/kamalsurya-6.jpg";
 import santGadge2 from "@/assets/sant-gadge-2.jpg";
 import santGadge3 from "@/assets/sant-gadge-3.jpg";
 import santGadge4 from "@/assets/sant-gadge-4.jpg";
@@ -705,6 +711,22 @@ if (lotusShyamNagar) {
   lotusShyamNagar.image = lotus1;
   lotusShyamNagar.gallery = [lotus1, lotus2, lotus3, lotus4, lotus5, lotus6, lotus7];
   lotusShyamNagar.highlights = [];
+}
+
+const kamalsuryaAbout: string[] = [
+  "Kamalsurya English Convent located in Gaurkheda Kumbji, provides education from Nursery to Class 4. The school building is beautiful, clean, and attractive, with spacious, airy, and well-lit classrooms that create a comfortable learning environment. The school caters to students from disadvantaged communities and remote areas.",
+  "The school provides learning materials and play items specially arranged for small children, along with a safe and friendly campus. The teachers are experienced, caring, and dedicated. They teach students in a simple and effective manner and give personal attention to each child. The school also focuses on the intellectual, physical, and moral development of students.",
+  "Various activities are organized regularly, including sports competitions, cultural programs, festival celebrations, drawing, singing, and dancing. These activities support the overall development of students and help build their confidence.",
+];
+
+const kamalsurya = schoolsCat?.items.find(
+  (i) => i.slug === "lotus-kamalsurya-english-primary-school-gaurkheda-kumbhi-tq-achalpur-dist-amrava"
+);
+if (kamalsurya) {
+  kamalsurya.about = kamalsuryaAbout;
+  kamalsurya.image = kamalsurya1;
+  kamalsurya.gallery = [kamalsurya1, kamalsurya2, kamalsurya3, kamalsurya4, kamalsurya5, kamalsurya6];
+  kamalsurya.highlights = [];
 }
 
 export const getInstitutionBySlug = (parent: string, slug: string) => {
