@@ -132,6 +132,7 @@ import uddeshBhartiProfile from "@/assets/uddesh-bharti-profile.jpg";
 import kalyaniDongreProfile from "@/assets/kalyani-dongre-profile.jpg";
 import santGadge1 from "@/assets/sant-gadge-1.jpg";
 import israilLaluwaleProfile from "@/assets/israil-laluwale-profile.jpg";
+import bhaktiChaudharyProfile from "@/assets/bhakti-chaudhary-profile.jpg";
 import santGadge2 from "@/assets/sant-gadge-2.jpg";
 import santGadge3 from "@/assets/sant-gadge-3.jpg";
 import santGadge4 from "@/assets/sant-gadge-4.jpg";
