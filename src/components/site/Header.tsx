@@ -198,9 +198,13 @@ const Header = () => {
           >
   <div className="flex items-center rounded-full overflow-hidden">
     
-    {/* LEFT: Link (About page) */}
-    <Link
-      to="/about"
+    {/* LEFT: toggle (About page inactive, opens dropdown) */}
+    <button
+      type="button"
+      onClick={(e) => {
+        e.stopPropagation();
+        setAboutOpen((v) => !v);
+      }}
       className={cn(
         "px-4 py-2 text-sm font-medium",
         aboutActive
@@ -209,7 +213,7 @@ const Header = () => {
       )}
     >
       {aboutMenu.label}
-    </Link>
+    </button>
 
     {/* RIGHT: Dropdown toggle */}
     <button
