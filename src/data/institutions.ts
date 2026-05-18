@@ -174,6 +174,16 @@ import gaikwad7 from "@/assets/gaikwad-7.jpg";
 import gaikwad8 from "@/assets/gaikwad-8.jpg";
 import gaikwad9 from "@/assets/gaikwad-9.jpg";
 import takshashilaHospital1 from "@/assets/takshashila-hospital-1.jpg";
+import takshashilaModern1 from "@/assets/takshashila-modern-1.jpeg";
+import takshashilaModern2 from "@/assets/takshashila-modern-2.jpeg";
+import takshashilaModern3 from "@/assets/takshashila-modern-3.jpeg";
+import takshashilaModern4 from "@/assets/takshashila-modern-4.jpeg";
+import takshashilaModern5 from "@/assets/takshashila-modern-5.jpeg";
+import takshashilaModern6 from "@/assets/takshashila-modern-6.jpeg";
+import takshashilaModern7 from "@/assets/takshashila-modern-7.jpeg";
+import takshashilaModern8 from "@/assets/takshashila-modern-8.jpeg";
+import takshashilaModern9 from "@/assets/takshashila-modern-9.jpeg";
+import takshashilaModern10 from "@/assets/takshashila-modern-10.jpeg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -803,7 +813,21 @@ if (takshashilaHospital) {
   takshashilaHospital.gallery = [];
   takshashilaHospital.highlights = [];
   takshashilaHospital.galleryFolders = [
-    { name: "Modern Facilities Hospital", images: [] },
+    {
+      name: "Modern Facilities Hospital",
+      images: [
+        takshashilaModern1,
+        takshashilaModern2,
+        takshashilaModern3,
+        takshashilaModern4,
+        takshashilaModern5,
+        takshashilaModern6,
+        takshashilaModern7,
+        takshashilaModern8,
+        takshashilaModern9,
+        takshashilaModern10,
+      ],
+    },
     { name: "Ayurvedic Hospital", images: [] },
     { name: "Other Activities", images: [] },
   ];
