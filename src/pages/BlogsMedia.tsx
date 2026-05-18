@@ -6,6 +6,8 @@ import { ArrowLeft } from "lucide-react";
 import fallbackImg from "@/assets/initiative-education.jpg";
 import jaiGuptaImg from "@/assets/jai-gupta.jpeg";
 import pallaviSadanshivImg from "@/assets/pallavi-sadanshiv.jpeg";
+import matoshriRamabai1 from "@/assets/matoshri-ramabai-1.jpg";
+import matoshriRamabai3 from "@/assets/matoshri-ramabai-3.jpg";
 import atishImg from "@/assets/success-atish-tayde.png";
 import vaishaliImg from "@/assets/success-vaishali-hiwrale.png";
 import shrawastiImg from "@/assets/success-shrawasti-tayde.png";
@@ -160,6 +162,34 @@ const stories = [
       "Life was not easy for Jai. Limited resources and daily struggles were a part of his routine. Travelling several kilometers by bicycle every day, he continued his studies without complaint or discouragement. Alongside academics, Jai nurtured a deep love for the traditional sport of Atya-Patya.",
       "Although he could not afford professional training or sports club facilities, he refused to let circumstances stand in the way of his dreams. With strong willpower and relentless practice on the college playground, Jai steadily sharpened his skills. The encouragement and guidance provided by his teachers and college staff became a major source of motivation in his sporting journey. His consistent efforts soon brought remarkable recognition. During the academic years 2024\u201325 and 2025\u201326, Jai represented his institution at the District, Division, State, and National levels in Atya-Patya. One of the proudest moments of his career came when he participated in the 35th Boys and Girls Junior Atya-Patya National Championship, organized by the Tamil Nadu Atya-Patya Federation, where he secured Third Place at the national level.",
       "Jai believes that his achievements are the result of the constant encouragement of his father, family, and teachers. His story serves as an inspiration to young students, proving that commitment, focus, and hard work can lead to success, regardless of the challenges one faces in life.",
+    ],
+  },
+  {
+    slug: "uddesh-bharti-chef-miami",
+    title: "Mr. Uddesh Sukhdev Bharti, International Chef, Miami USA",
+    image: matoshriRamabai1,
+    gallery: [],
+    tagline:
+      "From Humble Beginnings to Global Heights (\u0906\u092e\u091a\u093e \u0909\u0926\u094d\u0926\u0947\u0936 \u0925\u0947\u091f \u092a\u094b\u0939\u091a\u0932\u093e USA (Miami) \u092a\u0930\u0926\u0947\u0936\u093e\u0924)",
+    paragraphs: [
+      "\u201cCircumstances do not define your destiny; your determination does.\u201d This sentiment is perfectly personified by Uddesh Sukhdev Bharti, a brilliant and distinguished alumnus of Matoshree Ramabai Ambedkar Vidyalaya, Shyam Nagar, Amravati. Today, as we look at his global success, his transition from an underprivileged student to an international Chef, is nothing short of extraordinary.",
+      "Uddesh's path was paved with challenges. Coming from a family where his parents earned a living through manual labor, resources were scarce but dreams were plenty. He inherited a legacy of excellence from his elder brother\u2014also an alumnus of the same school\u2014who is currently a successful Engineer in Pune. Following in those footsteps, Uddesh combined his natural intelligence with an unwavering work ethic. During his time at Matoshri Ramabai Ambedkar Vidyalaya, Uddesh was known not only for his handsome personality and sharp mind but also for his vibrant and restless energy. He channeled this spirit into his studies, overcoming severe financial hardships to clear his Grade 10 exams with flying colors.",
+      "Uddesh's journey is a validation of the fact that no obstacle is too great for a willing heart. Breaking through every barrier, he took a giant leap from the streets of Amravati to the global stage. He is currently working as an exemplary Chef in the vibrant city of Miami, USA. By mastering the culinary arts, he turned his passion into a professional triumph on foreign soil.",
+      "He has proven that grit and perseverance can bridge the gap between a small town in Maharashtra and the luxury kitchens of America. By reaching the pinnacle of success, Uddesh has added a \u201cfeather of honor\u201d to the cap of his alma mater. He stands as a shining example for every student, proving that your background does not limit your future.",
+    ],
+  },
+  {
+    slug: "kalyani-dongre-nmms-scholarship",
+    title: "Ku. Kalyani Pravin Dongre, Recipient of National Means-cum-Merit Scholarship",
+    image: matoshriRamabai3,
+    gallery: [],
+    tagline:
+      "Hard work, perseverance and self-belief paving the way to success.",
+    paragraphs: [
+      "Matoshri Ramabai Ambedkar Vidyalaya, Shyam Nagar, Amravati proudly celebrates the inspiring success of Ku. Kalyani Pravin Dongre, a Class 8 student whose journey reflects determination, resilience, and academic excellence. Kalyani joined the school in the academic year 2022\u201323 in Class 5 and, despite coming from a financially challenged background, consistently excelled in academics and co-curricular competitions, securing top positions through her hard work and dedication.",
+      "Born into a family of daily wage laborers, Kalyani faced severe economic hardships and lacked many basic comforts. However, she refused to let adversity limit her dreams. With unwavering determination, continuous support from her parents, and dedicated guidance from her teachers through special coaching sessions, she appeared for the National Means-cum-Merit Scholarship (NMMS) Examination in Class 8 and achieved remarkable success.",
+      "Kalyani qualified for the prestigious NMMS Scholarship, earning financial assistance of \u20b948,000 for her future education. Her achievement is not only a personal milestone, but also a proud moment for the entire school community. Her story stands as a powerful inspiration for students everywhere, proving that hard work, perseverance, and self-belief can overcome even the greatest challenges.",
+      "Matoshri Ramabai Ambedkar Vidyalaya takes immense pride in Kalyani's achievement and wishes her continued success in all her future endeavors. Her journey truly proves that hard work paves the way to success.",
     ],
   },
 ];
