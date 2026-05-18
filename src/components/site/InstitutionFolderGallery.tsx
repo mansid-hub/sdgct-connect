@@ -31,7 +31,7 @@ const InstitutionFolderGallery = ({ folders, name }: Props) => {
         </h2>
         {folder.images.length > 0 ? (
           <div className="mt-6">
-            <InstitutionGallery images={folder.images} name={`${name} — ${folder.name}`} />
+            <InstitutionGallery images={folder.images} name={`${name} — ${folder.name}`} previewCount={4} />
           </div>
         ) : (
           <div className="mt-6 rounded-2xl border border-dashed border-border/60 bg-secondary/40 p-10 text-center text-muted-foreground">
