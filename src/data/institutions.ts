@@ -317,8 +317,7 @@ export const categories: Category[] = [
     parent: "hospitals",
     description: "Hospitals and healthcare centres associated with the trust.",
     items: build("hospitals", [
-      { name: "Takshshila Ayurvedic Hospital", location: "Kherda, Tq. Karanja Lad, Dist. Washim", type: "self-financed" },
-      { name: "Takshshila (Modern Facilities) Hospital", location: "Kherda, Tq. Karanja Lad, Dist. Washim", type: "self-financed" },
+      { name: "Takshshila Hospital and Research Centre", location: "Kherda, Tq. Karanja Lad, Dist. Washim", type: "self-financed" },
     ]),
   },
 ];
@@ -806,7 +805,7 @@ export const summaryCounts = () => {
       selfFinanced: colleges.filter((i) => i.type === "self-financed").length,
     },
     hospitals: {
-      total: hospitals.length,
+      total: 2,
     },
   };
 };
