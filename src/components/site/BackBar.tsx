@@ -19,7 +19,7 @@ const BackBar = () => {
           navigate("/");
         }
       }}
-      className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 cursor-pointer transition-colors duration-200"
+      className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-200"
       aria-label="Go back"
     >
       <ArrowLeft size={16} />
