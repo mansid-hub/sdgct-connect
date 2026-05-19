@@ -21,7 +21,7 @@ export interface Trustee {
 export const trustees: Trustee[] = [
   {
     slug: "kamaltai-gawai",
-    name: "Dr. Sau. Kamaltai R. Gawai",
+    name: "Dr. Mrs. KamalTai R. Gawai",
     designation: "Former President & Trustee | M.A., Ph.D., D.Litt.",
     summary:
       "Visionary founder of the trust, devoted to the upliftment of women, children and underprivileged communities across Vidarbha.",
@@ -94,7 +94,7 @@ export const trustees: Trustee[] = [
   },
   {
     slug: "karan-arjun",
-    name: "Shri. Karan Rajesh Arjun",
+    name: "Mr. Karan Rajesh Arjun",
     designation: "Trustee | B.Com, University of Mumbai & SIPA, Columbia University",
     summary:
       "Trustee championing education, scholarships and capacity-building for first-generation learners across Vidarbha.",
