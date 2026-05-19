@@ -249,6 +249,7 @@ import takshashilaAyurvedCollege3 from "@/assets/takshashila-ayurved-college-3.j
 import takshashilaAyurvedCollege4 from "@/assets/takshashila-ayurved-college-4.jpg";
 import takshashilaAyurvedCollege5 from "@/assets/takshashila-ayurved-college-5.jpg";
 import takshashilaAyurvedCollege6 from "@/assets/takshashila-ayurved-college-6.jpg";
+import takshashilaAyurvedCollegeProfile from "@/assets/takshashila-ayurved-college-profile.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
