@@ -287,6 +287,7 @@ import tiet11 from "@/assets/tiet-11.jpg";
 import tiet12 from "@/assets/tiet-12.jpg";
 import tiet13 from "@/assets/tiet-13.jpg";
 import tiet14 from "@/assets/tiet-14.jpg";
+import tietProfile from "@/assets/tiet-profile.jpeg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -1238,7 +1239,7 @@ const tiet = categories
   .find((i) => i.slug === "takshashila-institute-of-engineering-and-technology-and-research-centre-darapur-");
 if (tiet) {
   tiet.about = tietAbout;
-  tiet.image = tiet2;
+  tiet.image = tietProfile;
   tiet.highlights = [];
   tiet.gallery = [tiet1, tiet2, tiet3, tiet4, tiet5, tiet6, tiet7, tiet8, tiet9, tiet10, tiet11, tiet12, tiet13, tiet14];
 }
