@@ -38,6 +38,7 @@ import rajnandiniGroup from "@/assets/success-rajnandini-group.jpg";
 import rajnandiniCert from "@/assets/success-rajnandini-certificate.jpg";
 import rajnandiniNaik from "@/assets/success-rajnandini-naik.jpg";
 import rajnandiniSandeepNaik from "@/assets/success-rajnandini-sandeep-naik.jpg";
+import nandiniGawai from "@/assets/success-nandini-gawai.jpg";
 import mahatma2 from "@/assets/mahatma-2.jpg";
 import ankitProfileCard from "@/assets/ankit-profile-card.jpg";
 import mahatma1 from "@/assets/mahatma-1.jpg";
@@ -256,7 +257,7 @@ const stories = [
     slug: "nandini-gawai-fencing",
     title:
       "Ms. Nandini Satish Gawai, National-level Athlete in Fencing, Yoga, and Minigolf",
-    image: takshashilaCollege1,
+    image: nandiniGawai,
     gallery: [],
     tagline:
       "From the dusty fields of Balegaon to national fencing competitions \u2014 a testament to the power of tenacity and sacrifice.",

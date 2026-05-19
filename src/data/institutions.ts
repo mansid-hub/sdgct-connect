@@ -926,7 +926,7 @@ if (takshashilaCollege) {
       title: "Ms. Nandini Satish Gawai, National-level Athlete in Fencing, Yoga, and Minigolf",
       preview:
         "From a modest household in Balegaon to the national sporting arena \u2014 a testament to the power of tenacity, sacrifice and discipline.",
-      image: takshashilaCollege1,
+      image: nandiniGawai,
     },
     {
       slug: "gauri-khawale-archery",
