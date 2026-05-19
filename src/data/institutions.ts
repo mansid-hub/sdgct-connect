@@ -1254,8 +1254,8 @@ const samratAshokItiAbout = [
 ];
 
 const samratAshokIti = categories
-  .flatMap((c) => c.children ?? [])
-  .find((c) => c.slug === "samrat-ashok-industrial-training-institute-darapur-tq-daryapur-amravati");
+  .flatMap((c) => c.items)
+  .find((i) => i.slug === "samrat-ashok-industrial-training-institute-darapur-tq-daryapur-amravati");
 
 if (samratAshokIti) {
   samratAshokIti.about = samratAshokItiAbout;
