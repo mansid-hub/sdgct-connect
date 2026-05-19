@@ -243,6 +243,16 @@ import ramkrushnaJr5 from "@/assets/ramkrushna-jr-5.jpg";
 import ramkrushnaJr6 from "@/assets/ramkrushna-jr-6.jpg";
 import ramkrushnaJr7 from "@/assets/ramkrushna-jr-7.jpg";
 import ramkrushnaJr8 from "@/assets/ramkrushna-jr-8.jpg";
+import ramkrushnaBed1 from "@/assets/ramkrushna-bed-1.jpg";
+import ramkrushnaBed2 from "@/assets/ramkrushna-bed-2.jpg";
+import ramkrushnaBed3 from "@/assets/ramkrushna-bed-3.jpg";
+import ramkrushnaBed4 from "@/assets/ramkrushna-bed-4.jpg";
+import ramkrushnaBed5 from "@/assets/ramkrushna-bed-5.jpg";
+import ramkrushnaBed6 from "@/assets/ramkrushna-bed-6.jpg";
+import ramkrushnaBed7 from "@/assets/ramkrushna-bed-7.jpg";
+import ramkrushnaBed8 from "@/assets/ramkrushna-bed-8.jpg";
+import ramkrushnaBed9 from "@/assets/ramkrushna-bed-9.jpg";
+import ramkrushnaBed10 from "@/assets/ramkrushna-bed-10.jpg";
 import takshashilaAyurvedCollege1 from "@/assets/takshashila-ayurved-college-1.jpg";
 import takshashilaAyurvedCollege2 from "@/assets/takshashila-ayurved-college-2.jpg";
 import takshashilaAyurvedCollege3 from "@/assets/takshashila-ayurved-college-3.jpg";
@@ -1147,6 +1157,34 @@ if (tiper) {
   tiper.image = tiper1;
   tiper.highlights = [];
   tiper.gallery = [tiper1, tiper2];
+}
+
+const ramkrushnaBedAbout = [
+  "Ramkrushna Shikshan Shastra Mahavidyalaya (also known as Ramakrishna College of Education), run by Shri Dadasaheb Gavai Charitable Trust, Amravati, is a prestigious educational institution in Amravati city. This is the only college of education affiliated to Kavikulguru Kalidas Sanskrit University, Ramtek University and is recognized by the National Council for Teacher Education (NCTE) and the Government of Maharashtra. Established in 2005, this college has cultivated a fine educational tradition of 19 years.",
+  "The main objective of the college is to produce quality, knowledgeable and skilled teachers. It has a capacity of 100 students (two batches) for the B.Ed. course. Sanskrit subject is mandatory up to graduation for admission eligibility, and admission is given based on the marks in the common entrance examination.",
+  "The salient features of the college include Wi-Fi campus, state-of-the-art ICT labs, psychology and social science labs, well-stocked library, language labs, separate 'pink room' for girl students and well-equipped seminar halls. Educational tours, personality development, skill development, yoga, guidance for competitive exams like TET/CTET/SET/NET and campus interviews are also organized here.",
+  "Government and social welfare scholarships along with Rajarshi Shahu Maharaj scholarship are available to students. The college is famous for its discipline, honesty and strict anti-ragging rules. As a study center of Yashwantrao Chavan Maharashtra Open University, courses like M.A. Education, D.S.M. are also implemented here. Ramakrishna College of Education is an ideal institution for producing dedicated and career-oriented teachers.",
+];
+
+const ramkrushnaBed = categories
+  .flatMap((c) => c.items)
+  .find((i) => i.slug === "ramkrushna-shikshan-shastra-mahavidyalaya-b-ed-uttam-nagar-dist-amravati");
+if (ramkrushnaBed) {
+  ramkrushnaBed.about = ramkrushnaBedAbout;
+  ramkrushnaBed.image = ramkrushnaBed1;
+  ramkrushnaBed.highlights = [];
+  ramkrushnaBed.gallery = [
+    ramkrushnaBed1,
+    ramkrushnaBed2,
+    ramkrushnaBed3,
+    ramkrushnaBed4,
+    ramkrushnaBed5,
+    ramkrushnaBed6,
+    ramkrushnaBed7,
+    ramkrushnaBed8,
+    ramkrushnaBed9,
+    ramkrushnaBed10,
+  ];
 }
 
 

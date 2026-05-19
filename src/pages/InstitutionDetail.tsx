@@ -195,6 +195,7 @@ const InstitutionDetail = () => {
                   || inst.slug === "takshashila-mahavidyalaya-darapur-tq-daryapur-dist-amravati"
                   || inst.slug === "takshashila-ayurved-college-and-hospital-and-research-centre-kherda-tq-karanja-d"
                   || inst.slug === "takshashila-polytechnic-college-uttam-nagar-amravati"
+                  || inst.slug === "ramkrushna-shikshan-shastra-mahavidyalaya-b-ed-uttam-nagar-dist-amravati"
                     ? 4
                     : undefined
                 }
