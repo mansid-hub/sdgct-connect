@@ -216,6 +216,16 @@ import takshashilaShyam4 from "@/assets/takshashila-shyam-4.jpeg";
 import takshashilaShyam5 from "@/assets/takshashila-shyam-5.jpeg";
 import takshashilaShyam6 from "@/assets/takshashila-shyam-6.jpeg";
 import takshashilaShyam7 from "@/assets/takshashila-shyam-7.jpeg";
+import takshashilaDarapur1 from "@/assets/takshashila-darapur-1.jpeg";
+import takshashilaDarapur2 from "@/assets/takshashila-darapur-2.jpeg";
+import takshashilaDarapur3 from "@/assets/takshashila-darapur-3.jpeg";
+import takshashilaDarapur4 from "@/assets/takshashila-darapur-4.jpeg";
+import takshashilaDarapur5 from "@/assets/takshashila-darapur-5.jpeg";
+import takshashilaDarapur6 from "@/assets/takshashila-darapur-6.jpeg";
+import takshashilaDarapur7 from "@/assets/takshashila-darapur-7.jpeg";
+import takshashilaDarapur8 from "@/assets/takshashila-darapur-8.jpeg";
+import takshashilaDarapur9 from "@/assets/takshashila-darapur-9.jpeg";
+import takshashilaDarapur10 from "@/assets/takshashila-darapur-10.jpeg";
 import rajeshBobade from "@/assets/success-rajesh-bobade.jpeg";
 import nandiniGawai from "@/assets/success-nandini-gawai.jpg";
 import gauriKhawale from "@/assets/success-gauri-khawale.jpg";
@@ -1012,6 +1022,34 @@ if (takshashilaShyam) {
         "From a B.A. student at Takshashila Mahavidyalaya to Ph.D. Librarian and Soft Skills Trainer — a journey shaped by mentorship, NSS and youth festivals.",
       image: rajeshBobade,
     },
+  ];
+}
+
+const takshashilaDarapurAbout = [
+  "Takshashila Mahavidyalaya, Darapur was established in June 2000 with the noble objective of spreading awareness and promoting higher education among the rural, underprivileged, deprived, and marginalized sections of society. The institution is managed by Shri Dadasaheb Gawai Charitable Trust, Amravati, which has consistently worked for the educational and social upliftment of weaker sections in accordance with the ideals and vision of Bharat Ratna Dr. B. R. Ambedkar, the architect of the Indian Constitution.",
+  "The college owes its foundation to the visionary leadership and foresight of Hon'ble Shri R. S. alias Dadasaheb Gawai, whose inspiration and dedication motivated the establishment of this institution. His commitment to social justice and education continues to guide the institution in all its academic and social endeavors. The efforts and blessings of Dr. Sau. Kamaltai R. Gawai, Founder President of the Trust, played a vital role in transforming this vision into reality.",
+  "Under the dynamic leadership of the President of the Society, Sau. Kirtitai R. Arjun, and the Secretary, Dr. Kamlakar Payas, the institution continues to progress steadily towards achieving its educational goals and objectives. The college is committed not only to academic excellence, but also to the holistic development of students through various curricular, co-curricular, and extra-curricular activities.",
+  "Students actively participate in sports, university-level tournaments, cultural events, and extension activities such as the National Service Scheme (NSS). Through NSS camps and social outreach programs, students are encouraged to develop leadership qualities, social responsibility, and a spirit of voluntary service. The institution strives to nurture talent, moral values, and social commitment among students, enabling them to become responsible citizens and valuable contributors to society.",
+];
+
+const takshashilaDarapur = categories
+  .flatMap((c) => c.items)
+  .find((i) => i.slug === "takshashila-mahavidyalaya-darapur-tq-daryapur-dist-amravati");
+if (takshashilaDarapur) {
+  takshashilaDarapur.about = takshashilaDarapurAbout;
+  takshashilaDarapur.image = takshashilaDarapur1;
+  takshashilaDarapur.highlights = [];
+  takshashilaDarapur.gallery = [
+    takshashilaDarapur1,
+    takshashilaDarapur2,
+    takshashilaDarapur3,
+    takshashilaDarapur4,
+    takshashilaDarapur5,
+    takshashilaDarapur6,
+    takshashilaDarapur7,
+    takshashilaDarapur8,
+    takshashilaDarapur9,
+    takshashilaDarapur10,
   ];
 }
 

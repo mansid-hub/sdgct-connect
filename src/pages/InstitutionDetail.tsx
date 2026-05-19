@@ -192,6 +192,7 @@ const InstitutionDetail = () => {
                   || inst.slug === "dr-babasaheb-ambedkar-takshashila-mahavidyalaya-and-junior-college-uttam-nagar-d"
                   || inst.slug === "ramkrushna-junior-college-darapur-tq-daryapur-dist-amravati"
                   || inst.slug === "takshashila-mahavidyalaya-and-junior-college-shyam-nagar-dist-amravati"
+                  || inst.slug === "takshashila-mahavidyalaya-darapur-tq-daryapur-dist-amravati"
                     ? 4
                     : undefined
                 }
