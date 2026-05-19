@@ -901,9 +901,9 @@ const takshashilaCollegeAbout: string[] = [
   "Social Outreach & Culture: The college conducts social initiatives such as educational material donations, regular visits to old age homes, and Sanvidhan (Constitution) Rallies to spread legal awareness, and features a \u201cSAVINDHAN WALL\u201d portraying all the aspects of the Indian Constitution. It uses street plays to highlight the lives of social reformers and organizes Matru-Pitru Sanman programs to strengthen the bond between students and parents. The college's registered publication department has published 15 books with ISBNs.",
 ];
 
-const takshashilaCollege = allInstitutions("colleges").find(
-  (i) => i.slug === "dr-babasaheb-ambedkar-takshashila-mahavidyalaya-and-junior-college-uttam-nagar-d"
-);
+const takshashilaCollege = categories
+  .flatMap((c) => c.items)
+  .find((i) => i.slug === "dr-babasaheb-ambedkar-takshashila-mahavidyalaya-and-junior-college-uttam-nagar-d");
 if (takshashilaCollege) {
   takshashilaCollege.about = takshashilaCollegeAbout;
   takshashilaCollege.image = takshashilaCollege1;
