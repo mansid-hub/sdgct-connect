@@ -40,6 +40,7 @@ import rajnandiniNaik from "@/assets/success-rajnandini-naik.jpg";
 import rajnandiniSandeepNaik from "@/assets/success-rajnandini-sandeep-naik.jpg";
 import nandiniGawai from "@/assets/success-nandini-gawai.jpg";
 import gauriKhawale from "@/assets/success-gauri-khawale.jpg";
+import rajeshBobade from "@/assets/success-rajesh-bobade.jpeg";
 import mahatma2 from "@/assets/mahatma-2.jpg";
 import ankitProfileCard from "@/assets/ankit-profile-card.jpg";
 import mahatma1 from "@/assets/mahatma-1.jpg";
@@ -289,7 +290,7 @@ const stories = [
     slug: "rajesh-bobade-librarian",
     title:
       "Dr. Rajesh G. Bobade, Librarian, Dr. Shyamaprasad Mukherjee Arts College, Shendurjanaghat",
-    image: fallbackImg,
+    image: rajeshBobade,
     gallery: [],
     tagline:
       "From a B.A. student at Takshashila Mahavidyalaya to Ph.D. Librarian and Soft Skills Trainer — a journey shaped by mentorship, NSS and youth festivals.",

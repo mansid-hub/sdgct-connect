@@ -216,6 +216,7 @@ import takshashilaShyam4 from "@/assets/takshashila-shyam-4.jpeg";
 import takshashilaShyam5 from "@/assets/takshashila-shyam-5.jpeg";
 import takshashilaShyam6 from "@/assets/takshashila-shyam-6.jpeg";
 import takshashilaShyam7 from "@/assets/takshashila-shyam-7.jpeg";
+import rajeshBobade from "@/assets/success-rajesh-bobade.jpeg";
 import nandiniGawai from "@/assets/success-nandini-gawai.jpg";
 import gauriKhawale from "@/assets/success-gauri-khawale.jpg";
 import ramkrushnaJr1 from "@/assets/ramkrushna-jr-1.jpg";
@@ -1009,6 +1010,7 @@ if (takshashilaShyam) {
         "Dr. Rajesh G. Bobade, Librarian, Dr. Shyamaprasad Mukherjee Arts College, Shendurjanaghat",
       preview:
         "From a B.A. student at Takshashila Mahavidyalaya to Ph.D. Librarian and Soft Skills Trainer — a journey shaped by mentorship, NSS and youth festivals.",
+      image: rajeshBobade,
     },
   ];
 }
