@@ -1013,7 +1013,7 @@ if (takshashilaShyam) {
   ];
 }
 
-
+export const getInstitutionBySlug = (parent: string, slug: string) => {
   const all = allInstitutions();
   return all.find((i) => i.parent === parent && i.slug === slug);
 };
