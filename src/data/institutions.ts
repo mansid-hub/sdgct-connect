@@ -945,9 +945,9 @@ const ramkrushnaJrAbout: string[] = [
   "The institution takes pride in its highly qualified faculty, including three Ph.D. holders and award-winning educators. With the establishment of the Science Department in 2001, the college further strengthened its commitment to scientific awareness and higher education. Through discipline, knowledge, experimentation, and value-based learning, Ramkrishna Junior College continues its unwavering dedication to shaping capable, confident, and socially responsible citizens for the future.",
 ];
 
-const ramkrushnaJr = allInstitutions("colleges").find(
-  (i) => i.slug === "ramkrushna-junior-college-darapur-tq-daryapur-dist-amravati"
-);
+const ramkrushnaJr = categories
+  .flatMap((c) => c.items)
+  .find((i) => i.slug === "ramkrushna-junior-college-darapur-tq-daryapur-dist-amravati");
 if (ramkrushnaJr) {
   ramkrushnaJr.about = ramkrushnaJrAbout;
   ramkrushnaJr.image = ramkrushnaJr1;
