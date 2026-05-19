@@ -283,6 +283,10 @@ import tiet7 from "@/assets/tiet-7.jpg";
 import tiet8 from "@/assets/tiet-8.jpg";
 import tiet9 from "@/assets/tiet-9.png";
 import tiet10 from "@/assets/tiet-10.jpeg";
+import tiet11 from "@/assets/tiet-11.jpg";
+import tiet12 from "@/assets/tiet-12.jpg";
+import tiet13 from "@/assets/tiet-13.jpg";
+import tiet14 from "@/assets/tiet-14.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -1236,7 +1240,7 @@ if (tiet) {
   tiet.about = tietAbout;
   tiet.image = tiet2;
   tiet.highlights = [];
-  tiet.gallery = [tiet1, tiet2, tiet3, tiet4, tiet5, tiet6, tiet7, tiet8, tiet9, tiet10];
+  tiet.gallery = [tiet1, tiet2, tiet3, tiet4, tiet5, tiet6, tiet7, tiet8, tiet9, tiet10, tiet11, tiet12, tiet13, tiet14];
 }
 
 
