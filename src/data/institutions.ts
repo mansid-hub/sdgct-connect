@@ -253,6 +253,9 @@ import ramkrushnaBed7 from "@/assets/ramkrushna-bed-7.jpg";
 import ramkrushnaBed8 from "@/assets/ramkrushna-bed-8.jpg";
 import ramkrushnaBed9 from "@/assets/ramkrushna-bed-9.jpg";
 import ramkrushnaBed10 from "@/assets/ramkrushna-bed-10.jpg";
+import ramkrushnaBed11 from "@/assets/ramkrushna-bed-11.jpg";
+import ramkrushnaBed12 from "@/assets/ramkrushna-bed-12.jpg";
+import ramkrushnaBed13 from "@/assets/ramkrushna-bed-13.jpg";
 import takshashilaAyurvedCollege1 from "@/assets/takshashila-ayurved-college-1.jpg";
 import takshashilaAyurvedCollege2 from "@/assets/takshashila-ayurved-college-2.jpg";
 import takshashilaAyurvedCollege3 from "@/assets/takshashila-ayurved-college-3.jpg";
@@ -1184,6 +1187,9 @@ if (ramkrushnaBed) {
     ramkrushnaBed8,
     ramkrushnaBed9,
     ramkrushnaBed10,
+    ramkrushnaBed11,
+    ramkrushnaBed12,
+    ramkrushnaBed13,
   ];
 }
 
