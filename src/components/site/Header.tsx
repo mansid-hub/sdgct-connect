@@ -581,7 +581,7 @@ const Header = () => {
     onClick={() => setMobileInstOpen((v) => (v === "media" ? null : "media"))}
     className="w-full flex items-center justify-between px-5 py-4 rounded-2xl text-lg font-display font-semibold"
   >
-    Media
+    Resources
     <ChevronDown
       size={18}
       className={cn(
