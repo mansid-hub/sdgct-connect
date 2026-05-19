@@ -1128,6 +1128,29 @@ if (takshashilaPolytechnic) {
   ];
 }
 
+const tiperAbout = [
+  "Takshashila Institute of Pharmaceutical Education and Research (TIPER), Kherda, established under the Shri Dadasaheb Gawai Charitable Trust, is committed to the tagline \"Transformation of Society through Quality Education.\" The institute has emerged as a center of excellence in pharmaceutical education by providing quality, affordable, and industry-oriented learning opportunities to students from rural and semi-urban backgrounds.",
+  "Approved by the Pharmacy Council of India (PCI), AICTE, Directorate of Technical Education (DTE), Government of Maharashtra, and affiliated with Dr. Babasaheb Ambedkar Technological University, Lonere and MSBTE, Mumbai, the institute offers D.Pharm, B.Pharm and Mpharm (Pharmaceutical quality assurance, Pharmacology) programs with a strong focus on academic excellence, research, innovation, and healthcare service.",
+  "TIPER emphasizes outcome-based education through experienced faculty, well-equipped laboratories, digital library facilities, research-oriented learning, industrial collaborations, and practical training. The institute continuously promotes professional ethics, patient care, scientific inquiry, and skill development to prepare competent pharmacy professionals capable of contributing effectively to the healthcare and pharmaceutical sectors.",
+  "With a lush green campus, modern infrastructure, placement support, seminars, workshops, industrial visits, and student-centered academic practices, TIPER creates a dynamic environment that nurtures knowledge, leadership, discipline, and lifelong learning among future pharmacists.",
+  "Takshashila Institute of Pharmaceutical Education and Research (TIPER), Kherda has been playing a transformative role in rural education and social empowerment by making pharmaceutical education accessible to students from economically and socially disadvantaged communities across the Vidarbha region. Guided by the vision of social transformation through quality education, the institute works extensively for the upliftment of first-generation learners and rural youth.",
+  "The institute supports students through mentorship, bridge courses, career guidance, personality development programs, and practical skill training, enabling them to overcome academic, financial, and social barriers. Along with academic excellence, TIPER actively promotes social awareness and community engagement through health awareness campaigns, diagnostic camps, meditation programs, employment initiatives for rural youth, and educational outreach activities.",
+  "Through its dedicated faculty, inclusive learning environment, scholarship support, and strong emphasis on ethical healthcare practices, the institute empowers students with confidence, communication skills, leadership qualities, and professional competence. TIPER not only develops skilled pharmacy professionals but also nurtures responsible citizens committed to serving society and improving community healthcare outcomes.",
+  "As a part of the Shri Dadasaheb Gawai Charitable Trust, which manages numerous educational institutions dedicated to social welfare and educational advancement, TIPER continues to contribute meaningfully toward regional development and nation-building through quality pharmaceutical education and rural empowerment.",
+];
+
+const tiper = categories
+  .flatMap((c) => c.items)
+  .find((i) => i.slug === "takshashila-institute-of-pharmaceutical-education-and-research-kherda-tq-karanja");
+if (tiper) {
+  tiper.about = tiperAbout;
+  tiper.image = tiper1;
+  tiper.highlights = [];
+  tiper.gallery = [tiper1, tiper2];
+}
+
+
+
 
 export const getInstitutionBySlug = (parent: string, slug: string) => {
   const all = allInstitutions();
