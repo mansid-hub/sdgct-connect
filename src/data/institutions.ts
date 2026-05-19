@@ -973,7 +973,47 @@ if (ramkrushnaJr) {
   ];
 }
 
-export const getInstitutionBySlug = (parent: string, slug: string) => {
+const takshashilaShyamAbout: string[] = [
+  "Where the whole world is a single nest — This maxim is true concerning Takshashila Mahavidyalay and Junior College, Shyam Nagar, Amravati. It is a pioneer in the sphere of education. It is guided by the progressive ideals of Bharat Ratna Dr. Babasaheb Ambedkar, Chhatrapati Shahu Maharaj, and Mahatma Jyotirao Phule, the vision of empowering society through education has been meaningfully followed by Shri Dadasaheb Gawai and Dr. Kamaltai Gawai through the establishment of the Shri Dadasaheb Gawai Charitable Trust, Amravati.",
+  "Founded with a deep commitment to social transformation, the Trust has consistently worked towards the educational and social upliftment of students, especially those belonging to economically and socially disadvantaged communities. Over the years, it has emerged as a distinguished educational organization dedicated to nurturing knowledge, character, and social consciousness.",
+  "Takshashila Mahavidyalaya, Amravati, established on 20 June 1984, is affiliated to Sant Gadge Baba Amravati University, Amravati. Since its inception, the institution has made remarkable progress in academics, sports, cultural activities, and community engagement. The college has been accredited with 'B' Grade by the National Assessment and Accreditation Council (NAAC), Bengaluru, reflecting its commitment to quality education and institutional excellence.",
+  "The institution offers a broad spectrum of academic programs designed to meet the evolving educational needs of students.",
+  "Granted Courses (Government-aided) — Junior College Programmes: Higher Secondary Education (Std. XI & XII) in Arts and Commerce; H.S.C. Vocational Courses. Undergraduate Programmes: Bachelor of Arts (B.A.); Bachelor of Commerce (B.Com.).",
+  "Non-granted Courses (Self-financed) — Junior College Programme: Higher Secondary Education (Std. XI & XII) in Science. Undergraduate Programmes: Bachelor of Science (B.Sc.); Bachelor of Commerce (B.Com.); Bachelor of Business Administration (B.B.A.); Bachelor of Computer Applications (BCA); Bachelor of Arts in Journalism and Mass Communication (B.A.J.M.C.); Bachelor of Laws degree (LLB) — Five-year integrated course. Postgraduate Programmes: Master of Arts (M.A.) in Pali-Prakrit, History, Political Science, and Marathi; Master of Science (M.Sc.) in Maths, Computer Science, and Physics; Master of Commerce (M.Com.).",
+  "The college also facilitates programmes offered by Yashwantrao Chavan Maharashtra Open University (Y.C.M.O.U.), Nashik.",
+  "To enrich students with practical knowledge and contemporary skills, the college conducts several UGC-recognized and value-oriented programmes such as the UGC Network Centre, Certificate Course in Human Rights, Dr. Babasaheb Ambedkar Study Centre, Certificate Course in Communication Skills, and Certificate Course in Translation Proficiency. These initiatives aim to prepare students to face global challenges with confidence, competence, and ethical values.",
+  "It is the pride of the Institution to have Ph.D. in its Research Centres affiliated with Sant Gadge Baba Amravati University in the disciplines of English, Marathi, Pali, Economics, Sociology, Commerce, and Physical Education, where numerous scholars are actively engaged in doctoral research and academic advancement.",
+  "In accordance with the transformative vision of the National Education Policy (NEP) 2020, the college introduced NEP-based academic programmes from the session 2024–25. Expanding its horizon of professional education, the institution has also launched an integrated B.Com. LL.B. programme from the academic session 2025–26, creating new pathways for aspiring students in the field of legal and commercial studies.",
+];
+
+const takshashilaShyam = categories
+  .flatMap((c) => c.items)
+  .find((i) => i.slug === "takshashila-mahavidyalaya-and-junior-college-shyam-nagar-dist-amravati");
+if (takshashilaShyam) {
+  takshashilaShyam.about = takshashilaShyamAbout;
+  takshashilaShyam.image = takshashilaShyam6;
+  takshashilaShyam.highlights = [];
+  takshashilaShyam.gallery = [
+    takshashilaShyam1,
+    takshashilaShyam2,
+    takshashilaShyam3,
+    takshashilaShyam4,
+    takshashilaShyam5,
+    takshashilaShyam6,
+    takshashilaShyam7,
+  ];
+  takshashilaShyam.successStories = [
+    {
+      slug: "rajesh-bobade-librarian",
+      title:
+        "Dr. Rajesh G. Bobade, Librarian, Dr. Shyamaprasad Mukherjee Arts College, Shendurjanaghat",
+      preview:
+        "From a B.A. student at Takshashila Mahavidyalaya to Ph.D. Librarian and Soft Skills Trainer — a journey shaped by mentorship, NSS and youth festivals.",
+    },
+  ];
+}
+
+
   const all = allInstitutions();
   return all.find((i) => i.parent === parent && i.slug === slug);
 };
