@@ -209,6 +209,7 @@ import takshashilaCollege7 from "@/assets/takshashila-college-7.jpg";
 import takshashilaCollege8 from "@/assets/takshashila-college-8.jpg";
 import takshashilaCollege9 from "@/assets/takshashila-college-9.jpg";
 import takshashilaCollege10 from "@/assets/takshashila-college-10.jpg";
+import nandiniGawai from "@/assets/success-nandini-gawai.jpg";
 import ramkrushnaJr1 from "@/assets/ramkrushna-jr-1.jpg";
 import ramkrushnaJr2 from "@/assets/ramkrushna-jr-2.jpg";
 import ramkrushnaJr3 from "@/assets/ramkrushna-jr-3.jpg";
