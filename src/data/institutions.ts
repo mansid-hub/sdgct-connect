@@ -226,6 +226,12 @@ import takshashilaDarapur7 from "@/assets/takshashila-darapur-7.jpeg";
 import takshashilaDarapur8 from "@/assets/takshashila-darapur-8.jpeg";
 import takshashilaDarapur9 from "@/assets/takshashila-darapur-9.jpeg";
 import takshashilaDarapur10 from "@/assets/takshashila-darapur-10.jpeg";
+import takshashilaDarapur11 from "@/assets/takshashila-darapur-11.jpeg";
+import takshashilaDarapur12 from "@/assets/takshashila-darapur-12.jpeg";
+import takshashilaDarapur13 from "@/assets/takshashila-darapur-13.jpeg";
+import takshashilaDarapur14 from "@/assets/takshashila-darapur-14.jpeg";
+import takshashilaDarapur15 from "@/assets/takshashila-darapur-15.jpeg";
+import takshashilaDarapur16 from "@/assets/takshashila-darapur-16.jpeg";
 import rajeshBobade from "@/assets/success-rajesh-bobade.jpeg";
 import nandiniGawai from "@/assets/success-nandini-gawai.jpg";
 import gauriKhawale from "@/assets/success-gauri-khawale.jpg";
@@ -1050,6 +1056,12 @@ if (takshashilaDarapur) {
     takshashilaDarapur8,
     takshashilaDarapur9,
     takshashilaDarapur10,
+    takshashilaDarapur11,
+    takshashilaDarapur12,
+    takshashilaDarapur13,
+    takshashilaDarapur14,
+    takshashilaDarapur15,
+    takshashilaDarapur16,
   ];
 }
 
