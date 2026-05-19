@@ -199,6 +199,16 @@ import takshashilaOther4 from "@/assets/takshashila-other-4.jpg";
 import takshashilaOther5 from "@/assets/takshashila-other-5.jpg";
 import takshashilaOther6 from "@/assets/takshashila-other-6.jpg";
 import takshashilaOther7 from "@/assets/takshashila-other-7.jpg";
+import takshashilaCollege1 from "@/assets/takshashila-college-1.jpg";
+import takshashilaCollege2 from "@/assets/takshashila-college-2.jpg";
+import takshashilaCollege3 from "@/assets/takshashila-college-3.jpg";
+import takshashilaCollege4 from "@/assets/takshashila-college-4.jpg";
+import takshashilaCollege5 from "@/assets/takshashila-college-5.jpg";
+import takshashilaCollege6 from "@/assets/takshashila-college-6.jpg";
+import takshashilaCollege7 from "@/assets/takshashila-college-7.jpg";
+import takshashilaCollege8 from "@/assets/takshashila-college-8.jpg";
+import takshashilaCollege9 from "@/assets/takshashila-college-9.jpg";
+import takshashilaCollege10 from "@/assets/takshashila-college-10.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
