@@ -210,6 +210,7 @@ import takshashilaCollege8 from "@/assets/takshashila-college-8.jpg";
 import takshashilaCollege9 from "@/assets/takshashila-college-9.jpg";
 import takshashilaCollege10 from "@/assets/takshashila-college-10.jpg";
 import nandiniGawai from "@/assets/success-nandini-gawai.jpg";
+import gauriKhawale from "@/assets/success-gauri-khawale.jpg";
 import ramkrushnaJr1 from "@/assets/ramkrushna-jr-1.jpg";
 import ramkrushnaJr2 from "@/assets/ramkrushna-jr-2.jpg";
 import ramkrushnaJr3 from "@/assets/ramkrushna-jr-3.jpg";
@@ -934,7 +935,7 @@ if (takshashilaCollege) {
       title: "Ms. Gauri Sunilrao Khawale, National-level Archer",
       preview:
         "From a small village to Khelo India University Games \u2014 a story of grit, sweat and an unwavering spirit, carved out with the pull of a bowstring.",
-      image: takshashilaCollege1,
+      image: gauriKhawale,
     },
   ];
 }
