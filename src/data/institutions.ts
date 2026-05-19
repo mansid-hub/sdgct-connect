@@ -273,6 +273,16 @@ import takshashilaPolytechnic6 from "@/assets/takshashila-polytechnic-6.jpeg";
 import takshashilaPolytechnic7 from "@/assets/takshashila-polytechnic-7.jpeg";
 import tiper1 from "@/assets/tiper-1.jpeg";
 import tiper2 from "@/assets/tiper-2.jpeg";
+import tiet1 from "@/assets/tiet-1.jpeg";
+import tiet2 from "@/assets/tiet-2.jpg";
+import tiet3 from "@/assets/tiet-3.jpeg";
+import tiet4 from "@/assets/tiet-4.jpg";
+import tiet5 from "@/assets/tiet-5.jpg";
+import tiet6 from "@/assets/tiet-6.jpg";
+import tiet7 from "@/assets/tiet-7.jpg";
+import tiet8 from "@/assets/tiet-8.jpg";
+import tiet9 from "@/assets/tiet-9.png";
+import tiet10 from "@/assets/tiet-10.jpeg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -1210,6 +1220,23 @@ if (kamaltaiDed) {
   kamaltaiDed.image = kamaltaiDed1;
   kamaltaiDed.highlights = [];
   kamaltaiDed.gallery = [kamaltaiDed1];
+}
+
+const tietAbout = [
+  "Takshashila Institute of Engineering and Technology and Research Center (also known as Takshashila Institute of Engineering and Technology - TIET), Darapur, Amravati is a NAAC-accredited (B++) engineering institution established in 2008, recognized for its commitment to academic excellence and outcome-based education. With a mission to make quality technical education accessible and affordable, the institute primarily serves students from rural and semi-urban backgrounds across the Vidarbha region.",
+  "Affiliated with Sant Gadge Baba Amravati University and approved by AICTE, TIET offers undergraduate and postgraduate programs designed to meet evolving industry standards. The institute empowers first-generation learners through mentorship, bridge courses, and skill development initiatives. The institute not only enhances technical competencies but also builds confidence, communication skills, and career readiness.",
+  "The institute emphasizes strong conceptual learning, practical exposure through laboratories and projects, and structured training for employability. With experienced faculty, continuous academic innovation, and a focus on discipline, ethics, and lifelong learning, TIET consistently develops competent, industry-ready engineers equipped to contribute effectively in a competitive global environment.",
+  "By enabling students to overcome financial, academic, and social barriers, TIET plays a vital role in transforming rural youth into skilled professionals and responsible citizens, contributing meaningfully to regional and national development.",
+];
+
+const tiet = categories
+  .flatMap((c) => c.items)
+  .find((i) => i.slug === "takshashila-institute-of-engineering-and-technology-and-research-centre-darapur-");
+if (tiet) {
+  tiet.about = tietAbout;
+  tiet.image = tiet2;
+  tiet.highlights = [];
+  tiet.gallery = [tiet1, tiet2, tiet3, tiet4, tiet5, tiet6, tiet7, tiet8, tiet9, tiet10];
 }
 
 
