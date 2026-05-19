@@ -43,7 +43,6 @@ import ankitProfileCard from "@/assets/ankit-profile-card.jpg";
 import mahatma1 from "@/assets/mahatma-1.jpg";
 import mahatma3 from "@/assets/mahatma-3.jpg";
 import takshashilaCollege1 from "@/assets/takshashila-college-1.jpg";
-import takshashilaCollege5 from "@/assets/takshashila-college-5.jpg";
 
 const stories = [
   {
