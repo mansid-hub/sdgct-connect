@@ -243,6 +243,12 @@ import ramkrushnaJr5 from "@/assets/ramkrushna-jr-5.jpg";
 import ramkrushnaJr6 from "@/assets/ramkrushna-jr-6.jpg";
 import ramkrushnaJr7 from "@/assets/ramkrushna-jr-7.jpg";
 import ramkrushnaJr8 from "@/assets/ramkrushna-jr-8.jpg";
+import takshashilaAyurvedCollege1 from "@/assets/takshashila-ayurved-college-1.jpg";
+import takshashilaAyurvedCollege2 from "@/assets/takshashila-ayurved-college-2.jpg";
+import takshashilaAyurvedCollege3 from "@/assets/takshashila-ayurved-college-3.jpg";
+import takshashilaAyurvedCollege4 from "@/assets/takshashila-ayurved-college-4.jpg";
+import takshashilaAyurvedCollege5 from "@/assets/takshashila-ayurved-college-5.jpg";
+import takshashilaAyurvedCollege6 from "@/assets/takshashila-ayurved-college-6.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -1062,6 +1068,29 @@ if (takshashilaDarapur) {
     takshashilaDarapur14,
     takshashilaDarapur15,
     takshashilaDarapur16,
+  ];
+}
+
+const takshashilaAyurvedCollegeAbout = [
+  "Takshashila Ayurved College, Hospital, and Research Center, Kherda, is a prominent institution dedicated to Ayurved education, healthcare, and research. It is located at Kherda (Khurd), Taluka Karanja (Lad) in Washim district of Maharashtra. The institute was established in 2025 with the vision of preserving and promoting traditional Indian medical knowledge.",
+  "Affiliated with the Maharashtra University of Health Sciences, the institution ensures that its academic programs follow recognized standards in medical education. It offers the Bachelor of Ayurved Medicine and Surgery (BAMS), a four-and-a-half-year undergraduate degree along with one year internship training. The institution focuses on imparting both theoretical knowledge and practical clinical skills to students, preparing them to serve society through Ayurved healthcare.",
+  "In terms of infrastructure, the campus is well-equipped with modern facilities. It includes digital classrooms, well-developed Laboratories, and a Central Library containing over 2,500 books along with journals and e-resources. The campus also provides Wi-Fi connectivity and separate common rooms for students. A herbal garden with hundreds of medicinal plants is maintained for academic and research purposes, helping students gain practical exposure to Ayurved herbs.",
+];
+
+const takshashilaAyurvedCollege = categories
+  .flatMap((c) => c.items)
+  .find((i) => i.slug === "takshashila-ayurved-college-and-hospital-and-research-centre-kherda-tq-karanja-d");
+if (takshashilaAyurvedCollege) {
+  takshashilaAyurvedCollege.about = takshashilaAyurvedCollegeAbout;
+  takshashilaAyurvedCollege.image = takshashilaAyurvedCollege2;
+  takshashilaAyurvedCollege.highlights = [];
+  takshashilaAyurvedCollege.gallery = [
+    takshashilaAyurvedCollege1,
+    takshashilaAyurvedCollege2,
+    takshashilaAyurvedCollege3,
+    takshashilaAyurvedCollege4,
+    takshashilaAyurvedCollege5,
+    takshashilaAyurvedCollege6,
   ];
 }
 
