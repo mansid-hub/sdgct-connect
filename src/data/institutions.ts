@@ -361,18 +361,11 @@ export const categories: Category[] = [
 
 export const getCategory = (slug: string) => categories.find((c) => c.slug === slug);
 
-export const allInstitutions = (
-  parent?: "schools" | "colleges" | "hospitals"
-) => {
-  const all = categories.flatMap((c) =>
-    c.items.map((i) => ({
-      ...i,
-      parent: c.parent,
-    }))
-  );
+export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
+  categories
+    .filter((c) => (parent ? c.parent === parent : true))
+    .flatMap((c) => c.items.map((i) => ({ ...i, categorySlug: c.slug, categoryTitle: c.title, parent: c.parent })));
 
-  return parent ? all.filter((i) => i.parent === parent) : all;
-};
 
 // ---- Establishment years by slug ----
 const establishedBySlug: Record<string, string> = {
@@ -637,10 +630,6 @@ if (mahatma) {
   mahatma.highlights = [];
 }
 
-export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =>
-  categories
-    .filter((c) => (parent ? c.parent === parent : true))
-    .flatMap((c) => c.items.map((i) => ({ ...i, categorySlug: c.slug, categoryTitle: c.title, parent: c.parent })));
 
 const matoshriGangadeviAbout: string[] = [
   "With the noble vision of providing quality education to poor and underprivileged students from rural areas, respected Dadasaheb Gavai, who had dedicated himself to social service, inspired by the ideals of Dr. Babasaheb Ambedkar, established a school in Gaurkheda village, Achalpur taluka, Amravati district in 1989. What began as a small initiative has today grown into a thriving institution, nurturing more than 700 students from Classes 5 to 12.",
