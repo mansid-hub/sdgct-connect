@@ -360,6 +360,19 @@ export const categories: Category[] = [
 
 export const getCategory = (slug: string) => categories.find((c) => c.slug === slug);
 
+export const allInstitutions = (
+  parent?: "schools" | "colleges" | "hospitals"
+) => {
+  const all = categories.flatMap((c) =>
+    c.items.map((i) => ({
+      ...i,
+      parent: c.parent,
+    }))
+  );
+
+  return parent ? all.filter((i) => i.parent === parent) : all;
+};
+
 // ---- Establishment years by slug ----
 const establishedBySlug: Record<string, string> = {
   "kamaljyot-marathi-primary-and-middle-school-navasari-dist-amravati": "1995",
