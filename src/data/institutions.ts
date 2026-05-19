@@ -209,16 +209,6 @@ import takshashilaCollege7 from "@/assets/takshashila-college-7.jpg";
 import takshashilaCollege8 from "@/assets/takshashila-college-8.jpg";
 import takshashilaCollege9 from "@/assets/takshashila-college-9.jpg";
 import takshashilaCollege10 from "@/assets/takshashila-college-10.jpg";
-import takshashilaCollege11 from "@/assets/takshashila-college-11.jpg";
-import takshashilaCollege12 from "@/assets/takshashila-college-12.jpg";
-import takshashilaCollege13 from "@/assets/takshashila-college-13.jpg";
-import takshashilaCollege14 from "@/assets/takshashila-college-14.jpg";
-import takshashilaCollege15 from "@/assets/takshashila-college-15.jpg";
-import takshashilaCollege16 from "@/assets/takshashila-college-16.jpg";
-import takshashilaCollege17 from "@/assets/takshashila-college-17.jpg";
-import takshashilaCollege18 from "@/assets/takshashila-college-18.jpg";
-import takshashilaCollege19 from "@/assets/takshashila-college-19.jpg";
-import takshashilaCollege20 from "@/assets/takshashila-college-20.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -918,16 +908,6 @@ if (takshashilaCollege) {
     takshashilaCollege8,
     takshashilaCollege9,
     takshashilaCollege10,
-    takshashilaCollege11,
-    takshashilaCollege12,
-    takshashilaCollege13,
-    takshashilaCollege14,
-    takshashilaCollege15,
-    takshashilaCollege16,
-    takshashilaCollege17,
-    takshashilaCollege18,
-    takshashilaCollege19,
-    takshashilaCollege20,
   ];
   takshashilaCollege.successStories = [
     {
