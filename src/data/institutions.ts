@@ -881,7 +881,6 @@ if (takshashilaHospital) {
   ];
 }
 
-export const getInstitutionBySlug = (parent: string, slug: string) => {
 const takshashilaCollegeAbout: string[] = [
   "Established in 1972 by the Shri Dadasaheb Gawai Charitable Trust, Dr. Babasaheb Ambedkar Mahavidyalaya serves as a prominent educational institution in Amravati. Founded by the visionary leader Late Shri Dadasaheb (R.S.) Gawai and Dr. Kamaltai R. Gawai, the college was created to fulfill Dr. B.R. Ambedkar's dream of empowering the socially and economically deprived sections of society.",
   "Institutional Overview: Affiliated with Sant Gadge Baba Amravati University and recognized by the UGC under sections 2(f) and 12(B). Situated on a 21.2-acre campus with a built-up area of over 33,791 square meters, the college offers a green and secure environment and features a swimming pool that adds to the beauty of the campus. The institution is ISO 9001-2015 certified.",
@@ -891,7 +890,6 @@ const takshashilaCollegeAbout: string[] = [
   "Social Outreach & Culture: The college conducts social initiatives such as educational material donations, regular visits to old age homes, and Sanvidhan (Constitution) Rallies to spread legal awareness, and features a \u201cSAVINDHAN WALL\u201d portraying all the aspects of the Indian Constitution. It uses street plays to highlight the lives of social reformers and organizes Matru-Pitru Sanman programs to strengthen the bond between students and parents. The college's registered publication department has published 15 books with ISBNs.",
 ];
 
-const collegesCat = categories.find((c) => c.slug === "senior-college");
 const takshashilaCollege = allInstitutions("colleges").find(
   (i) => i.slug === "dr-babasaheb-ambedkar-takshashila-mahavidyalaya-and-junior-college-uttam-nagar-d"
 );
