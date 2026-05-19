@@ -250,6 +250,13 @@ import takshashilaAyurvedCollege4 from "@/assets/takshashila-ayurved-college-4.j
 import takshashilaAyurvedCollege5 from "@/assets/takshashila-ayurved-college-5.jpg";
 import takshashilaAyurvedCollege6 from "@/assets/takshashila-ayurved-college-6.jpg";
 import takshashilaAyurvedCollegeProfile from "@/assets/takshashila-ayurved-college-profile.jpg";
+import takshashilaPolytechnic1 from "@/assets/takshashila-polytechnic-1.jpeg";
+import takshashilaPolytechnic2 from "@/assets/takshashila-polytechnic-2.jpeg";
+import takshashilaPolytechnic3 from "@/assets/takshashila-polytechnic-3.jpeg";
+import takshashilaPolytechnic4 from "@/assets/takshashila-polytechnic-4.jpeg";
+import takshashilaPolytechnic5 from "@/assets/takshashila-polytechnic-5.jpeg";
+import takshashilaPolytechnic6 from "@/assets/takshashila-polytechnic-6.jpeg";
+import takshashilaPolytechnic7 from "@/assets/takshashila-polytechnic-7.jpeg";
 
 export type FundingType = "granted" | "self-financed";
 
