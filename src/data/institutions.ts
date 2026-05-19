@@ -145,16 +145,6 @@ import santGadge3 from "@/assets/sant-gadge-3.jpg";
 import santGadge4 from "@/assets/sant-gadge-4.jpg";
 import santGadge5 from "@/assets/sant-gadge-5.jpg";
 import santGadge6 from "@/assets/sant-gadge-6.jpg";
-import santGadge7 from "@/assets/sant-gadge-7.jpg";
-import santGadge8 from "@/assets/sant-gadge-8.jpg";
-import santGadge9 from "@/assets/sant-gadge-9.jpg";
-import santGadge10 from "@/assets/sant-gadge-10.jpg";
-import santGadge11 from "@/assets/sant-gadge-11.jpg";
-import santGadge12 from "@/assets/sant-gadge-12.jpg";
-import santGadge13 from "@/assets/sant-gadge-13.jpg";
-import santGadge14 from "@/assets/sant-gadge-14.jpg";
-import santGadge15 from "@/assets/sant-gadge-15.jpg";
-import santGadge16 from "@/assets/sant-gadge-16.jpg";
 import lotus1 from "@/assets/lotus-1.jpg";
 import lotus2 from "@/assets/lotus-2.jpg";
 import lotus3 from "@/assets/lotus-3.jpg";
@@ -703,48 +693,21 @@ if (matoshriRamabai) {
 }
 
 const santGadgeAbout: string[] = [
-  "Established in 1972 by the Shri Dadasaheb Gawai Charitable Trust, Dr. Babasaheb Ambedkar Mahavidyalaya serves as a prominent educational institution in Amravati. Founded by the visionary leader Late Shri Dadasaheb (R.S.) Gawai and Dr. Kamaltai R. Gawai, the college was created to fulfill Dr. B.R. Ambedkar's dream of empowering the socially and economically deprived sections of society.",
-  "Institutional Overview:",
-  "Affiliation & Status: Affiliated with Sant Gadge Baba Amravati University and recognized by the UGC under sections 2(f) and 12(B).",
-  "Campus Infrastructure: Situated on a 21.2-acre campus with a built-up area of over 33,791 square meters, offering a green and secure environment. The college has a swimming pool to add to the beauty of the campus.",
-  "Quality Standards: The institution is ISO 9001-2015 certified.",
-  "Academic & Research Excellence:",
-  "The college offers a diverse range of programs across the Arts and Commerce streams.",
-  "Courses: 2 undergraduate and 3 postgraduate programs.",
-  "Specialized Research: Hosts 6 research centers in English, Marathi, Pali and Prakrit, History, Commerce, and Physical Education.",
-  "Faculty Prowess: The academic staff includes 12 PhD holders and 7 PhD supervisors; to date, 25 scholars have completed their doctoral degrees through the college's centers.",
-  "Recent Achievements: In 2024, student Yash Milind Kamble earned a University Gold Medal in Pali & Prakrit. College magazine Pradnya Surya has been awarded second best from the urban category by Sant Gadge Baba Amravati University, Amravati.",
-  "Student Development & Welfare:",
-  "The institution prioritizes holistic development and support for its students, more than 70% of whom belong to the ST category.",
-  "Skill Building: Annual Business Fests develop entrepreneurial skills, while the Competitive Exam Guidance Centre prepares students for professional careers.",
-  "Financial Support: Features a \u201CLearn and Earn\u201D scheme to assist students financially during their studies.",
-  "Facilities: Provides a dedicated \u201CPink Room\u201D (Girls Common Room) and meditation facilities for staff and students.",
-  "Extra-curriculars: Active NSS, NCC, and Scout Guide units focus on personality development.",
-  "Sports & Environmental Commitment:",
-  "Sports: A powerhouse in athletics, the college has produced national and international players and recently received the Sports Excellence Award from the Maharashtra Baseball Association.",
-  "Sustainability: Known for its \u201COxy-rich Garden\u201D and the \u201CEK ZAD, EK VIDHYARTHI\u201D (One Tree, One Student) initiative, the college has received multiple awards for environmental enrichment.",
-  "Social Outreach & Culture:",
-  "Community Engagement: Conducts social initiatives such as educational material donations, regular visits to old age homes, and Sanvidhan (Constitution) Rallies to spread legal awareness. The college has the \u201CSAVINDHAN WALL\u201D to portray all the aspects of the Indian Constitution.",
-  "Cultural Preservation: Uses street plays to highlight the lives of social reformers and organizes Matru-Pitru Sanman programs to strengthen the bond between students and parents.",
-  "Publications: The college's registered publication department has published 15 books with ISBNs.",
+  "Sant Gadge Baba Hindi Vidyalaya, Shyam Nagar, Amravati is a partially aided secondary school established in 2006. The school offers education in Hindi-medium from Grades 8 to 10. Our primary objective is to provide quality education to students from all sections of society, especially those from economically weaker and under-resourced backgrounds.",
+  "The majority of students at the school come from minority and disadvantaged families. The school continuously strives to keep these students in the educational mainstream. Our dedicated and experienced teachers not only provide education but also inspire and guide students toward becoming confident and responsible citizens.",
+  "Along with academic activities, the all-round development of students is encouraged through initiatives such as sports, cultural programs, science exhibitions, and competitive exam guidance. Special attention is paid to providing a safe and enjoyable environment, a clean campus, and necessary facilities within the school.",
+  "The school places special emphasis on the development of moral values, discipline, and social responsibility. To promote education, especially for girls, the school periodically organizes awareness programs and parent-child dialogues to foster a positive attitude toward education.",
+  "Our aim is to provide equal opportunities to every student and lay a strong foundation for their victorious future.",
 ];
 
 const santGadgeStories = [
   {
-    title: "Ms. Nandini Satish Gawai, National-level Athlete in Fencing, Yoga, and Minigolf",
+    title: "Mr. Israil Hasan Laluwale, SRPF (State Reserve Police Force)",
     preview:
-      "From a modest household in Balegaon to the national sporting arena \u2014 Nandini's journey across Fencing, Yoga and Minigolf is a testament to tenacity and sacrifice.",
-    image: santGadge10,
-    imagePosition: "center",
-    slug: "nandini-gawai-fencing-yoga-minigolf",
-  },
-  {
-    title: "Ms. Gauri Sunilrao Khawale, National-level Archer",
-    preview:
-      "From the small village of Yavali Shahid to national archery championships \u2014 Gauri carved out success with the pull of a bowstring and the flight of an arrow.",
-    image: santGadge8,
-    imagePosition: "center",
-    slug: "gauri-khawale-archery",
+      "From financial hardship and daily wage struggles to selection in the State Reserve Police Force — Israil's story is a remarkable example of perseverance, self-belief and unwavering determination.",
+    image: israilLaluwaleProfile,
+    imagePosition: "center 20%",
+    slug: "israil-laluwale-srpf",
   },
 ];
 
@@ -755,11 +718,7 @@ if (santGadge) {
   santGadge.about = santGadgeAbout;
   santGadge.successStories = santGadgeStories;
   santGadge.image = santGadge1;
-  santGadge.gallery = [
-    santGadge1, santGadge2, santGadge3, santGadge4, santGadge5, santGadge6,
-    santGadge7, santGadge8, santGadge9, santGadge10, santGadge11, santGadge12,
-    santGadge13, santGadge14, santGadge15, santGadge16,
-  ];
+  santGadge.gallery = [santGadge1, santGadge2, santGadge3, santGadge4, santGadge5, santGadge6];
   santGadge.highlights = [];
 }
 
