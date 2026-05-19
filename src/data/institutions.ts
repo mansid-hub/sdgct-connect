@@ -257,6 +257,8 @@ import takshashilaPolytechnic4 from "@/assets/takshashila-polytechnic-4.jpeg";
 import takshashilaPolytechnic5 from "@/assets/takshashila-polytechnic-5.jpeg";
 import takshashilaPolytechnic6 from "@/assets/takshashila-polytechnic-6.jpeg";
 import takshashilaPolytechnic7 from "@/assets/takshashila-polytechnic-7.jpeg";
+import tiper1 from "@/assets/tiper-1.jpeg";
+import tiper2 from "@/assets/tiper-2.jpeg";
 
 export type FundingType = "granted" | "self-financed";
 
