@@ -59,7 +59,7 @@ export const trustees: Trustee[] = [
   },
   {
     slug: "dharam-arjun",
-    name: "Shri. Dharam Rajesh Arjun",
+    name: "Mr. Dharam Rajesh Arjun",
     designation: "Vice-President | B.Tech (IT), Symbiosis Institute of Technology & MBA, IIM Udaipur",
     summary:
       "Vice-President of the trust, driving youth engagement, technology adoption and modern outreach programmes.",
