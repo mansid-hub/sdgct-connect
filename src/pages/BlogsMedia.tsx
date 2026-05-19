@@ -285,6 +285,25 @@ const stories = [
       "Gauri, now a third-year B.A. student, successfully balances her studies with the demanding journey of being a national-level archer. She considers archery both her struggle and her path to empowerment. She believes that true dreams are the ones that inspire constant hard work and determination, no matter the challenges. Today, Gauri Khawale stands not just as a national archer, but as a beacon of hope for every village girl who dares to look at the stars and aim an arrow toward them. Her story reminds us that with the right aim, no target is too far.",
     ],
   },
+  {
+    slug: "rajesh-bobade-librarian",
+    title:
+      "Dr. Rajesh G. Bobade, Librarian, Dr. Shyamaprasad Mukherjee Arts College, Shendurjanaghat",
+    image: fallbackImg,
+    gallery: [],
+    tagline:
+      "From a B.A. student at Takshashila Mahavidyalaya to Ph.D. Librarian and Soft Skills Trainer — a journey shaped by mentorship, NSS and youth festivals.",
+    paragraphs: [
+      "I am a proud alumnus of Takshashila Mahavidyalaya and completed my Bachelor of Arts (B.A.) degree from this esteemed institution in 2003. My college life was one of the most memorable and transformative phases of my journey. The institution played a vital role in shaping the personality, leadership qualities, and career path of a student like me who came from an underprivileged background.",
+      "During my time at the college, I actively participated not only in academics but also in various social, cultural, and student-oriented activities. I had the honor of serving as the General Secretary of the college, which gave me the opportunity to work closely with students and represent their voices. This responsibility helped me develop leadership skills, communication abilities, teamwork, and organizational management. I always believed in walking together with students, understanding their concerns, and creating a positive and united environment on campus.",
+      "The college provided us with a platform for co-curricular activities that contributed significantly to our personality development. I was actively involved in the National Service Scheme (NSS) and Youth Festival activities. Through NSS, I learned the importance of social service, discipline, community engagement, and teamwork. Participation in youth festivals enhanced my confidence, creativity, and overall personality development. These experiences taught me valuable life lessons and strengthened my ability to work with people from different backgrounds.",
+      "Throughout my academic journey, I received constant encouragement and guidance from the respected faculty members of the college. I am especially grateful to Hon'ble Prof. Dr. Kamalakar Payas for his valuable support, inspiration, and mentorship. The motivation and guidance provided by all my professors encouraged me to pursue higher education and build a successful academic career.",
+      "After completing my B.A., I chose Library and Information Science as my professional field. With dedication and continuous hard work, I successfully completed my Master of Library Science (M.Lib.Sc.), M.Phil., NET, SET, and Ph.D. qualifications. My educational journey was deeply inspired by the values, discipline, and academic culture I experienced during my college days.",
+      "Today, I am proudly serving as a Librarian at Dr. Shyamaprasad Mukherjee Arts College, Shendurjana Ghat. Along with this responsibility, I am also working as the IQAC Coordinator of the college, contributing to quality enhancement and academic development initiatives within the institution. I strive to contribute to the academic and intellectual growth of students while promoting the importance of libraries and knowledge in society.",
+      "In addition, I am honored to serve as a Soft Skills Trainer at Sant Gadge Baba Amravati University, Amravati, where I have the opportunity to guide and motivate students in personality development, communication skills, leadership, and professional growth.",
+      "For me, Takshashila Mahavidyalaya is not just a college; it is the foundation that shaped my future and guided me toward success. The memories, experiences, friendships, and teachings I gained there continue to inspire me in every step of my professional and personal life. I will always remain grateful to my teachers, classmates, and the institution for their invaluable contribution to my journey.",
+    ],
+  },
 ];
 
 const BlogsMedia = () => {

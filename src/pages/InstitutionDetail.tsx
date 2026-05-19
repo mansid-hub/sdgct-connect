@@ -191,6 +191,7 @@ const InstitutionDetail = () => {
                   || inst.slug === "lotus-shri-dadasaheb-gaikwad-english-school-darapur-tq-daryapur-dist-amravati"
                   || inst.slug === "dr-babasaheb-ambedkar-takshashila-mahavidyalaya-and-junior-college-uttam-nagar-d"
                   || inst.slug === "ramkrushna-junior-college-darapur-tq-daryapur-dist-amravati"
+                  || inst.slug === "takshashila-mahavidyalaya-and-junior-college-shyam-nagar-dist-amravati"
                     ? 4
                     : undefined
                 }
