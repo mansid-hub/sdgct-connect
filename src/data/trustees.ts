@@ -94,7 +94,7 @@ export const trustees: Trustee[] = [
   },
   {
     slug: "karan-arjun",
-    name: "Shri. Karan Rajesh Arjun",
+    name: "Mr. Karan Rajesh Arjun",
     designation: "Trustee | B.Com, University of Mumbai & SIPA, Columbia University",
     summary:
       "Trustee championing education, scholarships and capacity-building for first-generation learners across Vidarbha.",
