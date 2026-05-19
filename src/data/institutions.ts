@@ -209,6 +209,14 @@ import takshashilaCollege7 from "@/assets/takshashila-college-7.jpg";
 import takshashilaCollege8 from "@/assets/takshashila-college-8.jpg";
 import takshashilaCollege9 from "@/assets/takshashila-college-9.jpg";
 import takshashilaCollege10 from "@/assets/takshashila-college-10.jpg";
+import ramkrushnaJr1 from "@/assets/ramkrushna-jr-1.jpg";
+import ramkrushnaJr2 from "@/assets/ramkrushna-jr-2.jpg";
+import ramkrushnaJr3 from "@/assets/ramkrushna-jr-3.jpg";
+import ramkrushnaJr4 from "@/assets/ramkrushna-jr-4.jpg";
+import ramkrushnaJr5 from "@/assets/ramkrushna-jr-5.jpg";
+import ramkrushnaJr6 from "@/assets/ramkrushna-jr-6.jpg";
+import ramkrushnaJr7 from "@/assets/ramkrushna-jr-7.jpg";
+import ramkrushnaJr8 from "@/assets/ramkrushna-jr-8.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -927,6 +935,32 @@ if (takshashilaCollege) {
         "From a small village to Khelo India University Games \u2014 a story of grit, sweat and an unwavering spirit, carved out with the pull of a bowstring.",
       image: takshashilaCollege1,
     },
+  ];
+}
+
+const ramkrushnaJrAbout: string[] = [
+  "Ramkrushna Junior College, Darapur, established in 1984 by the Shri Dadasaheb Gavai Charitable Trust, Amravati, stands as a beacon of education and social progress in the rural region of Daryapur Taluka. Here, the noble work of imparting knowledge continues ceaselessly on a grand scale. It is evident that the institution's founder—the late Hon. R. S. Gavai (affectionately known as 'Dadasaheb Gavai')—strove to carry the \"Ganges of Education\" to every household, starting right from his own native village. At a time when educational facilities were limited only to Daryapur town, the college emerged as a guiding light for rural students aspiring to build a better future.",
+  "Over the years, the institution has transformed from a modest college with limited resources into a well-established educational center offering Arts, Commerce, Science, and HSVC streams. Beyond academics, the college focuses on the holistic development of students through cultural activities, literary programs, personality development, computer literacy, science and geography exhibitions, educational tours, sports, and field visits. Through these experiences, students become increasingly aware of every aspect and events occurring within their local environment. It is through this very medium that students from rural areas are empowered to thrive in this competitive era.",
+  "The deep-seated passion for the dissemination of education and a steadfast commitment to social welfare is visible even today in every facet of the institution. Students did not come here merely to acquire academic knowledge; rather, the college dedicated its efforts toward ensuring their holistic development. The students who received this education are now seen occupying high-ranking positions across various professional fields.",
+  "The institution takes pride in its highly qualified faculty, including three Ph.D. holders and award-winning educators. With the establishment of the Science Department in 2001, the college further strengthened its commitment to scientific awareness and higher education. Through discipline, knowledge, experimentation, and value-based learning, Ramkrishna Junior College continues its unwavering dedication to shaping capable, confident, and socially responsible citizens for the future.",
+];
+
+const ramkrushnaJr = allInstitutions("colleges").find(
+  (i) => i.slug === "ramkrushna-junior-college-darapur-tq-daryapur-dist-amravati"
+);
+if (ramkrushnaJr) {
+  ramkrushnaJr.about = ramkrushnaJrAbout;
+  ramkrushnaJr.image = ramkrushnaJr1;
+  ramkrushnaJr.highlights = [];
+  ramkrushnaJr.gallery = [
+    ramkrushnaJr1,
+    ramkrushnaJr2,
+    ramkrushnaJr3,
+    ramkrushnaJr4,
+    ramkrushnaJr5,
+    ramkrushnaJr6,
+    ramkrushnaJr7,
+    ramkrushnaJr8,
   ];
 }
 
