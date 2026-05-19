@@ -130,7 +130,7 @@ const Donate = () => {
           {/* Form Card */}
           <form
             onSubmit={submit}
-            className="bg-card rounded-3xl p-7 sm:p-10 border border-border/60 shadow-soft space-y-7"
+            className="bg-card rounded-3xl p-7 sm:p-10 border border-border/60 shadow-soft space-y-4"
           >
             {/* Donation Type Toggle */}
             <div className="flex justify-center">
@@ -162,9 +162,9 @@ const Donate = () => {
               </div>
             </div>
 
-            <div className="space-y-5">
+            <div className="space-y-3">
               {/* Name */}
-              <div className="grid sm:grid-cols-2 gap-5">
+              <div className="grid sm:grid-cols-2 gap-3">
                 <div>
                   <Label htmlFor="firstName">First Name</Label>
                   <Input id="firstName" className="mt-2 h-12 rounded-xl" placeholder="First Name *" />
@@ -187,7 +187,7 @@ const Donate = () => {
               </div>
 
               {/* City / State / Postal */}
-              <div className="grid sm:grid-cols-3 gap-5">
+              <div className="grid sm:grid-cols-3 gap-3">
                 <div>
                   <Label htmlFor="city">City</Label>
                   <Input id="city" className="mt-2 h-12 rounded-xl" placeholder="City *" />
@@ -203,7 +203,7 @@ const Donate = () => {
               </div>
 
               {/* PAN + Phone */}
-              <div className="grid sm:grid-cols-2 gap-5">
+              <div className="grid sm:grid-cols-2 gap-3">
                 <div>
                   <Label htmlFor="pan">PAN Number</Label>
                   <div className="mt-2 flex gap-2">
@@ -283,7 +283,7 @@ const Donate = () => {
               </div>
 
               {/* DOB + Email */}
-              <div className="grid sm:grid-cols-2 gap-5">
+              <div className="grid sm:grid-cols-2 gap-3">
                 <div>
                   <Label htmlFor="dob">Date of Birth</Label>
                   <Input id="dob" type="date" className="mt-2 h-12 rounded-xl" />
