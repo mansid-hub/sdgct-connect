@@ -42,6 +42,7 @@ import mahatma2 from "@/assets/mahatma-2.jpg";
 import ankitProfileCard from "@/assets/ankit-profile-card.jpg";
 import mahatma1 from "@/assets/mahatma-1.jpg";
 import mahatma3 from "@/assets/mahatma-3.jpg";
+import takshashilaCollege1 from "@/assets/takshashila-college-1.jpg";
 
 const stories = [
   {
@@ -249,6 +250,37 @@ const stories = [
       "From an early age, Kanchan was disciplined and determined to build a better future. To continue her education, she stayed away from home in the boarding facility of Lotus Hostel from Class 1 onward. Although staying away from her family was challenging, she never allowed hardships to weaken her dreams. The disciplined environment of the hostel, constant guidance from her teachers, and her own hard work helped shape her into a confident, independent, and responsible individual.",
       "Along with academics, Kanchan developed a deep interest in sports. She participated in fencing, Sepak Takraw, and mini golf, achieving remarkable success in all three. She performed excellently in fencing at the divisional level and advanced to the state-level competition. In Sepak Takraw, she displayed outstanding skill and commitment. Her greatest achievement came in mini golf, where she won a gold medal at the state-level championship, bringing pride to her school, family, and village.",
       "Kanchan's journey is not only about personal success, but also about hope, ambition, and the power of dreams. Despite coming from a poor rural family, she created her own identity through perseverance. Today, she stands as an inspiration to students striving to achieve something meaningful in life.",
+    ],
+  },
+  {
+    slug: "nandini-gawai-fencing",
+    title:
+      "Ms. Nandini Satish Gawai, National-level Athlete in Fencing, Yoga, and Minigolf",
+    image: takshashilaCollege1,
+    gallery: [],
+    tagline:
+      "From the dusty fields of Balegaon to national fencing competitions \u2014 a testament to the power of tenacity and sacrifice.",
+    paragraphs: [
+      "Success is not merely defined by the medals around one's neck, but by the distance traveled to reach the podium. For Nandini Satish Gawai, a young athlete from the village of Balegaon in Achalpur, the journey from a modest household to the national sporting arena is a testament to the power of \"Jidda\" (tenacity) and sacrifice.",
+      "A Foundation of Hard Work: Growing up in a family where financial constraints were a daily reality, Nandini learned the value of labor early on. Her days were not spent in leisure but in balancing academic responsibilities with helping her mother in her daily chores. Despite the lack of resources and the constant pressure of poverty, her spirit remained unbroken. Nandini's parents and mentors provided the emotional backbone she needed, encouraging her to look beyond their current circumstances toward a brighter future through education and sports.",
+      "The Turning Point \u2014 2024 and Beyond: The year 2024 marked a pivotal moment in her life. After clearing her 12th-grade examinations with a solid 76%, Nandini's focus shifted toward uplifting her family. She enrolled in Dr. Babasaheb Ambedkar College, an institution that would become the launchpad for her athletic career. It was on the college grounds where her journey truly accelerated. Starting her practice barefoot due to a lack of professional gear, she caught the eye of the college's Physical Education Director. Under professional guidance, she traded the struggles of the past for the discipline of Fencing.",
+      "A Trail of Triumphs: Nandini's rise in the world of sports has been nothing short of meteoric. Excelling in multiple disciplines \u2014 Fencing, Yoga, and Minigolf \u2014 she has become a versatile national-level athlete. Her achievements include: Fencing Excellence \u2014 she earned her 1st University Colour Coat at Jammu University (2023\u201324), and by 2025\u201326 she achieved her 2nd Colour Coat and was honored with the Captainship of her team in Amritsar, Punjab. All India University Games \u2014 represented her university with distinction in Fencing, proving her mettle against the best in the country. Minigolf \u2014 secured 2nd Place at both the State and National levels in Nagpur (2025\u201326). Yoga \u2014 showcased her mental and physical poise by securing 3rd Place in International Yoga (2025) and competing at the HVPM National Yoga event (2026). Recognition \u2014 her consistent excellence earned her the prestigious National Star Award and the Star Sports Award in Panipat (2026).",
+      "For Nandini, now a second-year B.A. student, true success is not her medals, but the inspiration she gives to children in her village to step onto the playground with confidence. Guided by Dr. Babasaheb Ambedkar's message, \"Educate, Organize, and Agitate,\" she views struggle not as a burden, but as the fuel that drives her to fulfill her ultimate dream of giving her parents a life of comfort and pride. Nandini's journey from the dusty fields of Balegaon to national fencing competitions proves that poverty and failure cannot stop those who have the will to work hard and the courage to fight.",
+    ],
+  },
+  {
+    slug: "gauri-khawale-archery",
+    title: "Ms. Gauri Sunilrao Khawale, National-level Archer",
+    image: takshashilaCollege1,
+    gallery: [],
+    tagline:
+      "Behind every glinting medal lies a story of grit, sweat, and an unwavering spirit \u2014 carved out with the pull of a bowstring.",
+    paragraphs: [
+      "Behind every glinting medal lies a story of grit, sweat, and an unwavering spirit. For Gauri Sunilrao Khawale, a national-level archer from the small village of Yavali Shahid, success wasn't handed to her on a silver platter; she carved it out with the pull of a bowstring and the flight of an arrow.",
+      "Small Beginnings, Big Dreams: Gauri's journey began in a modest household where resources were scarce, but dreams were plentiful. Growing up in a village, she harbored a deep passion for sports from a young age. However, archery is an expensive pursuit. The cost of professional equipment was a significant hurdle for her family's limited means. Recognizing her raw talent and fierce determination, Shakti Singh Dixit stepped in as a benefactor, helping her procure the necessary archery kit. This gesture wasn't just financial aid; it was the spark that ignited a professional fire.",
+      "The Grind \u2014 Turning Toil into Technique: Gauri's routine became a testament to discipline. While most of the world slept, she was up at dawn, beginning a grueling schedule of 7 to 8 hours of daily practice. Through the scorching heat and physical exhaustion, she remained focused on the bullseye. She credits her resilience to her \"support system\" \u2014 her sister and her coaches, who stood by her during moments of doubt. Her journey proves that while an athlete stands alone on the field, they are carried there by the strength of their loved ones and mentors.",
+      "The Rise to National Prominence: Gauri's hard work began to translate into silverware on the state and national stages. Her breakthrough came through a series of consistent performances \u2014 Senior State (Osmanabad): secured a prestigious Silver Medal, marking her arrival in the big leagues; Junior State (Warora): clinched a Bronze Medal, proving her consistency across age groups; Senior State (Kolhapur): added another Bronze Medal to her tally. Her prowess wasn't limited to state borders. Gauri represented her institution, Dr. Babasaheb Ambedkar College, at the highest levels of collegiate sports. She participated in the prestigious Khelo India University Games (Shillong) and competed in All India University tournaments across the country from Patiala (Punjab) and Bhatinda to Bhubaneswar (Odisha).",
+      "Gauri, now a third-year B.A. student, successfully balances her studies with the demanding journey of being a national-level archer. She considers archery both her struggle and her path to empowerment. She believes that true dreams are the ones that inspire constant hard work and determination, no matter the challenges. Today, Gauri Khawale stands not just as a national archer, but as a beacon of hope for every village girl who dares to look at the stars and aim an arrow toward them. Her story reminds us that with the right aim, no target is too far.",
     ],
   },
 ];

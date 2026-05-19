@@ -199,6 +199,16 @@ import takshashilaOther4 from "@/assets/takshashila-other-4.jpg";
 import takshashilaOther5 from "@/assets/takshashila-other-5.jpg";
 import takshashilaOther6 from "@/assets/takshashila-other-6.jpg";
 import takshashilaOther7 from "@/assets/takshashila-other-7.jpg";
+import takshashilaCollege1 from "@/assets/takshashila-college-1.jpg";
+import takshashilaCollege2 from "@/assets/takshashila-college-2.jpg";
+import takshashilaCollege3 from "@/assets/takshashila-college-3.jpg";
+import takshashilaCollege4 from "@/assets/takshashila-college-4.jpg";
+import takshashilaCollege5 from "@/assets/takshashila-college-5.jpg";
+import takshashilaCollege6 from "@/assets/takshashila-college-6.jpg";
+import takshashilaCollege7 from "@/assets/takshashila-college-7.jpg";
+import takshashilaCollege8 from "@/assets/takshashila-college-8.jpg";
+import takshashilaCollege9 from "@/assets/takshashila-college-9.jpg";
+import takshashilaCollege10 from "@/assets/takshashila-college-10.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -867,6 +877,52 @@ if (takshashilaHospital) {
         takshashilaOther6,
         takshashilaOther7,
       ],
+    },
+  ];
+}
+
+const takshashilaCollegeAbout: string[] = [
+  "Established in 1972 by the Shri Dadasaheb Gawai Charitable Trust, Dr. Babasaheb Ambedkar Mahavidyalaya serves as a prominent educational institution in Amravati. Founded by the visionary leader Late Shri Dadasaheb (R.S.) Gawai and Dr. Kamaltai R. Gawai, the college was created to fulfill Dr. B.R. Ambedkar's dream of empowering the socially and economically deprived sections of society.",
+  "Institutional Overview: Affiliated with Sant Gadge Baba Amravati University and recognized by the UGC under sections 2(f) and 12(B). Situated on a 21.2-acre campus with a built-up area of over 33,791 square meters, the college offers a green and secure environment and features a swimming pool that adds to the beauty of the campus. The institution is ISO 9001-2015 certified.",
+  "Academic & Research Excellence: The college offers a diverse range of programs across the Arts and Commerce streams — 2 undergraduate and 3 postgraduate programs. It hosts 6 research centers in English, Marathi, Pali and Prakrit, History, Commerce, and Physical Education. The academic staff includes 12 PhD holders and 7 PhD supervisors; to date, 25 scholars have completed their doctoral degrees through the college's centers. In 2024, student Yash Milind Kamble earned a University Gold Medal in Pali & Prakrit, and the college magazine Pradnya Surya was awarded second best from the urban category by Sant Gadge Baba Amravati University, Amravati.",
+  "Student Development & Welfare: The institution prioritizes holistic development and support for its students, more than 70% of whom belong to the ST category. Annual Business Fests develop entrepreneurial skills, while the Competitive Exam Guidance Centre prepares students for professional careers. A \u201cLearn and Earn\u201d scheme assists students financially during their studies. The campus provides a dedicated \u201cPink Room\u201d (Girls Common Room) and meditation facilities for staff and students. Active NSS, NCC, and Scout Guide units focus on personality development.",
+  "Sports & Environmental Commitment: A powerhouse in athletics, the college has produced national and international players and recently received the Sports Excellence Award from the Maharashtra Baseball Association. Known for its \u201cOxy-rich Garden\u201d and the \u201cEK ZAD, EK VIDHYARTHI\u201d (One Tree, One Student) initiative, the college has received multiple awards for environmental enrichment.",
+  "Social Outreach & Culture: The college conducts social initiatives such as educational material donations, regular visits to old age homes, and Sanvidhan (Constitution) Rallies to spread legal awareness, and features a \u201cSAVINDHAN WALL\u201d portraying all the aspects of the Indian Constitution. It uses street plays to highlight the lives of social reformers and organizes Matru-Pitru Sanman programs to strengthen the bond between students and parents. The college's registered publication department has published 15 books with ISBNs.",
+];
+
+const takshashilaCollege = allInstitutions("colleges").find(
+  (i) => i.slug === "dr-babasaheb-ambedkar-takshashila-mahavidyalaya-and-junior-college-uttam-nagar-d"
+);
+if (takshashilaCollege) {
+  takshashilaCollege.about = takshashilaCollegeAbout;
+  takshashilaCollege.image = takshashilaCollege1;
+  takshashilaCollege.highlights = [];
+  takshashilaCollege.gallery = [
+    takshashilaCollege1,
+    takshashilaCollege2,
+    takshashilaCollege3,
+    takshashilaCollege4,
+    takshashilaCollege5,
+    takshashilaCollege6,
+    takshashilaCollege7,
+    takshashilaCollege8,
+    takshashilaCollege9,
+    takshashilaCollege10,
+  ];
+  takshashilaCollege.successStories = [
+    {
+      slug: "nandini-gawai-fencing",
+      title: "Ms. Nandini Satish Gawai, National-level Athlete in Fencing, Yoga, and Minigolf",
+      preview:
+        "From a modest household in Balegaon to the national sporting arena \u2014 a testament to the power of tenacity, sacrifice and discipline.",
+      image: takshashilaCollege1,
+    },
+    {
+      slug: "gauri-khawale-archery",
+      title: "Ms. Gauri Sunilrao Khawale, National-level Archer",
+      preview:
+        "From a small village to Khelo India University Games \u2014 a story of grit, sweat and an unwavering spirit, carved out with the pull of a bowstring.",
+      image: takshashilaCollege1,
     },
   ];
 }
