@@ -1271,6 +1271,25 @@ if (samratAshokIti) {
   samratAshokIti.gallery = [samratAshokIti1, samratAshokIti2, samratAshokIti3];
 }
 
+const nalandaItiAbout = [
+  "Nalanda Private Industrial Training Center, established in 2009 at Mogra, Amravati, Maharashtra, is a respected vocational training institute committed to empowering rural and semi-urban youth through quality technical education and skill development.",
+  "The institute is affiliated with NCVT/DVET and provides industry-oriented training programs that support employment, entrepreneurship, and socio-economic development. The institute offers various engineering and technical trades including Electrician, Fitter, Welder, Electronics Mechanic, and COPA (Computer Operator and Programming Assistant). Through practical workshops, laboratory training, and hands-on learning methods, students gain technical competency aligned with modern industrial requirements.",
+  "The institute plays an important role in supporting the national \u201CSkill India\u201D mission by preparing skilled manpower for manufacturing, electrical, service, and technology sectors. With a strong focus on affordable education and career-oriented training, Nalanda ITI continuously works toward improving employability and encouraging entrepreneurship among economically weaker and rural students.",
+  "Due to its commitment to inclusive education and community development, the institution holds strong potential for future collaborations in areas such as youth skill development, women empowerment, digital literacy, entrepreneurship training, renewable energy projects, smart classrooms, modern laboratories, scholarships, placement support, and community-based vocational programs. Such initiatives can help create sustainable social impact, reduce unemployment, and strengthen the skilled workforce in the Vidarbha region.",
+  "Overall, Nalanda Private Industrial Training Center stands as a dedicated institution for technical education, youth empowerment, and community progress through skill-based vocational training.",
+];
+
+const nalandaIti = categories
+  .flatMap((c) => c.items)
+  .find((i) => i.slug === "nalanda-industrial-training-institute-mogra-post-bhankheda-amravati");
+
+if (nalandaIti) {
+  nalandaIti.about = nalandaItiAbout;
+  nalandaIti.image = nalandaIti1;
+  nalandaIti.highlights = [];
+  nalandaIti.gallery = [nalandaIti1, nalandaIti2, nalandaIti3, nalandaIti4, nalandaIti5, nalandaIti6, nalandaIti7];
+}
+
 
 
 
