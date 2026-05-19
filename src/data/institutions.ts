@@ -291,6 +291,13 @@ import tietProfile from "@/assets/tiet-profile.jpeg";
 import samratAshokIti1 from "@/assets/samrat-ashok-iti-1.jpg";
 import samratAshokIti2 from "@/assets/samrat-ashok-iti-2.jpg";
 import samratAshokIti3 from "@/assets/samrat-ashok-iti-3.jpg";
+import nalandaIti1 from "@/assets/nalanda-iti-1.jpg";
+import nalandaIti2 from "@/assets/nalanda-iti-2.jpg";
+import nalandaIti3 from "@/assets/nalanda-iti-3.jpg";
+import nalandaIti4 from "@/assets/nalanda-iti-4.jpg";
+import nalandaIti5 from "@/assets/nalanda-iti-5.jpg";
+import nalandaIti6 from "@/assets/nalanda-iti-6.jpg";
+import nalandaIti7 from "@/assets/nalanda-iti-7.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
