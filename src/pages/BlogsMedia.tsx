@@ -39,6 +39,7 @@ import rajnandiniCert from "@/assets/success-rajnandini-certificate.jpg";
 import rajnandiniNaik from "@/assets/success-rajnandini-naik.jpg";
 import rajnandiniSandeepNaik from "@/assets/success-rajnandini-sandeep-naik.jpg";
 import nandiniGawai from "@/assets/success-nandini-gawai.jpg";
+import gauriKhawale from "@/assets/success-gauri-khawale.jpg";
 import mahatma2 from "@/assets/mahatma-2.jpg";
 import ankitProfileCard from "@/assets/ankit-profile-card.jpg";
 import mahatma1 from "@/assets/mahatma-1.jpg";
@@ -272,7 +273,7 @@ const stories = [
   {
     slug: "gauri-khawale-archery",
     title: "Ms. Gauri Sunilrao Khawale, National-level Archer",
-    image: takshashilaCollege1,
+    image: gauriKhawale,
     gallery: [],
     tagline:
       "Behind every glinting medal lies a story of grit, sweat, and an unwavering spirit \u2014 carved out with the pull of a bowstring.",
