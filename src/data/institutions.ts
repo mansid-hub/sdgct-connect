@@ -1102,6 +1102,31 @@ if (takshashilaAyurvedCollege) {
   ];
 }
 
+const takshashilaPolytechnicAbout = [
+  "Takshashila Polytechnic College, Uttam Nagar, is dedicated to developing skilled and industry-ready professionals by providing quality technical education and practical training. The institution offers Diploma programs in Civil, Electrical, Computer, and Mechanical Engineering, with a strong focus on engineering techniques, hands-on learning, projects, and skill development under the guidance of experienced faculty members.",
+  "To bridge the gap between academics and industry, the college regularly organizes industrial visits, guest lectures, workshops, seminars, and faculty development programs that enhance students' technical knowledge and professional skills. The Training and Placement Cell actively conducts campus recruitment drives, guides students toward higher education opportunities, and encourages entrepreneurship so that students become job creators as well as job seekers. The college also promotes real-world problem-solving through industry-based projects and technical exposure visits to industries, power plants, and construction sites.",
+  "The institution firmly believes that the growth and sustainability of the industrial sector depend on the availability of trained and skilled manpower capable of performing the multidimensional activities required to keep industries running efficiently. Guided by this vision, the institution continuously works to strengthen industry interaction and enhance student development through practical learning and innovation. Reflecting its commitment to excellence, students from the Electrical Engineering Department secured third prize at the Innovex-2026 Project Competition held at Raisoni University, Amravati.",
+];
+
+const takshashilaPolytechnic = categories
+  .flatMap((c) => c.items)
+  .find((i) => i.slug === "takshashila-polytechnic-college-uttam-nagar-amravati");
+if (takshashilaPolytechnic) {
+  takshashilaPolytechnic.about = takshashilaPolytechnicAbout;
+  takshashilaPolytechnic.image = takshashilaPolytechnic1;
+  takshashilaPolytechnic.highlights = [];
+  takshashilaPolytechnic.gallery = [
+    takshashilaPolytechnic1,
+    takshashilaPolytechnic2,
+    takshashilaPolytechnic3,
+    takshashilaPolytechnic4,
+    takshashilaPolytechnic5,
+    takshashilaPolytechnic6,
+    takshashilaPolytechnic7,
+  ];
+}
+
+
 export const getInstitutionBySlug = (parent: string, slug: string) => {
   const all = allInstitutions();
   return all.find((i) => i.parent === parent && i.slug === slug);
