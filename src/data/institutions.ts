@@ -1083,7 +1083,7 @@ const takshashilaAyurvedCollege = categories
   .find((i) => i.slug === "takshashila-ayurved-college-and-hospital-and-research-centre-kherda-tq-karanja-d");
 if (takshashilaAyurvedCollege) {
   takshashilaAyurvedCollege.about = takshashilaAyurvedCollegeAbout;
-  takshashilaAyurvedCollege.image = takshashilaAyurvedCollege2;
+  takshashilaAyurvedCollege.image = takshashilaAyurvedCollegeProfile;
   takshashilaAyurvedCollege.highlights = [];
   takshashilaAyurvedCollege.gallery = [
     takshashilaAyurvedCollege1,
