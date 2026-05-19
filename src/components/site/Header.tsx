@@ -359,12 +359,13 @@ const Header = () => {
         : "text-foreground/75 hover:text-primary hover:bg-secondary"
     )}
   >
-    <Link
-      to={mediaMenu.to}
+    <button
+      type="button"
+      onClick={() => setMediaOpen((v) => !v)}
       className="pl-4 pr-1.5 py-2 text-sm font-medium rounded-l-full"
     >
       {mediaMenu.label}
-    </Link>
+    </button>
 
     <button
       type="button"
