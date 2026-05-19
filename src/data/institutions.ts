@@ -184,6 +184,14 @@ import takshashilaModern7 from "@/assets/takshashila-modern-7.jpeg";
 import takshashilaModern8 from "@/assets/takshashila-modern-8.jpeg";
 import takshashilaModern9 from "@/assets/takshashila-modern-9.jpeg";
 import takshashilaModern10 from "@/assets/takshashila-modern-10.jpeg";
+import takshashilaAyurved1 from "@/assets/takshashila-ayurved-1.jpg";
+import takshashilaAyurved2 from "@/assets/takshashila-ayurved-2.jpeg";
+import takshashilaAyurved3 from "@/assets/takshashila-ayurved-3.jpeg";
+import takshashilaAyurved4 from "@/assets/takshashila-ayurved-4.jpeg";
+import takshashilaAyurved5 from "@/assets/takshashila-ayurved-5.jpeg";
+import takshashilaAyurved6 from "@/assets/takshashila-ayurved-6.jpeg";
+import takshashilaAyurved7 from "@/assets/takshashila-ayurved-7.jpg";
+import takshashilaAyurved8 from "@/assets/takshashila-ayurved-8.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -828,7 +836,19 @@ if (takshashilaHospital) {
         takshashilaModern10,
       ],
     },
-    { name: "Ayurvedic Hospital", images: [] },
+    {
+      name: "Ayurvedic Hospital",
+      images: [
+        takshashilaAyurved1,
+        takshashilaAyurved2,
+        takshashilaAyurved3,
+        takshashilaAyurved4,
+        takshashilaAyurved5,
+        takshashilaAyurved6,
+        takshashilaAyurved7,
+        takshashilaAyurved8,
+      ],
+    },
     { name: "Other Activities", images: [] },
   ];
 }
