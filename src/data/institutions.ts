@@ -213,6 +213,7 @@ import takshashilaCollege10 from "@/assets/takshashila-college-10.jpg";
 export type FundingType = "granted" | "self-financed";
 
 export interface Institution {
+  parent?: "schools" | "colleges" | "hospitals";
   slug: string;
   name: string;
   location?: string;
