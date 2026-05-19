@@ -290,7 +290,7 @@ const stories = [
     slug: "rajesh-bobade-librarian",
     title:
       "Dr. Rajesh G. Bobade, Librarian, Dr. Shyamaprasad Mukherjee Arts College, Shendurjanaghat",
-    image: fallbackImg,
+    image: rajeshBobade,
     gallery: [],
     tagline:
       "From a B.A. student at Takshashila Mahavidyalaya to Ph.D. Librarian and Soft Skills Trainer — a journey shaped by mentorship, NSS and youth festivals.",
