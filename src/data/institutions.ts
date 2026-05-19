@@ -288,6 +288,9 @@ import tiet12 from "@/assets/tiet-12.jpg";
 import tiet13 from "@/assets/tiet-13.jpg";
 import tiet14 from "@/assets/tiet-14.jpg";
 import tietProfile from "@/assets/tiet-profile.jpeg";
+import samratAshokIti1 from "@/assets/samrat-ashok-iti-1.jpg";
+import samratAshokIti2 from "@/assets/samrat-ashok-iti-2.jpg";
+import samratAshokIti3 from "@/assets/samrat-ashok-iti-3.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -1242,6 +1245,23 @@ if (tiet) {
   tiet.image = tietProfile;
   tiet.highlights = [];
   tiet.gallery = [tiet1, tiet2, tiet3, tiet4, tiet5, tiet6, tiet7, tiet8, tiet9, tiet10, tiet11, tiet12, tiet13, tiet14];
+}
+
+const samratAshokItiAbout = [
+  "Samrat Ashok Industrial Training Institute (ITI), Darapur, established in 2010, is a private vocational training institute located in Darapur, Taluka Daryapur, District Amravati, Maharashtra. Affiliated with the National Council for Vocational Training (NCVT) and operating under the Directorate of Vocational Education and Training (DVET), Maharashtra, the institute is dedicated to providing skill-based technical education to rural and semi-urban youth.",
+  "The institute offers various NCVT-approved trades such as Electrician, Fitter, Welder, and Electronics Mechanic, with a total intake capacity of around 100+ students annually. These programs focus on hands-on training, practical exposure, and industry-relevant skills aligned with Skill India initiatives. The institute is equipped with essential infrastructure, including workshops, classrooms, and trade-specific training equipment that support effective hands-on learning. It also maintains systems for student progress tracking, certification, grievance redressal, and industry interaction to strengthen training outcomes and placement opportunities.",
+  "Committed to rural upliftment and youth empowerment, the institute provides an excellent platform for initiatives focused on skill development and employment generation. The institute intends to create opportunities such as upgrading workshops, sponsoring training programs, offering scholarships, organizing skill camps, and supporting placement drives to significantly enhance the employability of underprivileged students. Through its dedication to vocational education and community development, Samrat Ashok ITI Darapur continues to bridge the gap between education and industry requirements while contributing to sustainable social progress.",
+];
+
+const samratAshokIti = categories
+  .flatMap((c) => c.children ?? [])
+  .find((c) => c.slug === "samrat-ashok-industrial-training-institute-darapur-tq-daryapur-amravati");
+
+if (samratAshokIti) {
+  samratAshokIti.about = samratAshokItiAbout;
+  samratAshokIti.image = samratAshokIti1;
+  samratAshokIti.highlights = [];
+  samratAshokIti.gallery = [samratAshokIti1, samratAshokIti2, samratAshokIti3];
 }
 
 
