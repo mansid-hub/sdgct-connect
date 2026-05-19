@@ -192,6 +192,13 @@ import takshashilaAyurved5 from "@/assets/takshashila-ayurved-5.jpeg";
 import takshashilaAyurved6 from "@/assets/takshashila-ayurved-6.jpeg";
 import takshashilaAyurved7 from "@/assets/takshashila-ayurved-7.jpg";
 import takshashilaAyurved8 from "@/assets/takshashila-ayurved-8.jpg";
+import takshashilaOther1 from "@/assets/takshashila-other-1.jpg";
+import takshashilaOther2 from "@/assets/takshashila-other-2.jpg";
+import takshashilaOther3 from "@/assets/takshashila-other-3.jpg";
+import takshashilaOther4 from "@/assets/takshashila-other-4.jpg";
+import takshashilaOther5 from "@/assets/takshashila-other-5.jpg";
+import takshashilaOther6 from "@/assets/takshashila-other-6.jpg";
+import takshashilaOther7 from "@/assets/takshashila-other-7.jpg";
 
 export type FundingType = "granted" | "self-financed";
 
@@ -849,7 +856,18 @@ if (takshashilaHospital) {
         takshashilaAyurved8,
       ],
     },
-    { name: "Other Activities", images: [] },
+    {
+      name: "Other Activities",
+      images: [
+        takshashilaOther1,
+        takshashilaOther2,
+        takshashilaOther3,
+        takshashilaOther4,
+        takshashilaOther5,
+        takshashilaOther6,
+        takshashilaOther7,
+      ],
+    },
   ];
 }
 
