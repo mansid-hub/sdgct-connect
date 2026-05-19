@@ -256,6 +256,7 @@ import ramkrushnaBed10 from "@/assets/ramkrushna-bed-10.jpg";
 import ramkrushnaBed11 from "@/assets/ramkrushna-bed-11.jpg";
 import ramkrushnaBed12 from "@/assets/ramkrushna-bed-12.jpg";
 import ramkrushnaBed13 from "@/assets/ramkrushna-bed-13.jpg";
+import kamaltaiDed1 from "@/assets/kamaltai-ded-1.jpg";
 import takshashilaAyurvedCollege1 from "@/assets/takshashila-ayurved-college-1.jpg";
 import takshashilaAyurvedCollege2 from "@/assets/takshashila-ayurved-college-2.jpg";
 import takshashilaAyurvedCollege3 from "@/assets/takshashila-ayurved-college-3.jpg";
@@ -1191,6 +1192,24 @@ if (ramkrushnaBed) {
     ramkrushnaBed12,
     ramkrushnaBed13,
   ];
+}
+
+const kamaltaiDedAbout = [
+  "Sau. Dr. Kamaltai Gawai Adhyapak Vidyalaya (D.Ed.), Darapur, established in 2006 under the Shri Dadasaheb Gavai Charitable Trust, Amravati, was founded with the noble mission of providing quality teacher education to rural, deprived, and socially marginalized sections of society. Guided by the ideals of social justice, equality, and educational empowerment inspired by Dr. B. R. Ambedkar, the institution strives to nurture competent, value-based, and socially responsible teachers who can contribute meaningfully to nation-building.",
+  "Recognized by NCTE, New Delhi, and SCERT Maharashtra, Pune, the college operates on a permanent non-grant basis and offers a two-year teacher training program with an annual examination system. With an intake capacity of 100 students, admissions are conducted according to government rules and centralized procedures, ensuring educational opportunities for students from economically weaker backgrounds, many of whom benefit from government scholarships.",
+  "The institution focuses on holistic student development by integrating academics with co-curricular and community-oriented activities. Seminars, workshops, cultural programs, personality development sessions, communication skill training, and social awareness initiatives are regularly organized to promote leadership, discipline, professional ethics, gender equality, environmental awareness, and human values. ICT-enabled teaching methods, study materials, e-content, and continuous assessment further strengthen the learning process.",
+  "The college campus provides a supportive and secure environment with spacious classrooms, a well-equipped library, computer facilities, playgrounds, gardens, and separate amenities for students and staff. Teachers guide trainees with dedication and sincerity, continuously striving to shape skilled and compassionate educators.",
+  "Under the leadership of Principal Shri Dilip Wankhede, Office Head Shri Krishna Dhote, and the guidance of the institution's management, the college has made remarkable progress since its establishment. Through its unwavering commitment to teacher education and social upliftment, the institution continues to play an important role in shaping responsible teachers for society and the nation.",
+];
+
+const kamaltaiDed = categories
+  .flatMap((c) => c.items)
+  .find((i) => i.slug === "sau-dr-kamaltai-gawai-adhyapak-vidyalaya-d-ed-darapur-tq-daryapur-dist-amravati");
+if (kamaltaiDed) {
+  kamaltaiDed.about = kamaltaiDedAbout;
+  kamaltaiDed.image = kamaltaiDed1;
+  kamaltaiDed.highlights = [];
+  kamaltaiDed.gallery = [kamaltaiDed1];
 }
 
 
