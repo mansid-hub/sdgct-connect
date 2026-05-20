@@ -12,18 +12,18 @@ const slides = [
   {
     image: hero3,
     eyebrow: "Community First",
-    title: "Every Hand We Hold Builds a Stronger Tomorrow",
+    title: "Where Compassion Meets Commitment",
     description:
-      "From village schools to mobile clinics, your support powers the change happening across Vidarbha.",
+      "Join thousands of supporters who believe that no child should be left behind — for any reason.",
     objectPosition: "center 75%",
     overlay: "bg-black/35",
   },
   {
     image: hero2,
     eyebrow: "Hope in Action",
-    title: "Where Compassion Meets Commitment",
+    title: "Every hand we hold builds a stronger tomorrow",
     description:
-      "Join thousands of supporters who believe that no child should be left behind — for any reason.",
+      "From village schools to mobile clinics, your support powers the change happening across Vidarbha.",
     objectPosition: "center 35%",
     overlay: "bg-black/35",
   },
