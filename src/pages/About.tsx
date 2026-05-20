@@ -51,7 +51,7 @@ const About = () => {
                 small rural village of Darapur, in Daryapur taluka of Vidarbha.
               </p>
               <p>
-                Born into a modest farming family as one among seven siblings,
+                Born in 1929 into a modest farming family as one among seven siblings,
                 Late Shri R. S. Gavai understood firsthand the barriers that
                 prevented rural children from accessing education. Despite
                 financial hardship, he pursued higher education and went on to
@@ -65,7 +65,7 @@ const About = () => {
                 The Problem He Saw
               </h3>
               <p>
-                As he travelled across Vidarbha, Shri Gavai recognised two
+                After graduating from college and travelling across Vidarbha, Shri Gavai recognised two
                 fundamental challenges facing rural education.
               </p>
               <p>
@@ -97,16 +97,26 @@ const About = () => {
                 How It Began
               </h3>
               <p>
-                Shri Gavai believed that if children could not reach schools,
-                schools must reach them.
+                Shri Gavai believed that if children could not reach schools, schools must reach them. 
+                With this vision, he established the first school, Dr. Babasaheb Ambedkar Vidyalaya, in 
+                the informal housing settlements of Frazerpura in 1968, providing free education to children from the locality.
               </p>
               <p>
-                With this vision, he began establishing schools directly within
-                rural communities. In the early years, this often meant
-                persuading local landowners to donate small parcels of land for
-                educational institutions. In return, schools would sometimes be
-                named in memory of their family members—creating a shared sense
+                In the early years, starting a school often meant persuading local landowners to donate 
+                small parcels of land for educational institutions. In return, schools would sometimes be 
+                named in memory of their family members. Through this model, the next institution, 
+                Madan Maharaj Vidyalaya in the village of Fulamla, was established, creating a shared sense 
                 of ownership and community participation in education.
+              </p>
+              <p>
+                Over the years, his vision expanded beyond primary schooling to include junior and senior
+                colleges, as well as professional degree institutions and training centres focused on improving 
+                employability and creating meaningful career opportunities for students from rural backgrounds.
+              </p>
+              <p>
+                In 2008, he fulfilled a long-held aspiration by establishing an engineering college in his native 
+                village of Darapur, bringing professional education to students who would otherwise have had to leave 
+                their homes or abandon such ambitions entirely.
               </p>
               <p>
                 What began as a small initiative steadily evolved into a large
@@ -117,20 +127,13 @@ const About = () => {
                 Where We Are Today
               </h3>
               <p>
-                Today, the Trust operates 16 schools and 12 higher educational
-                institutions across Maharashtra, including engineering,
-                pharmacy, law, polytechnic, and Ayurvedic medical colleges,
-                along with a 100-bedded hospital serving rural communities.
+                Today, the Trust operates 16 schools and 12 higher educational institutions 
+                across Vidarbha, including engineering, pharmacy, law, polytechnic, and 
+                Ayurvedic medical education, alongside a growing presence in healthcare through 
+                the establishment of a rural 100-bedded hospital in Kherda, Washim serving rural communities.
               </p>
               <p>
-                One of Shri Gavai's most meaningful achievements was fulfilling
-                the long-standing aspiration of the people of his native region
-                by establishing an engineering college there—bringing
-                professional education to students who would otherwise have had
-                to leave their villages or abandon such ambitions entirely.
-              </p>
-              <p>
-                Over the decades, the institutions built under his vision have
+                Over the decades, the institutions built under Shri Gawai's vision have
                 enabled students from rural and underserved backgrounds to
                 access opportunities once considered unimaginable. Alumni from
                 our institutions have gone on to study at IITs, IIMs, Ivy League
@@ -142,25 +145,26 @@ const About = () => {
                 The Legacy
               </h3>
               <p>
-                While the scale of the Trust has grown, its core mission remains
-                unchanged: to expand access to quality education and healthcare
-                for communities that are too often left behind by geography,
-                circumstance, or economic barriers.
+                While the scale of the Trust has grown significantly over the decades, 
+                its core mission has remained rooted in expanding educational opportunity 
+                for communities too often left behind by geography, circumstance, or economic barriers.
               </p>
               <p>
-                Today, that mission remains as relevant as ever. Even now,
-                thousands of students across rural India continue to face
-                barriers of affordability, access, and exposure. The Trust's
-                work therefore continues to focus not only on building
-                institutions, but on creating pathways of opportunity that allow
-                students from rural backgrounds to participate fully in a
-                rapidly changing world.
+                In its early years, the challenge was access itself ensuring that no child was left 
+                uneducated simply because a school did not exist nearby. Today, with educational access 
+                improving across the region, the Trust’s focus has evolved towards improving the quality 
+                of education, exposure, and career opportunities available to rural students.
               </p>
               <p>
-                From one small school to a network serving thousands annually,
-                the journey of the Trust continues to be guided by the belief
-                that talent exists everywhere and opportunity must too.
+                The Trust now actively seeks to collaborate with institutional partners, CSR initiatives, 
+                and philanthropic organisations to strengthen infrastructure, modernise learning, and ensure 
+                that students from rural backgrounds receive opportunities at par with the best educational institutions.
               </p>
+              <p>
+                From one small school to a network serving thousands annually, the journey of the Trust continues 
+                to be guided by the belief that talent exists everywhere, and opportunity must too.
+              </p>
+
             </div>
           </div>
         </div>
