@@ -23,7 +23,7 @@ const aboutMenu = {
 };
 
 const institutionMenu = {
-  label: "Institution",
+  label: "Institutions",
   to: "/institution",
   items: [
     { label: "Schools", to: "/institution/schools", parent: "schools" as const },
