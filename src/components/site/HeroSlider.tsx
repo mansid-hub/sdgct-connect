@@ -12,7 +12,7 @@ const slides = [
   {
     image: hero3,
     eyebrow: "Community First",
-    title: "Where Compassion Meets Commitment",
+    title: "Empowering lives through education",
     description:
       "Join thousands of supporters who believe that no child should be left behind — for any reason.",
     objectPosition: "center 75%",
