@@ -23,9 +23,11 @@ const SectionHeader = ({ eyebrow, title, description, align = "center", classNam
           {eyebrow}
         </span>
       )}
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance">
-        {title}
-      </h2>
+      {title && (
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance">
+          {title}
+        </h2>
+      )}
       {description && (
         <p className="text-base sm:text-lg text-muted-foreground leading-relaxed text-balance">
           {description}
