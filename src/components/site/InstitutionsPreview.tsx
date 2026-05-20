@@ -36,7 +36,7 @@ const InstitutionsPreview = () => {
       <div className="container">
         <SectionHeader
           eyebrow="Our Institutions"
-          title="A growing network shaping futures"
+          title=""
         />
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
