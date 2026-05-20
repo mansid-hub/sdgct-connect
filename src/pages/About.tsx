@@ -1,28 +1,6 @@
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
-import SectionHeader from "@/components/site/SectionHeader";
-import { GraduationCap, HeartHandshake, Sparkles, BookOpen, Users, Cpu } from "lucide-react";
 import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
-import CallToDonate from "@/components/site/CallToDonate";
-
-const whatWeDo = [
-  {
-    icon: BookOpen,
-    title: "Education for all",
-    text: "Pre-primary to post-graduation across schools, junior and senior colleges.",
-  },
-  {
-    icon: Cpu,
-    title: "Skills & digital learning",
-    text: "Pharmacy, vocational training, e-learning and applied research programmes.",
-  },
-  {
-    icon: Users,
-    title: "Community upliftment",
-    text: "Outreach, scholarships and welfare initiatives that reach families across Vidarbha.",
-  },
-];
 
 const About = () => {
   return (
@@ -188,63 +166,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Growth & Impact */}
-      <section className="section-y bg-secondary/40">
-        <div className="container grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div className="order-2 lg:order-1">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-accent">
-              <span className="h-px w-6 bg-accent" /> Growth & Impact
-            </span>
-
-            <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-foreground text-balance">
-              Approaching a golden jubilee of service.
-            </h2>
-
-            <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Several of our institutions are nearing their golden jubilee — a
-                quiet milestone built on decades of trust earned from students,
-                parents and the communities we serve.
-              </p>
-
-              <p>
-                In recent years the trust has expanded into pharmacy education,
-                e-learning, applied research and vocational courses — preparing
-                a new generation of learners for the world they are entering.
-              </p>
-
-              <div className="pt-2 grid grid-cols-3 gap-4">
-                {[
-                  { icon: GraduationCap, label: "Education" },
-                  { icon: Sparkles, label: "Research" },
-                  { icon: HeartHandshake, label: "Community" },
-                ].map((p, i) => (
-                  <div
-                    key={i}
-                    className="rounded-2xl border border-border/60 bg-card p-4 flex items-center gap-2"
-                  >
-                    <p.icon size={16} className="text-primary" />
-                    <span className="text-sm font-semibold text-foreground">
-                      {p.label}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          <img
-            src={hero3}
-            alt="SDGCT institutions across the Amravati region"
-            loading="lazy"
-            width={1920}
-            height={1080}
-            className="order-1 lg:order-2 rounded-3xl shadow-card aspect-[5/4] object-cover w-full"
-          />
-        </div>
-      </section>
-
-      <CallToDonate />
     </Layout>
   );
 };
