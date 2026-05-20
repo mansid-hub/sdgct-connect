@@ -12,9 +12,9 @@ const slides = [
   {
     image: hero3,
     eyebrow: "Community First",
-    title: "Empowering lives through education",
+    title: "When Compassion Meet Commitment",
     description:
-      "Join thousands of supporters who believe that no child should be left behind — for any reason.",
+      "Empowering lives through education.",
     objectPosition: "center 75%",
     overlay: "bg-black/35",
   },
@@ -23,7 +23,7 @@ const slides = [
     eyebrow: "Hope in Action",
     title: "Every hand we hold builds a stronger tomorrow",
     description:
-      "From village schools to mobile clinics, your support powers the change happening across Vidarbha.",
+      "From village schools to mobile clinics, we create equitable opportunities.",
     objectPosition: "center 35%",
     overlay: "bg-black/35",
   },
