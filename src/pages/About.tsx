@@ -1,10 +1,8 @@
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
 import SectionHeader from "@/components/site/SectionHeader";
-import { GraduationCap, HeartHandshake, Sparkles, BookOpen, Users, Cpu } from "lucide-react";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
-import CallToDonate from "@/components/site/CallToDonate";
 
 const whatWeDo = [
   {
