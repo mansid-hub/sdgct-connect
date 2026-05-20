@@ -21,10 +21,10 @@ const Logo = ({ variant = "default", compact = false }: LogoProps) => {
       {!compact && (
         <div className="flex flex-col leading-tight">
           <span className={`font-display font-bold text-sm sm:text-base ${textColor}`}>
-            Dadasaheb Gawai
+            Shri Dadasaheb Gawai Charitable Trust
           </span>
           <span className={`text-[10px] sm:text-xs uppercase tracking-wider ${subColor}`}>
-            Charitable Trust · Amravati
+            Amravati
           </span>
         </div>
       )}
