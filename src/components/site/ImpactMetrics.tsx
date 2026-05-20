@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from "react";
 import { HandHeart, GraduationCap, Building2, HeartPulse } from "lucide-react";
 
 const metrics = [
-  { icon: GraduationCap, value: 10000, suffix: "+", label: "Students Learning ", note: "Across Our Schools & Colleges" },
-  { icon: HandHeart, value: 700, suffix: "+", label: "Educators & Support Staff", note: "Dedicated teaching professionals across schools, colleges, and institutes" },
-  { icon: Building2, value: 30, suffix: "+", label: "Institutes Supported", note: "Schools, colleges & hospitals" },
-  { icon: HeartPulse, value: 175000, suffix: "+", label: "Lives Touched", note: "Through education & healthcare" },
+  { icon: GraduationCap, value: 10915, suffix: "", label: "Students Learning ", note: "Across our schools and colleges" },
+  { icon: HandHeart, value: 743, suffix: "", label: "Educators & Support Staff", note: "Dedicated teaching professionals across schools, colleges, and other institutes" },
+  { icon: Building2, value: 30, suffix: "+", label: "Institutes Supported", note: "Schools, colleges, and hospitals" },
+  { icon: HeartPulse, value: 40649, suffix: "", label: "OPD Patients", note: "Through healthcare services" },
 ];
 
 function useCountUp(end: number, start: boolean, duration = 1800) {
