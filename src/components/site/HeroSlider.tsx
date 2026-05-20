@@ -11,28 +11,28 @@ import { cn } from "@/lib/utils";
 const slides = [
   {
     image: hero3,
-    eyebrow: "Community First",
-    title: "When Compassion Meet Commitment",
+    eyebrow: "Education for All",
+    title: "Quality education made accessible and affordable",
     description:
-      "Empowering lives and expanding access to quality education.",
+      "For over three decades, we’ve supported the most vulnerable because talent is everywhere, but opportunity isn’t.",
     objectPosition: "center 75%",
     overlay: "bg-black/35",
   },
   {
     image: hero2,
     eyebrow: "Hope in Action",
-    title: "Every hand we hold builds a stronger tomorrow",
+    title: "Empowering students from disadvantaged backgrounds",
     description:
-      "From village schools to mobile clinics, we create equitable opportunities.",
+      "Every hand we hold builds a stronger tomorrow",
     objectPosition: "center 35%",
     overlay: "bg-black/35",
   },
   {
     image: hero1,
-    eyebrow: "Education for All",
-    title: "Empowering lives and expanding access to quality education",
+    eyebrow: "Social Transformation",
+    title: "When compansion meets commitment",
     description:
-      "For over three decades, we’ve supported the most vulnerable because talent is everywhere, but opportunity isn’t.",
+      "From village schools to compassionate healthcare services, we drive upliftment initiatives that promote dignity, self-reliance, and equitable growth",
     objectPosition: "center top",
     overlay: "bg-black/40",
   },
