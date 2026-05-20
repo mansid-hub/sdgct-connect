@@ -14,14 +14,14 @@ const slides = [
     eyebrow: "Education for All",
     title: "Quality education made accessible and affordable",
     description:
-      "For over three decades, we’ve supported the most vulnerable because talent is everywhere, but opportunity isn’t.",
+      "For over six decades, we've made schools and colleges accessible for disadvantaged students, as talent is everywhere, but opportunity isn’t.",
     objectPosition: "center 75%",
     overlay: "bg-black/35",
   },
   {
     image: hero2,
     eyebrow: "Hope in Action",
-    title: "Empowering students from disadvantaged backgrounds",
+    title: "Empowering students from underserved backgrounds",
     description:
       "Every hand we hold builds a stronger tomorrow",
     objectPosition: "center 35%",
@@ -32,7 +32,7 @@ const slides = [
     eyebrow: "Social Transformation",
     title: "When compansion meets commitment",
     description:
-      "From village schools to compassionate healthcare services, we drive upliftment initiatives that promote dignity, self-reliance, and equitable growth",
+      "From village schools to healthcare services, we drive upliftment initiatives that promote dignity, self-reliance, and equitable growth",
     objectPosition: "center top",
     overlay: "bg-black/40",
   },
