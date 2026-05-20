@@ -14,7 +14,7 @@ const slides = [
     eyebrow: "Community First",
     title: "When Compassion Meet Commitment",
     description:
-      "Empowering lives through education.",
+      "Empowering lives through quality education.",
     objectPosition: "center 75%",
     overlay: "bg-black/35",
   },
