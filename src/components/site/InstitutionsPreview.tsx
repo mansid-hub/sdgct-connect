@@ -37,7 +37,6 @@ const InstitutionsPreview = () => {
         <SectionHeader
           eyebrow="Our Institutions"
           title="A growing network shaping futures"
-          description="Explore the schools, colleges and healthcare programmes run under SDGCT."
         />
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

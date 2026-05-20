@@ -12,29 +12,14 @@ const Index = () => {
       {/* Hero */}
       <HeroSlider />
 
-      {/* Intro Section (NEW – makes site feel like a trust) */}
-      <section className="py-16 bg-secondary/30">
-        <div className="container max-w-5xl text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-            Empowering Lives Through Education & Service
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Shri Dadasaheb Gawai Charitable Trust has been working since 1991 to
-            uplift communities through education, skill development, and social
-            initiatives. From classrooms to communities, our mission is to create
-            equal opportunities for all.
-          </p>
-        </div>
-      </section>
-
       {/* Impact */}
       <ImpactMetrics />
 
-      {/* Institutions */}
-      <InstitutionsPreview />
-
       {/* What We Do */}
       <WhatWeDo />
+
+      {/* Institutions */}
+      <InstitutionsPreview />
 
       {/* Stories / Testimonials */}
       <Testimonials />
