@@ -32,13 +32,13 @@ const Institution = () => {
           <div className="max-w-3xl">
             <div className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Complete directory</div>
             <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-foreground">
-              {totalSchools + totalColleges + totalHospitals}+ institutions across the Amravati region
+              {totalSchools + totalColleges + totalHospitals}+ Institutions across Vidarbha region
             </h2>
             <p className="mt-3 text-muted-foreground leading-relaxed">
-              The trust operates a diverse network spanning primary schools to professional colleges and
-              healthcare — combining government-aided institutions with self-financed campuses to serve
-              students from every background. Click any institution to learn more about its location, focus
-              areas and official website.
+              The Trust operates a diverse network spanning primary schools to professional colleges and
+              healthcare — combining government-aided institutions with self-financed campuses to serve 
+              disadvantaged communities. Click any institution to learn more about its location and focus
+              areas.
             </p>
           </div>
 
