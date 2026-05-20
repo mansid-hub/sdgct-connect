@@ -10,7 +10,7 @@ const Trustees = () => {
       <PageHeader
         eyebrow="Leadership"
         title="Meet the trustees behind our work"
-        description="A small board of trusted leaders, advocates and professionals who give their time, skill and conscience to this trust."
+        description="A small board of trusted leaders, advocates and professionals who give their time, skill and conscience to this Trust."
         crumbs={[{ label: "Home", to: "/" }, { label: "Trustees" }]}
       />
 
