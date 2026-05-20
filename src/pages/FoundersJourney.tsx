@@ -41,7 +41,7 @@ const FoundersJourney = () => {
 
             <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed">
               <p>
-                Born in the rural village of Darapur in Amravati, Late Shri R.
+                Born in 1929, in the rural village of Darapur in Amravati, Late Shri R.
                 S. Gavai dedicated his life to expanding opportunities for
                 underserved communities. Guided by the ideals of Dr. B. R.
                 Ambedkar, he believed that education was the most powerful
@@ -51,14 +51,14 @@ const FoundersJourney = () => {
 
               <p>
                 This belief took shape through the establishment of Shri
-                Dadasaheb Gawai Charitable Trust. What began as a single school
-                was rooted in a simple conviction: that access to quality
+                Dadasaheb Gawai Charitable Trust. What began as a single school,
+                in 1968, was rooted in a simple conviction that access to quality
                 education should not depend on where one is born.
               </p>
 
               <p>
-                Starting with modest beginnings, Shri Gavai focused on building
-                institutions where they were needed most — rural and often
+                Starting with modest beginnings, Shri Gawai focused on building
+                institutions where they were needed most in rural and often
                 overlooked regions of Vidarbha. Over time, this effort grew into
                 a network of schools and colleges that today educate over 12,000
                 students annually across Vidarbha.
@@ -85,20 +85,26 @@ const FoundersJourney = () => {
               </p>
 
               <p>
-                For Shri Gavai, education extended beyond academics. He saw it
-                as a means to build confidence, self-reliance, and a sense of
-                agency. The institutions he established were designed not just
-                to teach, but to enable individuals to navigate a changing
-                world with dignity and purpose.
+                Beyond education, Shri Gavai was associated with several social welfare 
+                initiatives focused on the eradication of untouchability, support for leprosy 
+                patients, and broader community upliftment. He served as Chairman Deeksha Bhoomi, 
+                Nagpur, and was also a member of the Land Reforms Committee of the Government of India. 
+                In 1975, he played a pioneering role in introducing the Employment Guarantee Scheme in Maharashtra.
+              </p>
+              
+              <p>
+                A prolific writer and public thinker, Shri Gavai also authored several Marathi books 
+                on social justice and equality. His interests extended beyond public life and education 
+                as he also served as President of the Western India Football Association.
               </p>
 
               <p>
-                He also recognised that barriers to progress were often
-                interconnected. His work therefore reflected a broader
-                understanding of community development, supporting not only
-                students, but the ecosystems around them.
+                Over the years, his contributions were recognised through numerous honours, including 
+                the National Press Award by National Press India, the Priyadarshini Award, 
+                National Integration Awards for peace and harmony, and the Kushta Mitra Awards for 
+                his work supporting leprosy patients.
               </p>
-
+              
               <p>
                 Today, the institutions established under his guidance continue
                 to serve as pillars of opportunity for thousands of students and
