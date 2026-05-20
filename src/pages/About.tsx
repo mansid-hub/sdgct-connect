@@ -1,26 +1,6 @@
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
-import SectionHeader from "@/components/site/SectionHeader";
 import hero2 from "@/assets/hero-2.jpg";
-import hero3 from "@/assets/hero-3.jpg";
-
-const whatWeDo = [
-  {
-    icon: BookOpen,
-    title: "Education for all",
-    text: "Pre-primary to post-graduation across schools, junior and senior colleges.",
-  },
-  {
-    icon: Cpu,
-    title: "Skills & digital learning",
-    text: "Pharmacy, vocational training, e-learning and applied research programmes.",
-  },
-  {
-    icon: Users,
-    title: "Community upliftment",
-    text: "Outreach, scholarships and welfare initiatives that reach families across Vidarbha.",
-  },
-];
 
 const About = () => {
   return (
