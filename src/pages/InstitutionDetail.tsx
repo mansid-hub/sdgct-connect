@@ -94,15 +94,6 @@ const InstitutionDetail = () => {
                     </div>
                   )}
                 </div>
-                <Button asChild variant="default" size="default" className="mt-6 w-full">
-                  <a
-                    href={buildWebsiteUrl(inst)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Visit Website <ExternalLink size={14} />
-                  </a>
-                </Button>
               </div>
             </div>
           </aside>
