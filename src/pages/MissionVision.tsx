@@ -73,7 +73,5 @@ const MissionVision = () => {
     </Layout>
   );
 };
-  );
-};
 
 export default MissionVision;
