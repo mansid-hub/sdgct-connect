@@ -8,7 +8,7 @@ const About = () => {
       <PageHeader
         eyebrow="About Us"
         title="A trust built on dignity, education and opportunity."
-        description="Shri Dadasaheb Gawai Charitable Trust (SDGCT) is a Buddhist Minority Institution recognised by the Government of Maharashtra, serving Amravati and beyond since 1991."
+        
         crumbs={[{ label: "Home", to: "/" }, { label: "About" }]}
       />
 
@@ -16,12 +16,14 @@ const About = () => {
       <section className="section-y">
         <div className="container grid lg:grid-cols-5 gap-12 lg:gap-16">
           <div className="lg:col-span-2">
-            <div className="relative lg:sticky lg:top-28">
+            <div className="relative lg:sticky lg:top-28 p-4 bg-card rounded-3xl shadow-card">
               <img
                 src={timeline}
                 alt="Timeline of SDGCT institutions from 1960 to 2025"
-                loading="lazy"
-                className="rounded-3xl shadow-card w-full h-auto object-contain"
+                loading="eager"
+                decoding="async"
+                className="w-full h-auto object-contain rounded-2xl"
+                style={{ imageRendering: 'auto' }}
               />
             </div>
           </div>
