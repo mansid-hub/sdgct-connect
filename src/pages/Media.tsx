@@ -3,24 +3,13 @@ import { Link } from "react-router-dom";
 
 const mediaItems = [
   {
-    title: "Awards & Recognition",
-    description: "Celebrating milestones and achievements across our institutions.",
-    image: "/images/awards.png",
-    link: "/media/awards",
-  },
-  {
-    title: "Blogs",
+    title: "Success Stories",
     description: "Insights, stories, and updates from our journey.",
     image: "/images/blog.png",
     link: "/media/blogs",
   },
-  {
-    title: "Press Release",
-    description: "Official announcements and media coverage.",
-    image: "/images/press.png",
-    link: "/media/press",
-  },
 ];
+
 
 const Media = () => {
   return (

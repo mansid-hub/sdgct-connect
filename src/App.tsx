@@ -18,11 +18,10 @@ import InstitutionList from "./pages/InstitutionList.tsx";
 import ScrollToTop from "./components/site/ScrollToTop.tsx";
 import WhyUs from "@/pages/WhyUs";
 import Media from "@/pages/Media";
-import Awards from "@/pages/Awards";
 import BlogsMedia from "@/pages/BlogsMedia";
-import Press from "@/pages/Press";
 import MissionVision from "@/pages/MissionVision";
 import FoundersJourney from "@/pages/FoundersJourney";
+
 
 const queryClient = new QueryClient();
 
@@ -36,10 +35,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/media" element={<Media />} />
-          <Route path="/media/awards" element={<Awards />} />
           <Route path="/media/blogs" element={<BlogsMedia />} />
           <Route path="/media/blogs/:slug" element={<BlogsMedia />} />
-          <Route path="/media/press" element={<Press />} />
+
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/about/mission-vision" element={<MissionVision />} />
           <Route path="/about/founders-journey" element={<FoundersJourney />} />
