@@ -1,19 +1,9 @@
 import { useParams, Navigate, Link } from "react-router-dom";
-import { ExternalLink, MapPin, Building2, ArrowUpRight } from "lucide-react";
+import { MapPin, Building2, ArrowUpRight } from "lucide-react";
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
 import { Button } from "@/components/ui/button";
 import { getCategory } from "@/data/institutions";
-
-const buildWebsiteUrl = (inst: { name: string; location?: string; website?: string }) => {
-  if (inst.website) return inst.website;
-  const query = encodeURIComponent(
-    `${inst.name}${inst.location ? " " + inst.location : ""} official website`
-  );
-  // Google's "I'm Feeling Lucky" redirects straight to the top result,
-  // which is almost always the institution's official site.
-  return `https://www.google.com/search?q=${query}&btnI=1`;
-};
 
 interface InstitutionListProps {
   categorySlug?: string;
