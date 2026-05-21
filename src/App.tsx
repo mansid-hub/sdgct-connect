@@ -35,10 +35,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/media" element={<Media />} />
-          <Route path="/media/awards" element={<Awards />} />
           <Route path="/media/blogs" element={<BlogsMedia />} />
           <Route path="/media/blogs/:slug" element={<BlogsMedia />} />
-          <Route path="/media/press" element={<Press />} />
+
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/about/mission-vision" element={<MissionVision />} />
           <Route path="/about/founders-journey" element={<FoundersJourney />} />
