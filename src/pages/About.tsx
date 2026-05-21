@@ -16,12 +16,12 @@ const About = () => {
       <section className="section-y">
         <div className="container grid lg:grid-cols-5 gap-12 lg:gap-16">
           <div className="lg:col-span-2">
-            <div className="relative lg:sticky lg:top-28 lg:h-[calc(100vh-8rem)]">
+            <div className="relative lg:sticky lg:top-28">
               <img
                 src={timeline}
                 alt="Timeline of SDGCT institutions from 1960 to 2025"
                 loading="lazy"
-                className="rounded-3xl shadow-card w-full h-full object-contain bg-card"
+                className="rounded-3xl shadow-card w-full h-auto object-contain"
               />
             </div>
           </div>
