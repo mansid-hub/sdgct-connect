@@ -1,6 +1,6 @@
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
-import hero2 from "@/assets/hero-2.jpg";
+import timeline from "@/assets/timeline.png";
 
 const About = () => {
   return (
