@@ -152,6 +152,13 @@ import lotus4 from "@/assets/lotus-4.jpg";
 import lotus5 from "@/assets/lotus-5.jpg";
 import lotus6 from "@/assets/lotus-6.jpg";
 import lotus7 from "@/assets/lotus-7.jpg";
+import lotusKaran1 from "@/assets/lotus-karan-1.jpg";
+import lotusKaran2 from "@/assets/lotus-karan-2.jpg";
+import lotusKaran3 from "@/assets/lotus-karan-3.jpg";
+import lotusKaran4 from "@/assets/lotus-karan-4.jpg";
+import lotusKaran5 from "@/assets/lotus-karan-5.jpg";
+import lotusKaran6 from "@/assets/lotus-karan-6.jpg";
+import lotusKaran7 from "@/assets/lotus-karan-7.jpg";
 import prerna1 from "@/assets/prerna-1.jpg";
 import prerna2 from "@/assets/prerna-2.jpg";
 import prerna3 from "@/assets/prerna-3.jpg";
@@ -859,6 +866,15 @@ if (lotusShyamNagar) {
   lotusShyamNagar.image = lotus1;
   lotusShyamNagar.gallery = [lotus1, lotus2, lotus3, lotus4, lotus5, lotus6, lotus7];
   lotusShyamNagar.highlights = [];
+}
+
+const lotusKaran = schoolsCat?.items.find(
+  (i) => i.slug === "lotus-karan-english-school-uttam-nagar-dist-amravati"
+);
+if (lotusKaran) {
+  lotusKaran.image = lotusKaran1;
+  lotusKaran.gallery = [lotusKaran1, lotusKaran2, lotusKaran3, lotusKaran4, lotusKaran5, lotusKaran6, lotusKaran7];
+  lotusKaran.highlights = [];
 }
 
 const kamalsuryaAbout: string[] = [
