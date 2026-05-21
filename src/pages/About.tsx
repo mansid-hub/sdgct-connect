@@ -16,23 +16,13 @@ const About = () => {
       <section className="section-y">
         <div className="container grid lg:grid-cols-5 gap-12 lg:gap-16">
           <div className="lg:col-span-2">
-            <div className="relative lg:sticky lg:top-28">
+            <div className="relative lg:sticky lg:top-28 lg:h-[calc(100vh-8rem)]">
               <img
-                src={hero2}
-                alt="Students and teachers across SDGCT institutions"
+                src={timeline}
+                alt="Timeline of SDGCT institutions from 1960 to 2025"
                 loading="lazy"
-                width={1920}
-                height={1080}
-                className="rounded-3xl shadow-card aspect-[4/5] object-cover w-full"
+                className="rounded-3xl shadow-card w-full h-full object-contain bg-card"
               />
-              <div className="absolute -bottom-6 -right-6 hidden md:block bg-card rounded-2xl p-6 shadow-elegant border border-border/60 w-56">
-                <div className="font-display text-3xl font-bold text-primary">
-                  Since 1991
-                </div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  Three decades of grassroots service
-                </div>
-              </div>
             </div>
           </div>
 
