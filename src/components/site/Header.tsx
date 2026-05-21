@@ -344,64 +344,21 @@ const Header = () => {
             </div>
           </div>
           
-          {/* Media dropdown (placed right after Institution) */}
-          <div
-            className="relative"
-            ref={mediaRef}
-            onMouseEnter={() => openWithHover("media")}
-            onMouseLeave={() => closeWithHover("media")}
+          {/* Success Stories link */}
+          <NavLink
+            to="/media/blogs"
+            className={({ isActive }) =>
+              cn(
+                "px-4 py-2 rounded-full text-sm font-medium transition-base",
+                isActive
+                  ? "text-primary bg-primary/8"
+                  : "text-foreground/75 hover:text-primary hover:bg-secondary"
+              )
+            }
           >
-  <div
-    className={cn(
-      "rounded-full inline-flex items-center transition-base",
-      mediaActive
-        ? "text-primary bg-primary/8"
-        : "text-foreground/75 hover:text-primary hover:bg-secondary"
-    )}
-  >
-    <button
-      type="button"
-      onClick={() => setMediaOpen((v) => !v)}
-      className="pl-4 pr-1.5 py-2 text-sm font-medium rounded-l-full"
-    >
-      {mediaMenu.label}
-    </button>
+            Success Stories
+          </NavLink>
 
-    <button
-      type="button"
-      onClick={() => setMediaOpen((v) => !v)}
-      aria-haspopup="menu"
-      aria-expanded={mediaOpen}
-      aria-label="Toggle Media menu"
-      className="pr-3 pl-1 py-2 rounded-r-full"
-    >
-      <ChevronDown
-        size={14}
-        className={cn("transition-base", mediaOpen && "rotate-180")}
-      />
-    </button>
-  </div>
-
-  <div
-    role="menu"
-    className={cn(
-      "absolute left-0 mt-3 w-60 p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
-      mediaOpen
-        ? "opacity-100 scale-100 pointer-events-auto"
-        : "opacity-0 scale-95 pointer-events-none"
-    )}
-  >
-    {mediaMenu.items.map((i) => (
-      <Link
-        key={i.to}
-        to={i.to}
-        className="block px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary"
-      >
-        {i.label}
-      </Link>
-    ))}
-  </div>
-</div>
           {/* Remaining simple links */}
           {links.filter((l) => l.to !== "/").map((l) => (
             <NavLink
