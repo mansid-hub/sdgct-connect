@@ -58,16 +58,12 @@ const Testimonials = () => {
               to={`/media/blogs/${s.slug}`}
               className="group bg-card rounded-3xl overflow-hidden shadow-soft border border-border/60 flex flex-col transition-base hover:-translate-y-1 hover:shadow-card"
             >
-              <div className="aspect-[4/5] overflow-hidden bg-muted">
+              <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden bg-muted">
                 <img
                   src={s.image}
                   alt={s.name}
                   loading="lazy"
-                  className={`w-full h-full object-cover transition-base group-hover:scale-105 ${
-                    s.slug === "omprakash-jambekar-agriculture-officer"
-                      ? "object-top"
-                      : "object-center"
-                  }`}
+                  className="w-full h-full object-cover object-top transition-base group-hover:scale-105"
                 />
               </div>
               <div className="p-5 flex flex-col flex-1">
