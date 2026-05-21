@@ -383,13 +383,14 @@ const BlogsMedia = () => {
           {stories.map((story, index) => (
             <article
               key={index}
-              className="bg-card border border-border/60 rounded-2xl overflow-hidden shadow-card grid md:grid-cols-[320px_1fr]"
+              className="bg-card border border-border/60 rounded-2xl overflow-hidden shadow-card grid grid-cols-[120px_1fr] sm:grid-cols-[180px_1fr] md:grid-cols-[320px_1fr]"
             >
               <img
                 src={story.image}
                 alt={story.title}
-                className="w-full h-full max-h-80 md:max-h-none object-cover"
+                className="w-full h-full object-cover object-top"
               />
+
               <div className="p-6 sm:p-8">
                 <h2 className="text-xl sm:text-2xl font-display font-bold text-foreground leading-snug">
                   {story.title}
