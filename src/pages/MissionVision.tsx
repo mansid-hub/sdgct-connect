@@ -15,12 +15,6 @@ const visionPoints = [
   "Where every individual has the opportunity to live with purpose, self-reliance, and possibility—across rural Vidarbha and beyond.",
 ];
 
-const stats = [
-  { value: "16+", label: "Educational Institutions" },
-  { value: "400+", label: "Educators & Faculty" },
-  { value: "30+", label: "Years of Community Impact" },
-  { value: "Vidarbha", label: "Region of Continued Service" },
-];
 
 const MissionVision = () => {
   return (
