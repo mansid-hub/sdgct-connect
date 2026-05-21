@@ -7,7 +7,7 @@ const About = () => {
     <Layout>
       <PageHeader
         eyebrow="About Us"
-        title="A trust built on dignity, education and opportunity."
+        title="A Trust built on dignity, education and opportunity."
         
         crumbs={[{ label: "Home", to: "/" }, { label: "About" }]}
       />
