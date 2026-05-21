@@ -84,7 +84,7 @@ const HeroSlider = () => {
       ))}
 
       {/* Content */}
-      <div className="container relative z-10 pt-16 pb-12">
+      <div className="container relative z-10 pt-8 pb-24 sm:pb-28">
         <div className="max-w-3xl">
           {slides.map((slide, i) => (
             <div key={i} className={cn(active === i ? "block" : "hidden")}>
