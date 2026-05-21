@@ -532,36 +532,18 @@ const Header = () => {
             )}
           </div>
 
-          <div className="animate-fade-up">
-  <button
-    type="button"
-    onClick={() => setMobileInstOpen((v) => (v === "media" ? null : "media"))}
-    className="w-full flex items-center justify-between px-5 py-4 rounded-2xl text-lg font-display font-semibold"
-  >
-    Resources
-    <ChevronDown
-      size={18}
-      className={cn(
-        "transition-base",
-        mobileInstOpen === "media" && "rotate-180"
-      )}
-    />
-  </button>
+          <NavLink
+            to="/media/blogs"
+            className={({ isActive }) =>
+              cn(
+                "px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base animate-fade-up",
+                isActive ? "bg-primary text-primary-foreground" : "text-black hover:bg-secondary"
+              )
+            }
+          >
+            Success Stories
+          </NavLink>
 
-  {mobileInstOpen === "media" && (
-    <div className="mt-1 ml-2 pl-3 border-l-2 border-border/60 flex flex-col gap-1">
-      {mediaMenu.items.map((i) => (
-        <Link
-          key={i.to}
-          to={i.to}
-          className="px-4 py-3 rounded-xl text-base font-medium text-black/80 hover:bg-secondary hover:text-primary"
-        >
-          {i.label}
-        </Link>
-      ))}
-    </div>
-  )}
-</div>
           {/* Remaining simple links (Blog, Contact) */}
           {links.filter((l) => l.to !== "/").map((l) => (
             <NavLink
