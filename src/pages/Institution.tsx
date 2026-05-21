@@ -45,7 +45,7 @@ const Institution = () => {
           <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-accent blur-3xl" />
           <div className="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-primary-glow blur-3xl" />
         </div>
-        <div className="container relative py-10 sm:py-12 lg:py-16">
+        <div className="container relative py-6 sm:py-8 lg:py-10">
           <div className="mb-6 [&_*]:!text-primary-foreground/70 [&_a:hover]:!text-accent [&_.text-foreground]:!text-primary-foreground">
             <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Institution" }]} />
           </div>

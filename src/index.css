@@ -136,9 +136,9 @@ All colors MUST be HSL.
   .gradient-soft { background: var(--gradient-soft); }
 
   /* Standardized section vertical rhythm — keeps every page consistent */
-  .section-y { @apply py-10 sm:py-12 lg:py-16; }
-  .section-y-sm { @apply py-8 sm:py-10 lg:py-12; }
-  .section-y-lg { @apply py-12 sm:py-16 lg:py-20; }
+  .section-y { @apply py-6 sm:py-8 lg:py-10; }
+  .section-y-sm { @apply py-4 sm:py-6 lg:py-8; }
+  .section-y-lg { @apply py-8 sm:py-10 lg:py-14; }
 
   .shadow-elegant { box-shadow: var(--shadow-elegant); }
   .shadow-soft { box-shadow: var(--shadow-md); }

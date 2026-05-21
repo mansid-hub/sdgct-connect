@@ -315,7 +315,7 @@ const BlogsMedia = () => {
     if (!story) {
       return (
         <Layout>
-          <div className="container mx-auto px-4 py-16 text-center">
+          <div className="container mx-auto px-4 py-10 text-center">
             <h1 className="text-2xl font-bold mb-4">Story not found</h1>
             <Link
               to="/media/blogs"
@@ -330,7 +330,7 @@ const BlogsMedia = () => {
 
     return (
       <Layout>
-        <div className="container mx-auto px-4 py-16">
+        <div className="container mx-auto px-4 py-10">
           <Link
             to="/media/blogs"
             className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline mb-8"
@@ -368,7 +368,7 @@ const BlogsMedia = () => {
 
   return (
     <Layout>
-      <div className="container mx-auto px-4 py-16">
+      <div className="container mx-auto px-4 py-10">
         {/* Heading */}
         <div className="max-w-2xl mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold mb-4">Success Stories</h1>

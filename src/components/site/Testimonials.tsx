@@ -44,7 +44,7 @@ const stories = [
 
 const Testimonials = () => {
   return (
-    <section className="py-12 sm:py-16 bg-secondary/40">
+    <section className="py-8 sm:py-10 bg-secondary/40">
       <div className="container">
         <SectionHeader
           eyebrow="Voices of Impact"

@@ -14,7 +14,7 @@ const mediaItems = [
 const Media = () => {
   return (
     <Layout>
-      <div className="container mx-auto px-4 py-16 text-black">
+      <div className="container mx-auto px-4 py-10 text-black">
 
         {/* Heading */}
         <div className="max-w-2xl mb-12">

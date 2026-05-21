@@ -11,7 +11,7 @@ const points = [
 
 const WhyUsTeaser = () => {
   return (
-    <section className="py-12 sm:py-16">
+    <section className="py-8 sm:py-10">
       <div className="container grid lg:grid-cols-[1fr_1.2fr] gap-10 lg:gap-16 items-center">
         <div>
           <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-accent">
