@@ -70,31 +70,9 @@ const MissionVision = () => {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="section-y bg-secondary/40">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-accent">
-              <span className="h-px w-6 bg-accent" /> Our Reach
-            </span>
-            <h2 className="mt-4 font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance">
-              Three decades of consistent, community-rooted service.
-            </h2>
-          </div>
-          <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
-            {stats.map((s, i) => (
-              <div
-                key={i}
-                className="bg-card rounded-3xl border border-border/60 shadow-soft p-6 sm:p-8 text-center hover:shadow-card hover:-translate-y-1 transition-smooth"
-              >
-                <div className="font-display text-3xl sm:text-4xl font-bold text-primary">{s.value}</div>
-                <div className="mt-2 text-sm sm:text-base text-muted-foreground font-medium">{s.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </Layout>
+  );
+};
   );
 };
 
