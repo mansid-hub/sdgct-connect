@@ -70,16 +70,6 @@ const InstitutionList = ({ categorySlug }: InstitutionListProps = {}) => {
                       View details <ArrowUpRight size={14} />
                     </Link>
                   </Button>
-                  <Button asChild variant="outline" size="sm" className="w-full">
-                    <a
-                      href={buildWebsiteUrl(inst)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Visit website of ${inst.name}`}
-                    >
-                      Visit Website <ExternalLink size={14} />
-                    </a>
-                  </Button>
                 </div>
               </article>
             ))}
