@@ -120,10 +120,10 @@ const Donate = () => {
               <ShieldCheck size={14} /> 80G Tax Exempt
             </div>
             <h1 className="font-display text-3xl sm:text-5xl font-bold text-foreground tracking-tight">
-              Support Our Cause
+              Support Our Trust
             </h1>
             <p className="mt-4 text-base sm:text-lg text-muted-foreground leading-relaxed">
-              Your contribution helps support education and healthcare initiatives.
+              Your contribution helps to uplift rural communities.
             </p>
           </div>
 
