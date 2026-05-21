@@ -7,7 +7,6 @@ import {
   ArrowRight,
   CalendarDays,
   CheckCircle2,
-  ExternalLink,
   MapPin,
   Sparkles,
   Trophy,
@@ -15,14 +14,6 @@ import {
 import { allInstitutions, getInstitutionBySlug } from "@/data/institutions";
 import InstitutionGallery from "@/components/site/InstitutionGallery";
 import InstitutionFolderGallery from "@/components/site/InstitutionFolderGallery";
-
-const buildWebsiteUrl = (inst: { name: string; location?: string; website?: string }) => {
-  if (inst.website) return inst.website;
-  const query = encodeURIComponent(
-    `${inst.name}${inst.location ? " " + inst.location : ""} official website`
-  );
-  return `https://www.google.com/search?q=${query}&btnI=1`;
-};
 
 const InstitutionDetail = () => {
   const { parent = "", slug = "" } = useParams();
@@ -94,15 +85,6 @@ const InstitutionDetail = () => {
                     </div>
                   )}
                 </div>
-                <Button asChild variant="default" size="default" className="mt-6 w-full">
-                  <a
-                    href={buildWebsiteUrl(inst)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Visit Website <ExternalLink size={14} />
-                  </a>
-                </Button>
               </div>
             </div>
           </aside>

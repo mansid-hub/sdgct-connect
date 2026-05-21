@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
+import { MapPin, Building2, ArrowUpRight, Stethoscope, ArrowLeft } from "lucide-react";
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
 import { Button } from "@/components/ui/button";
-import { Stethoscope, ArrowLeft } from "lucide-react";
-import { categories } from "@/data/institutions";
+import { allInstitutions } from "@/data/institutions";
 
 const Hospitals = () => {
-  const hospitals = categories.find((c) => c.slug === "hospitals");
-  const items = hospitals?.items ?? [];
+  const items = allInstitutions("hospitals");
 
   return (
     <Layout>
@@ -33,8 +32,7 @@ const Hospitals = () => {
               </h2>
               <p className="mt-3 text-muted-foreground leading-relaxed">
                 We are expanding our community work into healthcare. Details of hospitals and health
-                centres under the trust will be published here. In the meantime, please reach out
-                to us for any information.
+                centres under the trust will be published here.
               </p>
               <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
                 <Button asChild variant="default">
@@ -50,19 +48,35 @@ const Hospitals = () => {
           ) : (
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {items.map((inst, i) => (
-                <Link
-                  key={inst.slug + i}
-                  to={`/institution/hospitals/${inst.slug}`}
+                <article
+                  key={`${inst.slug}-${i}`}
                   style={{ animationDelay: `${i * 40}ms` }}
-                  className="group rounded-3xl border border-border/60 bg-card p-6 shadow-soft hover:shadow-card hover:-translate-y-1 transition-smooth animate-fade-up"
+                  className="group rounded-3xl border border-border/60 bg-card p-6 shadow-soft hover:shadow-card hover:-translate-y-1 transition-smooth animate-fade-up flex flex-col"
                 >
-                  <h3 className="font-display text-lg font-bold text-foreground group-hover:text-primary transition-base">
+                  <div className="h-11 w-11 rounded-2xl bg-primary/10 text-primary flex items-center justify-center">
+                    <Building2 size={20} />
+                  </div>
+                  <Link
+                    to={`/institution/hospitals/${inst.slug}`}
+                    className="mt-5 font-display text-lg font-bold text-foreground leading-snug hover:text-primary transition-base inline-flex items-start gap-1.5"
+                  >
                     {inst.name}
-                  </h3>
+                    <ArrowUpRight size={14} className="mt-1 shrink-0" />
+                  </Link>
                   {inst.location && (
-                    <p className="mt-2 text-sm text-muted-foreground">{inst.location}</p>
+                    <div className="mt-3 flex items-start gap-2 text-sm text-muted-foreground">
+                      <MapPin size={14} className="mt-0.5 shrink-0 text-accent" />
+                      <span>{inst.location}</span>
+                    </div>
                   )}
-                </Link>
+                  <div className="mt-auto pt-5 border-t border-border/60 flex flex-col gap-2">
+                    <Button asChild variant="default" size="sm" className="w-full">
+                      <Link to={`/institution/hospitals/${inst.slug}`}>
+                        View details <ArrowUpRight size={14} />
+                      </Link>
+                    </Button>
+                  </div>
+                </article>
               ))}
             </div>
           )}
