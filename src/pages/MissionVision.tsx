@@ -34,6 +34,24 @@ const MissionVision = () => {
 
       <section className="section-y">
         <div className="container grid lg:grid-cols-2 gap-8">
+          {/* Mission */}
+          <div className="bg-card rounded-3xl p-8 md:p-12 border border-border/60 shadow-soft">
+            <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.22em] uppercase text-accent">
+              <span className="h-px w-6 bg-accent" /> Our Mission
+            </span>
+            <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-foreground leading-tight">
+              Creating long-term impact through institutions.
+            </h2>
+            <div className="mt-8 space-y-5">
+              {missionPoints.map((p, i) => (
+                <div key={i} className="flex gap-4">
+                  <div className="mt-2 h-2.5 w-2.5 rounded-full bg-accent flex-shrink-0" />
+                  <p className="text-foreground/80 leading-relaxed">{p}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Vision */}
           <div className="bg-card rounded-3xl p-8 md:p-12 border border-border/60 shadow-soft">
             <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.22em] uppercase text-accent">
@@ -50,24 +68,6 @@ const MissionVision = () => {
               {visionPoints.map((p, i) => (
                 <div key={i} className="flex gap-4">
                   <div className="mt-2 h-2.5 w-2.5 rounded-full bg-primary flex-shrink-0" />
-                  <p className="text-foreground/80 leading-relaxed">{p}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Mission */}
-          <div className="bg-card rounded-3xl p-8 md:p-12 border border-border/60 shadow-soft">
-            <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.22em] uppercase text-accent">
-              <span className="h-px w-6 bg-accent" /> Our Mission
-            </span>
-            <h2 className="mt-4 font-display text-3xl sm:text-4xl font-bold text-foreground leading-tight">
-              Creating long-term impact through institutions.
-            </h2>
-            <div className="mt-8 space-y-5">
-              {missionPoints.map((p, i) => (
-                <div key={i} className="flex gap-4">
-                  <div className="mt-2 h-2.5 w-2.5 rounded-full bg-accent flex-shrink-0" />
                   <p className="text-foreground/80 leading-relaxed">{p}</p>
                 </div>
               ))}
