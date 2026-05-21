@@ -1,15 +1,36 @@
 import { Link } from "react-router-dom";
-import { ArrowUpRight, ExternalLink } from "lucide-react";
+import { ArrowUpRight, ExternalLink, GraduationCap, School, Stethoscope } from "lucide-react";
 import Layout from "@/components/site/Layout";
-import PageHeader from "@/components/site/PageHeader";
+import Breadcrumbs from "@/components/site/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { allInstitutions, summaryCounts } from "@/data/institutions";
 
 const Institution = () => {
   const counts = summaryCounts();
-  const totalSchools = counts.schools.total;
-  const totalColleges = counts.colleges.total;
-  const totalHospitals = counts.hospitals.total;
+
+  const previewCards = [
+    {
+      to: "/institution/schools",
+      icon: School,
+      title: "Schools",
+      count: counts.schools.total,
+      text: "Marathi and English-medium primary to higher secondary schools across Vidarbha.",
+    },
+    {
+      to: "/institution/colleges",
+      icon: GraduationCap,
+      title: "Colleges & Institutes",
+      count: counts.colleges.total,
+      text: "Engineering, pharmacy, ayurved, polytechnic, law, ITI institues, junior, and senior colleges.",
+    },
+    {
+      to: "/institution/hospitals",
+      icon: Stethoscope,
+      title: "Healthcare",
+      count: counts.hospitals.total,
+      text: "Healthcare initiatives and community health programmes for those who need it most.",
+    },
+  ];
 
   const groups = [
     { parent: "schools" as const, title: "Schools", items: allInstitutions("schools") },
@@ -19,30 +40,51 @@ const Institution = () => {
 
   return (
     <Layout>
-      <PageHeader
-        eyebrow="Our Institutions"
-        title="A network of schools and colleges shaping futures"
-        description="From primary schools to technical institutes, our campuses serve thousands of students across the Amravati region."
-        crumbs={[{ label: "Home", to: "/" }, { label: "Institution" }]}
-      />
+      <section className="relative overflow-hidden gradient-primary text-primary-foreground">
+        <div className="absolute inset-0 opacity-20" aria-hidden>
+          <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-accent blur-3xl" />
+          <div className="absolute -bottom-32 -left-24 h-96 w-96 rounded-full bg-primary-glow blur-3xl" />
+        </div>
+        <div className="container relative py-10 sm:py-12 lg:py-16">
+          <div className="mb-6 [&_*]:!text-primary-foreground/70 [&_a:hover]:!text-accent [&_.text-foreground]:!text-primary-foreground">
+            <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Institution" }]} />
+          </div>
+          <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-[0.2em] uppercase text-accent mb-4">
+            <span className="h-px w-6 bg-accent" />
+            Our Institutions
+          </span>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-balance max-w-3xl animate-fade-up">
+            A network of schools and colleges shaping futures
+          </h1>
+
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {previewCards.map((card, i) => (
+              <Link
+                key={i}
+                to={card.to}
+                className="group flex flex-col justify-between rounded-2xl border border-border/60 bg-card p-5 shadow-soft hover:shadow-card hover:-translate-y-1 transition-smooth min-h-[190px]"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="h-10 w-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+                    <card.icon size={20} />
+                  </div>
+                  <div className="flex flex-col leading-tight">
+                    <div className="text-2xl sm:text-3xl font-bold text-primary">{card.count}</div>
+                    <div className="text-sm sm:text-base font-semibold text-foreground">{card.title}</div>
+                  </div>
+                  <ArrowUpRight size={18} className="ml-auto text-muted-foreground group-hover:text-primary transition-base" />
+                </div>
+                <p className="mt-3 text-sm text-muted-foreground leading-snug line-clamp-3">{card.text}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Full list by category */}
       <section className="section-y">
         <div className="container">
-          <div className="max-w-3xl">
-            <div className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Complete directory</div>
-            <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-foreground">
-              {totalSchools + totalColleges + totalHospitals}+ Institutions across Vidarbha region
-            </h2>
-            <p className="mt-3 text-muted-foreground leading-relaxed">
-              The Trust operates a diverse network spanning primary schools to professional colleges and
-              healthcare — combining government-aided institutions with self-financed campuses to serve 
-              disadvantaged communities. Click any institution to learn more about its location and focus
-              areas.
-            </p>
-          </div>
-
-          <div className="mt-10 space-y-12">
+          <div className="space-y-12">
             {groups
               .filter((g) => g.items.length > 0)
               .map((g) => (
