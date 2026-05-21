@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import Layout from "@/components/site/Layout";
 import Breadcrumbs from "@/components/site/Breadcrumbs";
 import { getTrustee, trustees } from "@/data/trustees";
-import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NotFound from "./NotFound";
 
@@ -58,12 +58,6 @@ const TrusteeDetail = () => {
                 <h1 className="mt-2 text-2xl sm:text-3xl font-display font-bold text-foreground">
                   {trustee.name}
                 </h1>
-                <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-                  {trustee.summary}
-                </p>
-                <Button asChild variant="default" size="default" className="mt-6 w-full">
-                  <Link to="/donate">Support our work</Link>
-                </Button>
               </div>
             </div>
           </aside>
@@ -78,16 +72,6 @@ const TrusteeDetail = () => {
               </div>
             </div>
 
-            {trustee.message && (
-              <div className="relative gradient-primary text-primary-foreground rounded-3xl p-8 sm:p-10 shadow-elegant overflow-hidden">
-                <Quote className="absolute top-6 right-6 text-accent/40 fill-current" size={64} />
-                <div className="text-xs font-semibold uppercase tracking-[0.2em] text-accent">A message</div>
-                <p className="mt-4 font-display text-xl sm:text-2xl leading-relaxed text-balance max-w-2xl">
-                  "{trustee.message}"
-                </p>
-                <div className="mt-6 text-sm text-primary-foreground/75">— {trustee.name}</div>
-              </div>
-            )}
 
             <div className="flex items-center justify-between border-t border-border/60 pt-8">
               <Button asChild variant="ghost">
