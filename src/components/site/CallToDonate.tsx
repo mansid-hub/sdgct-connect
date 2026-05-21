@@ -11,7 +11,7 @@ const grants = [
 
 const CallToDonate = ({ hideLastTile = false }: { hideLastTile?: boolean }) => {
   return (
-    <section className="py-12 sm:py-16">
+    <section className="py-8 sm:py-10">
       <div className="container">
         <div className="relative overflow-hidden rounded-3xl gradient-primary text-primary-foreground p-8 sm:p-14 lg:p-20 shadow-elegant">
           <div

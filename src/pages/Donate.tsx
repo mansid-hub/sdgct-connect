@@ -112,7 +112,7 @@ const Donate = () => {
 
   return (
     <Layout>
-      <section className="py-16 sm:py-20 bg-gradient-to-b from-secondary/40 to-background">
+      <section className="py-10 sm:py-14 bg-gradient-to-b from-secondary/40 to-background">
         <div className="container max-w-3xl">
           {/* Header */}
           <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
