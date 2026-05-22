@@ -383,6 +383,7 @@ export const categories: Category[] = [
       { name: "Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College", location: "Uttam Nagar, Dist. Amravati", type: "granted" },
       { name: "Takshashila Mahavidyalaya and Junior College", location: "Shyam Nagar, Dist. Amravati", type: "granted" },
       { name: "Takshashila Mahavidyalaya", location: "Darapur, Tq. Daryapur, Dist. Amravati", type: "granted" },
+      { name: "Ramkrushna Junior College", location: "Darapur, Tq. Daryapur, Dist. Amravati", type: "granted" },
       { name: "Takshashila Ayurved College and Hospital and Research Centre", location: "Kherda, Tq. Karanja, Dist. Washim", type: "self-financed" },
       { name: "Takshashila Institute of Pharmaceutical Education and Research", location: "Kherda, Tq. Karanja (Lad), Dist. Washim", type: "self-financed" },
       { name: "Ramkrushna Shikshan Shastra Mahavidyalaya (B.Ed.)", location: "Uttam Nagar, Dist. Amravati", type: "self-financed" },
@@ -394,9 +395,7 @@ export const categories: Category[] = [
     title: "Junior Colleges",
     parent: "colleges",
     description: "Junior colleges and MCVC vocational streams.",
-    items: build("colleges", [
-      { name: "Ramkrushna Junior College", location: "Darapur, Tq. Daryapur, Dist. Amravati", type: "granted" },
-    ]),
+    items: build("colleges", []),
   },
   {
     slug: "technical-colleges",

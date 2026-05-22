@@ -97,8 +97,6 @@ const Institution = () => {
                   </div>
                   <ul className="mt-4 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-2">
                     {g.items
-                      .slice()
-                      .sort((a, b) => a.name.localeCompare(b.name))
                       .map((inst, i) => (
                         <li
                           key={inst.slug + i}
