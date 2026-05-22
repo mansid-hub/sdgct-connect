@@ -69,11 +69,9 @@ import kamaljyot8 from "@/assets/kamaljyot-8.jpg";
 import kamaljyot9 from "@/assets/kamaljyot-9.jpg";
 import kamaljyot10 from "@/assets/kamaljyot-10.jpg";
 import kamaljyot11 from "@/assets/kamaljyot-11.jpg";
-import kamaljyot12 from "@/assets/kamaljyot-12.jpg";
 import kamaljyot13 from "@/assets/kamaljyot-13.jpg";
 import kamaljyot17 from "@/assets/kamaljyot-17.jpg";
 import krushnakamal1 from "@/assets/krushnakamal-1.jpeg";
-import krushnakamal2 from "@/assets/krushnakamal-2.jpeg";
 import krushnakamal3 from "@/assets/krushnakamal-3.jpg";
 import krushnakamal4 from "@/assets/krushnakamal-4.jpg";
 import krushnakamal6 from "@/assets/krushnakamal-6.jpeg";
@@ -522,8 +520,8 @@ const malhara = schoolsCat?.items.find((i) => i.slug === "shri-dadasaheb-gawai-v
 if (malhara) {
   malhara.about = malharaAbout;
   malhara.successStories = malharaSuccessStories;
-  malhara.image = malhara1;
-  malhara.gallery = [malhara1, malhara2, malhara3, malhara5];
+  malhara.image = malhara2;
+  malhara.gallery = [malhara2, malhara1, malhara3, malhara5];
 }
 
 const ambedkarFraizarpuraAbout: string[] = [
@@ -595,7 +593,7 @@ const kamaljyot = schoolsCat?.items.find(
 if (kamaljyot) {
   kamaljyot.about = kamaljyotAbout;
   kamaljyot.image = kamaljyot1;
-  kamaljyot.gallery = [kamaljyot1, kamaljyot2, kamaljyot3, kamaljyot4, kamaljyot5, kamaljyot6, kamaljyot7, kamaljyot8, kamaljyot9, kamaljyot10, kamaljyot11, kamaljyot12, kamaljyot13, kamaljyot17];
+  kamaljyot.gallery = [kamaljyot1, kamaljyot2, kamaljyot3, kamaljyot4, kamaljyot5, kamaljyot6, kamaljyot7, kamaljyot8, kamaljyot9, kamaljyot10, kamaljyot11, kamaljyot13, kamaljyot17];
   kamaljyot.highlights = [];
 }
 
@@ -625,7 +623,7 @@ if (krushnakamal) {
   krushnakamal.about = krushnakamalAbout;
   krushnakamal.successStories = krushnakamalStories;
   krushnakamal.image = krushnakamal3;
-  krushnakamal.gallery = [krushnakamal1, krushnakamal2, krushnakamal3, krushnakamal4, krushnakamal6, krushnakamal7, krushnakamal8, krushnakamal9,];
+  krushnakamal.gallery = [krushnakamal3, krushnakamal1, krushnakamal4, krushnakamal6, krushnakamal7, krushnakamal8, krushnakamal9,];
   krushnakamal.highlights = [];
 }
 
