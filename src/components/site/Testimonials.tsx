@@ -13,6 +13,7 @@ const stories = [
     name: "Mr. Omprakash Harilal Jambekar",
     role: "Agricultural Assistant Officer, CICR Nagpur",
     image: omprakashImg,
+    objectPosition: "object-top",
     quote:
       "From a remote village in Dharni Ghat to serving the nation as an Agricultural Assistant Officer — a story of resilience and hope.",
   },
@@ -21,6 +22,7 @@ const stories = [
     name: "Ms. Pallavi A. Sadanshiv",
     role: "Police Sub-Inspector, Maharashtra Police",
     image: pallaviImg,
+    objectPosition: "object-[center_20%]",
     quote:
       "Through self-study and unwavering determination, Pallavi cleared the MPSC and became a Police Sub-Inspector.",
   },
@@ -29,6 +31,7 @@ const stories = [
     name: "Mr. Atish Tayde",
     role: "Scientist, DRDO",
     image: atishImg,
+    objectPosition: "object-top",
     quote:
       "From a humble rural background to serving the nation as a DRDO Scientist — a journey of discipline and dedication.",
   },
@@ -37,6 +40,7 @@ const stories = [
     name: "Ms. Bhakti Gajanan Chaudhary",
     role: "National Silver Medalist, Sepak Takraw",
     image: bhaktiImg,
+    objectPosition: "object-top",
     quote:
       "Honored with the Dr. Punjabrao Deshmukh Krida Award — Bhakti's perseverance turned dreams into reality.",
   },
@@ -49,6 +53,7 @@ const Testimonials = () => {
         <SectionHeader
           eyebrow="Voices of Impact"
           title="Success stories of our students"
+          className="max-w-4xl [&_h2]:whitespace-nowrap"
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -63,7 +68,7 @@ const Testimonials = () => {
                   src={s.image}
                   alt={s.name}
                   loading="lazy"
-                  className="w-full h-full object-cover object-top transition-base group-hover:scale-105"
+                  className={`w-full h-full object-cover ${s.objectPosition} transition-base group-hover:scale-105`}
                 />
               </div>
               <div className="p-5 flex flex-col flex-1">
