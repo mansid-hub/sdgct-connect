@@ -48,7 +48,13 @@ const TrusteeDetail = () => {
                   alt={trustee.name}
                   width={800}
                   height={800}
-                  className="h-full w-full object-cover"
+                  className={`h-full w-full object-cover ${
+                    trustee.slug === "rajendra-gawai"
+                      ? "object-[center_75%]"
+                      : trustee.slug === "kamlakar-payas"
+                      ? "object-[center_25%]"
+                      : "object-center"
+                  }`}
                 />
               </div>
               <div className="mt-6">

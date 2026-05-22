@@ -34,7 +34,13 @@ const Trustees = () => {
                     width={800}
                     height={800}
                     loading="lazy"
-                    className="h-full w-full object-cover"
+                    className={`h-full w-full object-cover ${
+                      t.slug === "rajendra-gawai"
+                        ? "object-[center_75%]"
+                        : t.slug === "kamlakar-payas"
+                        ? "object-[center_25%]"
+                        : "object-center"
+                    }`}
                   />
                 </div>
                 <h3 className="mt-5 font-display font-bold text-xl text-foreground">{t.name}</h3>
