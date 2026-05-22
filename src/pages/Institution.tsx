@@ -26,16 +26,16 @@ const Institution = () => {
     {
       to: "/institution/hospitals",
       icon: Stethoscope,
-      title: "Healthcare",
+      title: "Hospitals",
       count: counts.hospitals.total,
-      text: "Healthcare initiatives and community health programmes for those who need it most.",
+      text: "Hospitals and healthcare centres associated with the trust.",
     },
   ];
 
   const groups = [
-    { parent: "schools" as const, title: "Schools", items: allInstitutions("schools") },
-    { parent: "colleges" as const, title: "Colleges", items: allInstitutions("colleges") },
-    { parent: "hospitals" as const, title: "Healthcare", items: allInstitutions("hospitals") },
+    { parent: "schools" as const, title: "Schools", to: "/institution/schools", items: allInstitutions("schools") },
+    { parent: "colleges" as const, title: "Colleges", to: "/institution/colleges", items: allInstitutions("colleges") },
+    { parent: "hospitals" as const, title: "Hospitals", to: "/institution/hospitals", items: allInstitutions("hospitals") },
   ];
 
   return (

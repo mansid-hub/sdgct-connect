@@ -354,7 +354,7 @@ export const categories: Category[] = [
     slug: "schools",
     title: "Schools",
     parent: "schools",
-    description: "Primary, middle and secondary schools nurturing students across the Amravati region.",
+    description: "Primary, middle, secondary, and higher secondary schools nurturing students across the Amravati region.",
     items: build("schools", [
       { name: "Kamaljyot Marathi Primary and Middle School", location: "Navasari, Dist. Amravati", type: "granted" },
       { name: "Krushnakamal Adiwasi Anudanit Ashram School", location: "Ner Pingalai, Tq. Morshi, Dist. Amravati", type: "granted" },
