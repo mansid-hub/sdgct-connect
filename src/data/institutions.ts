@@ -695,11 +695,11 @@ const mahatma = schoolsCat?.items.find(
 if (mahatma) {
   mahatma.about = mahatmaAbout;
   mahatma.successStories = mahatmaStories;
-  mahatma.image = mahatma1;
-  mahatma.gallery = [mahatma1, mahatma2, mahatma3, mahatma4, mahatma5];
+  mahatma.image = mahatma2;
+  mahatma.gallery = [mahatma2, mahatma1, mahatma3, mahatma4, mahatma5];
   mahatma.galleryFolders = [
-    { name: "Gatherings", images: [mahatmaGatherings1, mahatmaGatherings2, mahatmaGatherings3, mahatmaGatherings4, mahatmaGatherings5, mahatmaGatherings6, mahatmaGatherings7, mahatmaGatherings8, mahatmaGatherings9, mahatmaGatherings10] },
-    { name: "Sports & Cultural Activities", images: [mahatmaSports1, mahatmaSports2, mahatmaSports3, mahatmaSports4, mahatmaSports5, mahatmaSports6, mahatmaSports7, mahatmaSports8] },
+    { name: "Gatherings", images: [mahatmaGatherings1, mahatmaGatherings2, mahatmaGatherings3, mahatmaGatherings4, mahatmaGatherings6, mahatmaGatherings7, mahatmaGatherings8, mahatmaGatherings10] },
+    { name: "Sports & Cultural Activities", images: [mahatmaSports1, mahatmaSports2, mahatmaSports3, mahatmaSports4, mahatmaSports5, mahatmaGatherings5, mahatmaSports6, mahatmaSports7, mahatmaSports8, mahatmaGatherings9] },
   ];
   mahatma.highlights = [];
 }
