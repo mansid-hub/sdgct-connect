@@ -359,6 +359,61 @@ const Header = () => {
             Success Stories
           </NavLink>
 
+          {/* Resources dropdown */}
+          <div
+            className="relative"
+            ref={mediaRef}
+            onMouseEnter={() => openWithHover("media")}
+            onMouseLeave={() => closeWithHover("media")}
+          >
+            <div className="flex items-center rounded-full overflow-hidden">
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setMediaOpen((v) => !v);
+                }}
+                className="px-4 py-2 text-sm font-medium text-foreground/75 hover:text-primary hover:bg-secondary"
+              >
+                Resources
+              </button>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setMediaOpen((v) => !v);
+                }}
+                aria-haspopup="menu"
+                aria-expanded={mediaOpen}
+                aria-label="Toggle Resources menu"
+                className="px-2 py-2 hover:bg-secondary"
+              >
+                <ChevronDown
+                  size={14}
+                  className={cn("transition-base", mediaOpen && "rotate-180")}
+                />
+              </button>
+            </div>
+            <div
+              role="menu"
+              className={cn(
+                "absolute left-0 mt-3 w-56 p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
+                mediaOpen
+                  ? "opacity-100 scale-100 pointer-events-auto"
+                  : "opacity-0 scale-95 pointer-events-none"
+              )}
+            >
+              <Link
+                to="/media/press"
+                className="block px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary"
+              >
+                Press Release
+              </Link>
+            </div>
+          </div>
+
+
+
           {/* Remaining simple links */}
           {links.filter((l) => l.to !== "/").map((l) => (
             <NavLink
