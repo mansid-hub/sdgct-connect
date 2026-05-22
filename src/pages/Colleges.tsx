@@ -13,7 +13,7 @@ const Colleges = () => {
       <PageHeader
         eyebrow="Institution"
         title="Colleges"
-        description="Senior colleges, junior colleges, technical institutes, polytechnics and ITIs across our network."
+        description="Junior colleges, senior colleges, and higher education institutes including engineering, pharmacy, law, polytechnic, ITI, and an Ayurvedic medical college."
         crumbs={[
           { label: "Home", to: "/" },
           { label: "Institution", to: "/institution" },
