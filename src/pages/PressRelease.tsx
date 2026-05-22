@@ -165,7 +165,7 @@ const PressRelease = () => {
                 </div>
               </article>
             ))}
-          </a>
+          </div>
 
           {/* Contact note */}
           <div className="mt-12 bg-accent-soft/60 border border-accent/20 rounded-2xl p-6 sm:p-8">
