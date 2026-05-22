@@ -1,6 +1,6 @@
 import Layout from "@/components/site/Layout";
 import { Quote, Sparkles } from "lucide-react";
-import hero1 from "@/assets/hero-1.jpeg";
+import hero1 from "@/assets/founder.png";
 
 const FoundersJourney = () => {
   return (
