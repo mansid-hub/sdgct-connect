@@ -38,7 +38,7 @@ const Trustees = () => {
                       t.slug === "kirtitai-arjun"
                         ? "object-[center_10%]"
                         : t.slug === "rajendra-gawai"
-                        ? "object-[center_25%]"
+                        ? "object-[center_10%]"
                         : t.slug === "kamlakar-payas"
                         ? "object-[center_65%]"
                         : "object-center"
