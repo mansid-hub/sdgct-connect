@@ -53,6 +53,7 @@ const Testimonials = () => {
         <SectionHeader
           eyebrow="Voices of Impact"
           title="Success stories of our students"
+          className="max-w-4xl [&_h2]:whitespace-nowrap"
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
