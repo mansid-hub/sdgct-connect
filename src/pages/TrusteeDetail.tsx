@@ -49,10 +49,12 @@ const TrusteeDetail = () => {
                   width={800}
                   height={800}
                   className={`h-full w-full object-cover ${
-                    trustee.slug === "rajendra-gawai"
-                      ? "object-[center_75%]"
+                    trustee.slug === "kirtitai-arjun"
+                      ? "object-[center_20%]"
+                      : trustee.slug === "rajendra-gawai"
+                      ? "object-[center_35%]"
                       : trustee.slug === "kamlakar-payas"
-                      ? "object-[center_25%]"
+                      ? "object-[center_65%]"
                       : "object-center"
                   }`}
                 />
