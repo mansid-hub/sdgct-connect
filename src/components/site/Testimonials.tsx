@@ -68,7 +68,7 @@ const Testimonials = () => {
                   src={s.image}
                   alt={s.name}
                   loading="lazy"
-                  className="w-full h-full object-cover object-top transition-base group-hover:scale-105"
+                  className={`w-full h-full object-cover ${s.objectPosition} transition-base group-hover:scale-105`}
                 />
               </div>
               <div className="p-5 flex flex-col flex-1">
