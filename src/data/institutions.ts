@@ -50,7 +50,6 @@ import ambedkarFr21 from "@/assets/ambedkar-fraizarpura-21.jpg";
 import devanandImg from "@/assets/success-devanand-shende.png";
 import ambedkarMa1 from "@/assets/ambedkar-marathi-1.jpg";
 import ambedkarMa2 from "@/assets/ambedkar-marathi-2.jpeg";
-import ambedkarMa3 from "@/assets/ambedkar-marathi-3.jpg";
 import ambedkarMa4 from "@/assets/ambedkar-marathi-4.jpg";
 import ambedkarMa5 from "@/assets/ambedkar-marathi-5.jpg";
 import ambedkarMa6 from "@/assets/ambedkar-marathi-6.jpg";
@@ -77,15 +76,10 @@ import krushnakamal1 from "@/assets/krushnakamal-1.jpeg";
 import krushnakamal2 from "@/assets/krushnakamal-2.jpeg";
 import krushnakamal3 from "@/assets/krushnakamal-3.jpg";
 import krushnakamal4 from "@/assets/krushnakamal-4.jpg";
-import krushnakamal5 from "@/assets/krushnakamal-5.jpeg";
 import krushnakamal6 from "@/assets/krushnakamal-6.jpeg";
 import krushnakamal7 from "@/assets/krushnakamal-7.jpeg";
 import krushnakamal8 from "@/assets/krushnakamal-8.jpeg";
 import krushnakamal9 from "@/assets/krushnakamal-9.jpeg";
-import krushnakamal10 from "@/assets/krushnakamal-10.jpeg";
-import krushnakamal11 from "@/assets/krushnakamal-11.jpeg";
-import krushnakamal12 from "@/assets/krushnakamal-12.jpeg";
-import krushnakamal13 from "@/assets/krushnakamal-13.jpeg";
 
 import omprakashImg from "@/assets/success-omprakash-jambekar.jpg";
 import madan1 from "@/assets/madan-1.jpg";
@@ -94,7 +88,6 @@ import madan3 from "@/assets/madan-3.jpg";
 import madan4 from "@/assets/madan-4.jpg";
 import madan5 from "@/assets/madan-5.jpg";
 import madan6 from "@/assets/madan-6.jpg";
-import madan7 from "@/assets/madan-7.jpg";
 import madan8 from "@/assets/madan-8.jpg";
 import madan9 from "@/assets/madan-9.jpeg";
 import madan10 from "@/assets/madan-10.jpeg";
@@ -155,7 +148,6 @@ import prerna4 from "@/assets/prerna-4.jpg";
 import prerna5 from "@/assets/prerna-5.jpg";
 import prerna6 from "@/assets/prerna-6.jpg";
 import prerna7 from "@/assets/prerna-7.jpg";
-import prerna8 from "@/assets/prerna-8.jpg";
 import prerna9 from "@/assets/prerna-9.jpg";
 import prerna10 from "@/assets/prerna-10.jpg";
 import prerna11 from "@/assets/prerna-11.jpg";
@@ -213,7 +205,6 @@ import takshashilaShyam5 from "@/assets/takshashila-shyam-5.jpeg";
 import takshashilaShyam6 from "@/assets/takshashila-shyam-6.jpeg";
 import takshashilaShyam7 from "@/assets/takshashila-shyam-7.jpeg";
 import takshashilaDarapur1 from "@/assets/takshashila-darapur-1.jpeg";
-import takshashilaDarapur2 from "@/assets/takshashila-darapur-2.jpeg";
 import takshashilaDarapur3 from "@/assets/takshashila-darapur-3.jpeg";
 import takshashilaDarapur4 from "@/assets/takshashila-darapur-4.jpeg";
 import takshashilaDarapur5 from "@/assets/takshashila-darapur-5.jpeg";
@@ -250,7 +241,6 @@ import ramkrushnaBed8 from "@/assets/ramkrushna-bed-8.jpg";
 import ramkrushnaBed9 from "@/assets/ramkrushna-bed-9.jpg";
 import ramkrushnaBed10 from "@/assets/ramkrushna-bed-10.jpg";
 import ramkrushnaBed11 from "@/assets/ramkrushna-bed-11.jpg";
-import ramkrushnaBed12 from "@/assets/ramkrushna-bed-12.jpg";
 import ramkrushnaBed13 from "@/assets/ramkrushna-bed-13.jpg";
 import kamaltaiDed1 from "@/assets/kamaltai-ded-1.jpg";
 import takshashilaAyurvedCollege1 from "@/assets/takshashila-ayurved-college-1.jpg";
@@ -585,7 +575,7 @@ if (ambedkarMarathiPrimary) {
   ambedkarMarathiPrimary.about = ambedkarMarathiPrimaryAbout;
   ambedkarMarathiPrimary.successStories = ambedkarMarathiPrimaryStories;
   ambedkarMarathiPrimary.image = ambedkarMa2;
-  ambedkarMarathiPrimary.gallery = [ambedkarMa2, ambedkarMa3, ambedkarMa1, ambedkarMa4, ambedkarMa5, ambedkarMa6, ambedkarMa7, ambedkarMa8, ambedkarMa9, ambedkarMa10, ambedkarMa11, ];
+  ambedkarMarathiPrimary.gallery = [ambedkarMa2, ambedkarMa1, ambedkarMa4, ambedkarMa5, ambedkarMa6, ambedkarMa7, ambedkarMa8, ambedkarMa9, ambedkarMa10, ambedkarMa11, ];
 
 }
 
@@ -633,7 +623,7 @@ if (krushnakamal) {
   krushnakamal.about = krushnakamalAbout;
   krushnakamal.successStories = krushnakamalStories;
   krushnakamal.image = krushnakamal3;
-  krushnakamal.gallery = [krushnakamal1, krushnakamal2, krushnakamal3, krushnakamal4, krushnakamal5, krushnakamal6, krushnakamal7, krushnakamal8, krushnakamal9, krushnakamal10, krushnakamal11, krushnakamal12, krushnakamal13];
+  krushnakamal.gallery = [krushnakamal1, krushnakamal2, krushnakamal3, krushnakamal4, krushnakamal6, krushnakamal7, krushnakamal8, krushnakamal9,];
   krushnakamal.highlights = [];
 }
 
@@ -662,7 +652,7 @@ if (madan) {
   madan.about = madanAbout;
   madan.successStories = madanStories;
   madan.image = madan4;
-  madan.gallery = [madan1, madan2, madan3, madan4, madan5, madan6, madan7, madan8, madan9, madan10, madan11, madan12];
+  madan.gallery = [madan1, madan2, madan3, madan4, madan5, madan6, madan8, madan9, madan10, madan11, madan12];
   madan.highlights = [];
 }
 
@@ -894,7 +884,7 @@ const prerna = schoolsCat?.items.find(
 if (prerna) {
   prerna.about = prernaAbout;
   prerna.image = prerna1;
-  prerna.gallery = [prerna1, prerna2, prerna3, prerna4, prerna5, prerna6, prerna7, prerna8, prerna9, prerna10, prerna11, prerna12];
+  prerna.gallery = [prerna1, prerna2, prerna3, prerna4, prerna5, prerna6, prerna7, prerna9, prerna10, prerna11, prerna12];
   prerna.highlights = [];
 }
 
@@ -1106,7 +1096,6 @@ if (takshashilaDarapur) {
   takshashilaDarapur.highlights = [];
   takshashilaDarapur.gallery = [
     takshashilaDarapur1,
-    takshashilaDarapur2,
     takshashilaDarapur3,
     takshashilaDarapur4,
     takshashilaDarapur5,
@@ -1218,7 +1207,6 @@ if (ramkrushnaBed) {
     ramkrushnaBed9,
     ramkrushnaBed10,
     ramkrushnaBed11,
-    ramkrushnaBed12,
     ramkrushnaBed13,
   ];
 }
