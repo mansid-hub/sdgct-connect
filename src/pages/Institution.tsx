@@ -90,7 +90,10 @@ const Institution = () => {
               .map((g) => (
                 <div key={g.parent}>
                   <div className="flex flex-wrap items-end justify-between gap-3 border-b border-border/60 pb-4">
-                    <h3 className="font-display text-2xl font-bold text-foreground">{g.title}</h3>
+                    <Link to={g.to} className="group flex items-center gap-2">
+                      <h3 className="font-display text-2xl font-bold text-foreground group-hover:text-primary transition-base">{g.title}</h3>
+                      <ArrowUpRight size={18} className="text-muted-foreground opacity-0 group-hover:opacity-100 transition-base" />
+                    </Link>
                     <span className="text-xs font-semibold tracking-[0.18em] uppercase text-accent">
                       {g.items.length} institutions
                     </span>
