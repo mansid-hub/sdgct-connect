@@ -20,7 +20,7 @@ const InstitutionList = ({ categorySlug }: InstitutionListProps = {}) => {
   }
 
   const parentLabel =
-    category.parent === "schools" ? "Schools" : category.parent === "colleges" ? "Colleges" : "Healthcare";
+    category.parent === "schools" ? "Schools" : category.parent === "colleges" ? "Colleges" : "Hospitals";
   const parentPath = `/institution/${category.parent}`;
   const showCategoryCrumb = category.title !== parentLabel;
 
