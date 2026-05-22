@@ -19,6 +19,7 @@ import ScrollToTop from "./components/site/ScrollToTop.tsx";
 import WhyUs from "@/pages/WhyUs";
 import Media from "@/pages/Media";
 import BlogsMedia from "@/pages/BlogsMedia";
+import PressRelease from "@/pages/PressRelease";
 import MissionVision from "@/pages/MissionVision";
 import FoundersJourney from "@/pages/FoundersJourney";
 
