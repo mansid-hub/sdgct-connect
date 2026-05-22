@@ -38,6 +38,7 @@ const App = () => (
           <Route path="/media" element={<Media />} />
           <Route path="/media/blogs" element={<BlogsMedia />} />
           <Route path="/media/blogs/:slug" element={<BlogsMedia />} />
+          <Route path="/media/press" element={<PressRelease />} />
 
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/about/mission-vision" element={<MissionVision />} />
