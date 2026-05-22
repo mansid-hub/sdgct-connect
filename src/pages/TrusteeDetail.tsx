@@ -50,9 +50,9 @@ const TrusteeDetail = () => {
                   height={800}
                   className={`h-full w-full object-cover ${
                     trustee.slug === "kirtitai-arjun"
-                      ? "object-[center_20%]"
+                      ? "object-[center_10%]"
                       : trustee.slug === "rajendra-gawai"
-                      ? "object-[center_35%]"
+                      ? "object-[center_10%]"
                       : trustee.slug === "kamlakar-payas"
                       ? "object-[center_65%]"
                       : "object-center"
