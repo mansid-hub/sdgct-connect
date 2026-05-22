@@ -599,6 +599,33 @@ const Header = () => {
             Success Stories
           </NavLink>
 
+          {/* Mobile Resources accordion */}
+          <div className="animate-fade-up">
+            <button
+              type="button"
+              onClick={() => setMediaOpen((v) => !v)}
+              className="w-full flex items-center justify-between px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base text-black hover:bg-secondary"
+              aria-expanded={mediaOpen}
+            >
+              Resources
+              <ChevronDown
+                size={18}
+                className={cn("transition-base", mediaOpen && "rotate-180")}
+              />
+            </button>
+            {mediaOpen && (
+              <div className="mt-1 ml-2 pl-3 border-l-2 border-border/60 flex flex-col gap-1">
+                <Link
+                  to="/media/press"
+                  className="px-4 py-3 rounded-xl text-base font-medium text-black/80 hover:bg-secondary hover:text-primary transition-base"
+                >
+                  Press Release
+                </Link>
+              </div>
+            )}
+          </div>
+
+
           {/* Remaining simple links (Blog, Contact) */}
           {links.filter((l) => l.to !== "/").map((l) => (
             <NavLink
