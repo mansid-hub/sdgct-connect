@@ -48,7 +48,7 @@ const Testimonials = () => {
       <div className="container">
         <SectionHeader
           eyebrow="Voices of Impact"
-          title="Success stories from the people we serve"
+          title="Success stories of our students"
         />
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
