@@ -146,9 +146,9 @@ const FoundersJourney = () => {
 
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
             What began with one institution and one vision has grown into a
-            lasting movement of education, empowerment, and community
+            lasting movement of education, empowerment, and rural community
             development across Vidarbha. The values Shri R. S. Gavai stood for
-            continue to guide every institution under the trust today.
+            continue to guide every institution under the Trust today.
           </p>
         </div>
       </section>
