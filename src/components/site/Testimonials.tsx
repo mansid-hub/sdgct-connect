@@ -22,7 +22,7 @@ const stories = [
     name: "Ms. Pallavi A. Sadanshiv",
     role: "Police Sub-Inspector, Maharashtra Police",
     image: pallaviImg,
-    objectPosition: "object-[center_40%]",
+    objectPosition: "object-[center_55%]",
     quote:
       "Through self-study and unwavering determination, Pallavi cleared the MPSC and became a Police Sub-Inspector.",
   },
