@@ -72,9 +72,6 @@ import kamaljyot10 from "@/assets/kamaljyot-10.jpg";
 import kamaljyot11 from "@/assets/kamaljyot-11.jpg";
 import kamaljyot12 from "@/assets/kamaljyot-12.jpg";
 import kamaljyot13 from "@/assets/kamaljyot-13.jpg";
-import kamaljyot14 from "@/assets/kamaljyot-14.jpg";
-import kamaljyot15 from "@/assets/kamaljyot-15.jpg";
-import kamaljyot16 from "@/assets/kamaljyot-16.jpg";
 import kamaljyot17 from "@/assets/kamaljyot-17.jpg";
 import krushnakamal1 from "@/assets/krushnakamal-1.jpeg";
 import krushnakamal2 from "@/assets/krushnakamal-2.jpeg";
@@ -606,7 +603,7 @@ const kamaljyot = schoolsCat?.items.find(
 if (kamaljyot) {
   kamaljyot.about = kamaljyotAbout;
   kamaljyot.image = kamaljyot1;
-  kamaljyot.gallery = [kamaljyot1, kamaljyot2, kamaljyot3, kamaljyot4, kamaljyot5, kamaljyot6, kamaljyot7, kamaljyot8, kamaljyot9, kamaljyot10, kamaljyot11, kamaljyot12, kamaljyot13, kamaljyot14, kamaljyot15, kamaljyot16, kamaljyot17];
+  kamaljyot.gallery = [kamaljyot1, kamaljyot2, kamaljyot3, kamaljyot4, kamaljyot5, kamaljyot6, kamaljyot7, kamaljyot8, kamaljyot9, kamaljyot10, kamaljyot11, kamaljyot12, kamaljyot13, kamaljyot17];
   kamaljyot.highlights = [];
 }
 
