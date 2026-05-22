@@ -36,9 +36,9 @@ const Trustees = () => {
                     loading="lazy"
                     className={`h-full w-full object-cover ${
                       t.slug === "rajendra-gawai"
-                        ? "object-[center_75%]"
+                        ? "object-[center_55%]"
                         : t.slug === "kamlakar-payas"
-                        ? "object-[center_25%]"
+                        ? "object-[center_15%]"
                         : "object-center"
                     }`}
                   />
