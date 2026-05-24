@@ -774,6 +774,10 @@ if (matoshriRamabai) {
   matoshriRamabai.about = matoshriRamabaiAbout;
   matoshriRamabai.successStories = matoshriRamabaiStories;
   matoshriRamabai.image = matoshriRamabai4;
+  <img
+  src={matoshriRamabai.image}
+  className="w-full h-full object-cover object-[70%_center]"
+/>
   matoshriRamabai.gallery = [matoshriRamabai2, matoshriRamabai1, matoshriRamabai4, matoshriRamabai3];
   matoshriRamabai.highlights = [];
 }
