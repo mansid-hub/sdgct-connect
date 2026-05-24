@@ -236,7 +236,6 @@ import ramkrushnaBed6 from "@/assets/ramkrushna-bed-6.jpg";
 import ramkrushnaBed7 from "@/assets/ramkrushna-bed-7.jpg";
 import ramkrushnaBed8 from "@/assets/ramkrushna-bed-8.jpg";
 import ramkrushnaBed9 from "@/assets/ramkrushna-bed-9.jpg";
-import ramkrushnaBed10 from "@/assets/ramkrushna-bed-10.jpg";
 import ramkrushnaBed11 from "@/assets/ramkrushna-bed-11.jpg";
 import ramkrushnaBed13 from "@/assets/ramkrushna-bed-13.jpg";
 import kamaltaiDed1 from "@/assets/kamaltai-ded-1.jpg";
@@ -1208,7 +1207,6 @@ if (ramkrushnaBed) {
     ramkrushnaBed7,
     ramkrushnaBed8,
     ramkrushnaBed9,
-    ramkrushnaBed10,
     ramkrushnaBed11,
     ramkrushnaBed13,
   ];
