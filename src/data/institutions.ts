@@ -1063,13 +1063,13 @@ if (takshashilaShyam) {
   takshashilaShyam.image = takshashilaShyam6;
   takshashilaShyam.highlights = [];
   takshashilaShyam.gallery = [
+    takshashilaShyam6,
+    takshashilaShyam7,
+    takshashilaShyam4,
     takshashilaShyam1,
     takshashilaShyam2,
     takshashilaShyam3,
-    takshashilaShyam4,
     takshashilaShyam5,
-    takshashilaShyam6,
-    takshashilaShyam7,
   ];
   takshashilaShyam.successStories = [
     {
