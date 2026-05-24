@@ -153,7 +153,6 @@ import prerna12 from "@/assets/prerna-12.jpg";
 import gaikwad1 from "@/assets/gaikwad-1.jpg";
 import gaikwad2 from "@/assets/gaikwad-2.jpg";
 import gaikwad3 from "@/assets/gaikwad-3.jpg";
-import gaikwad4 from "@/assets/gaikwad-4.jpg";
 import gaikwad5 from "@/assets/gaikwad-5.jpg";
 import gaikwad6 from "@/assets/gaikwad-6.jpg";
 import gaikwad7 from "@/assets/gaikwad-7.jpg";
@@ -774,7 +773,7 @@ const matoshriRamabai = schoolsCat?.items.find(
 if (matoshriRamabai) {
   matoshriRamabai.about = matoshriRamabaiAbout;
   matoshriRamabai.successStories = matoshriRamabaiStories;
-  matoshriRamabai.image = matoshriRamabai2;
+  matoshriRamabai.image = matoshriRamabai4;
   matoshriRamabai.gallery = [matoshriRamabai2, matoshriRamabai1, matoshriRamabai4, matoshriRamabai3];
   matoshriRamabai.highlights = [];
 }
@@ -902,7 +901,7 @@ const gaikwad = schoolsCat?.items.find(
 if (gaikwad) {
   gaikwad.about = gaikwadAbout;
   gaikwad.image = gaikwad1;
-  gaikwad.gallery = [gaikwad1, gaikwad2, gaikwad3, gaikwad4, gaikwad5, gaikwad6, gaikwad7, gaikwad8, gaikwad9];
+  gaikwad.gallery = [gaikwad1, gaikwad2, gaikwad3, gaikwad5, gaikwad6, gaikwad7, gaikwad8, gaikwad9];
   gaikwad.highlights = [];
 }
 
