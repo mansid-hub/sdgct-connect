@@ -7,7 +7,7 @@ const About = () => {
     <Layout>
       <PageHeader
         eyebrow="About Us"
-        title="A Trust built on dignity, education and opportunity."
+        title="A Trust built on dignity, education and opportunity"
         
         crumbs={[{ label: "Home", to: "/" }, { label: "About" }]}
       />
@@ -34,7 +34,7 @@ const About = () => {
             </span>
 
             <h2 className="mt-4 text-3xl sm:text-4xl font-bold text-foreground text-balance">
-              From a small village in Vidarbha to a network shaping rural futures.
+              From a small village in Vidarbha to a network shaping rural futures
             </h2>
 
             <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
