@@ -1010,6 +1010,7 @@ if (takshashilaCollege) {
     takshashilaCollege12,
     takshashilaCollege13,
     takshashilaCollege14,
+    takshashilaCollege15,
   ];
   takshashilaCollege.successStories = [
     {
