@@ -1,17 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
-import { X, ChevronLeft, ChevronRight, Newspaper, FileText, Download } from "lucide-react";
-
-const imageModules = import.meta.glob("@/assets/press/*.{jpg,jpeg,png,webp}", {
-  eager: true,
-  import: "default",
-});
-
-const imageTitles: Record<string, string> = {
-  "press-128": "पर्यावरण संवर्धनासाठी तक्षशिला संस्थेचा ऐतिहासिक पुढाकार",
-  "press-129": "पर्यावरण संरक्षण के लिए तक्षशिला इंस्टीट्यूट दर्यापुर में जनजागृति अभियान",
-};
+import { FileText, Download, ExternalLink } from "lucide-react";
+import coverCollege from "@/assets/press-covers/cover-college.jpg";
+import coverEngineering from "@/assets/press-covers/cover-engineering.jpg";
 
 const pdfs = [
   {
@@ -19,55 +10,24 @@ const pdfs = [
       "Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College, Uttam Nagar, Dist. Amravati",
     href: "/press/Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College, Uttam Nagar, Dist. Amravati.pdf",
     pages: 118,
+    cover: coverCollege,
   },
   {
     title:
       "Press Releases of Takshashila Institute of Engineering and Technology and Research Center, Darapur, Tq. Daryapur, Dist. Amravati",
     href: "/press/Press Releases of Takshashila Institute of Engineering and Technology and Research Center, Darapur, Tq. Daryapur, Dist. Amravati.pdf",
     pages: 61,
+    cover: coverEngineering,
   },
 ];
 
 const PressRelease = () => {
-  const [active, setActive] = useState<number | null>(null);
-
-  const clippings = useMemo(() => {
-    return Object.entries(imageModules)
-      .sort(([a], [b]) => a.localeCompare(b, undefined, { numeric: true }))
-      .map(([path, src]) => {
-        const filename = path.split("/").pop()?.split(".")[0] || "";
-        return {
-          src: src as string,
-          title: imageTitles[filename] || filename.replace(/-/g, " "),
-        };
-      });
-  }, []);
-
-  useEffect(() => {
-    if (active === null) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setActive(null);
-      if (e.key === "ArrowRight")
-        setActive((i) => (i === null ? 0 : (i + 1) % clippings.length));
-      if (e.key === "ArrowLeft")
-        setActive((i) =>
-          i === null ? 0 : (i - 1 + clippings.length) % clippings.length
-        );
-    };
-    document.addEventListener("keydown", onKey);
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.removeEventListener("keydown", onKey);
-      document.body.style.overflow = "";
-    };
-  }, [active, clippings.length]);
-
   return (
     <Layout>
       <PageHeader
         eyebrow="Resources"
         title="Press Release"
-        description="Newspaper clippings and media coverage of Shri Dadasaheb Gawai Charitable Trust. Browse compiled press release documents and individual clippings below."
+        description="Newspaper clippings and media coverage of Shri Dadasaheb Gawai Charitable Trust. Browse compiled press release documents below."
         crumbs={[
           { label: "Home", to: "/" },
           { label: "Resources", to: "/media" },
@@ -84,118 +44,57 @@ const PressRelease = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 mb-14">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {pdfs.map((p, i) => (
-              <a
+              <article
                 key={i}
-                href={p.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card shadow-soft hover:shadow-card transition-base p-6 flex gap-4 items-start"
+                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card shadow-soft hover:shadow-card transition-base flex flex-col"
               >
-                <div className="shrink-0 h-14 w-14 rounded-xl bg-primary/10 text-primary inline-flex items-center justify-center">
-                  <FileText size={26} />
-                </div>
-                <div className="flex-1">
-                  <p className="font-medium text-foreground group-hover:text-primary transition-base">
-                    {p.title}
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-2 inline-flex items-center gap-1">
-                    <Download size={12} /> PDF · {p.pages} pages
-                  </p>
-                </div>
-              </a>
-            ))}
-          </div>
-
-          <div className="flex items-center gap-3 mb-8">
-            <Newspaper className="text-accent" />
-            <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground">
-              Media Coverage
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            {clippings.map((c, i) => (
-              <button
-                key={i}
-                type="button"
-                onClick={() => setActive(i)}
-                className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card shadow-soft hover:shadow-card transition-base focus:outline-none focus:ring-2 focus:ring-primary text-left"
-              >
-                <div className="aspect-[3/4] overflow-hidden bg-secondary/40">
+                <a
+                  href={p.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block aspect-[3/4] overflow-hidden bg-secondary/40"
+                >
                   <img
-                    src={c.src}
-                    alt={c.title}
+                    src={p.cover}
+                    alt={`Cover of ${p.title}`}
                     loading="lazy"
                     className="h-full w-full object-cover object-top transition-smooth group-hover:scale-105"
                   />
+                </a>
+                <div className="p-5 flex flex-col gap-4 flex-1">
+                  <div className="flex-1">
+                    <p className="font-medium text-foreground leading-snug">
+                      {p.title}
+                    </p>
+                    <p className="text-xs text-muted-foreground mt-2">
+                      PDF · {p.pages} pages
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-3">
+                    <a
+                      href={p.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full bg-primary text-primary-foreground hover:bg-primary/90 transition-base px-4 py-2 text-sm font-semibold"
+                    >
+                      <ExternalLink size={16} /> View
+                    </a>
+                    <a
+                      href={p.href}
+                      download
+                      className="inline-flex items-center gap-2 rounded-full border-2 border-primary/20 text-primary hover:border-primary hover:bg-primary/5 transition-base px-4 py-2 text-sm font-semibold"
+                    >
+                      <Download size={16} /> Download
+                    </a>
+                  </div>
                 </div>
-                <div className="p-4">
-                  <p className="text-sm font-medium text-foreground line-clamp-2 group-hover:text-primary transition-base">
-                    {c.title}
-                  </p>
-                  <p className="text-xs text-muted-foreground mt-1">
-                    Click to read full clipping
-                  </p>
-                </div>
-              </button>
+              </article>
             ))}
           </div>
         </div>
       </section>
-
-      {active !== null && (
-        <div
-          className="fixed inset-0 z-[1000] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8 animate-fade-in"
-          onClick={() => setActive(null)}
-        >
-          <button
-            type="button"
-            aria-label="Close"
-            className="absolute top-4 right-4 h-11 w-11 rounded-full bg-white/10 hover:bg-white/20 text-white inline-flex items-center justify-center transition-base"
-            onClick={(e) => {
-              e.stopPropagation();
-              setActive(null);
-            }}
-          >
-            <X size={22} />
-          </button>
-          <button
-            type="button"
-            aria-label="Previous"
-            className="absolute left-4 sm:left-8 h-11 w-11 rounded-full bg-white/10 hover:bg-white/20 text-white inline-flex items-center justify-center transition-base"
-            onClick={(e) => {
-              e.stopPropagation();
-              setActive((i) =>
-                i === null ? 0 : (i - 1 + clippings.length) % clippings.length
-              );
-            }}
-          >
-            <ChevronLeft size={22} />
-          </button>
-          <img
-            src={clippings[active].src}
-            alt={clippings[active].title}
-            onClick={(e) => e.stopPropagation()}
-            className="max-h-[90vh] max-w-full rounded-2xl shadow-elegant object-contain"
-          />
-          <button
-            type="button"
-            aria-label="Next"
-            className="absolute right-4 sm:right-8 h-11 w-11 rounded-full bg-white/10 hover:bg-white/20 text-white inline-flex items-center justify-center transition-base"
-            onClick={(e) => {
-              e.stopPropagation();
-              setActive((i) => (i === null ? 0 : (i + 1) % clippings.length));
-            }}
-          >
-            <ChevronRight size={22} />
-          </button>
-          <div className="absolute bottom-5 left-0 right-0 text-center text-white/80 text-sm px-4">
-            {active + 1} / {clippings.length} — {clippings[active].title}
-          </div>
-        </div>
-      )}
     </Layout>
   );
 };
