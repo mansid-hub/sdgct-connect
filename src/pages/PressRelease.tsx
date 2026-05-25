@@ -13,6 +13,7 @@ const pdfs = [
     filename:
       "college-press-release.pdf",
     pages: 118,
+    cover: collegeCover,
   },
   {
     title:
