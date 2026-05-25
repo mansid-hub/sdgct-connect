@@ -35,7 +35,7 @@ const PressRelease = () => {
       <PageHeader
         eyebrow="Resources"
         title="Press Release"
-        description="Newspaper clippings and media coverage of Shri Dadasaheb Gawai Charitable Trust. Browse compiled press release documents below."
+        description="Browse compiled newspaper clippings and media coverage in the documents below"
         crumbs={[
           { label: "Home", to: "/" },
           { label: "Resources", to: "/media" },
