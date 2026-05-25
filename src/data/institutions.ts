@@ -363,7 +363,7 @@ export const categories: Category[] = [
     parent: "schools",
     description: "Primary, middle, secondary, and higher secondary schools nurturing students across the Amravati region.",
     items: build("schools", [
-      { name: "Kamaljyot Marathi Primary and Middle School", location: "Navasari, Dist. Amravati", type: "granted" },
+      { name: "Kamaljyot Marathi Primary and Middle School", location: "Navsari, Dist. Amravati", type: "granted" },
       { name: "Krushnakamal Adiwasi Anudanit Ashram School", location: "Ner Pingalai, Tq. Morshi, Dist. Amravati", type: "granted" },
       { name: "Shri Dadasaheb Gawai Vidyalaya", location: "Malhara, Tq. Achalpur, Dist. Amravati", type: "granted" },
       { name: "Matoshri Gangadevi Lulla Vidyalaya and Junior College", location: "Gaurkheda Kumbhi, Tq. Achalpur, Dist. Amravati", type: "granted" },
@@ -453,7 +453,7 @@ export const allInstitutions = (parent?: "schools" | "colleges" | "hospitals") =
 
 // ---- Establishment years by slug ----
 const establishedBySlug: Record<string, string> = {
-  "kamaljyot-marathi-primary-and-middle-school-navasari-dist-amravati": "1995",
+  "kamaljyot-marathi-primary-and-middle-school-navsari-dist-amravati": "1995",
   "krushnakamal-adiwasi-anudanit-ashram-school-ner-pingalai-tq-morshi-dist-amravati": "2003",
   "shri-dadasaheb-gawai-vidyalaya-malhara-tq-achalpur-dist-amravati": "1987",
   "matoshri-gangadevi-lulla-vidyalaya-and-junior-college-gaurkheda-kumbhi-tq-achalp": "1989",
@@ -597,7 +597,7 @@ const kamaljyotAbout: string[] = [
 ];
 
 const kamaljyot = schoolsCat?.items.find(
-  (i) => i.slug === "kamaljyot-marathi-primary-and-middle-school-navasari-dist-amravati"
+  (i) => i.slug === "kamaljyot-marathi-primary-and-middle-school-navsari-dist-amravati"
 );
 if (kamaljyot) {
   kamaljyot.about = kamaljyotAbout;
