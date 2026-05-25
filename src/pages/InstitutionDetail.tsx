@@ -62,7 +62,10 @@ const InstitutionDetail = () => {
                   width={800}
                   height={800}
                   className="h-full w-full object-cover"
-                  style={{ objectPosition: (inst as any).imagePosition ?? "center" }}
+                  style={{
+                    objectPosition: inst.imagePosition ?? "center",
+                    transform: inst.imageScale ? `scale(${inst.imageScale})` : undefined,
+                  }}
                 />
               </div>
               <div className="mt-6">
