@@ -194,6 +194,10 @@ import takshashilaCollege7 from "@/assets/takshashila-college-7.jpg";
 import takshashilaCollege8 from "@/assets/takshashila-college-8.jpg";
 import takshashilaCollege9 from "@/assets/takshashila-college-9.jpg";
 import takshashilaCollege10 from "@/assets/takshashila-college-10.jpg";
+import takshashilaCollege11 from "@/assets/takshashila-college-11.jpg";
+import takshashilaCollege12 from "@/assets/takshashila-college-12.jpg";
+import takshashilaCollege13 from "@/assets/takshashila-college-13.jpg";
+import takshashilaCollege14 from "@/assets/takshashila-college-14.jpg";
 import takshashilaShyam1 from "@/assets/takshashila-shyam-1.jpeg";
 import takshashilaShyam2 from "@/assets/takshashila-shyam-2.jpeg";
 import takshashilaShyam3 from "@/assets/takshashila-shyam-3.jpeg";
@@ -1002,6 +1006,10 @@ if (takshashilaCollege) {
     takshashilaCollege8,
     takshashilaCollege9,
     takshashilaCollege10,
+    takshashilaCollege11,
+    takshashilaCollege12,
+    takshashilaCollege13,
+    takshashilaCollege14,
   ];
   takshashilaCollege.successStories = [
     {
