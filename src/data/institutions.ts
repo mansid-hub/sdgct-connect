@@ -889,8 +889,8 @@ const prerna = schoolsCat?.items.find(
 if (prerna) {
   prerna.about = prernaAbout;
   prerna.image = prerna1;
-  prerna.imageScale = 0.95;
-  prerna.imagePosition = "40% center";
+  prerna.imageScale = 0.9;
+  prerna.imagePosition = "center top";  
   prerna.gallery = [prerna1, prerna2, prerna3, prerna4, prerna5, prerna6, prerna7, prerna9, prerna10, prerna11, prerna12];
   prerna.highlights = [];
 }
