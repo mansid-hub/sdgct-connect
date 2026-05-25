@@ -932,7 +932,7 @@ const takshashilaHospital = hospitalsCat?.items.find(
 );
 if (takshashilaHospital) {
   takshashilaHospital.about = takshashilaHospitalAbout;
-  takshashilaHospital.image = takshashilaHospital1;
+  takshashilaHospital.image = takshashilaModern1;
   takshashilaHospital.gallery = [];
   takshashilaHospital.highlights = [];
   takshashilaHospital.galleryFolders = [
@@ -954,6 +954,7 @@ if (takshashilaHospital) {
     {
       name: "Ayurvedic Hospital",
       images: [
+        takshashilaHospital1,
         takshashilaAyurved1,
         takshashilaAyurved2,
         takshashilaAyurved3,
