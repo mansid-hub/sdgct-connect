@@ -179,9 +179,10 @@ const InstitutionDetail = () => {
                   || inst.slug === "takshashila-ayurved-college-and-hospital-and-research-centre-kherda-tq-karanja-d"
                   || inst.slug === "takshashila-polytechnic-college-uttam-nagar-amravati"
                   || inst.slug === "ramkrushna-shikshan-shastra-mahavidyalaya-b-ed-uttam-nagar-dist-amravati"
-                  || inst.slug === "takshashila-institute-of-engineering-and-technology-and-research-centre-darapur-"
-                  || inst.slug === "nalanda-industrial-training-institute-mogra-post-bhankheda-amravati"
-                  || inst.slug === "lotus-karan-english-school-uttam-nagar-dist-amravati"
+                   || inst.slug === "takshashila-institute-of-engineering-and-technology-and-research-centre-darapur-"
+                   || inst.slug === "nalanda-industrial-training-institute-mogra-post-bhankheda-amravati"
+                   || inst.slug === "lotus-karan-english-school-uttam-nagar-dist-amravati"
+                   || inst.slug === "takshashila-institute-of-pharmaceutical-education-and-research-kherda-tq-karanja"
                     ? 4
                     : undefined
                 }
