@@ -35,7 +35,7 @@ const Footer = () => {
               { to: "/", label: "Home" },
               { to: "/about", label: "About Us" },
               { to: "/trustees", label: "Our Trustees" },
-              { to: "/blog", label: "Resources" },
+              { to: "/pressrelease", label: "Resources" },
               { to: "/donate", label: "Donate" },
               { to: "/contact", label: "Contact" },
             ].map((l) => (
@@ -65,7 +65,7 @@ const Footer = () => {
             </li>
             <li className="flex gap-3 items-center">
               <Mail size={16} className="text-accent shrink-0" />
-              <a href="mailto:sdgct1991@gmail.com" className="hover:text-accent">
+              <a href="mailto:info@sdgct.org" className="hover:text-accent">
                 info@sdgct.org
               </a>
             </li>
