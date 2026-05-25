@@ -2,6 +2,7 @@ import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
 import { FileText, Download, ExternalLink } from "lucide-react";
 import collegeCover from "@/assets/takshashila-college-cover.jpg";
+import engineeringCover from "@/assets/takshashila-engineering-cover.png";
 
 const pdfs = [
   {
@@ -24,6 +25,7 @@ const pdfs = [
     filename:
       "engineering-press-release.pdf",
     pages: 61,
+    cover: engineeringCover,
   },
 ];
 
