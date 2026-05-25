@@ -965,18 +965,6 @@ if (takshashilaHospital) {
         takshashilaAyurved8,
       ],
     },
-    {
-      name: "Other Activities",
-      images: [
-        takshashilaOther1,
-        takshashilaOther2,
-        takshashilaOther3,
-        takshashilaOther4,
-        takshashilaOther5,
-        takshashilaOther6,
-        takshashilaOther7,
-      ],
-    },
   ];
 }
 
