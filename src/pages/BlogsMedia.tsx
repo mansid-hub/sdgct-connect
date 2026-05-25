@@ -378,29 +378,30 @@ const BlogsMedia = () => {
         </div>
 
         {/* Story tiles */}
-        <div className="space-y-12">
-          {stories.map((story, index) => (
-            <article
-              key={index}
-              className="bg-card border border-border/60 rounded-2xl overflow-hidden shadow-card grid md:grid-cols-[320px_1fr]"
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {stories.map((story) => (
+            <Link
+              key={story.slug}
+              to={`/media/blogs/${story.slug}`}
+              className="group bg-card rounded-3xl overflow-hidden shadow-soft border border-border/60 flex flex-col transition-all hover:-translate-y-1 hover:shadow-card"
             >
-              <img
-                src={story.image}
-                alt={story.title}
-                className="w-full h-full max-h-80 md:max-h-none object-cover"
-              />
-              <div className="p-6 sm:p-8">
-                <h2 className="text-xl sm:text-2xl font-display font-bold text-foreground leading-snug">
+              <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden bg-muted">
+                <img
+                  src={story.image}
+                  alt={story.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-5 flex flex-col flex-1">
+                <h2 className="font-semibold text-foreground text-base leading-snug line-clamp-3">
                   {story.title}
                 </h2>
-                <p className="mt-3 text-sm italic text-accent">{story.tagline}</p>
-                <div className="mt-5 space-y-4 text-sm sm:text-base text-muted-foreground leading-relaxed">
-                  {story.paragraphs.map((p, i) => (
-                    <p key={i}>{p}</p>
-                  ))}
-                </div>
+                <p className="mt-3 text-sm text-foreground/80 leading-relaxed line-clamp-4">
+                  {story.tagline}
+                </p>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </div>
