@@ -74,7 +74,7 @@ const Contact = () => {
             {[
               { icon: MapPin, title: "Visit us", body: "Shri Dadasaheb Gawai Charitable Trust,\nShyam Nagar, Congress Nagar Road,\nAmravati - 444606, Maharashtra" },
               { icon: Phone, title: "Call us", body: "+91 98234 96914" },
-              { icon: Mail, title: "Email", body: "sdgct1991@gmail.com" },
+              { icon: Mail, title: "Email", body: "info@sdgct.org" },
               { icon: Clock, title: "Office hours", body: "Mon–Sat · 9:00 am – 6:00 pm\nSun · By appointment" },
             ].map((c, i) => (
               <div key={i} className="bg-card rounded-2xl p-6 border border-border/60 shadow-soft flex gap-4">
