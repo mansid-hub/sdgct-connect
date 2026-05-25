@@ -1,8 +1,6 @@
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
 import { FileText, Download, ExternalLink } from "lucide-react";
-import coverCollege from "@/assets/press-covers/cover-college.jpg";
-import coverEngineering from "@/assets/press-covers/cover-engineering.jpg";
 
 const pdfs = [
   {
@@ -14,7 +12,6 @@ const pdfs = [
     filename:
       "Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College, Uttam Nagar, Dist. Amravati.pdf",
     pages: 118,
-    cover: coverCollege,
   },
   {
     title:
@@ -25,7 +22,6 @@ const pdfs = [
     filename:
       "Press Releases of Takshashila Institute of Engineering and Technology and Research Center, Darapur, Tq. Daryapur, Dist. Amravati.pdf",
     pages: 61,
-    cover: coverEngineering,
   },
 ];
 
@@ -58,19 +54,9 @@ const PressRelease = () => {
                 key={i}
                 className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card shadow-soft hover:shadow-card transition-base flex flex-col"
               >
-                <a
-                  href={p.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block aspect-[3/4] overflow-hidden bg-secondary/40"
-                >
-                  <img
-                    src={p.cover}
-                    alt={`Cover of ${p.title}`}
-                    loading="lazy"
-                    className="h-full w-full object-cover object-top transition-smooth group-hover:scale-105"
-                  />
-                </a>
+                <div className="flex items-center justify-center aspect-[16/9] bg-gradient-to-br from-primary/10 to-accent/10">
+                  <FileText className="text-primary" size={64} strokeWidth={1.5} />
+                </div>
                 <div className="p-5 flex flex-col gap-4 flex-1">
                   <div className="flex-1">
                     <p className="font-medium text-foreground leading-snug">
