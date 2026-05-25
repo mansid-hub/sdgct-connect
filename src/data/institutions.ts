@@ -363,7 +363,7 @@ export const categories: Category[] = [
     parent: "schools",
     description: "Primary, middle, secondary, and higher secondary schools nurturing students across the Amravati region.",
     items: build("schools", [
-      { name: "Kamaljyot Marathi Primary and Middle School", location: "Navasari, Dist. Amravati", type: "granted" },
+      { name: "Kamaljyot Marathi Primary and Middle School", location: "navsari, Dist. Amravati", type: "granted" },
       { name: "Krushnakamal Adiwasi Anudanit Ashram School", location: "Ner Pingalai, Tq. Morshi, Dist. Amravati", type: "granted" },
       { name: "Shri Dadasaheb Gawai Vidyalaya", location: "Malhara, Tq. Achalpur, Dist. Amravati", type: "granted" },
       { name: "Matoshri Gangadevi Lulla Vidyalaya and Junior College", location: "Gaurkheda Kumbhi, Tq. Achalpur, Dist. Amravati", type: "granted" },
