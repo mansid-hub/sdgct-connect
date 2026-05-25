@@ -1,8 +1,6 @@
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
 import { FileText, Download, ExternalLink } from "lucide-react";
-import coverCollege from "@/assets/press-covers/cover-college.jpg";
-import coverEngineering from "@/assets/press-covers/cover-engineering.jpg";
 
 const pdfs = [
   {
