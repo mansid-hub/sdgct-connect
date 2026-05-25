@@ -298,6 +298,8 @@ export interface Institution {
   website?: string;
   type: FundingType;
   image?: string;
+  imagePosition?: string;
+  imageScale?: number;
   established?: string;
   about?: string[];
   highlights?: string[];
