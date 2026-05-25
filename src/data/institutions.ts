@@ -597,7 +597,7 @@ const kamaljyotAbout: string[] = [
 ];
 
 const kamaljyot = schoolsCat?.items.find(
-  (i) => i.slug === "kamaljyot-marathi-primary-and-middle-school-navsari-dist-amravati"
+  (i) => i.slug === "kamaljyot-marathi-primary-and-middle-school-navasari-dist-amravati"
 );
 if (kamaljyot) {
   kamaljyot.about = kamaljyotAbout;
