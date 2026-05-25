@@ -1060,7 +1060,7 @@ const takshashilaShyam = categories
   .find((i) => i.slug === "takshashila-mahavidyalaya-and-junior-college-shyam-nagar-dist-amravati");
 if (takshashilaShyam) {
   takshashilaShyam.about = takshashilaShyamAbout;
-  takshashilaShyam.image = takshashilaShyam1;
+  takshashilaShyam.image = takshashilaShyam6;
   takshashilaShyam.highlights = [];
   takshashilaShyam.gallery = [
     takshashilaShyam6,
