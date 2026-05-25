@@ -779,7 +779,7 @@ if (matoshriRamabai) {
   matoshriRamabai.about = matoshriRamabaiAbout;
   matoshriRamabai.successStories = matoshriRamabaiStories;
   matoshriRamabai.image = matoshriRamabai4;
-  matoshriRamabai.imagePosition = "right center";
+  matoshriRamabai.imagePosition = "left center";
   matoshriRamabai.gallery = [matoshriRamabai2, matoshriRamabai1, matoshriRamabai4, matoshriRamabai3];
   matoshriRamabai.highlights = [];
 }
