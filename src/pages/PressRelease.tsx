@@ -12,7 +12,6 @@ const pdfs = [
     filename:
       "Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College, Uttam Nagar, Dist. Amravati.pdf",
     pages: 118,
-    cover: coverCollege,
   },
   {
     title:
@@ -23,7 +22,6 @@ const pdfs = [
     filename:
       "Press Releases of Takshashila Institute of Engineering and Technology and Research Center, Darapur, Tq. Daryapur, Dist. Amravati.pdf",
     pages: 61,
-    cover: coverEngineering,
   },
 ];
 
