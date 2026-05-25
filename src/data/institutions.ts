@@ -992,9 +992,10 @@ const takshashilaCollege = categories
   .find((i) => i.slug === "dr-babasaheb-ambedkar-takshashila-mahavidyalaya-and-junior-college-uttam-nagar-d");
 if (takshashilaCollege) {
   takshashilaCollege.about = takshashilaCollegeAbout;
-  takshashilaCollege.image = takshashilaCollege1;
+  takshashilaCollege.image = takshashilaCollege2;
   takshashilaCollege.highlights = [];
   takshashilaCollege.gallery = [
+    takshashilaCollege2,
     takshashilaCollege1,
     takshashilaCollege3,
     takshashilaCollege4,
