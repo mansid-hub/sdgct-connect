@@ -1,5 +1,5 @@
 import Layout from "@/components/site/Layout";
-import { Quote, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import hero1 from "@/assets/founder.png";
 
 const FoundersJourney = () => {
