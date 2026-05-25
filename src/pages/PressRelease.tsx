@@ -8,14 +8,22 @@ const pdfs = [
   {
     title:
       "Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College, Uttam Nagar, Dist. Amravati",
-    href: "/press/Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College, Uttam Nagar, Dist. Amravati.pdf",
+    href: encodeURI(
+      "/press/Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College, Uttam Nagar, Dist. Amravati.pdf"
+    ),
+    filename:
+      "Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College, Uttam Nagar, Dist. Amravati.pdf",
     pages: 118,
     cover: coverCollege,
   },
   {
     title:
       "Press Releases of Takshashila Institute of Engineering and Technology and Research Center, Darapur, Tq. Daryapur, Dist. Amravati",
-    href: "/press/Press Releases of Takshashila Institute of Engineering and Technology and Research Center, Darapur, Tq. Daryapur, Dist. Amravati.pdf",
+    href: encodeURI(
+      "/press/Press Releases of Takshashila Institute of Engineering and Technology and Research Center, Darapur, Tq. Daryapur, Dist. Amravati.pdf"
+    ),
+    filename:
+      "Press Releases of Takshashila Institute of Engineering and Technology and Research Center, Darapur, Tq. Daryapur, Dist. Amravati.pdf",
     pages: 61,
     cover: coverEngineering,
   },
@@ -83,7 +91,7 @@ const PressRelease = () => {
                     </a>
                     <a
                       href={p.href}
-                      download
+                      download={p.filename}
                       className="inline-flex items-center gap-2 rounded-full border-2 border-primary/20 text-primary hover:border-primary hover:bg-primary/5 transition-base px-4 py-2 text-sm font-semibold"
                     >
                       <Download size={16} /> Download
