@@ -185,7 +185,7 @@ import takshashilaOther5 from "@/assets/takshashila-other-5.jpg";
 import takshashilaOther6 from "@/assets/takshashila-other-6.jpg";
 import takshashilaOther7 from "@/assets/takshashila-other-7.jpg";
 import takshashilaCollege1 from "@/assets/takshashila-college-1.jpg";
-import takshashilaCollege2 from "@/assets/takshashila-college-2.JPG";
+import takshashilaCollege2 from "@/assets/takshashila-college-2.jpg";
 import takshashilaCollege3 from "@/assets/takshashila-college-3.jpg";
 import takshashilaCollege4 from "@/assets/takshashila-college-4.jpg";
 import takshashilaCollege5 from "@/assets/takshashila-college-5.jpg";
@@ -198,6 +198,7 @@ import takshashilaCollege11 from "@/assets/takshashila-college-11.jpg";
 import takshashilaCollege12 from "@/assets/takshashila-college-12.jpg";
 import takshashilaCollege13 from "@/assets/takshashila-college-13.jpg";
 import takshashilaCollege14 from "@/assets/takshashila-college-14.jpg";
+import takshashilaCollege15 from "@/assets/takshashila-college-15.jpg";
 import takshashilaShyam1 from "@/assets/takshashila-shyam-1.jpeg";
 import takshashilaShyam2 from "@/assets/takshashila-shyam-2.jpeg";
 import takshashilaShyam3 from "@/assets/takshashila-shyam-3.jpeg";
@@ -1009,6 +1010,7 @@ if (takshashilaCollege) {
     takshashilaCollege12,
     takshashilaCollege13,
     takshashilaCollege14,
+    takshashilaCollege15,
   ];
   takshashilaCollege.successStories = [
     {
