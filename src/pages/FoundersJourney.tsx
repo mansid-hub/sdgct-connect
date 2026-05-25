@@ -30,15 +30,6 @@ const FoundersJourney = () => {
               Founder, Shri Dadasaheb Gawai Charitable Trust
             </p>
 
-            <div className="mt-6 rounded-2xl border-l-4 border-accent bg-secondary/40 p-5">
-              <Quote className="text-accent mb-2" size={20} />
-
-              <p className="text-foreground italic leading-relaxed">
-                "Education is the strongest foundation for dignity,
-                self-reliance, and lasting social change."
-              </p>
-            </div>
-
             <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed">
               <p>
                 Born in 1929, in the rural village of Darapur in Amravati, Late Shri R.
