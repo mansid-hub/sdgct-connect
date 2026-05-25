@@ -7,20 +7,20 @@ const pdfs = [
     title:
       "Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College",
     href: encodeURI(
-      "/press/Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College, Uttam Nagar, Dist. Amravati.pdf"
+      "/press/college-press-release.pdf"
     ),
     filename:
-      "Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College, Uttam Nagar, Dist. Amravati.pdf",
+      "college-press-release.pdf",
     pages: 118,
   },
   {
     title:
       "Press Releases of Takshashila Institute of Engineering and Technology and Research Center",
     href: encodeURI(
-      "/press/Press Releases of Takshashila Institute of Engineering and Technology and Research Center, Darapur, Tq. Daryapur, Dist. Amravati.pdf"
+      "/press/engineering-press-release.pdf"
     ),
     filename:
-      "Press Releases of Takshashila Institute of Engineering and Technology and Research Center, Darapur, Tq. Daryapur, Dist. Amravati.pdf",
+      "engineering-press-release.pdf",
     pages: 61,
   },
 ];
