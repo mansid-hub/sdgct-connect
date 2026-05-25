@@ -66,7 +66,7 @@ const Footer = () => {
             <li className="flex gap-3 items-center">
               <Mail size={16} className="text-accent shrink-0" />
               <a href="mailto:sdgct1991@gmail.com" className="hover:text-accent">
-                sdgct1991@gmail.com
+                info@sdgct.org
               </a>
             </li>
           </ul>
