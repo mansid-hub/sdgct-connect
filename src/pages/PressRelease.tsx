@@ -7,7 +7,7 @@ import coverEngineering from "@/assets/press-covers/cover-engineering.jpg";
 const pdfs = [
   {
     title:
-      "Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College, Uttam Nagar, Dist. Amravati",
+      "Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College",
     href: encodeURI(
       "/press/Press Releases of Dr. Babasaheb Ambedkar Takshashila Mahavidyalaya and Junior College, Uttam Nagar, Dist. Amravati.pdf"
     ),
@@ -18,7 +18,7 @@ const pdfs = [
   },
   {
     title:
-      "Press Releases of Takshashila Institute of Engineering and Technology and Research Center, Darapur, Tq. Daryapur, Dist. Amravati",
+      "Press Releases of Takshashila Institute of Engineering and Technology and Research Center",
     href: encodeURI(
       "/press/Press Releases of Takshashila Institute of Engineering and Technology and Research Center, Darapur, Tq. Daryapur, Dist. Amravati.pdf"
     ),
