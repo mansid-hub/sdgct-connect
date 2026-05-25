@@ -1179,9 +1179,10 @@ const tiper = categories
   .find((i) => i.slug === "takshashila-institute-of-pharmaceutical-education-and-research-kherda-tq-karanja");
 if (tiper) {
   tiper.about = tiperAbout;
-  tiper.image = tiper3;
+  tiper.image = tiperProfile;
+  (tiper as any).imagePosition = "center top";
   tiper.highlights = [];
-  tiper.gallery = [tiper3, tiper5, tiper4, tiper1, tiper2];
+  tiper.gallery = [tiper1, tiper2, tiper3, tiper4, tiper5, tiper6, tiper7, tiper8];
 }
 
 const ramkrushnaBedAbout = [
