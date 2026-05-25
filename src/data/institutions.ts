@@ -258,6 +258,10 @@ import tiper2 from "@/assets/tiper-2.jpeg";
 import tiper3 from "@/assets/tiper-3.jpeg";
 import tiper4 from "@/assets/tiper-4.jpeg";
 import tiper5 from "@/assets/tiper-5.jpeg";
+import tiper6 from "@/assets/tiper-6.jpeg";
+import tiper7 from "@/assets/tiper-7.jpeg";
+import tiper8 from "@/assets/tiper-8.jpeg";
+import tiperProfile from "@/assets/tiper-profile.jpeg";
 import tiet1 from "@/assets/tiet-1.jpeg";
 import tiet2 from "@/assets/tiet-2.jpg";
 import tiet3 from "@/assets/tiet-3.jpeg";
@@ -1175,9 +1179,10 @@ const tiper = categories
   .find((i) => i.slug === "takshashila-institute-of-pharmaceutical-education-and-research-kherda-tq-karanja");
 if (tiper) {
   tiper.about = tiperAbout;
-  tiper.image = tiper3;
+  tiper.image = tiperProfile;
+  (tiper as any).imagePosition = "center top";
   tiper.highlights = [];
-  tiper.gallery = [tiper3, tiper5, tiper4, tiper1, tiper2];
+  tiper.gallery = [tiper1, tiper2, tiper3, tiper4, tiper5, tiper6, tiper7, tiper8];
 }
 
 const ramkrushnaBedAbout = [
