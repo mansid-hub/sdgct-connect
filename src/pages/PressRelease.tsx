@@ -56,8 +56,12 @@ const PressRelease = () => {
                 key={i}
                 className="group relative overflow-hidden rounded-2xl border border-border/60 bg-card shadow-soft hover:shadow-card transition-base flex flex-col"
               >
-                <div className="flex items-center justify-center aspect-[16/9] bg-gradient-to-br from-primary/10 to-accent/10">
-                  <FileText className="text-primary" size={64} strokeWidth={1.5} />
+                <div className="flex items-center justify-center aspect-[16/9] bg-gradient-to-br from-primary/10 to-accent/10 overflow-hidden">
+                  {p.cover ? (
+                    <img src={p.cover} alt={p.title} className="w-full h-full object-cover" loading="lazy" />
+                  ) : (
+                    <FileText className="text-primary" size={64} strokeWidth={1.5} />
+                  )}
                 </div>
                 <div className="p-5 flex flex-col gap-4 flex-1">
                   <div className="flex-1">
