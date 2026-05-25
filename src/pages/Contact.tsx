@@ -39,7 +39,7 @@ const Contact = () => {
       <PageHeader
         eyebrow="Get in Touch"
         title="We would love to hear from you"
-        description="Questions, partnership ideas or simply a hello — our team usually replies within two working days."
+        description="You are welcome to send us any questions, partnership ideas or simply a hello."
         crumbs={[{ label: "Home", to: "/" }, { label: "Contact" }]}
       />
 
@@ -75,7 +75,7 @@ const Contact = () => {
               { icon: MapPin, title: "Visit us", body: "Shri Dadasaheb Gawai Charitable Trust,\nShyam Nagar, Congress Nagar Road,\nAmravati - 444606, Maharashtra" },
               { icon: Phone, title: "Call us", body: "+91 98234 96914" },
               { icon: Mail, title: "Email", body: "sdgct1991@gmail.com" },
-              { icon: Clock, title: "Office hours", body: "Mon–Sat · 9:30 am – 6:00 pm\nSun · By appointment" },
+              { icon: Clock, title: "Office hours", body: "Mon–Sat · 9:00 am – 6:00 pm\nSun · By appointment" },
             ].map((c, i) => (
               <div key={i} className="bg-card rounded-2xl p-6 border border-border/60 shadow-soft flex gap-4">
                 <div className="h-11 w-11 rounded-xl gradient-primary text-primary-foreground flex items-center justify-center shrink-0">
