@@ -777,7 +777,7 @@ if (matoshriRamabai) {
   matoshriRamabai.about = matoshriRamabaiAbout;
   matoshriRamabai.successStories = matoshriRamabaiStories;
   matoshriRamabai.image = matoshriRamabai4;
-  
+  matoshriRamabai.imagePosition = "right center";
   matoshriRamabai.gallery = [matoshriRamabai2, matoshriRamabai1, matoshriRamabai4, matoshriRamabai3];
   matoshriRamabai.highlights = [];
 }
@@ -887,6 +887,7 @@ const prerna = schoolsCat?.items.find(
 if (prerna) {
   prerna.about = prernaAbout;
   prerna.image = prerna1;
+  prerna.imageScale = 0.85;
   prerna.gallery = [prerna1, prerna2, prerna3, prerna4, prerna5, prerna6, prerna7, prerna9, prerna10, prerna11, prerna12];
   prerna.highlights = [];
 }
