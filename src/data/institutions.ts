@@ -185,7 +185,7 @@ import takshashilaOther5 from "@/assets/takshashila-other-5.jpg";
 import takshashilaOther6 from "@/assets/takshashila-other-6.jpg";
 import takshashilaOther7 from "@/assets/takshashila-other-7.jpg";
 import takshashilaCollege1 from "@/assets/takshashila-college-1.jpg";
-import takshashilaCollege2 from "@/assets/takshashila-college-2.jpg";
+import takshashilaCollege2 from "@/assets/takshashila-college-2.JPG";
 import takshashilaCollege3 from "@/assets/takshashila-college-3.jpg";
 import takshashilaCollege4 from "@/assets/takshashila-college-4.jpg";
 import takshashilaCollege5 from "@/assets/takshashila-college-5.jpg";
