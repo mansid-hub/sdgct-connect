@@ -996,7 +996,6 @@ if (takshashilaCollege) {
   takshashilaCollege.highlights = [];
   takshashilaCollege.gallery = [
     takshashilaCollege1,
-    takshashilaCollege2,
     takshashilaCollege3,
     takshashilaCollege4,
     takshashilaCollege5,
