@@ -12,7 +12,7 @@ const WhatWeDo = () => {
       <div className="container">
         <SectionHeader
           eyebrow="What We Do"
-          title="From Rural Roots to Limitless Possibilities."
+          title="From Rural Roots to Limitless Possibilities"
           className="max-w-4xl [&>h2]:text-2xl [&>h2]:sm:text-3xl [&>h2]:lg:text-3xl [&>h2]:whitespace-nowrap"
         />
 
