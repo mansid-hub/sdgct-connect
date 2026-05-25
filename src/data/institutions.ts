@@ -198,6 +198,7 @@ import takshashilaCollege11 from "@/assets/takshashila-college-11.jpg";
 import takshashilaCollege12 from "@/assets/takshashila-college-12.jpg";
 import takshashilaCollege13 from "@/assets/takshashila-college-13.jpg";
 import takshashilaCollege14 from "@/assets/takshashila-college-14.jpg";
+import takshashilaCollege15 from "@/assets/takshashila-college-15.jpg";
 import takshashilaShyam1 from "@/assets/takshashila-shyam-1.jpeg";
 import takshashilaShyam2 from "@/assets/takshashila-shyam-2.jpeg";
 import takshashilaShyam3 from "@/assets/takshashila-shyam-3.jpeg";
