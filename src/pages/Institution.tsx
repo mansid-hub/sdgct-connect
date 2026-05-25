@@ -95,7 +95,7 @@ const Institution = () => {
                       <ArrowUpRight size={18} className="text-muted-foreground opacity-0 group-hover:opacity-100 transition-base" />
                     </Link>
                     <span className="text-xs font-semibold tracking-[0.18em] uppercase text-accent">
-                      {g.items.length} institutions
+                      {g.items.length} Institutions
                     </span>
                   </div>
                   <ul className="mt-4 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-2">
