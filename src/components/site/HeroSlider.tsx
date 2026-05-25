@@ -14,14 +14,14 @@ const slides = [
     eyebrow: "Education for All",
     title: "Quality education made accessible and affordable",
     description:
-      "For over six decades, we've made schools and colleges accessible for disadvantaged students, as talent is everywhere, but opportunity isn’t.",
+      "For over six decades, we've made schools and colleges accessible for underserved students, as talent is everywhere, but opportunity isn’t",
     objectPosition: "center 75%",
     overlay: "bg-black/35",
   },
   {
     image: hero2,
     eyebrow: "Hope in Action",
-    title: "Empowering students from underserved backgrounds",
+    title: "Empowering students from disadvantaged backgrounds",
     description:
       "Every hand we hold builds a stronger tomorrow",
     objectPosition: "center 35%",
