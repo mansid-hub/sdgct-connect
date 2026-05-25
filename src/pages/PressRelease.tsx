@@ -1,6 +1,7 @@
 import Layout from "@/components/site/Layout";
 import PageHeader from "@/components/site/PageHeader";
 import { FileText, Download, ExternalLink } from "lucide-react";
+import collegeCover from "@/assets/takshashila-college-cover.jpg";
 
 const pdfs = [
   {
