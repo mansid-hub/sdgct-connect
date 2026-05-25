@@ -1028,7 +1028,7 @@ const ramkrushnaJr = categories
   .find((i) => i.slug === "ramkrushna-junior-college-darapur-tq-daryapur-dist-amravati");
 if (ramkrushnaJr) {
   ramkrushnaJr.about = ramkrushnaJrAbout;
-  ramkrushnaJr.image = ramkrushnaJr1;
+  ramkrushnaJr.image = takshashilaDarapur1;
   ramkrushnaJr.highlights = [];
   ramkrushnaJr.gallery = [
     ramkrushnaJr1,
