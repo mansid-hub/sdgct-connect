@@ -25,6 +25,7 @@ const pdfs = [
     filename:
       "engineering-press-release.pdf",
     pages: 61,
+    cover: engineeringCover,
   },
 ];
 
