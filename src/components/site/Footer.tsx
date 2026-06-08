@@ -99,11 +99,11 @@ const Footer = () => {
         <div className="container py-6 flex flex-col sm:flex-row gap-3 items-center justify-between text-xs text-primary-foreground/55">
           <p>© {new Date().getFullYear()} Shri Dadasaheb Gawai Charitable Trust. All rights reserved.</p>
           <nav className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center">
-            <a href={termsConditionsPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Terms &amp; Conditions</a>
+            <a href="/docs/terms-and-conditions" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Terms &amp; Conditions</a>
             <span aria-hidden="true">|</span>
-            <a href={privacyPolicyPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Privacy Policy</a>
+            <a href="/docs/privacy-policy" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Privacy Policy</a>
             <span aria-hidden="true">|</span>
-            <a href={refundCancellationPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Refund &amp; Cancellation</a>
+            <a href="/docs/refund-and-cancellation" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Refund &amp; Cancellation</a>
           </nav>
           <p>Reg. No. F-XXXX/Amravati · 80G & 12A certified</p>
         </div>
