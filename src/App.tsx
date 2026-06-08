@@ -53,6 +53,7 @@ const App = () => (
           <Route path="/institution/colleges" element={<Colleges />} />
           <Route path="/institution/hospitals" element={<Hospitals />} />
           <Route path="/institution/:parent/:slug" element={<InstitutionRouter />} />
+          <Route path="/docs/:slug" element={<PdfViewer />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
