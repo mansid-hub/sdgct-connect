@@ -22,6 +22,7 @@ import BlogsMedia from "@/pages/BlogsMedia";
 import PressRelease from "@/pages/PressRelease";
 import MissionVision from "@/pages/MissionVision";
 import FoundersJourney from "@/pages/FoundersJourney";
+import PdfViewer from "@/pages/PdfViewer";
 
 
 const queryClient = new QueryClient();
