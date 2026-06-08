@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, Heart } from "lucide-react";
 import Logo from "./Logo";
+import termsPdf from "@/assets/terms-and-conditions.pdf.asset.json";
+
 
 const Footer = () => {
   return (
@@ -91,8 +93,15 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-primary-foreground/10">
-        <div className="container py-6 flex flex-col sm:flex-row gap-2 items-center justify-between text-xs text-primary-foreground/55">
+        <div className="container py-6 flex flex-col sm:flex-row gap-3 items-center justify-between text-xs text-primary-foreground/55">
           <p>© {new Date().getFullYear()} Shri Dadasaheb Gawai Charitable Trust. All rights reserved.</p>
+          <nav className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center">
+            <a href={termsPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Terms &amp; Conditions</a>
+            <span aria-hidden="true">|</span>
+            <a href={termsPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Privacy Policy</a>
+            <span aria-hidden="true">|</span>
+            <a href={termsPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Refund &amp; Cancellation</a>
+          </nav>
           <p>Reg. No. F-XXXX/Amravati · 80G & 12A certified</p>
         </div>
       </div>
