@@ -3,6 +3,7 @@ import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, Heart } fro
 import Logo from "./Logo";
 import termsPdf from "@/assets/terms-and-conditions.pdf.asset.json";
 import termsConditionsPdf from "@/assets/terms-conditions.pdf.asset.json";
+import privacyPolicyPdf from "@/assets/privacy-policy.pdf.asset.json";
 
 
 const Footer = () => {
@@ -99,7 +100,7 @@ const Footer = () => {
           <nav className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center">
             <a href={termsConditionsPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Terms &amp; Conditions</a>
             <span aria-hidden="true">|</span>
-            <a href={termsPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Privacy Policy</a>
+            <a href={privacyPolicyPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Privacy Policy</a>
             <span aria-hidden="true">|</span>
             <a href={termsPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Refund &amp; Cancellation</a>
           </nav>
