@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, Heart } from "lucide-react";
 import Logo from "./Logo";
 import termsPdf from "@/assets/terms-and-conditions.pdf.asset.json";
+import termsConditionsPdf from "@/assets/terms-conditions.pdf.asset.json";
 
 
 const Footer = () => {
@@ -96,7 +97,7 @@ const Footer = () => {
         <div className="container py-6 flex flex-col sm:flex-row gap-3 items-center justify-between text-xs text-primary-foreground/55">
           <p>© {new Date().getFullYear()} Shri Dadasaheb Gawai Charitable Trust. All rights reserved.</p>
           <nav className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center">
-            <a href={termsPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Terms &amp; Conditions</a>
+            <a href={termsConditionsPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Terms &amp; Conditions</a>
             <span aria-hidden="true">|</span>
             <a href={termsPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Privacy Policy</a>
             <span aria-hidden="true">|</span>
