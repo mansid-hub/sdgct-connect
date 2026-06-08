@@ -4,6 +4,7 @@ import Logo from "./Logo";
 import termsPdf from "@/assets/terms-and-conditions.pdf.asset.json";
 import termsConditionsPdf from "@/assets/terms-conditions.pdf.asset.json";
 import privacyPolicyPdf from "@/assets/privacy-policy.pdf.asset.json";
+import refundCancellationPdf from "@/assets/refund-cancellation.pdf.asset.json";
 
 
 const Footer = () => {
@@ -102,7 +103,7 @@ const Footer = () => {
             <span aria-hidden="true">|</span>
             <a href={privacyPolicyPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Privacy Policy</a>
             <span aria-hidden="true">|</span>
-            <a href={termsPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Refund &amp; Cancellation</a>
+            <a href={refundCancellationPdf.url} target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-base">Refund &amp; Cancellation</a>
           </nav>
           <p>Reg. No. F-XXXX/Amravati · 80G & 12A certified</p>
         </div>
