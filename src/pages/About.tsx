@@ -44,7 +44,7 @@ const About = () => {
               </p>
               <p>
                 Born in 1929 into a modest farming family as one among seven siblings,
-                Late Shri R. S. Gavai understood firsthand the barriers that
+                Late Shri R. S. Gawai understood firsthand the barriers that
                 prevented rural children from accessing education. Despite
                 financial hardship, he pursued higher education and went on to
                 complete his degree from Nagpur University. But his ambition
@@ -57,7 +57,7 @@ const About = () => {
                 The Problem He Saw
               </h3>
               <p>
-                After graduating from college and travelling across Vidarbha, Shri Gavai recognised two
+                After graduating from college and travelling across Vidarbha, Shri Gawai recognised two
                 fundamental challenges facing rural education.
               </p>
               <p>
@@ -79,7 +79,7 @@ const About = () => {
                 These challenges were particularly visible across Vidarbha's
                 agrarian belt, where economic uncertainty, drought-prone
                 conditions, and limited infrastructure often restricted
-                educational opportunity for rural families. Shri Gavai saw
+                educational opportunity for rural families. Shri Gawai saw
                 education not only as a pathway to employment, but as a means of
                 creating long-term social and economic stability within these
                 communities.
@@ -89,7 +89,7 @@ const About = () => {
                 How It Began
               </h3>
               <p>
-                Shri Gavai believed that if children could not reach schools, schools must reach them. 
+                Shri Gawai believed that if children could not reach schools, schools must reach them. 
                 With this vision, he established the first school, Dr. Babasaheb Ambedkar Vidyalaya, in 
                 the informal housing settlements of Frazerpura in 1968, providing free education to children from the locality.
               </p>
