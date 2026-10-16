@@ -5,12 +5,12 @@ import hero1 from "@/assets/founder.png";
 const FoundersJourney = () => {
   return (
     <Layout>
-      {/* Shri R. S. Gavai */}
+      {/* Shri R. S. Gawai */}
       <section className="section-y">
         <div className="container grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
           <img
             src={hero1}
-            alt="Legacy of Late Shri R. S. Gavai"
+            alt="Legacy of Late Shri R. S. Gawai"
             loading="lazy"
             width={1600}
             height={1200}
@@ -23,7 +23,7 @@ const FoundersJourney = () => {
             </span>
 
             <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance">
-              Late Shri R. S. Gavai
+              Late Shri R. S. Gawai
             </h1>
 
             <p className="mt-3 text-lg text-accent font-medium">
@@ -33,7 +33,7 @@ const FoundersJourney = () => {
             <div className="mt-8 space-y-5 text-muted-foreground leading-relaxed">
               <p>
                 Born in 1929, in the rural village of Darapur in Amravati, Late Shri R.
-                S. Gavai dedicated his life to expanding opportunities for
+                S. Gawai dedicated his life to expanding opportunities for
                 underserved communities. Guided by the ideals of Dr. B. R.
                 Ambedkar, he believed that education was the most powerful
                 instrument for social mobility, capable of transforming not just
@@ -76,7 +76,7 @@ const FoundersJourney = () => {
               </p>
 
               <p>
-                Beyond education, Shri Gavai was associated with several social welfare 
+                Beyond education, Shri Gawai was associated with several social welfare 
                 initiatives focused on the eradication of untouchability, support for leprosy 
                 patients, and broader community upliftment. He served as Chairman Deeksha Bhoomi, 
                 Nagpur, and was also a member of the Land Reforms Committee of the Government of India. 
@@ -84,7 +84,7 @@ const FoundersJourney = () => {
               </p>
               
               <p>
-                A prolific writer and public thinker, Shri Gavai also authored several Marathi books 
+                A prolific writer and public thinker, Shri Gawai also authored several Marathi books 
                 on social justice and equality. His interests extended beyond public life and education 
                 as he also served as President of the Western India Football Association.
               </p>
@@ -105,7 +105,7 @@ const FoundersJourney = () => {
               </p>
 
               <p>
-                Shri R. S. Gavai’s legacy is reflected not only in these
+                Shri R. S. Gawai’s legacy is reflected not only in these
                 institutions but also in the breadth of responsibility he
                 carried in public life. Over the years, he served in several of
                 the nation’s highest constitutional roles, including as Governor
@@ -138,7 +138,7 @@ const FoundersJourney = () => {
           <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
             What began with one institution and one vision has grown into a
             lasting movement of education, empowerment, and rural community
-            development across Vidarbha. The values Shri R. S. Gavai stood for
+            development across Vidarbha. The values Shri R. S. Gawai stood for
             continue to guide every institution under the Trust today.
           </p>
         </div>
