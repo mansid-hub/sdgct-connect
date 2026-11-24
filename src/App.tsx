@@ -20,6 +20,7 @@ import WhyUs from "@/pages/WhyUs";
 import Media from "@/pages/Media";
 import BlogsMedia from "@/pages/BlogsMedia";
 import PressRelease from "@/pages/PressRelease";
+import Updates from "@/pages/Updates";
 import MissionVision from "@/pages/MissionVision";
 import FoundersJourney from "@/pages/FoundersJourney";
 import PdfViewer from "@/pages/PdfViewer";
@@ -40,6 +41,7 @@ const App = () => (
           <Route path="/media/blogs" element={<BlogsMedia />} />
           <Route path="/media/blogs/:slug" element={<BlogsMedia />} />
           <Route path="/media/press" element={<PressRelease />} />
+          <Route path="/updates" element={<Updates />} />
 
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/about/mission-vision" element={<MissionVision />} />

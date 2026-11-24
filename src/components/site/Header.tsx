@@ -42,24 +42,36 @@ const mediaMenu = {
   ],
 };
 
+const contactMenu = {
+  label: "Contact Us",
+  items: [
+    { label: "Contact Us", to: "/contact" },
+    { label: "Career", href: "mailto:info@sdgct.org?subject=Career%20Enquiry" },
+    { label: "Updates", to: "/updates" },
+  ],
+} as const;
+
 const Header = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [instOpen, setInstOpen] = useState(false);
   const [aboutOpen, setAboutOpen] = useState(false);
   const [mediaOpen, setMediaOpen] = useState(false);
+  const [contactOpen, setContactOpen] = useState(false);
   const [mobileInstOpen, setMobileInstOpen] = useState<string | null>(null);
   const [mobileAboutOpen, setMobileAboutOpen] = useState(false);
+  const [mobileContactOpen, setMobileContactOpen] = useState(false);
   const [mobileInstChild, setMobileInstChild] = useState<string | null>(null);
   const [instHover, setInstHover] = useState<string | null>(null);
   const instRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
   const mediaRef = useRef<HTMLDivElement>(null);
-  const hoverTimers = useRef<{ about?: number; inst?: number; media?: number }>({});
+  const contactRef = useRef<HTMLDivElement>(null);
+  const hoverTimers = useRef<{ about?: number; inst?: number; media?: number; contact?: number }>({});
   const location = useLocation();
 
   const HOVER_DELAY = 180;
-  const openWithHover = (key: "about" | "inst" | "media") => {
+  const openWithHover = (key: "about" | "inst" | "media" | "contact") => {
     if (hoverTimers.current[key]) {
       window.clearTimeout(hoverTimers.current[key]);
       hoverTimers.current[key] = undefined;
@@ -67,13 +79,15 @@ const Header = () => {
     if (key === "about") setAboutOpen(true);
     if (key === "inst") setInstOpen(true);
     if (key === "media") setMediaOpen(true);
+    if (key === "contact") setContactOpen(true);
   };
-  const closeWithHover = (key: "about" | "inst" | "media") => {
+  const closeWithHover = (key: "about" | "inst" | "media" | "contact") => {
     if (hoverTimers.current[key]) window.clearTimeout(hoverTimers.current[key]);
     hoverTimers.current[key] = window.setTimeout(() => {
       if (key === "about") setAboutOpen(false);
       if (key === "inst") setInstOpen(false);
       if (key === "media") setMediaOpen(false);
+      if (key === "contact") setContactOpen(false);
     }, HOVER_DELAY);
   };
 
@@ -88,8 +102,11 @@ const Header = () => {
     setOpen(false);
     setInstOpen(false);
     setAboutOpen(false);
+    setMediaOpen(false);
+    setContactOpen(false);
     setMobileInstOpen(null);
     setMobileAboutOpen(false);
+    setMobileContactOpen(false);
   }, [location.pathname]);
 
   useEffect(() => {
@@ -153,10 +170,27 @@ const Header = () => {
   };
 }, [mediaOpen]);
 
+  useEffect(() => {
+    if (!contactOpen) return;
+    const onClick = (e: MouseEvent) => {
+      if (contactRef.current && !contactRef.current.contains(e.target as Node)) setContactOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setContactOpen(false);
+    };
+    document.addEventListener("mousedown", onClick);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("mousedown", onClick);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [contactOpen]);
+
   const instActive = location.pathname.startsWith("/institution");
   const aboutActive =
     location.pathname === "/about" || location.pathname.startsWith("/trustees");
   const mediaActive = location.pathname.startsWith("/media");
+  const contactActive = location.pathname.startsWith("/contact") || location.pathname === "/updates";
 
   return (
     <>
@@ -414,24 +448,71 @@ const Header = () => {
 
 
 
-          {/* Remaining simple links */}
-          {links.filter((l) => l.to !== "/").map((l) => (
-            <NavLink
-              key={l.to}
-              to={l.to}
-              end={l.to === "/"}
-              className={({ isActive }) =>
-                cn(
-                  "px-4 py-2 rounded-full text-sm font-medium transition-base",
-                  isActive
+          {/* Contact Us dropdown */}
+          <div
+            className="relative"
+            ref={contactRef}
+            onMouseEnter={() => openWithHover("contact")}
+            onMouseLeave={() => closeWithHover("contact")}
+          >
+            <div className="flex items-center rounded-full overflow-hidden">
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setContactOpen(true);
+                }}
+                className={cn(
+                  "whitespace-nowrap px-4 py-2 text-sm font-medium",
+                  contactActive
                     ? "text-primary bg-primary/8"
                     : "text-foreground/75 hover:text-primary hover:bg-secondary"
-                )
-              }
+                )}
+              >
+                {contactMenu.label}
+              </button>
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setContactOpen(true);
+                }}
+                aria-haspopup="menu"
+                aria-expanded={contactOpen}
+                aria-label="Toggle Contact Us menu"
+                className="px-2 py-2 hover:bg-secondary"
+              >
+                <ChevronDown size={14} className={cn("transition-base", contactOpen && "rotate-180")} />
+              </button>
+            </div>
+            <div
+              role="menu"
+              className={cn(
+                "absolute left-0 z-50 mt-3 w-56 p-2 rounded-2xl border border-border bg-background shadow-elegant transition-smooth origin-top",
+                contactOpen ? "opacity-100 scale-100 pointer-events-auto" : "opacity-0 scale-95 pointer-events-none"
+              )}
             >
-              {l.label}
-            </NavLink>
-          ))}
+              {contactMenu.items.map((item) => (
+                "href" in item ? (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    className="block px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary"
+                  >
+                    {item.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    className="block px-3 py-2.5 rounded-lg text-sm text-foreground/80 hover:text-primary hover:bg-secondary"
+                  >
+                    {item.label}
+                  </Link>
+                )
+              ))}
+            </div>
+          </div>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -626,21 +707,44 @@ const Header = () => {
           </div>
 
 
-          {/* Remaining simple links (Blog, Contact) */}
-          {links.filter((l) => l.to !== "/").map((l) => (
-            <NavLink
-              key={l.to}
-              to={l.to}
-              className={({ isActive }) =>
-                cn(
-                  "px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base animate-fade-up",
-                  isActive ? "bg-primary text-primary-foreground" : "text-black hover:bg-secondary"
-                )
-              }
+          {/* Mobile Contact Us accordion */}
+          <div className="animate-fade-up">
+            <button
+              type="button"
+              onClick={() => setMobileContactOpen((v) => !v)}
+              className={cn(
+                "w-full flex items-center justify-between px-5 py-4 rounded-2xl text-lg font-display font-semibold transition-base",
+                contactActive ? "bg-primary text-primary-foreground" : "text-black hover:bg-secondary"
+              )}
+              aria-expanded={mobileContactOpen}
             >
-              {l.label}
-            </NavLink>
-          ))}
+              Contact Us
+              <ChevronDown size={18} className={cn("transition-base", mobileContactOpen && "rotate-180")} />
+            </button>
+            {mobileContactOpen && (
+              <div className="mt-1 ml-2 pl-3 border-l-2 border-border/60 flex flex-col gap-1">
+                {contactMenu.items.map((item) => (
+                  "href" in item ? (
+                    <a
+                      key={item.label}
+                      href={item.href}
+                      className="px-4 py-3 rounded-xl text-base font-medium text-black/80 hover:bg-secondary hover:text-primary transition-base"
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      key={item.to}
+                      to={item.to}
+                      className="px-4 py-3 rounded-xl text-base font-medium text-black/80 hover:bg-secondary hover:text-primary transition-base"
+                    >
+                      {item.label}
+                    </Link>
+                  )
+                ))}
+              </div>
+            )}
+          </div>
 
           <Button asChild variant="donate" size="lg" className="mt-6 w-full">
             <Link to="/donate">
